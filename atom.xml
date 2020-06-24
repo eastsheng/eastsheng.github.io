@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>EastSheng</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://eastsheng.github.io/"/>
+  <updated>2020-06-24T15:58:07.507Z</updated>
+  <id>https://eastsheng.github.io/</id>
+  
+  <author>
+    <name>Eastsheng</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>没有解决的问题</title>
+    <link href="https://eastsheng.github.io/2020/06/24/Problems/"/>
+    <id>https://eastsheng.github.io/2020/06/24/Problems/</id>
+    <published>2020-06-24T03:29:49.000Z</published>
+    <updated>2020-06-24T15:58:07.507Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-自动获取-ip-地址，获取了-169-开头的ip地址？&quot;&gt;&lt;a href=&quot;#1-自动获取-ip-地址，获取了-169-开头的ip地址？&quot; class=&quot;headerlink&quot; title=&quot;1. 自动获取 ip 地址，获取了 169 开头的ip地址？&quot;&gt;&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="Issues" scheme="https://eastsheng.github.io/categories/Issues/"/>
+    
+      <category term="Computer" scheme="https://eastsheng.github.io/categories/Issues/Computer/"/>
+    
+    
+      <category term="Bug" scheme="https://eastsheng.github.io/tags/Bug/"/>
+    
+      <category term="Network Connections" scheme="https://eastsheng.github.io/tags/Network-Connections/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跑MD结构散了</title>
+    <link href="https://eastsheng.github.io/2020/06/23/Struct-ComeApart/"/>
+    <id>https://eastsheng.github.io/2020/06/23/Struct-ComeApart/</id>
+    <published>2020-06-23T10:06:51.000Z</published>
+    <updated>2020-06-24T15:58:50.751Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="跑MD结构结构散了，常见原因总结："><a href="#跑MD结构结构散了，常见原因总结：" class="headerlink" title="跑MD结构结构散了，常见原因总结："></a>跑MD结构结构散了，常见原因总结：</h4><h6 id="1-势函数的问题，调研一下该势函数是否有人模拟过成果过。"><a href="#1-势函数的问题，调研一下该势函数是否有人模拟过成果过。" class="headerlink" title="1. 势函数的问题，调研一下该势函数是否有人模拟过成果过。"></a>1. 势函数的问题，调研一下该势函数是否有人模拟过成果过。</h6><h6 id="2-原子结构不稳定导致的，例如："><a href="#2-原子结构不稳定导致的，例如：" class="headerlink" title="2. 原子结构不稳定导致的，例如："></a>2. 原子结构不稳定导致的，例如：</h6><ul><li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li><li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li></ul><h6 id="3-势参数设置出错，例如："><a href="#3-势参数设置出错，例如：" class="headerlink" title="3. 势参数设置出错，例如："></a>3. 势参数设置出错，例如：</h6><ul><li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li></ul><h6 id="3-是否有足够的真空层"><a href="#3-是否有足够的真空层" class="headerlink" title="3. 是否有足够的真空层"></a>3. 是否有足够的真空层</h6><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;跑MD结构结构散了，常见原因总结：&quot;&gt;&lt;a href=&quot;#跑MD结构结构散了，常见原因总结：&quot; class=&quot;headerlink&quot; title=&quot;跑MD结构结构散了，常见原因总结：&quot;&gt;&lt;/a&gt;跑MD结构结构散了，常见原因总结：&lt;/h4&gt;&lt;h6 id=&quot;1-势函数
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="Error summary" scheme="https://eastsheng.github.io/categories/Lammps/Error-summary/"/>
+    
+    
+      <category term="分子模拟" scheme="https://eastsheng.github.io/tags/%E5%88%86%E5%AD%90%E6%A8%A1%E6%8B%9F/"/>
+    
+      <category term="原子结构散了" scheme="https://eastsheng.github.io/tags/%E5%8E%9F%E5%AD%90%E7%BB%93%E6%9E%84%E6%95%A3%E4%BA%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Origin Integrate</title>
+    <link href="https://eastsheng.github.io/2020/06/22/Origin-2/"/>
+    <id>https://eastsheng.github.io/2020/06/22/Origin-2/</id>
+    <published>2020-06-22T11:16:25.000Z</published>
+    <updated>2020-06-24T15:58:02.770Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul><li>选中数据，并按照figure2找到 Integrate</li><li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li><li>接下来就是画图，plot&gt;line</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure1</td><td>figure2</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td></tr></tbody></table><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;积分&quot;&gt;&lt;a href=&quot;#积分&quot; class=&quot;headerlink&quot; title=&quot;积分&quot;&gt;&lt;/a&gt;积分&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;选中数据，并按照figure2找到 Integrate&lt;/li&gt;
+&lt;li&gt;操作完之后，就会在figure1中E(Y2)列出现积分
+      
+    
+    </summary>
+    
+    
+      <category term="Origin" scheme="https://eastsheng.github.io/categories/Origin/"/>
+    
+      <category term="积分" scheme="https://eastsheng.github.io/categories/Origin/%E7%A7%AF%E5%88%86/"/>
+    
+    
+      <category term="origin画图-积分" scheme="https://eastsheng.github.io/tags/origin%E7%94%BB%E5%9B%BE-%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Origin 画双y轴</title>
+    <link href="https://eastsheng.github.io/2020/06/22/Origin-1/"/>
+    <id>https://eastsheng.github.io/2020/06/22/Origin-1/</id>
+    <published>2020-06-22T07:21:49.000Z</published>
+    <updated>2020-06-24T15:57:56.347Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul><li>选中数据并，plot&gt;line 画出图</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure1</td><td>figure2</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td></tr></tbody></table><h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul><li>如图figure3,可以得到figure4–双y轴</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure3</td><td>figure4</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td><td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td></tr></tbody></table><h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul><li>右键，选中figure5中的 Layer Contents,选择要画的数据</li><li>调一下格式就可以得到最后的图片</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure5</td><td>figure6</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td></tr></tbody></table><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h5 id=&quot;1-首先画一个单y轴&quot;&gt;&lt;a href=&quot;#1-首先画一个单y轴&quot; class=&quot;headerlink&quot; title=&quot;1. 首先画一个单y轴&quot;&gt;&lt;/a&gt;1. 首先画一个单y轴&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;选中数据并，plot&amp;gt;line 画出图&lt;/li&gt;
+&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="Origin" scheme="https://eastsheng.github.io/categories/Origin/"/>
+    
+      <category term="双y轴" scheme="https://eastsheng.github.io/categories/Origin/%E5%8F%8Cy%E8%BD%B4/"/>
+    
+    
+      <category term="origin画图-双y轴" scheme="https://eastsheng.github.io/tags/origin%E7%94%BB%E5%9B%BE-%E5%8F%8Cy%E8%BD%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Command-branch</title>
+    <link href="https://eastsheng.github.io/2020/06/21/git-command/"/>
+    <id>https://eastsheng.github.io/2020/06/21/git-command/</id>
+    <published>2020-06-21T10:34:23.000Z</published>
+    <updated>2020-06-24T15:55:21.368Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Git-Command"><a href="#Git-Command" class="headerlink" title="Git Command"></a>Git Command</h4><details><summary><font size=4>Branch</font></summary><ol><li><p>创建本地分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></li><li><p>远程创建分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></li><li><p>删除分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></li><li><p>远程删除分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin ---delete xxx</span><br></pre></td></tr></table></figure></li><li><p>查看所有分支(包括远程分支)</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></li><li><p>查看分支状态</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></li><li><p>切换分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></li><li><p>创建一个空白分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></li><li><p>把blog的源代码上传到刚刚创建的空白分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f</span><br></pre></td></tr></table></figure></details></li></ol><details><summary><font size=4>Check Infomation</font></summary><ol><li>显示有变更的文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></li></ol></details><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Git-Command&quot;&gt;&lt;a href=&quot;#Git-Command&quot; class=&quot;headerlink&quot; title=&quot;Git Command&quot;&gt;&lt;/a&gt;Git Command&lt;/h4&gt;&lt;details&gt;
+
+&lt;summary&gt;&lt;font size=4&gt;Bran
+      
+    
+    </summary>
+    
+    
+      <category term="Git Command" scheme="https://eastsheng.github.io/categories/Git-Command/"/>
+    
+      <category term="branch" scheme="https://eastsheng.github.io/categories/Git-Command/branch/"/>
+    
+    
+      <category term="Git command-branch" scheme="https://eastsheng.github.io/tags/Git-command-branch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>实用网站合集</title>
+    <link href="https://eastsheng.github.io/2020/06/19/sitecollect/"/>
+    <id>https://eastsheng.github.io/2020/06/19/sitecollect/</id>
+    <published>2020-06-19T00:50:09.000Z</published>
+    <updated>2020-06-24T15:58:33.036Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><center>干啥啥不行，收藏第一名</center></strong></p><img src="https://s1.ax1x.com/2020/06/24/Nd051H.gif" width="30%"><h3 id="一、科研学习"><a href="#一、科研学习" class="headerlink" title="一、科研学习"></a>一、科研学习</h3><hr><ol><li>期刊缩写、影响因子<a href="https://cassi.cas.org/search.jsp">查询1:CASSI</a>; <a href="https://www.paperpi.com">查询2:SCI</a></li><li>消除科学方面的障碍:<a href="https://sci-hub.tw">Sci-hub</a></li><li><a href="https://app.cailiaoren.com/view/series/detail?id=48&vid=189">VMD软件基础使用讲解</a></li><li>固体物理在线<a href="http://gtwlx.jpkc.fudan.edu.cn/solid.html">课件</a></li><li>一个在线科研分析包网站<a href="https://nanohub.org">nanoHUB</a></li><li>Google<a href="https://translate.google.cn">翻译</a></li><li>Origin简单<a href="https://mp.weixin.qq.com/s/JGi0CbRup6Yv8Dx3pq3l-w">操作</a></li><li><a href="https://www.koushare.com">蔻享</a>,一个前沿科学讲座会议视频网站.</li><li>上交的<a href="http://cms.sjtu.edu.cn">计算材料课程</a></li><li>科研社交朋友圈<a href="https://www.researchgate.net/">researchgate</a></li><li>集合了各种期刊论文的最新动态<a href="https://www.researcher-app.com/">Researcher</a></li><li><a href="https://www.materialscloud.org/work/tools/options">计算工具</a>，自己探索</li><li><a href="https://ecee.colorado.edu/~bart/book/book/title.htm">Principles of Semiconductor Sevices</a>, by Bart Van Zeghbroeck,一本讲半导体设备的在线书籍</li><li><a href="https://github.com/Tingliangstu/Lammps_tools">从UFF获取LJ势</a></li><li><a href="http://muchong.com/bbs/">小木虫</a></li><li><a href="http://www.sciencenet.cn/">科学网</a></li><li><a href="http://bbs.keinsci.com/forum.php">计算化学公社</a></li><li><a href="http://mdbbs.org/">分子模拟论坛</a></li></ol><hr><h3 id="二、学术讲座"><a href="#二、学术讲座" class="headerlink" title="二、学术讲座"></a>二、学术讲座</h3><hr><ol><li><a href="https://www.bilibili.com/video/BV1XD4y1D7MR/">基于GPU加速的分子动力学热输运模拟</a></li><li><a href="https://www.bilibili.com/video/BV1oK4y1x7Bu/">基于飞秒激光时域反射技术的热物性研究</a></li></ol><hr><h3 id="三、程序"><a href="#三、程序" class="headerlink" title="三、程序"></a>三、程序</h3><hr><ol><li><a href="https://www.bccn.net/run/">在线编程</a></li><li><a href="http://mahua.jser.me/">Markdown在线编辑器</a>、<a href="https://markdown-zh.readthedocs.io/en/latest/">中文文档</a></li><li><a href="http://micro.ustc.edu.cn/Fortran/">Fortran资源</a></li><li><a href="http://krsna.lamost.org/popular/fortran/fortran.htm">科学计算的语言Fortran</a></li><li><a href="http://fcode.cn/">Fortran论坛</a></li><li><a href="http://sofasofa.io/">数据科学社区</a></li><li><a href="https://www.runoob.com/">RUNOOB菜鸟教程</a></li><li><a href="https://www.liaoxuefeng.com/">廖雪峰的官方网站</a></li><li><a href="https://www.ilovematlab.cn/forum.php?mod=home">Matlab论坛</a></li><li><a href="http://www.pythondoc.com/">Python中文学习大本营</a></li><li><a href="https://www.python.org/">Python官网</a></li><li><a href="https://learnpythonthehardway.org/">Learn python the hard way</a></li><li><a href="http://python.itcarlow.ie/resources.html">Learn Python 3 with Head First - Resources</a></li><li><a href="https://www.programcreek.com/python/">Python code example</a></li><li><a href="https://www.numpy.org.cn/">NumPy 中文</a></li><li><a href="https://www.pypandas.cn/">Pandas 中文</a></li><li><a href="https://www.matplotlib.org.cn/">Matplotlib 中文</a></li><li><a href="http://djangobook.py3k.cn/2.0/">The Django Book</a></li><li><a href="https://www.w3cschool.cn/">W3Cschool</a></li><li><a href="http://www.ipaomi.com/">包含：python、Kivy、深度学习等</a></li></ol><hr><h3 id="四、英语学习"><a href="#四、英语学习" class="headerlink" title="四、英语学习"></a>四、英语学习</h3><hr><ol><li><a href="http://learnenglish.britishcouncil.org">BritishCouncil</a></li><li><a href="https://aimwriting.mtutor.engkoo.com">微软小英写作</a></li></ol><hr><h3 id="五、软件合集"><a href="#五、软件合集" class="headerlink" title="五、软件合集"></a>五、软件合集</h3><hr><ol><li>分子模拟软件<a href="https://lammps.sandia.gov/index.html">Lammps</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,以及在线<a href="https://lammps.sandia.gov/doc/Manual.html">手册</a></li><li>傅里叶快速变换<a href="http://www.fftw.org/download.html">FFTW</a>.</li><li>晶格动力学软件<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">GULP</a>,<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#scan_cell">在线手册</a></li><li>一个可以发现很多好软件的<a href="https://www.cuiuc.com">网站</a></li><li><a href="https://www.cccitu.com">玩机大学</a></li><li>一个新发展的MD模拟程序<a href="http://gpumd.zheyongfan.org/index.php/Main_Page">GPUMD</a>,源代码<a href="https://github.com/brucefan1983/GPUMD">在这</a></li><li><a href="https://tool.lu">在线工具</a></li><li>可视化软件<a href="https://www.ovito.org/">OVITO</a>、<a href="http://jp-minerals.org/vesta/en/">VESTA</a>、<a href="http://www.ks.uiuc.edu/Research/vmd/">VMD</a></li></ol><hr><h3 id="六、搜索"><a href="#六、搜索" class="headerlink" title="六、搜索"></a>六、搜索</h3><hr><ol><li><a href="https://cn.bing.com/?FORM=BEHPTB">必应Bing</a></li><li><a href="http://www.gaokeyan.com">科研导航</a></li><li><a href="https://ac.scmor.com">Google学术</a>镜像</li><li><a href="http://ztflh.xhma.com">中图分类号查询</a></li><li><a href="http://www.soopat.com">专利查询</a></li><li><a href="https://www.fermitech.com.cn/wiki/doku.php?id=start">费米维基</a></li><li><a href="https://www.rsc.org/periodic-table">在线的元素周期表</a></li><li><a href="https://gotolink.cn/general">沟渠网</a>，很全的网站导航</li></ol><hr><h3 id="七、Pictures下载"><a href="#七、Pictures下载" class="headerlink" title="七、Pictures下载"></a>七、Pictures下载</h3><hr><ol><li>包含图标、高清图片、字体等<a href="http://sc.chinaz.com">下载</a></li><li><a href="http://www.zitiweb.com">字体网</a></li><li><a href="https://www.asqql.com/">动图基地</a></li><li><a href="https://icon.52112.com/">寻图.标</a></li><li><a href="https://pixabay.com/zh/">免费正版高清图片素材库</a></li><li>免费素材图片<a href="https://www.pexels.com/zh-cn/">Pexels</a></li><li>免费图片，有些暗色调<a href="http://www.streetwill.co/">streetwill</a></li></ol><hr><h3 id="八、网课"><a href="#八、网课" class="headerlink" title="八、网课"></a>八、网课</h3><hr><ol><li><a href="https://www.icourse163.org">慕课</a></li><li><a href="https://www.51zxw.net">我要自学网</a></li><li><a href="http://v.dxsbb.com">大学生自学网</a></li><li><a href="http://www.fanshuxueyuan.com">番薯学院</a></li><li><a href="http://www.kgc.cn">课工场</a></li><li><a href="https://phet.colorado.edu/zh_CN/">免费的在线物理、化学、生物、地理及数学仿真程序</a></li><li><a href="https://www.5ifxw.com">我爱分享网</a></li></ol><hr><h3 id="九、灵异"><a href="#九、灵异" class="headerlink" title="九、灵异"></a>九、灵异</h3><hr><ol><li><a href="http://www.lingyi.org">中国灵异网</a></li><li><a href="http://www.lingyiwenhua.com">灵异文化</a></li></ol><hr><h3 id="十、书籍推荐"><a href="#十、书籍推荐" class="headerlink" title="十、书籍推荐"></a>十、书籍推荐</h3><hr><h5 id="新派武侠"><a href="#新派武侠" class="headerlink" title="新派武侠"></a>新派武侠</h5><ol><li><a href="https://www.jcdf99.com/book/3/3173/">《英雄志》</a>，作者：孙晓，未完……,不知道有生之年还能不能待续……</li><li><a href="https://mp.weixin.qq.com/s/BLUgI_hz289yvLbnoyhnxQ">《天之下》</a>,作者：三弦大天使，未完,待续……</li><li>《乱世铜炉》，作者：又是十三，不知道算不算武侠，虽然太监了，但是还不错。</li><li>《昆仑》《沧海》《灵飞经》，作者：凤歌，常说的凤歌的山海经三部曲。</li></ol><hr><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;&lt;center&gt;干啥啥不行，收藏第一名&lt;/center&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;https://s1.ax1x.com/2020/06/24/Nd051H.gif&quot; width=&quot;30%&quot;&gt;
+
+
+&lt;h3 id=&quot;一、科研学习&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+    
+      <category term="小技巧" scheme="https://eastsheng.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="实用网站" scheme="https://eastsheng.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    
+    
+      <category term="实用网站" scheme="https://eastsheng.github.io/tags/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>snap使用常见错误解决方法</title>
+    <link href="https://eastsheng.github.io/2020/06/18/snaperror/"/>
+    <id>https://eastsheng.github.io/2020/06/18/snaperror/</id>
+    <published>2020-06-18T10:34:04.000Z</published>
+    <updated>2020-06-24T15:58:41.115Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-cannot-open-SNAP-coefficient-snap"><a href="#1-cannot-open-SNAP-coefficient-snap" class="headerlink" title="1. cannot open SNAP coefficient snap"></a>1. cannot open SNAP coefficient snap</h3><p>错误信息：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure><p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p><h3 id="2-Incorrect-SNAP-parameter-file"><a href="#2-Incorrect-SNAP-parameter-file" class="headerlink" title="2. Incorrect SNAP parameter file"></a>2. Incorrect SNAP parameter file</h3><p>错误信息：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure><p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;1-cannot-open-SNAP-coefficient-snap&quot;&gt;&lt;a href=&quot;#1-cannot-open-SNAP-coefficient-snap&quot; class=&quot;headerlink&quot; title=&quot;1. cannot open SNAP co
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="potential" scheme="https://eastsheng.github.io/categories/Lammps/potential/"/>
+    
+    
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
+      <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
+    
+      <category term="snap使用常见错误解决方法" scheme="https://eastsheng.github.io/tags/snap%E4%BD%BF%E7%94%A8%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经验势snap的使用</title>
+    <link href="https://eastsheng.github.io/2020/06/18/Lammpsinput/"/>
+    <id>https://eastsheng.github.io/2020/06/18/Lammpsinput/</id>
+    <published>2020-06-18T08:43:56.000Z</published>
+    <updated>2020-06-24T15:57:49.332Z</updated>
+    
+    <content type="html"><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p><h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a>一、栗子</h3><p>官网举的是“磷化铟”的栗子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure><ol><li><p>第一行应该很明了了，就是个指定potential的style的。</p></li><li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p></li><li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p></li><li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure></li></ol><h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a>二、InP.snapcoeff 系数文件</h3><p>文件内容类似：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure><p>在lammps文件夹(Examples/snap)里直接可以找到,</p><ol><li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li><li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li><li>下面的31行就是系数了。</li></ol><h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a>补充1</h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure><h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a>三、InP.snapparam 参数文件</h3><p>类似：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure><ol><li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li><li>其他的为可选项，根据具体情况而定。</li></ol><h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a>补充2：</h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure><p>ps:学习笔记，以供查阅。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息&lt;a href=&quot;https://lammps.sandia.gov/doc/pair_snap.html&quot;&gt;在这&lt;/a&gt;可以找到。&lt;/p&gt;
+&lt;h3
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="potential" scheme="https://eastsheng.github.io/categories/Lammps/potential/"/>
+    
+    
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
+      <category term="snap" scheme="https://eastsheng.github.io/tags/snap/"/>
+    
+      <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Common Commands of Hexo</title>
+    <link href="https://eastsheng.github.io/2020/06/18/Hexo-command/"/>
+    <id>https://eastsheng.github.io/2020/06/18/Hexo-command/</id>
+    <published>2020-06-17T16:00:00.000Z</published>
+    <updated>2020-06-24T15:57:05.299Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hexo-command"><a href="#Hexo-command" class="headerlink" title="Hexo command"></a>Hexo command</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h3 id="Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="Generate static files and Deploy to remote sites simultaneously"></a>Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Hexo-command&quot;&gt;&lt;a href=&quot;#Hexo-command&quot; class=&quot;headerlink&quot; title=&quot;Hexo command&quot;&gt;&lt;/a&gt;Hexo command&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo Command" scheme="https://eastsheng.github.io/categories/Hexo-Command/"/>
+    
+      <category term="New post" scheme="https://eastsheng.github.io/categories/Hexo-Command/New-post/"/>
+    
+    
+      <category term="blog" scheme="https://eastsheng.github.io/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>控制Tecplot里的原子间距</title>
+    <link href="https://eastsheng.github.io/2020/05/08/Tecplot-1/"/>
+    <id>https://eastsheng.github.io/2020/05/08/Tecplot-1/</id>
+    <published>2020-05-08T11:49:48.000Z</published>
+    <updated>2020-06-24T15:58:57.683Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul><li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Tecplot1" border="0" />  </li></ul><ul><li><p>独立操作x,y,z的Size Factors</p><img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Tecplot2" border="0" /></li><li><p>调原子间距效果</p></li></ul><img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" /><h4 id="很奇怪，也非常便捷的一个操作"><a href="#很奇怪，也非常便捷的一个操作" class="headerlink" title="很奇怪，也非常便捷的一个操作"></a>很奇怪，也非常便捷的一个操作</h4><ul><li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li><li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li><li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors&quot;&gt;&lt;a href=&quot;#Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors&quot; class=&quot;headerlink&quot; title=&quot;Plot&amp;lt;Axis&amp;lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Tecplot" scheme="https://eastsheng.github.io/categories/Tecplot/"/>
+    
+    
+      <category term="Tecplot原子间距" scheme="https://eastsheng.github.io/tags/Tecplot%E5%8E%9F%E5%AD%90%E9%97%B4%E8%B7%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把自己写的Python程序打包exe可执行文件</title>
+    <link href="https://eastsheng.github.io/2020/03/17/Python-2/"/>
+    <id>https://eastsheng.github.io/2020/03/17/Python-2/</id>
+    <published>2020-03-17T11:23:21.000Z</published>
+    <updated>2020-06-24T15:58:24.177Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="打包Python程序"><a href="#打包Python程序" class="headerlink" title="打包Python程序"></a>打包Python程序</h4><ul><li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li></ul><ol><li>安装第三方包pyinstaller</li><li>在cmd命令行输入:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyinstaller</span><br></pre></td></tr></table></figure><ol start="3"><li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br></pre></td></tr></table></figure><ol start="4"><li>cmd执行：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F filename.py</span><br></pre></td></tr></table></figure><ol start="5"><li>还可以给程序加个图标：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py</span><br></pre></td></tr></table></figure><h4 id="其他需要用到的命令"><a href="#其他需要用到的命令" class="headerlink" title="其他需要用到的命令"></a>其他需要用到的命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -h             为查看help命令</span><br><span class="line">pyinstaller --clean        为清理打包过程中的临时文件</span><br><span class="line">pyinstaller -D,--onedir    为默认值，生成dist文件夹</span><br><span class="line">pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件</span><br><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</span><br></pre></td></tr></table></figure><h4 id="附上一个小程序"><a href="#附上一个小程序" class="headerlink" title="附上一个小程序"></a>附上一个小程序</h4><ul><li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li></ul><img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" /><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">#画个太极阴阳鱼</span><br><span class="line">import turtle</span><br><span class="line">turtle.setup(0.5,0.6,0,0)</span><br><span class="line">turtle.speed(10)</span><br><span class="line"># #大圆</span><br><span class="line"># turtle.penup()</span><br><span class="line"># turtle.goto(0,-160)</span><br><span class="line"># turtle.pendown()</span><br><span class="line"># turtle.circle(180)</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,200)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(90,180)</span><br><span class="line">turtle.circle(-90,180)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">#白眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;white&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,80)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#黑眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#太极</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,0)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;太&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,-50)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;极&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(200,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;---2020&#x2F;3&#x2F;17&quot;,font&#x3D;(&quot;方正&quot;,12,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(250,-150)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;sheng&quot;,font&#x3D;(&quot;华文行楷&quot;,12,&quot;normal&quot;))</span><br><span class="line"></span><br><span class="line">turtle.hideturtle()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;打包Python程序&quot;&gt;&lt;a href=&quot;#打包Python程序&quot; class=&quot;headerlink&quot; title=&quot;打包Python程序&quot;&gt;&lt;/a&gt;打包Python程序&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;打包后可以在Windows上运行，而不需要安装程序里需要的各种包
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://eastsheng.github.io/categories/Python/"/>
+    
+      <category term="打包" scheme="https://eastsheng.github.io/categories/Python/%E6%89%93%E5%8C%85/"/>
+    
+    
+      <category term="Python程序打包exe可执行文件" scheme="https://eastsheng.github.io/tags/Python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85exe%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GULP 问题记录</title>
+    <link href="https://eastsheng.github.io/2019/12/30/GULP-1/"/>
+    <id>https://eastsheng.github.io/2019/12/30/GULP-1/</id>
+    <published>2019-12-30T10:40:54.000Z</published>
+    <updated>2020-06-24T15:56:30.533Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li><li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li></ul><h4 id="dispersion-amp-DOS"><a href="#dispersion-amp-DOS" class="headerlink" title="dispersion &amp; DOS"></a>dispersion &amp; DOS</h4><ul><li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li><li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure><ul><li>官网给出的解释是：</li><li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li><li>并不清楚为什么加了这条命令之后DOS为空。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;GULP (General Utility Lattice Program)&lt;a href=&quot;http://gulp.curtin.edu.au/gulp/request.cfm?rel=download&quot;&gt;晶格动力学软件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在线&lt;a h
+      
+    
+    </summary>
+    
+    
+      <category term="Issues" scheme="https://eastsheng.github.io/categories/Issues/"/>
+    
+      <category term="GULP Problems" scheme="https://eastsheng.github.io/categories/Issues/GULP-Problems/"/>
+    
+    
+      <category term="GULP 问题记录" scheme="https://eastsheng.github.io/tags/GULP-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诡异之---温度分层多出一层</title>
+    <link href="https://eastsheng.github.io/2019/12/16/Lammps6/"/>
+    <id>https://eastsheng.github.io/2019/12/16/Lammps6/</id>
+    <published>2019-12-16T10:11:45.000Z</published>
+    <updated>2020-06-24T15:57:39.251Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="温度分层多出一层"><a href="#温度分层多出一层" class="headerlink" title="温度分层多出一层"></a>温度分层多出一层</h4><ul><li>正如题目所说的一样，有些诡异。</li></ul><ol><li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li><li>诡异的来了，分的有些层数，输出的结果会多出一层；</li><li>比如，分了120层，输出的结果有121层；</li><li>但是，有些就很正常，比如分了200层；</li></ol><h4 id="猜测的原因"><a href="#猜测的原因" class="headerlink" title="猜测的原因"></a>猜测的原因</h4><ul><li>是边边上有多余的部分没有被分到？自动分了？</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;温度分层多出一层&quot;&gt;&lt;a href=&quot;#温度分层多出一层&quot; class=&quot;headerlink&quot; title=&quot;温度分层多出一层&quot;&gt;&lt;/a&gt;温度分层多出一层&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;正如题目所说的一样，有些诡异。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;在跑NE
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
+    
+    
+      <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
+    
+      <category term="NEMD温度分层" scheme="https://eastsheng.github.io/tags/NEMD%E6%B8%A9%E5%BA%A6%E5%88%86%E5%B1%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这些错误实属粗心大意-放在这警示自己</title>
+    <link href="https://eastsheng.github.io/2019/12/15/Lammps5/"/>
+    <id>https://eastsheng.github.io/2019/12/15/Lammps5/</id>
+    <published>2019-12-15T09:45:16.000Z</published>
+    <updated>2020-06-24T15:57:33.721Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-data文件格式问题"><a href="#1-data文件格式问题" class="headerlink" title="1. data文件格式问题"></a>1. data文件格式问题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure><p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p><h4 id="2-NPT时，系统的边界条件必须为周期性边界条件"><a href="#2-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="2. NPT时，系统的边界条件必须为周期性边界条件"></a>2. NPT时，系统的边界条件必须为周期性边界条件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boundaryp p p</span><br></pre></td></tr></table></figure><h4 id="3-Nose-Hoover"><a href="#3-Nose-Hoover" class="headerlink" title="3. Nose-Hoover"></a>3. Nose-Hoover</h4><ul><li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li><li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li><li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li></ul><h4 id="4-区域分组：group"><a href="#4-区域分组：group" class="headerlink" title="4. 区域分组：group"></a>4. 区域分组：group</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">groupg_IDregionreg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure><ul><li>所分的组的个数不能大于32个。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-data文件格式问题&quot;&gt;&lt;a href=&quot;#1-data文件格式问题&quot; class=&quot;headerlink&quot; title=&quot;1. data文件格式问题&quot;&gt;&lt;/a&gt;1. data文件格式问题&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
+    
+    
+      <category term="atom style" scheme="https://eastsheng.github.io/tags/atom-style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Run GULP Command</title>
+    <link href="https://eastsheng.github.io/2019/12/06/GULP-2/"/>
+    <id>https://eastsheng.github.io/2019/12/06/GULP-2/</id>
+    <published>2019-12-06T10:59:53.000Z</published>
+    <updated>2020-06-24T15:56:52.299Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li><li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li></ul><h4 id="Run-GULP-Command"><a href="#Run-GULP-Command" class="headerlink" title="Run GULP Command"></a>Run GULP Command</h4><ul><li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li><li>例如：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;GULP (General Utility Lattice Program)&lt;a href=&quot;http://gulp.curtin.edu.au/gulp/request.cfm?rel=download&quot;&gt;晶格动力学软件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;在线&lt;a h
+      
+    
+    </summary>
+    
+    
+      <category term="GULP" scheme="https://eastsheng.github.io/categories/GULP/"/>
+    
+      <category term="Run GULP" scheme="https://eastsheng.github.io/categories/GULP/Run-GULP/"/>
+    
+    
+      <category term="Run GULP Command" scheme="https://eastsheng.github.io/tags/Run-GULP-Command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fortran Runtime error</title>
+    <link href="https://eastsheng.github.io/2019/10/31/Fortran-1/"/>
+    <id>https://eastsheng.github.io/2019/10/31/Fortran-1/</id>
+    <published>2019-10-31T10:29:32.000Z</published>
+    <updated>2020-06-24T15:55:54.797Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ Fortran runtime error: Bad value during floating point read</span><br><span class="line">$ Fortran runtime error: Bad integer for item 1 in list input</span><br><span class="line">$ Bad real number in item 4 of list input</span><br></pre></td></tr></table></figure><ul><li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li><li>所以，检查格式。</li></ul><h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ Warning: Extension: REAL array index at (1)</span><br><span class="line">$ Warning: Deleted feature: Loop variable at (1) must be integer</span><br></pre></td></tr></table></figure><ul><li>这种警告信息一般不影响程序运行。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-Bad-value-amp-Bad-integer&quot;&gt;&lt;a href=&quot;#1-Bad-value-amp-Bad-integer&quot; class=&quot;headerlink&quot; title=&quot;1. Bad value &amp;amp; Bad integer&quot;&gt;&lt;/a&gt;1.
+      
+    
+    </summary>
+    
+    
+      <category term="Fortran" scheme="https://eastsheng.github.io/categories/Fortran/"/>
+    
+      <category term="Runtime error" scheme="https://eastsheng.github.io/categories/Fortran/Runtime-error/"/>
+    
+    
+      <category term="Fortran运行error" scheme="https://eastsheng.github.io/tags/Fortran%E8%BF%90%E8%A1%8Cerror/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>诡异之---Lammps输入文件中变量k</title>
+    <link href="https://eastsheng.github.io/2019/10/30/Lammps4/"/>
+    <id>https://eastsheng.github.io/2019/10/30/Lammps4/</id>
+    <published>2019-10-30T09:22:16.000Z</published>
+    <updated>2020-06-24T15:57:16.691Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p><h4 id="为什么说它诡异呢？"><a href="#为什么说它诡异呢？" class="headerlink" title="为什么说它诡异呢？"></a>为什么说它诡异呢？</h4><ol><li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure><ol start="2"><li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li><li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li><li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li><li>结果就是，记录结果的inputfile不会 next k  and  jump</li></ol><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;首先说一下，Lammps inputfile 的变量有很多，这里说的这个 &lt;em&gt;k&lt;/em&gt; 是控制算几遍的那个变量。&lt;/p&gt;
+&lt;h4 id=&quot;为什么说它诡异呢？&quot;&gt;&lt;a href=&quot;#为什么说它诡异呢？&quot; class=&quot;headerlink&quot; title=&quot;为什么说它诡
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+    
+      <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
+    
+    
+      <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
+    
+      <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <link href="https://eastsheng.github.io/2019/04/23/Python-1/"/>
+    <id>https://eastsheng.github.io/2019/04/23/Python-1/</id>
+    <published>2019-04-23T11:05:21.000Z</published>
+    <updated>2020-06-24T15:58:16.598Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="把自己写的python函数组成模块，并安装在本地："><a href="#把自己写的python函数组成模块，并安装在本地：" class="headerlink" title="把自己写的python函数组成模块，并安装在本地："></a>把自己写的python函数组成模块，并安装在本地：</h4><ol><li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li><li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure><ol start="3"><li>然后，在此文件夹里打开cmd，输入：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure><ol start="4"><li>最后，安装此模块到本地，输入：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;把自己写的python函数组成模块，并安装在本地：&quot;&gt;&lt;a href=&quot;#把自己写的python函数组成模块，并安装在本地：&quot; class=&quot;headerlink&quot; title=&quot;把自己写的python函数组成模块，并安装在本地：&quot;&gt;&lt;/a&gt;把自己写的python
+      
+    
+    </summary>
+    
+    
+      <category term="Python" scheme="https://eastsheng.github.io/categories/Python/"/>
+    
+      <category term="模块" scheme="https://eastsheng.github.io/categories/Python/%E6%A8%A1%E5%9D%97/"/>
+    
+    
+      <category term="Python程序打包成模块" scheme="https://eastsheng.github.io/tags/Python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E6%A8%A1%E5%9D%97/"/>
+    
+  </entry>
+  
+</feed>
