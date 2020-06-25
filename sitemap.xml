@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/2020/06/19/sitecollect/</loc>
+    
+    <lastmod>2020-06-25T10:11:24.766Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/tags/index.html</loc>
     
     <lastmod>2020-06-24T16:47:17.893Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://eastsheng.github.io/2020/06/18/snaperror/</loc>
     
     <lastmod>2020-06-24T15:58:41.115Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/2020/06/19/sitecollect/</loc>
-    
-    <lastmod>2020-06-24T15:58:33.036Z</lastmod>
     
   </url>
   
@@ -152,6 +152,20 @@
     <loc>https://eastsheng.github.io/2020/06/21/git-command/</loc>
     
     <lastmod>2020-06-24T15:55:21.368Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/friend/index.html</loc>
+    
+    <lastmod>2020-06-24T07:43:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/media/index.html</loc>
+    
+    <lastmod>2020-06-24T07:43:29.000Z</lastmod>
     
   </url>
   
