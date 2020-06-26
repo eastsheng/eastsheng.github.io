@@ -516,24 +516,43 @@
   <entry>
     <title>控制Tecplot里的原子间距</title>
     <url>/2020/05/08/Tecplot-1/</url>
-    <content><![CDATA[<h4 id="Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
-<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Tecplot1" border="0" />  
+    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
+<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
 
 
 </li>
 </ul>
 <ul>
 <li><p>独立操作x,y,z的Size Factors</p>
-<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Tecplot2" border="0" />
+<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
 </li>
 <li><p>调原子间距效果</p>
 </li>
 </ul>
 <img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
 
-
-
-<h4 id="很奇怪，也非常便捷的一个操作"><a href="#很奇怪，也非常便捷的一个操作" class="headerlink" title="很奇怪，也非常便捷的一个操作"></a>很奇怪，也非常便捷的一个操作</h4><ul>
+<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
+<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
+<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
+<li>这个就不明显，藏在这里：<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View&gt;Rotate</td>
+<td>3D Rotate</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
 <li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
 <li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
 <li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
