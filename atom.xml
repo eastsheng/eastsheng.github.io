@@ -351,7 +351,7 @@
     <link href="https://eastsheng.github.io/2019/12/30/GULP-1/"/>
     <id>https://eastsheng.github.io/2019/12/30/GULP-1/</id>
     <published>2019-12-30T10:40:54.000Z</published>
-    <updated>2020-06-24T15:56:30.533Z</updated>
+    <updated>2020-06-26T03:50:54.769Z</updated>
     
     <content type="html"><![CDATA[<ul><li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li><li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li></ul><h4 id="dispersion-amp-DOS"><a href="#dispersion-amp-DOS" class="headerlink" title="dispersion &amp; DOS"></a>dispersion &amp; DOS</h4><ul><li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li><li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure><ul><li>官网给出的解释是：</li><li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li><li>并不清楚为什么加了这条命令之后DOS为空。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -367,9 +367,9 @@
     </summary>
     
     
-      <category term="Issues" scheme="https://eastsheng.github.io/categories/Issues/"/>
+      <category term="待解决" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
     
-      <category term="GULP Problems" scheme="https://eastsheng.github.io/categories/Issues/GULP-Problems/"/>
+      <category term="GULP Problems" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/GULP-Problems/"/>
     
     
       <category term="GULP 问题记录" scheme="https://eastsheng.github.io/tags/GULP-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
