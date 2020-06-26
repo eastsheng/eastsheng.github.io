@@ -381,7 +381,7 @@
     <link href="https://eastsheng.github.io/2019/12/16/Lammps6/"/>
     <id>https://eastsheng.github.io/2019/12/16/Lammps6/</id>
     <published>2019-12-16T10:11:45.000Z</published>
-    <updated>2020-06-24T15:57:39.251Z</updated>
+    <updated>2020-06-26T03:43:53.641Z</updated>
     
     <content type="html"><![CDATA[<h4 id="温度分层多出一层"><a href="#温度分层多出一层" class="headerlink" title="温度分层多出一层"></a>温度分层多出一层</h4><ul><li>正如题目所说的一样，有些诡异。</li></ul><ol><li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li><li>诡异的来了，分的有些层数，输出的结果会多出一层；</li><li>比如，分了120层，输出的结果有121层；</li><li>但是，有些就很正常，比如分了200层；</li></ol><h4 id="猜测的原因"><a href="#猜测的原因" class="headerlink" title="猜测的原因"></a>猜测的原因</h4><ul><li>是边边上有多余的部分没有被分到？自动分了？</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -408,6 +408,8 @@
     
       <category term="NEMD温度分层" scheme="https://eastsheng.github.io/tags/NEMD%E6%B8%A9%E5%BA%A6%E5%88%86%E5%B1%82/"/>
     
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
   </entry>
   
   <entry>
@@ -415,7 +417,7 @@
     <link href="https://eastsheng.github.io/2019/12/15/Lammps5/"/>
     <id>https://eastsheng.github.io/2019/12/15/Lammps5/</id>
     <published>2019-12-15T09:45:16.000Z</published>
-    <updated>2020-06-24T15:57:33.721Z</updated>
+    <updated>2020-06-26T03:44:06.353Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-data文件格式问题"><a href="#1-data文件格式问题" class="headerlink" title="1. data文件格式问题"></a>1. data文件格式问题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure><p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p><h4 id="2-NPT时，系统的边界条件必须为周期性边界条件"><a href="#2-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="2. NPT时，系统的边界条件必须为周期性边界条件"></a>2. NPT时，系统的边界条件必须为周期性边界条件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boundaryp p p</span><br></pre></td></tr></table></figure><h4 id="3-Nose-Hoover"><a href="#3-Nose-Hoover" class="headerlink" title="3. Nose-Hoover"></a>3. Nose-Hoover</h4><ul><li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li><li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li><li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li></ul><h4 id="4-区域分组：group"><a href="#4-区域分组：group" class="headerlink" title="4. 区域分组：group"></a>4. 区域分组：group</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">groupg_IDregionreg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure><ul><li>所分的组的个数不能大于32个。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -435,6 +437,8 @@
     
     
       <category term="atom style" scheme="https://eastsheng.github.io/tags/atom-style/"/>
+    
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
   </entry>
   
@@ -501,7 +505,7 @@
     <link href="https://eastsheng.github.io/2019/10/30/Lammps4/"/>
     <id>https://eastsheng.github.io/2019/10/30/Lammps4/</id>
     <published>2019-10-30T09:22:16.000Z</published>
-    <updated>2020-06-24T15:57:16.691Z</updated>
+    <updated>2020-06-26T03:42:50.028Z</updated>
     
     <content type="html"><![CDATA[<p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p><h4 id="为什么说它诡异呢？"><a href="#为什么说它诡异呢？" class="headerlink" title="为什么说它诡异呢？"></a>为什么说它诡异呢？</h4><ol><li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure><ol start="2"><li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li><li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li><li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li><li>结果就是，记录结果的inputfile不会 next k  and  jump</li></ol><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -524,6 +528,8 @@
       <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
     
       <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
+    
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
   </entry>
   
