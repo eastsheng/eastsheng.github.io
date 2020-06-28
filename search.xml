@@ -668,9 +668,9 @@
         <category>Bug</category>
       </categories>
       <tags>
+        <tag>lammps</tag>
         <tag>诡异</tag>
         <tag>NEMD温度分层</tag>
-        <tag>lammps</tag>
       </tags>
   </entry>
   <entry>
@@ -699,8 +699,8 @@
         <category>Bug</category>
       </categories>
       <tags>
-        <tag>atom style</tag>
         <tag>lammps</tag>
+        <tag>atom style</tag>
       </tags>
   </entry>
   <entry>
@@ -779,9 +779,9 @@
         <category>Bug</category>
       </categories>
       <tags>
+        <tag>lammps</tag>
         <tag>诡异</tag>
         <tag>lammps变量k</tag>
-        <tag>lammps</tag>
       </tags>
   </entry>
   <entry>

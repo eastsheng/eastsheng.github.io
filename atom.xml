@@ -424,11 +424,11 @@
       <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
     
     
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
       <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
     
       <category term="NEMD温度分层" scheme="https://eastsheng.github.io/tags/NEMD%E6%B8%A9%E5%BA%A6%E5%88%86%E5%B1%82/"/>
-    
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
   </entry>
   
@@ -456,9 +456,9 @@
       <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
     
     
-      <category term="atom style" scheme="https://eastsheng.github.io/tags/atom-style/"/>
-    
       <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
+      <category term="atom style" scheme="https://eastsheng.github.io/tags/atom-style/"/>
     
   </entry>
   
@@ -545,11 +545,11 @@
       <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
     
     
+      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
       <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
     
       <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
-    
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
   </entry>
   
