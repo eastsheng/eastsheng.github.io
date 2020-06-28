@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/media/index.html</loc>
+    
+    <lastmod>2020-06-28T12:06:05.017Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/self-talking/index.html</loc>
     
-    <lastmod>2020-06-28T10:35:20.583Z</lastmod>
+    <lastmod>2020-06-28T10:48:50.505Z</lastmod>
     
   </url>
   
@@ -171,13 +178,6 @@
   
   <url>
     <loc>https://eastsheng.github.io/friend/index.html</loc>
-    
-    <lastmod>2020-06-24T07:43:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/media/index.html</loc>
     
     <lastmod>2020-06-24T07:43:29.000Z</lastmod>
     
