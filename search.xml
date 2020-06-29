@@ -38,9 +38,10 @@
 </ol>
 <hr>
 <h3 id="三、程序"><a href="#三、程序" class="headerlink" title="三、程序"></a>三、程序</h3><hr>
-<ul>
-<li>教程或论坛</li>
-</ul>
+<div class="notification is-info">
+<p><strong>教程或论坛</strong></p>
+</div>
+
 <ol>
 <li><a href="https://www.bccn.net/run/">在线编程</a></li>
 <li><a href="http://mahua.jser.me/">Markdown在线编辑器</a>、<a href="https://markdown-zh.readthedocs.io/en/latest/">中文文档</a></li>
@@ -66,9 +67,10 @@
 <li><a href="https://juejin.im/">掘金</a>, 一个分享编程技术网站。</li>
 <li><a href="https://www.yanxishe.com/">AI研习社</a></li>
 </ol>
-<ul>
-<li>好用编辑器</li>
-</ul>
+<div class="notification is-info">
+<p><strong>好用编辑器</strong></p>
+</div>
+
 <ol>
 <li><a href="https://code.visualstudio.com/">VScode</a></li>
 <li><a href="https://www.sublimetext.com/3">Sublime Text</a></li>
