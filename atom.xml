@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.github.io/"/>
-  <updated>2020-06-29T03:44:18.958Z</updated>
+  <updated>2020-06-29T16:39:17.372Z</updated>
   <id>https://eastsheng.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无法将“mklink”项识别为 cmdlet</title>
+    <link href="https://eastsheng.github.io/2020/06/30/mklink/"/>
+    <id>https://eastsheng.github.io/2020/06/30/mklink/</id>
+    <published>2020-06-29T16:25:26.000Z</published>
+    <updated>2020-06-29T16:39:17.372Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul><li>目的是要把C盘的一个文件夹链接到D盘，在PowerShell（因为直接cmd没有权限）使用命令如下：</li><li>这里我是为了要把VScode安装的插件位置从C盘link到E盘</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure><h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径</span><br><span class="line">正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure><h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul><li>因为PowerShell中没有mklink命令</li></ul><h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul><li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure><h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</span><br></pre></td></tr></table></figure><p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-目的：&quot;&gt;&lt;a href=&quot;#1-目的：&quot; class=&quot;headerlink&quot; title=&quot;1. 目的：&quot;&gt;&lt;/a&gt;1. 目的：&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;目的是要把C盘的一个文件夹链接到D盘，在PowerShell（因为直接cmd没有权限）使用命令如下：
+      
+    
+    </summary>
+    
+    
+      <category term="Computer" scheme="https://eastsheng.github.io/categories/Computer/"/>
+    
+    
+      <category term="mklink" scheme="https://eastsheng.github.io/tags/mklink/"/>
+    
+  </entry>
   
   <entry>
     <title>给icarus主题换背景图片</title>
@@ -73,7 +100,7 @@
     <link href="https://eastsheng.github.io/2020/06/24/Problems/"/>
     <id>https://eastsheng.github.io/2020/06/24/Problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
-    <updated>2020-06-26T03:48:21.841Z</updated>
+    <updated>2020-06-29T16:39:59.160Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -87,9 +114,7 @@
     </summary>
     
     
-      <category term="待解决" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
-    
-      <category term="Computer" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/Computer/"/>
+      <category term="Computer" scheme="https://eastsheng.github.io/categories/Computer/"/>
     
     
       <category term="Bug" scheme="https://eastsheng.github.io/tags/Bug/"/>
@@ -576,34 +601,6 @@
       <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
     
       <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <link href="https://eastsheng.github.io/2019/04/23/Python-1/"/>
-    <id>https://eastsheng.github.io/2019/04/23/Python-1/</id>
-    <published>2019-04-23T11:05:21.000Z</published>
-    <updated>2020-06-24T15:58:16.598Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="把自己写的python函数组成模块，并安装在本地："><a href="#把自己写的python函数组成模块，并安装在本地：" class="headerlink" title="把自己写的python函数组成模块，并安装在本地："></a>把自己写的python函数组成模块，并安装在本地：</h4><ol><li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li><li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure><ol start="3"><li>然后，在此文件夹里打开cmd，输入：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure><ol start="4"><li>最后，安装此模块到本地，输入：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;把自己写的python函数组成模块，并安装在本地：&quot;&gt;&lt;a href=&quot;#把自己写的python函数组成模块，并安装在本地：&quot; class=&quot;headerlink&quot; title=&quot;把自己写的python函数组成模块，并安装在本地：&quot;&gt;&lt;/a&gt;把自己写的python
-      
-    
-    </summary>
-    
-    
-      <category term="Python" scheme="https://eastsheng.github.io/categories/Python/"/>
-    
-      <category term="模块" scheme="https://eastsheng.github.io/categories/Python/%E6%A8%A1%E5%9D%97/"/>
-    
-    
-      <category term="Python程序打包成模块" scheme="https://eastsheng.github.io/tags/Python%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E6%88%90%E6%A8%A1%E5%9D%97/"/>
     
   </entry>
   
