@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/about/index.html</loc>
+    
+    <lastmod>2020-06-29T03:00:46.374Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/photos/index.html</loc>
     
     <lastmod>2020-06-29T02:49:32.937Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://eastsheng.github.io/tags/index.html</loc>
     
     <lastmod>2020-06-24T16:47:17.893Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/about/index.html</loc>
-    
-    <lastmod>2020-06-24T16:47:17.850Z</lastmod>
     
   </url>
   
