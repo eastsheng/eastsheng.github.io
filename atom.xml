@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.github.io/"/>
-  <updated>2020-06-29T02:34:01.097Z</updated>
+  <updated>2020-06-29T03:44:18.958Z</updated>
   <id>https://eastsheng.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://eastsheng.github.io/2020/06/29/Hexo-icarus/"/>
     <id>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</id>
     <published>2020-06-28T16:00:34.000Z</published>
-    <updated>2020-06-29T02:34:01.097Z</updated>
+    <updated>2020-06-29T03:44:18.958Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);&#x2F;&#x2F; 设定背景图片,images同处于source文件夹下</span><br><span class="line"> background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>注：是添加不是替换，不然以前的布局将丢失。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    <content type="html"><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);</span><br><span class="line"> background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li><li>这里使用的是unsplash，刷新后自动更换美图。</li></ol><p>注：是添加不是替换，不然以前的布局将丢失。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
     <summary type="html">
     
@@ -573,9 +573,9 @@
     
       <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
-      <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
-    
       <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
+    
+      <category term="lammps变量k" scheme="https://eastsheng.github.io/tags/lammps%E5%8F%98%E9%87%8Fk/"/>
     
   </entry>
   

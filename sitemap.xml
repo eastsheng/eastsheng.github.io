@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</loc>
+    
+    <lastmod>2020-06-29T03:44:18.958Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/about/index.html</loc>
     
     <lastmod>2020-06-29T03:00:46.374Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://eastsheng.github.io/2020/06/18/snaperror/</loc>
     
     <lastmod>2020-06-29T02:35:00.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</loc>
-    
-    <lastmod>2020-06-29T02:34:01.097Z</lastmod>
     
   </url>
   
@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.github.io/friend/index.html</loc>
+    <loc>https://eastsheng.github.io/album/index.html</loc>
     
     <lastmod>2020-06-24T07:43:29.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eastsheng.github.io/album/index.html</loc>
+    <loc>https://eastsheng.github.io/friend/index.html</loc>
     
     <lastmod>2020-06-24T07:43:29.000Z</lastmod>
     
