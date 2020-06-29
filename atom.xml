@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.github.io/"/>
-  <updated>2020-06-26T05:33:51.263Z</updated>
+  <updated>2020-06-29T02:34:01.097Z</updated>
   <id>https://eastsheng.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <link href="https://eastsheng.github.io/2020/06/29/Hexo-icarus/"/>
+    <id>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</id>
+    <published>2020-06-28T16:00:34.000Z</published>
+    <updated>2020-06-29T02:34:01.097Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);&#x2F;&#x2F; 设定背景图片,images同处于source文件夹下</span><br><span class="line"> background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>注：是添加不是替换，不然以前的布局将丢失。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;在-themes-source-css-style-styl添加如下代码&quot;&gt;&lt;a href=&quot;#在-themes-source-css-style-styl添加如下代码&quot; class=&quot;headerlink&quot; title=&quot;在./themes/../source/
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://eastsheng.github.io/categories/Hexo/"/>
+    
+    
+      <category term="icarus主题换背景图片" scheme="https://eastsheng.github.io/tags/icarus%E4%B8%BB%E9%A2%98%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
   
   <entry>
     <title>Git Command-delete file</title>
@@ -223,7 +249,7 @@
     <link href="https://eastsheng.github.io/2020/06/18/snaperror/"/>
     <id>https://eastsheng.github.io/2020/06/18/snaperror/</id>
     <published>2020-06-18T10:34:04.000Z</published>
-    <updated>2020-06-24T15:58:41.115Z</updated>
+    <updated>2020-06-29T02:35:00.384Z</updated>
     
     <content type="html"><![CDATA[<h3 id="1-cannot-open-SNAP-coefficient-snap"><a href="#1-cannot-open-SNAP-coefficient-snap" class="headerlink" title="1. cannot open SNAP coefficient snap"></a>1. cannot open SNAP coefficient snap</h3><p>错误信息：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure><p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p><h3 id="2-Incorrect-SNAP-parameter-file"><a href="#2-Incorrect-SNAP-parameter-file" class="headerlink" title="2. Incorrect SNAP parameter file"></a>2. Incorrect SNAP parameter file</h3><p>错误信息：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure><p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -243,6 +269,8 @@
     
     
       <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+    
+      <category term="snap" scheme="https://eastsheng.github.io/tags/snap/"/>
     
       <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
     
@@ -288,7 +316,7 @@
     <link href="https://eastsheng.github.io/2020/06/18/Hexo-command/"/>
     <id>https://eastsheng.github.io/2020/06/18/Hexo-command/</id>
     <published>2020-06-17T16:00:00.000Z</published>
-    <updated>2020-06-24T15:57:05.299Z</updated>
+    <updated>2020-06-28T16:02:07.636Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Hexo-command"><a href="#Hexo-command" class="headerlink" title="Hexo command"></a>Hexo command</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h3 id="Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="Generate static files and Deploy to remote sites simultaneously"></a>Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -302,9 +330,7 @@
     </summary>
     
     
-      <category term="Hexo Command" scheme="https://eastsheng.github.io/categories/Hexo-Command/"/>
-    
-      <category term="New post" scheme="https://eastsheng.github.io/categories/Hexo-Command/New-post/"/>
+      <category term="Hexo" scheme="https://eastsheng.github.io/categories/Hexo/"/>
     
     
       <category term="blog" scheme="https://eastsheng.github.io/tags/blog/"/>

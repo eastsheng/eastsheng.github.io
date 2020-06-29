@@ -391,7 +391,7 @@ th:not([align]) {
   text-align: left;
 }
 html {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

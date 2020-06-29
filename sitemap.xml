@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/photos/index.html</loc>
+    
+    <lastmod>2020-06-29T02:49:32.937Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/2020/06/18/snaperror/</loc>
+    
+    <lastmod>2020-06-29T02:35:00.384Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</loc>
+    
+    <lastmod>2020-06-29T02:34:01.097Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/2020/06/18/Hexo-command/</loc>
+    
+    <lastmod>2020-06-28T16:02:07.636Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/media/index.html</loc>
     
     <lastmod>2020-06-28T12:06:05.017Z</lastmod>
@@ -100,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.github.io/photos/index.html</loc>
-    
-    <lastmod>2020-06-24T16:47:17.892Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.github.io/about/index.html</loc>
     
     <lastmod>2020-06-24T16:47:17.850Z</lastmod>
@@ -124,13 +145,6 @@
     <loc>https://eastsheng.github.io/2020/06/23/Struct-ComeApart/</loc>
     
     <lastmod>2020-06-24T15:58:50.751Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/2020/06/18/snaperror/</loc>
-    
-    <lastmod>2020-06-24T15:58:41.115Z</lastmod>
     
   </url>
   
@@ -156,13 +170,6 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.github.io/2020/06/18/Hexo-command/</loc>
-    
-    <lastmod>2020-06-24T15:57:05.299Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.github.io/2019/12/06/GULP-2/</loc>
     
     <lastmod>2020-06-24T15:56:52.299Z</lastmod>
@@ -178,6 +185,13 @@
   
   <url>
     <loc>https://eastsheng.github.io/friend/index.html</loc>
+    
+    <lastmod>2020-06-24T07:43:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.github.io/album/index.html</loc>
     
     <lastmod>2020-06-24T07:43:29.000Z</lastmod>
     
