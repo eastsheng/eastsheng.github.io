@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.github.io/2020/06/21/git-command/</loc>
+    
+    <lastmod>2020-06-30T02:58:12.614Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.github.io/2020/06/18/Hexo-command/</loc>
     
     <lastmod>2020-06-30T02:31:03.923Z</lastmod>
@@ -145,13 +152,6 @@
     <loc>https://eastsheng.github.io/2020/06/26/git-delfile/</loc>
     
     <lastmod>2020-06-26T05:33:51.263Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.github.io/2020/06/21/git-command/</loc>
-    
-    <lastmod>2020-06-26T05:25:35.385Z</lastmod>
     
   </url>
   
