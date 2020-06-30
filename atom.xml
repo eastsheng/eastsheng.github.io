@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.github.io/"/>
-  <updated>2020-06-30T02:03:38.377Z</updated>
+  <updated>2020-06-30T03:15:46.149Z</updated>
   <id>https://eastsheng.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vscode常用快捷键</title>
+    <link href="https://eastsheng.github.io/2020/06/30/Vscode1/"/>
+    <id>https://eastsheng.github.io/2020/06/30/Vscode1/</id>
+    <published>2020-06-30T03:03:46.000Z</published>
+    <updated>2020-06-30T03:15:46.149Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令输出窗口，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li><li></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt;或&lt;code&gt;F1&lt;/code&gt;打开命令输出窗口，例如输入&lt;code&gt;Configure Display Language&lt;/code&gt;可以换语言，如选择&lt;code&gt;zh-cn&lt;/code&gt;，切换为中文。&lt;/li
+      
+    
+    </summary>
+    
+    
+      <category term="VScode" scheme="https://eastsheng.github.io/categories/VScode/"/>
+    
+    
+      <category term="VScode" scheme="https://eastsheng.github.io/tags/VScode/"/>
+    
+  </entry>
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
@@ -565,37 +592,6 @@
     
     
       <category term="Fortran运行error" scheme="https://eastsheng.github.io/tags/Fortran%E8%BF%90%E8%A1%8Cerror/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>诡异之---Lammps输入文件中变量k</title>
-    <link href="https://eastsheng.github.io/2019/10/30/Lammps4/"/>
-    <id>https://eastsheng.github.io/2019/10/30/Lammps4/</id>
-    <published>2019-10-30T09:22:16.000Z</published>
-    <updated>2020-06-30T02:27:02.612Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p><h4 id="为什么说它诡异呢？"><a href="#为什么说它诡异呢？" class="headerlink" title="为什么说它诡异呢？"></a>为什么说它诡异呢？</h4><ol><li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure><ol start="2"><li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li><li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li><li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li><li>结果就是，记录结果的inputfile不会 next k  and  jump</li></ol><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;首先说一下，Lammps inputfile 的变量有很多，这里说的这个 &lt;em&gt;k&lt;/em&gt; 是控制算几遍的那个变量。&lt;/p&gt;
-&lt;h4 id=&quot;为什么说它诡异呢？&quot;&gt;&lt;a href=&quot;#为什么说它诡异呢？&quot; class=&quot;headerlink&quot; title=&quot;为什么说它诡
-      
-    
-    </summary>
-    
-    
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
-    
-      <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
-    
-    
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
-    
-      <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
     
   </entry>
   
