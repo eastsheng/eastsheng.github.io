@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.github.io/"/>
-  <updated>2020-06-30T03:15:46.149Z</updated>
+  <updated>2020-06-30T04:59:27.517Z</updated>
   <id>https://eastsheng.github.io/</id>
   
   <author>
@@ -21,16 +21,17 @@
     <link href="https://eastsheng.github.io/2020/06/30/Vscode1/"/>
     <id>https://eastsheng.github.io/2020/06/30/Vscode1/</id>
     <published>2020-06-30T03:03:46.000Z</published>
-    <updated>2020-06-30T03:15:46.149Z</updated>
+    <updated>2020-06-30T04:59:27.517Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令输出窗口，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li><li><code>F11</code>全屏模式。</li></ol><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
     <summary type="html">
     
       
       
         &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt;或&lt;code&gt;F1&lt;/code&gt;打开命令输出窗口，例如输入&lt;code&gt;Configure Display Language&lt;/code&gt;可以换语言，如选择&lt;code&gt;zh-cn&lt;/code&gt;，切换为中文。&lt;/li
+&lt;li&gt;&lt;code&gt;Ctrl+Shift+P&lt;/code&gt;或&lt;code&gt;F1&lt;/code&gt;打开命令面板，例如输入&lt;code&gt;Configure Display Language&lt;/code&gt;可以换语言，如选择&lt;code&gt;zh-cn&lt;/code&gt;，切换为中文。&lt;/li&gt;
+
       
     
     </summary>
