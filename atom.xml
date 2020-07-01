@@ -18,8 +18,8 @@
   
   <entry>
     <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <link href="https://eastsheng.ink/2020/07/01/Npm-1/"/>
-    <id>https://eastsheng.ink/2020/07/01/Npm-1/</id>
+    <link href="https://eastsheng.ink/2020/07/Npm-1/"/>
+    <id>https://eastsheng.ink/2020/07/Npm-1/</id>
     <published>2020-07-01T06:50:16.000Z</published>
     <updated>2020-07-01T06:55:45.285Z</updated>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>Vscode常用快捷键</title>
-    <link href="https://eastsheng.ink/2020/06/30/Vscode1/"/>
-    <id>https://eastsheng.ink/2020/06/30/Vscode1/</id>
+    <link href="https://eastsheng.ink/2020/06/Vscode1/"/>
+    <id>https://eastsheng.ink/2020/06/Vscode1/</id>
     <published>2020-06-30T03:03:46.000Z</published>
     <updated>2020-07-01T05:27:35.888Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.ink/2020/06/30/mklink/"/>
-    <id>https://eastsheng.ink/2020/06/30/mklink/</id>
+    <link href="https://eastsheng.ink/2020/06/mklink/"/>
+    <id>https://eastsheng.ink/2020/06/mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
     <updated>2020-07-01T05:35:21.713Z</updated>
     
@@ -100,8 +100,8 @@
   
   <entry>
     <title>给icarus主题换背景图片</title>
-    <link href="https://eastsheng.ink/2020/06/29/Hexo-icarus/"/>
-    <id>https://eastsheng.ink/2020/06/29/Hexo-icarus/</id>
+    <link href="https://eastsheng.ink/2020/06/Hexo-icarus/"/>
+    <id>https://eastsheng.ink/2020/06/Hexo-icarus/</id>
     <published>2020-06-28T16:00:34.000Z</published>
     <updated>2020-07-01T05:35:33.472Z</updated>
     
@@ -126,18 +126,18 @@
   
   <entry>
     <title>Git Command-delete file</title>
-    <link href="https://eastsheng.ink/2020/06/26/git-delfile/"/>
-    <id>https://eastsheng.ink/2020/06/26/git-delfile/</id>
+    <link href="https://eastsheng.ink/2020/06/git-delfile/"/>
+    <id>https://eastsheng.ink/2020/06/git-delfile/</id>
     <published>2020-06-26T05:22:24.000Z</published>
-    <updated>2020-07-01T05:37:33.176Z</updated>
+    <updated>2020-07-01T12:21:25.451Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="Git-Command-Delete-file"><a href="#Git-Command-Delete-file" class="headerlink" title="Git Command-Delete file"></a>Git Command-Delete file</h4><ol><li>首先 <em>Git bash</em> 进入到本地仓库;</li><li>切换到要删除文件所在分支：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure><ol start="3"><li>先删除本地仓库里的文件或文件夹</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure><ol start="4"><li>添加评论</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure><ol start="5"><li>push到GitHub远程仓库</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    <content type="html"><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure><h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure><h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure><h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;Git-Command-Delete-file&quot;&gt;&lt;a href=&quot;#Git-Command-Delete-file&quot; class=&quot;headerlink&quot; title=&quot;Git Command-Delete file&quot;&gt;&lt;/a&gt;Git Command-Delet
+        &lt;h4 id=&quot;1-首先-Git-bash-进入到本地仓库&quot;&gt;&lt;a href=&quot;#1-首先-Git-bash-进入到本地仓库&quot; class=&quot;headerlink&quot; title=&quot;1. 首先 Git bash 进入到本地仓库&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. 首先 Git bash
       
     
     </summary>
@@ -146,14 +146,14 @@
       <category term="Git Command" scheme="https://eastsheng.ink/categories/Git-Command/"/>
     
     
-      <category term="Delete file" scheme="https://eastsheng.ink/tags/Delete-file/"/>
+      <category term="Git delete file" scheme="https://eastsheng.ink/tags/Git-delete-file/"/>
     
   </entry>
   
   <entry>
     <title>没有解决的问题</title>
-    <link href="https://eastsheng.ink/2020/06/24/Problems/"/>
-    <id>https://eastsheng.ink/2020/06/24/Problems/</id>
+    <link href="https://eastsheng.ink/2020/06/Problems/"/>
+    <id>https://eastsheng.ink/2020/06/Problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
     <updated>2020-07-01T05:32:01.137Z</updated>
     
@@ -180,8 +180,8 @@
   
   <entry>
     <title>跑MD结构散了</title>
-    <link href="https://eastsheng.ink/2020/06/23/Struct-ComeApart/"/>
-    <id>https://eastsheng.ink/2020/06/23/Struct-ComeApart/</id>
+    <link href="https://eastsheng.ink/2020/06/Struct-ComeApart/"/>
+    <id>https://eastsheng.ink/2020/06/Struct-ComeApart/</id>
     <published>2020-06-23T10:06:51.000Z</published>
     <updated>2020-07-01T05:28:50.604Z</updated>
     
@@ -208,8 +208,8 @@
   
   <entry>
     <title>Origin Integrate</title>
-    <link href="https://eastsheng.ink/2020/06/22/Origin-2/"/>
-    <id>https://eastsheng.ink/2020/06/22/Origin-2/</id>
+    <link href="https://eastsheng.ink/2020/06/Origin-2/"/>
+    <id>https://eastsheng.ink/2020/06/Origin-2/</id>
     <published>2020-06-22T11:16:25.000Z</published>
     <updated>2020-07-01T05:32:24.833Z</updated>
     
@@ -236,8 +236,8 @@
   
   <entry>
     <title>Origin 画双y轴</title>
-    <link href="https://eastsheng.ink/2020/06/22/Origin-1/"/>
-    <id>https://eastsheng.ink/2020/06/22/Origin-1/</id>
+    <link href="https://eastsheng.ink/2020/06/Origin-1/"/>
+    <id>https://eastsheng.ink/2020/06/Origin-1/</id>
     <published>2020-06-22T07:21:49.000Z</published>
     <updated>2020-07-01T05:35:14.291Z</updated>
     
@@ -264,20 +264,18 @@
   
   <entry>
     <title>Git Command-branch</title>
-    <link href="https://eastsheng.ink/2020/06/21/git-command/"/>
-    <id>https://eastsheng.ink/2020/06/21/git-command/</id>
+    <link href="https://eastsheng.ink/2020/06/git-command/"/>
+    <id>https://eastsheng.ink/2020/06/git-command/</id>
     <published>2020-06-21T10:34:23.000Z</published>
-    <updated>2020-07-01T05:37:51.227Z</updated>
+    <updated>2020-07-01T12:05:28.708Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="Git-Command"><a href="#Git-Command" class="headerlink" title="Git Command"></a>Git Command</h4><details><summary><font size=4>Branch</font></summary><ol><li><p>创建本地分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></li><li><p>远程创建分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></li><li><p>删除分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></li><li><p>远程删除分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin ---delete xxx</span><br></pre></td></tr></table></figure></li><li><p>查看所有分支(包括远程分支)</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></li><li><p>查看分支状态</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></li><li><p>切换分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></li><li><p>创建一个空白分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></li><li><p>把blog的源代码上传到刚刚创建的空白分支</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f</span><br></pre></td></tr></table></figure></details></li></ol><details><summary><font size=4>Check Infomation</font></summary><ol><li>显示有变更的文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure></li></ol></details><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    <content type="html"><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin ---delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f</span><br></pre></td></tr></table></figure></code></pre><p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;Git-Command&quot;&gt;&lt;a href=&quot;#Git-Command&quot; class=&quot;headerlink&quot; title=&quot;Git Command&quot;&gt;&lt;/a&gt;Git Command&lt;/h4&gt;&lt;details&gt;
-
-&lt;summary&gt;&lt;font size=4&gt;Bran
+        &lt;h5 id=&quot;1-创建本地分支&quot;&gt;&lt;a href=&quot;#1-创建本地分支&quot; class=&quot;headerlink&quot; title=&quot;1. 创建本地分支&quot;&gt;&lt;/a&gt;1. 创建本地分支&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
       
     
     </summary>
@@ -292,8 +290,8 @@
   
   <entry>
     <title>实用网站合集</title>
-    <link href="https://eastsheng.ink/2020/06/19/sitecollect/"/>
-    <id>https://eastsheng.ink/2020/06/19/sitecollect/</id>
+    <link href="https://eastsheng.ink/2020/06/sitecollect/"/>
+    <id>https://eastsheng.ink/2020/06/sitecollect/</id>
     <published>2020-06-19T00:50:09.000Z</published>
     <updated>2020-07-01T05:43:29.304Z</updated>
     
@@ -325,8 +323,8 @@
   
   <entry>
     <title>snap使用常见错误解决方法</title>
-    <link href="https://eastsheng.ink/2020/06/18/snaperror/"/>
-    <id>https://eastsheng.ink/2020/06/18/snaperror/</id>
+    <link href="https://eastsheng.ink/2020/06/snaperror/"/>
+    <id>https://eastsheng.ink/2020/06/snaperror/</id>
     <published>2020-06-18T10:34:04.000Z</published>
     <updated>2020-07-01T05:28:56.451Z</updated>
     
@@ -357,8 +355,8 @@
   
   <entry>
     <title>经验势snap的使用</title>
-    <link href="https://eastsheng.ink/2020/06/18/Lammpsinput/"/>
-    <id>https://eastsheng.ink/2020/06/18/Lammpsinput/</id>
+    <link href="https://eastsheng.ink/2020/06/Lammpsinput/"/>
+    <id>https://eastsheng.ink/2020/06/Lammpsinput/</id>
     <published>2020-06-18T08:43:56.000Z</published>
     <updated>2020-07-01T05:35:28.417Z</updated>
     
@@ -390,8 +388,8 @@
   
   <entry>
     <title>Common Commands of Hexo</title>
-    <link href="https://eastsheng.ink/2020/06/18/Hexo-command/"/>
-    <id>https://eastsheng.ink/2020/06/18/Hexo-command/</id>
+    <link href="https://eastsheng.ink/2020/06/Hexo-command/"/>
+    <id>https://eastsheng.ink/2020/06/Hexo-command/</id>
     <published>2020-06-17T16:00:00.000Z</published>
     <updated>2020-07-01T07:29:21.194Z</updated>
     
@@ -416,8 +414,8 @@
   
   <entry>
     <title>控制Tecplot里的原子间距</title>
-    <link href="https://eastsheng.ink/2020/05/08/Tecplot-1/"/>
-    <id>https://eastsheng.ink/2020/05/08/Tecplot-1/</id>
+    <link href="https://eastsheng.ink/2020/05/Tecplot-1/"/>
+    <id>https://eastsheng.ink/2020/05/Tecplot-1/</id>
     <published>2020-05-08T11:49:48.000Z</published>
     <updated>2020-07-01T05:28:01.060Z</updated>
     
@@ -442,8 +440,8 @@
   
   <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
-    <link href="https://eastsheng.ink/2020/03/17/Python-2/"/>
-    <id>https://eastsheng.ink/2020/03/17/Python-2/</id>
+    <link href="https://eastsheng.ink/2020/03/Python-2/"/>
+    <id>https://eastsheng.ink/2020/03/Python-2/</id>
     <published>2020-03-17T11:23:21.000Z</published>
     <updated>2020-07-01T05:31:23.847Z</updated>
     
@@ -469,8 +467,8 @@
   
   <entry>
     <title>GULP 问题记录</title>
-    <link href="https://eastsheng.ink/2019/12/30/GULP-1/"/>
-    <id>https://eastsheng.ink/2019/12/30/GULP-1/</id>
+    <link href="https://eastsheng.ink/2019/12/2019-GULP-1/"/>
+    <id>https://eastsheng.ink/2019/12/2019-GULP-1/</id>
     <published>2019-12-30T10:40:54.000Z</published>
     <updated>2020-07-01T05:39:12.223Z</updated>
     
@@ -499,8 +497,8 @@
   
   <entry>
     <title>诡异之---温度分层多出一层</title>
-    <link href="https://eastsheng.ink/2019/12/16/Lammps6/"/>
-    <id>https://eastsheng.ink/2019/12/16/Lammps6/</id>
+    <link href="https://eastsheng.ink/2019/12/2019-Lammps6/"/>
+    <id>https://eastsheng.ink/2019/12/2019-Lammps6/</id>
     <published>2019-12-16T10:11:45.000Z</published>
     <updated>2020-07-01T05:38:53.875Z</updated>
     
@@ -532,8 +530,8 @@
   
   <entry>
     <title>这些错误实属粗心大意-放在这警示自己</title>
-    <link href="https://eastsheng.ink/2019/12/15/Lammps5/"/>
-    <id>https://eastsheng.ink/2019/12/15/Lammps5/</id>
+    <link href="https://eastsheng.ink/2019/12/2019-Lammps5/"/>
+    <id>https://eastsheng.ink/2019/12/2019-Lammps5/</id>
     <published>2019-12-15T09:45:16.000Z</published>
     <updated>2020-07-01T05:38:58.131Z</updated>
     
@@ -560,8 +558,8 @@
   
   <entry>
     <title>Run GULP Command</title>
-    <link href="https://eastsheng.ink/2019/12/06/GULP-2/"/>
-    <id>https://eastsheng.ink/2019/12/06/GULP-2/</id>
+    <link href="https://eastsheng.ink/2019/12/2019-GULP-2/"/>
+    <id>https://eastsheng.ink/2019/12/2019-GULP-2/</id>
     <published>2019-12-06T10:59:53.000Z</published>
     <updated>2020-07-01T05:39:07.904Z</updated>
     
