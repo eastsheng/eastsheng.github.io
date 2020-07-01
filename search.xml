@@ -3,16 +3,15 @@
   <entry>
     <title>实用网站合集</title>
     <url>/2020/06/19/sitecollect/</url>
-    <content><![CDATA[<p><strong><center>干啥啥不行，收藏第一名</center></strong></p>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong><center>干啥啥不行，收藏第一名</center></strong></p>
+</div>
+
 <center>
 <img src="https://s1.ax1x.com/2020/06/24/Nd051H.gif" width="30%">
 </center>
 
-<div class="notification is-info">
-<p><strong>一、科研学习</strong></p>
-</div>
-
-<hr>
+<h3 id="一、科研学习"><a href="#一、科研学习" class="headerlink" title="一、科研学习"></a><strong>一、科研学习</strong></h3><hr>
 <ol>
 <li>期刊缩写、影响因子<a href="https://cassi.cas.org/search.jsp">查询1:CASSI</a>; <a href="https://www.paperpi.com">查询2:SCI</a></li>
 <li>消除科学方面的障碍:<a href="https://sci-hub.tw">Sci-hub</a></li>
@@ -35,24 +34,16 @@
 <li><a href="https://scholar.google.com.hk/citations?user=bsOhaEAAAAAJ&hl=zh-CN&oi=ao">Zheyong Fan</a>老师写的MD模拟程序 <strong>GPUMD</strong> <a href="http://gpumd.zheyongfan.org/index.php/Main_Page">在线Manual</a>,源代码<a href="https://github.com/brucefan1983/GPUMD">在这</a>，一本在写的MD模拟教材<a href="http://gpumd.zheyongfan.org/index.php/Molecular_Dynamics_Simulaiton">Molecular Dynamics Simulaiton</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>二、学术讲座</strong></p>
-</div>
-
-<hr>
+<h3 id="二、学术讲座"><a href="#二、学术讲座" class="headerlink" title="二、学术讲座"></a><strong>二、学术讲座</strong></h3><hr>
 <ol>
 <li><a href="https://www.bilibili.com/video/BV1XD4y1D7MR/">基于GPU加速的分子动力学热输运模拟</a></li>
 <li><a href="https://www.bilibili.com/video/BV1oK4y1x7Bu/">基于飞秒激光时域反射技术的热物性研究</a></li>
 <li><a href="https://www.koushare.com/video/videodetail/5710">科技论文写作与投稿审稿经验分享</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>三、程序</strong></p>
-</div>
-
-<hr>
+<h3 id="三、程序"><a href="#三、程序" class="headerlink" title="三、程序"></a><strong>三、程序</strong></h3><hr>
 <blockquote>
-<h4 id="教程或论坛"><a href="#教程或论坛" class="headerlink" title="教程或论坛"></a>教程或论坛</h4></blockquote>
+<h4 id="教程或论坛"><a href="#教程或论坛" class="headerlink" title="教程或论坛"></a><strong>教程或论坛</strong></h4></blockquote>
 <ol>
 <li><a href="https://www.bccn.net/run/">在线编程</a></li>
 <li><a href="http://mahua.jser.me/">Markdown在线编辑器</a>、<a href="https://markdown-zh.readthedocs.io/en/latest/">中文文档</a></li>
@@ -79,28 +70,20 @@
 <li><a href="https://www.yanxishe.com/">AI研习社</a></li>
 </ol>
 <blockquote>
-<h4 id="好用编辑器"><a href="#好用编辑器" class="headerlink" title="好用编辑器"></a>好用编辑器</h4></blockquote>
+<h4 id="好用编辑器"><a href="#好用编辑器" class="headerlink" title="好用编辑器"></a><strong>好用编辑器</strong></h4></blockquote>
 <ol>
 <li><a href="https://code.visualstudio.com/">VScode</a></li>
 <li><a href="https://www.sublimetext.com/3">Sublime Text</a></li>
 <li><a href="http://www.codeblocks.org/downloads">Codeblocks</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>四、英语学习</strong></p>
-</div>
-
-<hr>
+<h3 id="四、英语学习"><a href="#四、英语学习" class="headerlink" title="四、英语学习"></a><strong>四、英语学习</strong></h3><hr>
 <ol>
 <li><a href="http://learnenglish.britishcouncil.org">BritishCouncil</a></li>
 <li><a href="https://aimwriting.mtutor.engkoo.com">微软小英写作</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>五、软件合集</strong></p>
-</div>
-
-<hr>
+<h3 id="五、软件合集"><a href="#五、软件合集" class="headerlink" title="五、软件合集"></a><strong>五、软件合集</strong></h3><hr>
 <ol>
 <li>分子模拟软件<a href="https://lammps.sandia.gov/index.html">Lammps</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,以及在线<a href="https://lammps.sandia.gov/doc/Manual.html">手册</a></li>
 <li>傅里叶快速变换<a href="http://www.fftw.org/download.html">FFTW</a>.</li>
@@ -112,11 +95,7 @@
 <li><a href="http://googlehelper.net/">谷歌助手Ghelper</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>六、搜索</strong></p>
-</div>
-
-<hr>
+<h3 id="六、搜索"><a href="#六、搜索" class="headerlink" title="六、搜索"></a><strong>六、搜索</strong></h3><hr>
 <ol>
 <li><a href="https://cn.bing.com/?FORM=BEHPTB">必应Bing</a></li>
 <li><a href="http://www.gaokeyan.com">科研导航</a></li>
@@ -129,13 +108,9 @@
 <li><a href="https://www.tianyancha.com/">天眼查</a>, 可以查询是否是虚假企业</li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>七、Pictures</strong></p>
-</div>
-
-<hr>
+<h3 id="七、Pictures"><a href="#七、Pictures" class="headerlink" title="七、Pictures"></a><strong>七、Pictures</strong></h3><hr>
 <blockquote>
-<h4 id="字体-amp-图片"><a href="#字体-amp-图片" class="headerlink" title="字体&amp;图片"></a>字体&amp;图片</h4></blockquote>
+<h4 id="字体-amp-图片"><a href="#字体-amp-图片" class="headerlink" title="字体&amp;图片"></a><strong>字体&amp;图片</strong></h4></blockquote>
 <ol>
 <li><p>包含图标、高清图片、字体等<a href="http://sc.chinaz.com">下载</a></p>
 </li>
@@ -161,7 +136,7 @@
 </li>
 <li><p><a href="https://fontawesome.com/icons?d=gallery">社交图标链接</a></p>
 <blockquote>
-<h4 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h4></blockquote>
+<h4 id="图床"><a href="#图床" class="headerlink" title="图床"></a><strong>图床</strong></h4></blockquote>
 </li>
 <li><p><a href="https://imgchr.com/">路过图床</a></p>
 </li>
@@ -173,11 +148,7 @@
 </li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>八、网课</strong></p>
-</div>
-
-<hr>
+<h3 id="八、网课"><a href="#八、网课" class="headerlink" title="八、网课"></a><strong>八、网课</strong></h3><hr>
 <ol>
 <li><a href="https://www.icourse163.org">慕课</a></li>
 <li><a href="https://www.51zxw.net">我要自学网</a></li>
@@ -188,23 +159,15 @@
 <li><a href="https://www.5ifxw.com">我爱分享网</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>九、灵异</strong></p>
-</div>
-
-<hr>
+<h3 id="九、灵异"><a href="#九、灵异" class="headerlink" title="九、灵异"></a><strong>九、灵异</strong></h3><hr>
 <ol>
 <li><a href="http://www.lingyi.org">中国灵异网</a></li>
 <li><a href="http://www.lingyiwenhua.com">灵异文化</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>十、书籍</strong></p>
-</div>
-
-<hr>
+<h3 id="十、书籍"><a href="#十、书籍" class="headerlink" title="十、书籍"></a><strong>十、书籍</strong></h3><hr>
 <blockquote>
-<h4 id="新派武侠"><a href="#新派武侠" class="headerlink" title="新派武侠"></a>新派武侠</h4></blockquote>
+<h4 id="新派武侠"><a href="#新派武侠" class="headerlink" title="新派武侠"></a><strong>新派武侠</strong></h4></blockquote>
 <ol>
 <li><a href="https://www.jcdf99.com/book/3/3173/">《英雄志》</a>，作者：孙晓，未完……,不知道有生之年还能不能待续……</li>
 <li><a href="https://mp.weixin.qq.com/s/BLUgI_hz289yvLbnoyhnxQ">《天之下》</a>,作者：三弦大天使，未完,待续……</li>
@@ -212,16 +175,12 @@
 <li>《昆仑》《沧海》《灵飞经》，作者：凤歌，常说的凤歌的山海经三部曲。</li>
 </ol>
 <blockquote>
-<h4 id="图书馆"><a href="#图书馆" class="headerlink" title="图书馆"></a>图书馆</h4></blockquote>
+<h4 id="图书馆"><a href="#图书馆" class="headerlink" title="图书馆"></a><strong>图书馆</strong></h4></blockquote>
 <ol>
 <li><a href="https://www.wdl.org/zh/">世界数字图书馆</a></li>
 </ol>
 <hr>
-<div class="notification is-info">
-<p><strong>十一、好玩的网站</strong></p>
-</div>
-
-<hr>
+<h3 id="十一、好玩的网站"><a href="#十一、好玩的网站" class="headerlink" title="十一、好玩的网站"></a><strong>十一、好玩的网站</strong></h3><hr>
 <ol>
 <li><a href="https://humanclock.com/">Human Clock</a>, 这个网站每隔一分钟就会刷新一次，并会展示这一分钟来自世界各地的图片。</li>
 <li><a href="https://www.autopiano.cn/">自由钢琴</a>, 在线弹钢琴，有意思。</li>
@@ -624,19 +583,19 @@
   <entry>
     <title>Common Commands of Hexo</title>
     <url>/2020/06/18/Hexo-command/</url>
-    <content><![CDATA[<h2 id="Hexo-command"><a href="#Hexo-command" class="headerlink" title="Hexo command"></a>Hexo command</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="Generate static files and Deploy to remote sites simultaneously"></a>Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="很详细的一个建站教程"><a href="#很详细的一个建站教程" class="headerlink" title="很详细的一个建站教程"></a><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">很详细的一个建站教程</a></h3><center class="half">
+<h3 id="6-很详细的一个建站教程"><a href="#6-很详细的一个建站教程" class="headerlink" title="6. 很详细的一个建站教程"></a>6. <a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">很详细的一个建站教程</a></h3><center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
 ]]></content>
@@ -704,11 +663,7 @@
   <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
     <url>/2020/03/17/Python-2/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>一、打包Python程序</strong></p>
-</div>
-
-<ul>
+    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
 <li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
 </ul>
 <ol>
@@ -731,16 +686,10 @@
 <li>还可以给程序加个图标：</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py</span><br></pre></td></tr></table></figure>
-<div class="notification is-info">
-<p><strong>二、其他需要用到的命令</strong></p>
-</div>
 
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -h             为查看help命令</span><br><span class="line">pyinstaller --clean        为清理打包过程中的临时文件</span><br><span class="line">pyinstaller -D,--onedir    为默认值，生成dist文件夹</span><br><span class="line">pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件</span><br><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</span><br></pre></td></tr></table></figure>
-<div class="notification is-info">
-<p><strong>三、附上一个小程序</strong></p>
-</div>
+<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -h             为查看help命令</span><br><span class="line">pyinstaller --clean        为清理打包过程中的临时文件</span><br><span class="line">pyinstaller -D,--onedir    为默认值，生成dist文件夹</span><br><span class="line">pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件</span><br><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</span><br></pre></td></tr></table></figure>
 
-<ul>
+<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
 <li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
 </ul>
 <img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
@@ -790,7 +739,7 @@
   <entry>
     <title>诡异之---温度分层多出一层</title>
     <url>/2019/12/16/Lammps6/</url>
-    <content><![CDATA[<h4 id="温度分层多出一层"><a href="#温度分层多出一层" class="headerlink" title="温度分层多出一层"></a>温度分层多出一层</h4><ul>
+    <content><![CDATA[<h4 id="1-温度分层多出一层"><a href="#1-温度分层多出一层" class="headerlink" title="1. 温度分层多出一层"></a>1. 温度分层多出一层</h4><ul>
 <li>正如题目所说的一样，有些诡异。</li>
 </ul>
 <ol>
@@ -799,7 +748,7 @@
 <li>比如，分了120层，输出的结果有121层；</li>
 <li>但是，有些就很正常，比如分了200层；</li>
 </ol>
-<h4 id="猜测的原因"><a href="#猜测的原因" class="headerlink" title="猜测的原因"></a>猜测的原因</h4><ul>
+<h4 id="2-猜测的原因"><a href="#2-猜测的原因" class="headerlink" title="2. 猜测的原因"></a>2. 猜测的原因</h4><ul>
 <li>是边边上有多余的部分没有被分到？自动分了？</li>
 </ul>
 <center class="half">
