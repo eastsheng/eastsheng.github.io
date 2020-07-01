@@ -201,6 +201,28 @@
       </tags>
   </entry>
   <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/2020/07/01/Npm-1/</url>
+    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+
+
+<p><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm install ERROR</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vscode常用快捷键</title>
     <url>/2020/06/30/Vscode1/</url>
     <content><![CDATA[<ol>
