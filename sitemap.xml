@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/about/index.html</loc>
+    
+    <lastmod>2020-07-01T09:05:14.562Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/2020/06/18/Hexo-command/</loc>
     
     <lastmod>2020-07-01T07:29:21.194Z</lastmod>
@@ -159,13 +166,6 @@
     <loc>https://eastsheng.ink/2020/06/30/Vscode1/</loc>
     
     <lastmod>2020-07-01T05:27:35.888Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
-    
-    <lastmod>2020-06-29T03:00:46.374Z</lastmod>
     
   </url>
   
