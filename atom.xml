@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://eastsheng.github.io/"/>
+  <link href="https://eastsheng.ink/"/>
   <updated>2020-07-01T05:27:35.888Z</updated>
-  <id>https://eastsheng.github.io/</id>
+  <id>https://eastsheng.ink/</id>
   
   <author>
     <name>Eastsheng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Vscode常用快捷键</title>
-    <link href="https://eastsheng.github.io/2020/06/30/Vscode1/"/>
-    <id>https://eastsheng.github.io/2020/06/30/Vscode1/</id>
+    <link href="https://eastsheng.ink/2020/06/30/Vscode1/"/>
+    <id>https://eastsheng.ink/2020/06/30/Vscode1/</id>
     <published>2020-06-30T03:03:46.000Z</published>
     <updated>2020-07-01T05:27:35.888Z</updated>
     
@@ -37,17 +37,17 @@
     </summary>
     
     
-      <category term="VScode" scheme="https://eastsheng.github.io/categories/VScode/"/>
+      <category term="VScode" scheme="https://eastsheng.ink/categories/VScode/"/>
     
     
-      <category term="VScode" scheme="https://eastsheng.github.io/tags/VScode/"/>
+      <category term="VScode" scheme="https://eastsheng.ink/tags/VScode/"/>
     
   </entry>
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.github.io/2020/06/30/mklink/"/>
-    <id>https://eastsheng.github.io/2020/06/30/mklink/</id>
+    <link href="https://eastsheng.ink/2020/06/30/mklink/"/>
+    <id>https://eastsheng.ink/2020/06/30/mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
     <updated>2020-07-01T05:35:21.713Z</updated>
     
@@ -65,17 +65,17 @@
     </summary>
     
     
-      <category term="Computer" scheme="https://eastsheng.github.io/categories/Computer/"/>
+      <category term="Computer" scheme="https://eastsheng.ink/categories/Computer/"/>
     
     
-      <category term="mklink" scheme="https://eastsheng.github.io/tags/mklink/"/>
+      <category term="mklink" scheme="https://eastsheng.ink/tags/mklink/"/>
     
   </entry>
   
   <entry>
     <title>给icarus主题换背景图片</title>
-    <link href="https://eastsheng.github.io/2020/06/29/Hexo-icarus/"/>
-    <id>https://eastsheng.github.io/2020/06/29/Hexo-icarus/</id>
+    <link href="https://eastsheng.ink/2020/06/29/Hexo-icarus/"/>
+    <id>https://eastsheng.ink/2020/06/29/Hexo-icarus/</id>
     <published>2020-06-28T16:00:34.000Z</published>
     <updated>2020-07-01T05:35:33.472Z</updated>
     
@@ -91,17 +91,17 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://eastsheng.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://eastsheng.ink/categories/Hexo/"/>
     
     
-      <category term="Icarus" scheme="https://eastsheng.github.io/tags/Icarus/"/>
+      <category term="Icarus" scheme="https://eastsheng.ink/tags/Icarus/"/>
     
   </entry>
   
   <entry>
     <title>Git Command-delete file</title>
-    <link href="https://eastsheng.github.io/2020/06/26/git-delfile/"/>
-    <id>https://eastsheng.github.io/2020/06/26/git-delfile/</id>
+    <link href="https://eastsheng.ink/2020/06/26/git-delfile/"/>
+    <id>https://eastsheng.ink/2020/06/26/git-delfile/</id>
     <published>2020-06-26T05:22:24.000Z</published>
     <updated>2020-07-01T05:37:33.176Z</updated>
     
@@ -117,17 +117,17 @@
     </summary>
     
     
-      <category term="Git Command" scheme="https://eastsheng.github.io/categories/Git-Command/"/>
+      <category term="Git Command" scheme="https://eastsheng.ink/categories/Git-Command/"/>
     
     
-      <category term="Delete file" scheme="https://eastsheng.github.io/tags/Delete-file/"/>
+      <category term="Delete file" scheme="https://eastsheng.ink/tags/Delete-file/"/>
     
   </entry>
   
   <entry>
     <title>没有解决的问题</title>
-    <link href="https://eastsheng.github.io/2020/06/24/Problems/"/>
-    <id>https://eastsheng.github.io/2020/06/24/Problems/</id>
+    <link href="https://eastsheng.ink/2020/06/24/Problems/"/>
+    <id>https://eastsheng.ink/2020/06/24/Problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
     <updated>2020-07-01T05:32:01.137Z</updated>
     
@@ -143,19 +143,19 @@
     </summary>
     
     
-      <category term="Computer" scheme="https://eastsheng.github.io/categories/Computer/"/>
+      <category term="Computer" scheme="https://eastsheng.ink/categories/Computer/"/>
     
     
-      <category term="没有解决的问题" scheme="https://eastsheng.github.io/tags/%E6%B2%A1%E6%9C%89%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <category term="没有解决的问题" scheme="https://eastsheng.ink/tags/%E6%B2%A1%E6%9C%89%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/"/>
     
-      <category term="Network Connections" scheme="https://eastsheng.github.io/tags/Network-Connections/"/>
+      <category term="Network Connections" scheme="https://eastsheng.ink/tags/Network-Connections/"/>
     
   </entry>
   
   <entry>
     <title>跑MD结构散了</title>
-    <link href="https://eastsheng.github.io/2020/06/23/Struct-ComeApart/"/>
-    <id>https://eastsheng.github.io/2020/06/23/Struct-ComeApart/</id>
+    <link href="https://eastsheng.ink/2020/06/23/Struct-ComeApart/"/>
+    <id>https://eastsheng.ink/2020/06/23/Struct-ComeApart/</id>
     <published>2020-06-23T10:06:51.000Z</published>
     <updated>2020-07-01T05:28:50.604Z</updated>
     
@@ -171,19 +171,19 @@
     </summary>
     
     
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
     
-      <category term="Error summary" scheme="https://eastsheng.github.io/categories/Lammps/Error-summary/"/>
+      <category term="Error summary" scheme="https://eastsheng.ink/categories/Lammps/Error-summary/"/>
     
     
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
     
   </entry>
   
   <entry>
     <title>Origin Integrate</title>
-    <link href="https://eastsheng.github.io/2020/06/22/Origin-2/"/>
-    <id>https://eastsheng.github.io/2020/06/22/Origin-2/</id>
+    <link href="https://eastsheng.ink/2020/06/22/Origin-2/"/>
+    <id>https://eastsheng.ink/2020/06/22/Origin-2/</id>
     <published>2020-06-22T11:16:25.000Z</published>
     <updated>2020-07-01T05:32:24.833Z</updated>
     
@@ -201,17 +201,17 @@
     </summary>
     
     
-      <category term="Origin" scheme="https://eastsheng.github.io/categories/Origin/"/>
+      <category term="Origin" scheme="https://eastsheng.ink/categories/Origin/"/>
     
     
-      <category term="origin" scheme="https://eastsheng.github.io/tags/origin/"/>
+      <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
     
   </entry>
   
   <entry>
     <title>Origin 画双y轴</title>
-    <link href="https://eastsheng.github.io/2020/06/22/Origin-1/"/>
-    <id>https://eastsheng.github.io/2020/06/22/Origin-1/</id>
+    <link href="https://eastsheng.ink/2020/06/22/Origin-1/"/>
+    <id>https://eastsheng.ink/2020/06/22/Origin-1/</id>
     <published>2020-06-22T07:21:49.000Z</published>
     <updated>2020-07-01T05:35:14.291Z</updated>
     
@@ -229,17 +229,17 @@
     </summary>
     
     
-      <category term="Origin" scheme="https://eastsheng.github.io/categories/Origin/"/>
+      <category term="Origin" scheme="https://eastsheng.ink/categories/Origin/"/>
     
     
-      <category term="origin" scheme="https://eastsheng.github.io/tags/origin/"/>
+      <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
     
   </entry>
   
   <entry>
     <title>Git Command-branch</title>
-    <link href="https://eastsheng.github.io/2020/06/21/git-command/"/>
-    <id>https://eastsheng.github.io/2020/06/21/git-command/</id>
+    <link href="https://eastsheng.ink/2020/06/21/git-command/"/>
+    <id>https://eastsheng.ink/2020/06/21/git-command/</id>
     <published>2020-06-21T10:34:23.000Z</published>
     <updated>2020-07-01T05:37:51.227Z</updated>
     
@@ -257,17 +257,17 @@
     </summary>
     
     
-      <category term="Git Command" scheme="https://eastsheng.github.io/categories/Git-Command/"/>
+      <category term="Git Command" scheme="https://eastsheng.ink/categories/Git-Command/"/>
     
     
-      <category term="Git command-branch" scheme="https://eastsheng.github.io/tags/Git-command-branch/"/>
+      <category term="Git command-branch" scheme="https://eastsheng.ink/tags/Git-command-branch/"/>
     
   </entry>
   
   <entry>
     <title>实用网站合集</title>
-    <link href="https://eastsheng.github.io/2020/06/19/sitecollect/"/>
-    <id>https://eastsheng.github.io/2020/06/19/sitecollect/</id>
+    <link href="https://eastsheng.ink/2020/06/19/sitecollect/"/>
+    <id>https://eastsheng.ink/2020/06/19/sitecollect/</id>
     <published>2020-06-19T00:50:09.000Z</published>
     <updated>2020-07-01T05:43:29.304Z</updated>
     
@@ -288,19 +288,19 @@
     </summary>
     
     
-      <category term="小技巧" scheme="https://eastsheng.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+      <category term="小技巧" scheme="https://eastsheng.ink/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="实用网站" scheme="https://eastsheng.github.io/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+      <category term="实用网站" scheme="https://eastsheng.ink/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
     
     
-      <category term="实用网站" scheme="https://eastsheng.github.io/tags/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
+      <category term="实用网站" scheme="https://eastsheng.ink/tags/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/"/>
     
   </entry>
   
   <entry>
     <title>snap使用常见错误解决方法</title>
-    <link href="https://eastsheng.github.io/2020/06/18/snaperror/"/>
-    <id>https://eastsheng.github.io/2020/06/18/snaperror/</id>
+    <link href="https://eastsheng.ink/2020/06/18/snaperror/"/>
+    <id>https://eastsheng.ink/2020/06/18/snaperror/</id>
     <published>2020-06-18T10:34:04.000Z</published>
     <updated>2020-07-01T05:28:56.451Z</updated>
     
@@ -316,23 +316,23 @@
     </summary>
     
     
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
     
-      <category term="potential" scheme="https://eastsheng.github.io/categories/Lammps/potential/"/>
+      <category term="potential" scheme="https://eastsheng.ink/categories/Lammps/potential/"/>
     
     
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
     
-      <category term="snap" scheme="https://eastsheng.github.io/tags/snap/"/>
+      <category term="snap" scheme="https://eastsheng.ink/tags/snap/"/>
     
-      <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
+      <category term="potential" scheme="https://eastsheng.ink/tags/potential/"/>
     
   </entry>
   
   <entry>
     <title>经验势snap的使用</title>
-    <link href="https://eastsheng.github.io/2020/06/18/Lammpsinput/"/>
-    <id>https://eastsheng.github.io/2020/06/18/Lammpsinput/</id>
+    <link href="https://eastsheng.ink/2020/06/18/Lammpsinput/"/>
+    <id>https://eastsheng.ink/2020/06/18/Lammpsinput/</id>
     <published>2020-06-18T08:43:56.000Z</published>
     <updated>2020-07-01T05:35:28.417Z</updated>
     
@@ -349,23 +349,23 @@
     </summary>
     
     
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
     
-      <category term="potential" scheme="https://eastsheng.github.io/categories/Lammps/potential/"/>
+      <category term="potential" scheme="https://eastsheng.ink/categories/Lammps/potential/"/>
     
     
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
     
-      <category term="snap" scheme="https://eastsheng.github.io/tags/snap/"/>
+      <category term="snap" scheme="https://eastsheng.ink/tags/snap/"/>
     
-      <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
+      <category term="potential" scheme="https://eastsheng.ink/tags/potential/"/>
     
   </entry>
   
   <entry>
     <title>Common Commands of Hexo</title>
-    <link href="https://eastsheng.github.io/2020/06/18/Hexo-command/"/>
-    <id>https://eastsheng.github.io/2020/06/18/Hexo-command/</id>
+    <link href="https://eastsheng.ink/2020/06/18/Hexo-command/"/>
+    <id>https://eastsheng.ink/2020/06/18/Hexo-command/</id>
     <published>2020-06-17T16:00:00.000Z</published>
     <updated>2020-07-01T05:37:08.488Z</updated>
     
@@ -381,17 +381,17 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://eastsheng.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="https://eastsheng.ink/categories/Hexo/"/>
     
     
-      <category term="Hexo command" scheme="https://eastsheng.github.io/tags/Hexo-command/"/>
+      <category term="Hexo command" scheme="https://eastsheng.ink/tags/Hexo-command/"/>
     
   </entry>
   
   <entry>
     <title>控制Tecplot里的原子间距</title>
-    <link href="https://eastsheng.github.io/2020/05/08/Tecplot-1/"/>
-    <id>https://eastsheng.github.io/2020/05/08/Tecplot-1/</id>
+    <link href="https://eastsheng.ink/2020/05/08/Tecplot-1/"/>
+    <id>https://eastsheng.ink/2020/05/08/Tecplot-1/</id>
     <published>2020-05-08T11:49:48.000Z</published>
     <updated>2020-07-01T05:28:01.060Z</updated>
     
@@ -407,17 +407,17 @@
     </summary>
     
     
-      <category term="Tecplot" scheme="https://eastsheng.github.io/categories/Tecplot/"/>
+      <category term="Tecplot" scheme="https://eastsheng.ink/categories/Tecplot/"/>
     
     
-      <category term="Tecplot" scheme="https://eastsheng.github.io/tags/Tecplot/"/>
+      <category term="Tecplot" scheme="https://eastsheng.ink/tags/Tecplot/"/>
     
   </entry>
   
   <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
-    <link href="https://eastsheng.github.io/2020/03/17/Python-2/"/>
-    <id>https://eastsheng.github.io/2020/03/17/Python-2/</id>
+    <link href="https://eastsheng.ink/2020/03/17/Python-2/"/>
+    <id>https://eastsheng.ink/2020/03/17/Python-2/</id>
     <published>2020-03-17T11:23:21.000Z</published>
     <updated>2020-07-01T05:31:23.847Z</updated>
     
@@ -434,17 +434,17 @@
     </summary>
     
     
-      <category term="Python" scheme="https://eastsheng.github.io/categories/Python/"/>
+      <category term="Python" scheme="https://eastsheng.ink/categories/Python/"/>
     
     
-      <category term="Python" scheme="https://eastsheng.github.io/tags/Python/"/>
+      <category term="Python" scheme="https://eastsheng.ink/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>GULP 问题记录</title>
-    <link href="https://eastsheng.github.io/2019/12/30/GULP-1/"/>
-    <id>https://eastsheng.github.io/2019/12/30/GULP-1/</id>
+    <link href="https://eastsheng.ink/2019/12/30/GULP-1/"/>
+    <id>https://eastsheng.ink/2019/12/30/GULP-1/</id>
     <published>2019-12-30T10:40:54.000Z</published>
     <updated>2020-07-01T05:39:12.223Z</updated>
     
@@ -462,19 +462,19 @@
     </summary>
     
     
-      <category term="待解决" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+      <category term="待解决" scheme="https://eastsheng.ink/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
     
-      <category term="GULP Problems" scheme="https://eastsheng.github.io/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/GULP-Problems/"/>
+      <category term="GULP Problems" scheme="https://eastsheng.ink/categories/%E5%BE%85%E8%A7%A3%E5%86%B3/GULP-Problems/"/>
     
     
-      <category term="GULP 问题记录" scheme="https://eastsheng.github.io/tags/GULP-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+      <category term="GULP 问题记录" scheme="https://eastsheng.ink/tags/GULP-%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>诡异之---温度分层多出一层</title>
-    <link href="https://eastsheng.github.io/2019/12/16/Lammps6/"/>
-    <id>https://eastsheng.github.io/2019/12/16/Lammps6/</id>
+    <link href="https://eastsheng.ink/2019/12/16/Lammps6/"/>
+    <id>https://eastsheng.ink/2019/12/16/Lammps6/</id>
     <published>2019-12-16T10:11:45.000Z</published>
     <updated>2020-07-01T05:38:53.875Z</updated>
     
@@ -493,21 +493,21 @@
     </summary>
     
     
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
     
-      <category term="Bug" scheme="https://eastsheng.github.io/categories/Lammps/Bug/"/>
+      <category term="Bug" scheme="https://eastsheng.ink/categories/Lammps/Bug/"/>
     
     
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
     
-      <category term="诡异" scheme="https://eastsheng.github.io/tags/%E8%AF%A1%E5%BC%82/"/>
+      <category term="诡异" scheme="https://eastsheng.ink/tags/%E8%AF%A1%E5%BC%82/"/>
     
   </entry>
   
   <entry>
     <title>这些错误实属粗心大意-放在这警示自己</title>
-    <link href="https://eastsheng.github.io/2019/12/15/Lammps5/"/>
-    <id>https://eastsheng.github.io/2019/12/15/Lammps5/</id>
+    <link href="https://eastsheng.ink/2019/12/15/Lammps5/"/>
+    <id>https://eastsheng.ink/2019/12/15/Lammps5/</id>
     <published>2019-12-15T09:45:16.000Z</published>
     <updated>2020-07-01T05:38:58.131Z</updated>
     
@@ -523,19 +523,19 @@
     </summary>
     
     
-      <category term="Lammps" scheme="https://eastsheng.github.io/categories/Lammps/"/>
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
     
-      <category term="Error summary" scheme="https://eastsheng.github.io/categories/Lammps/Error-summary/"/>
+      <category term="Error summary" scheme="https://eastsheng.ink/categories/Lammps/Error-summary/"/>
     
     
-      <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
     
   </entry>
   
   <entry>
     <title>Run GULP Command</title>
-    <link href="https://eastsheng.github.io/2019/12/06/GULP-2/"/>
-    <id>https://eastsheng.github.io/2019/12/06/GULP-2/</id>
+    <link href="https://eastsheng.ink/2019/12/06/GULP-2/"/>
+    <id>https://eastsheng.ink/2019/12/06/GULP-2/</id>
     <published>2019-12-06T10:59:53.000Z</published>
     <updated>2020-07-01T05:39:07.904Z</updated>
     
@@ -553,19 +553,19 @@
     </summary>
     
     
-      <category term="GULP" scheme="https://eastsheng.github.io/categories/GULP/"/>
+      <category term="GULP" scheme="https://eastsheng.ink/categories/GULP/"/>
     
-      <category term="Run GULP" scheme="https://eastsheng.github.io/categories/GULP/Run-GULP/"/>
+      <category term="Run GULP" scheme="https://eastsheng.ink/categories/GULP/Run-GULP/"/>
     
     
-      <category term="Run GULP Command" scheme="https://eastsheng.github.io/tags/Run-GULP-Command/"/>
+      <category term="Run GULP Command" scheme="https://eastsheng.ink/tags/Run-GULP-Command/"/>
     
   </entry>
   
   <entry>
     <title>Fortran Runtime error</title>
-    <link href="https://eastsheng.github.io/2019/10/31/Fortran-1/"/>
-    <id>https://eastsheng.github.io/2019/10/31/Fortran-1/</id>
+    <link href="https://eastsheng.ink/2019/10/31/Fortran-1/"/>
+    <id>https://eastsheng.ink/2019/10/31/Fortran-1/</id>
     <published>2019-10-31T10:29:32.000Z</published>
     <updated>2020-07-01T05:38:14.466Z</updated>
     
@@ -581,12 +581,12 @@
     </summary>
     
     
-      <category term="Fortran" scheme="https://eastsheng.github.io/categories/Fortran/"/>
+      <category term="Fortran" scheme="https://eastsheng.ink/categories/Fortran/"/>
     
-      <category term="Runtime error" scheme="https://eastsheng.github.io/categories/Fortran/Runtime-error/"/>
+      <category term="Runtime error" scheme="https://eastsheng.ink/categories/Fortran/Runtime-error/"/>
     
     
-      <category term="Fortran运行error" scheme="https://eastsheng.github.io/tags/Fortran%E8%BF%90%E8%A1%8Cerror/"/>
+      <category term="Fortran运行error" scheme="https://eastsheng.ink/tags/Fortran%E8%BF%90%E8%A1%8Cerror/"/>
     
   </entry>
   
