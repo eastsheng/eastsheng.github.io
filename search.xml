@@ -203,7 +203,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Git Push Everything up-to-date错误个人理解</title>
+    <title>Git Push Everything up-to-date错误</title>
     <url>/Git-Command/GitPushError/</url>
     <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git Push origin master之后</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure>
 
