@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/Python/Python-2/</loc>
+    
+    <lastmod>2020-07-02T15:22:09.921Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-07-02T14:40:57.038Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>https://eastsheng.ink/Computer/Problems/</loc>
     
     <lastmod>2020-07-01T05:32:01.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Python/Python-2/</loc>
-    
-    <lastmod>2020-07-01T05:31:23.847Z</lastmod>
     
   </url>
   

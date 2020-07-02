@@ -646,7 +646,14 @@
 <li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br></pre></td></tr></table></figure>
-
+<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
+<blockquote>
+<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 按回车<br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;</span><br><span class="line"> </span><br><span class="line">[install]</span><br><span class="line">trusted-host&#x3D;mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>(5). 然后可以试试快不快</p>
+</blockquote>
 <ol start="4">
 <li>cmd执行：</li>
 </ol>
@@ -666,6 +673,7 @@
 
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#画个太极阴阳鱼</span><br><span class="line">import turtle</span><br><span class="line">turtle.setup(0.5,0.6,0,0)</span><br><span class="line">turtle.speed(10)</span><br><span class="line"># #大圆</span><br><span class="line"># turtle.penup()</span><br><span class="line"># turtle.goto(0,-160)</span><br><span class="line"># turtle.pendown()</span><br><span class="line"># turtle.circle(180)</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,200)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(90,180)</span><br><span class="line">turtle.circle(-90,180)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">#白眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;white&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,80)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#黑眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#太极</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,0)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;太&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,-50)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;极&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(200,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;---2020&#x2F;3&#x2F;17&quot;,font&#x3D;(&quot;方正&quot;,12,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(250,-150)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;sheng&quot;,font&#x3D;(&quot;华文行楷&quot;,12,&quot;normal&quot;))</span><br><span class="line"></span><br><span class="line">turtle.hideturtle()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
+
 
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
