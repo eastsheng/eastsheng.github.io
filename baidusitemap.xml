@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eastsheng.ink/Python/Python-2/</loc>
+    <lastmod>2020-07-03</lastmod>
+  </url>  <url>
     <loc>https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/</loc>
     <lastmod>2020-07-03</lastmod>
   </url>  <url>
@@ -8,9 +11,6 @@
     <lastmod>2020-07-03</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Git-Command/GitPushError/</loc>
-    <lastmod>2020-07-02</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/Python/Python-2/</loc>
     <lastmod>2020-07-02</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Python/2019-Python-1/</loc>

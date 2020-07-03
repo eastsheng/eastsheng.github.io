@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/Python/Python-2/</loc>
+    
+    <lastmod>2020-07-03T06:34:23.842Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-07-03T04:00:23.878Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://eastsheng.ink/Git-Command/GitPushError/</loc>
     
     <lastmod>2020-07-02T15:46:43.824Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Python/Python-2/</loc>
-    
-    <lastmod>2020-07-02T15:22:09.921Z</lastmod>
     
   </url>
   
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/album/index.html</loc>
+    <loc>https://eastsheng.ink/categories/index.html</loc>
     
     <lastmod>2020-07-01T12:41:47.522Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/index.html</loc>
+    <loc>https://eastsheng.ink/album/index.html</loc>
     
     <lastmod>2020-07-01T12:41:47.522Z</lastmod>
     
