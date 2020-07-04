@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/about/index.html</loc>
+    
+    <lastmod>2020-07-04T11:34:45.147Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/photos/index.html</loc>
+    
+    <lastmod>2020-07-04T11:31:07.358Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Git-Command/git-command/</loc>
+    
+    <lastmod>2020-07-04T09:14:18.925Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/%E5%B0%8F%E6%8A%80%E5%B7%A7/sitecollect/</loc>
     
     <lastmod>2020-07-04T08:54:06.064Z</lastmod>
@@ -19,13 +40,6 @@
     <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-07-03T04:00:23.878Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
-    
-    <lastmod>2020-07-03T02:39:11.949Z</lastmod>
     
   </url>
   
@@ -54,13 +68,6 @@
     <loc>https://eastsheng.ink/self-talking/index.html</loc>
     
     <lastmod>2020-07-01T12:41:47.638Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/photos/index.html</loc>
-    
-    <lastmod>2020-07-01T12:41:47.631Z</lastmod>
     
   </url>
   
@@ -138,13 +145,6 @@
     <loc>https://eastsheng.ink/Git-Command/git-delfile/</loc>
     
     <lastmod>2020-07-01T12:21:25.451Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Git-Command/git-command/</loc>
-    
-    <lastmod>2020-07-01T12:05:28.708Z</lastmod>
     
   </url>
   
