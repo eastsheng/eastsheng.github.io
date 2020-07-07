@@ -210,7 +210,7 @@
   <entry>
     <title>Hueman主题</title>
     <url>/Hexo/Hexo-hueman/</url>
-    <content><![CDATA[<p>这个主题挺不错的，不过在配置的时候有些坑，也不能算是坑吧，一起看一下。</p>
+    <content><![CDATA[<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
 <h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</span><br></pre></td></tr></table></figure>
 <p><strong>注：</strong></p>
 <ul>
@@ -223,20 +223,22 @@
 <li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
 </ul>
 <h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
-<li>菜单栏配置</li>
+<li>第一个坑</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li><p>首先，按照以往的及经验，直接在上面<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:  </span><br><span class="line">    People: &#x2F;people</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure></li>
-<li><p>但是，经过<code>hexo s</code>预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</p>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:  </span><br><span class="line">    People: &#x2F;people</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure></li>
+<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
+<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
+</ol>
+<ul>
+<li>第二个坑</li>
+</ul>
+<ol>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png" alt=""></p>
 </li>
-<li><p>这个问题很好解决，找到主题下的<code>languages</code>文件夹，比如打开en.yml,在里面添加<code>people: &quot;People&quot;</code>就可以了。</p>
-</li>
-<li><p>另一个我认为的坑，在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么弄。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png" alt=""></p>
-</li>
-<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual.</p>
+<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
 </li>
 <li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
 </li>
