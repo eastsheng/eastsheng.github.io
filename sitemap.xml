@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Ovito/Ovito/</loc>
+    
+    <lastmod>2020-07-08T05:50:13.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Origin/Origin-2/</loc>
+    
+    <lastmod>2020-07-08T05:43:58.502Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Origin/Origin-1/</loc>
+    
+    <lastmod>2020-07-08T05:43:54.174Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/</loc>
+    
+    <lastmod>2020-07-08T05:43:37.225Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/Hexo/Hexo-hueman/</loc>
     
     <lastmod>2020-07-07T09:44:16.125Z</lastmod>
@@ -16,14 +44,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/self-talking/index.html</loc>
+    <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-07-07T05:08:39.594Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/plans/index.html</loc>
+    <loc>https://eastsheng.ink/self-talking/index.html</loc>
     
     <lastmod>2020-07-07T05:08:39.594Z</lastmod>
     
@@ -142,20 +170,6 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/Origin/Origin-2/</loc>
-    
-    <lastmod>2020-07-07T05:08:39.459Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Origin/Origin-1/</loc>
-    
-    <lastmod>2020-07-07T05:08:39.452Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.ink/Lammps/potential/Lammpsinput/</loc>
     
     <lastmod>2020-07-07T05:08:39.451Z</lastmod>
@@ -173,13 +187,6 @@
     <loc>https://eastsheng.ink/Hexo/Hexo-command/</loc>
     
     <lastmod>2020-07-07T05:08:39.450Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Tecplot/Tecplot-1/</loc>
-    
-    <lastmod>2020-07-07T05:08:39.449Z</lastmod>
     
   </url>
   

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Ovito/Ovito/</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Origin/Origin-2/</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Origin/Origin-1/</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/</loc>
+    <lastmod>2020-07-08</lastmod>
+  </url>  <url>
     <loc>https://eastsheng.ink/Hexo/Hexo-hueman/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
@@ -34,12 +46,6 @@
     <loc>https://eastsheng.ink/Lammps/Error-summary/Struct-ComeApart/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Origin/Origin-2/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/Origin/Origin-1/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
     <loc>https://eastsheng.ink/Lammps/potential/Lammpsinput/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
@@ -47,9 +53,6 @@
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Hexo/Hexo-icarus/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/Tecplot/Tecplot-1/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Python/Python-2/</loc>
@@ -67,10 +70,10 @@
     <loc>https://eastsheng.ink/Lammps/Error-summary/2019-Lammps5/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/GULP/Run-GULP/2019-GULP-2/</loc>
+    <loc>https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/</loc>
+    <loc>https://eastsheng.ink/GULP/Run-GULP/2019-GULP-2/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Fortran/Runtime-error/2019-Fortran-1/</loc>

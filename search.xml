@@ -450,7 +450,7 @@
   </entry>
   <entry>
     <title>Origin Integrate</title>
-    <url>/Origin/Origin-2/</url>
+    <url>/Visualization-Software/Origin/Origin-2/</url>
     <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
 <li>选中数据，并按照figure2找到 Integrate</li>
 <li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
@@ -476,6 +476,7 @@
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
+        <category>Visualization Software</category>
         <category>Origin</category>
       </categories>
       <tags>
@@ -484,7 +485,7 @@
   </entry>
   <entry>
     <title>Origin 画双y轴</title>
-    <url>/Origin/Origin-1/</url>
+    <url>/Visualization-Software/Origin/Origin-1/</url>
     <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
 <li>选中数据并，plot&gt;line 画出图</li>
 </ul>
@@ -548,6 +549,7 @@
 </center>
 ]]></content>
       <categories>
+        <category>Visualization Software</category>
         <category>Origin</category>
       </categories>
       <tags>
@@ -672,8 +674,29 @@
       </tags>
   </entry>
   <entry>
+    <title>Ovito</title>
+    <url>/Visualization-Software/Ovito/Ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+
+
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>Visualization Software</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>控制Tecplot里的原子间距</title>
-    <url>/Tecplot/Tecplot-1/</url>
+    <url>/Visualization-Software/Tecplot/Tecplot-1/</url>
     <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
 <li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
 
@@ -719,6 +742,7 @@
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
+        <category>Visualization Software</category>
         <category>Tecplot</category>
       </categories>
       <tags>

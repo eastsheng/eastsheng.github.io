@@ -261,10 +261,10 @@
   
   <entry>
     <title>Origin Integrate</title>
-    <link href="https://eastsheng.ink/Origin/Origin-2/"/>
-    <id>https://eastsheng.ink/Origin/Origin-2/</id>
+    <link href="https://eastsheng.ink/Visualization-Software/Origin/Origin-2/"/>
+    <id>https://eastsheng.ink/Visualization-Software/Origin/Origin-2/</id>
     <published>2020-06-22T11:16:25.000Z</published>
-    <updated>2020-07-07T05:08:39.459Z</updated>
+    <updated>2020-07-08T05:43:58.502Z</updated>
     
     <content type="html"><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul><li>选中数据，并按照figure2找到 Integrate</li><li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li><li>接下来就是画图，plot&gt;line</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure1</td><td>figure2</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td></tr></tbody></table><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -280,7 +280,9 @@
     </summary>
     
     
-      <category term="Origin" scheme="https://eastsheng.ink/categories/Origin/"/>
+      <category term="Visualization Software" scheme="https://eastsheng.ink/categories/Visualization-Software/"/>
+    
+      <category term="Origin" scheme="https://eastsheng.ink/categories/Visualization-Software/Origin/"/>
     
     
       <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
@@ -289,10 +291,10 @@
   
   <entry>
     <title>Origin 画双y轴</title>
-    <link href="https://eastsheng.ink/Origin/Origin-1/"/>
-    <id>https://eastsheng.ink/Origin/Origin-1/</id>
+    <link href="https://eastsheng.ink/Visualization-Software/Origin/Origin-1/"/>
+    <id>https://eastsheng.ink/Visualization-Software/Origin/Origin-1/</id>
     <published>2020-06-22T07:21:49.000Z</published>
-    <updated>2020-07-07T05:08:39.452Z</updated>
+    <updated>2020-07-08T05:43:54.174Z</updated>
     
     <content type="html"><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul><li>选中数据并，plot&gt;line 画出图</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure1</td><td>figure2</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td></tr></tbody></table><h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul><li>如图figure3,可以得到figure4–双y轴</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure3</td><td>figure4</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td><td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td></tr></tbody></table><h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul><li>右键，选中figure5中的 Layer Contents,选择要画的数据</li><li>调一下格式就可以得到最后的图片</li></ul><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>figure5</td><td>figure6</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td><td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td></tr></tbody></table><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -308,7 +310,9 @@
     </summary>
     
     
-      <category term="Origin" scheme="https://eastsheng.ink/categories/Origin/"/>
+      <category term="Visualization Software" scheme="https://eastsheng.ink/categories/Visualization-Software/"/>
+    
+      <category term="Origin" scheme="https://eastsheng.ink/categories/Visualization-Software/Origin/"/>
     
     
       <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
@@ -464,11 +468,40 @@
   </entry>
   
   <entry>
+    <title>Ovito</title>
+    <link href="https://eastsheng.ink/Visualization-Software/Ovito/Ovito/"/>
+    <id>https://eastsheng.ink/Visualization-Software/Ovito/Ovito/</id>
+    <published>2020-05-09T11:49:48.000Z</published>
+    <updated>2020-07-08T05:50:13.154Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul><li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li></ul><img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" /><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-去掉盒子&quot;&gt;&lt;a href=&quot;#1-去掉盒子&quot; class=&quot;headerlink&quot; title=&quot;1. 去掉盒子&quot;&gt;&lt;/a&gt;1. 去掉盒子&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;直接把&lt;code&gt;Display&lt;/code&gt;下的&lt;code&gt;Simulation Cell
+      
+    
+    </summary>
+    
+    
+      <category term="Visualization Software" scheme="https://eastsheng.ink/categories/Visualization-Software/"/>
+    
+      <category term="Ovito" scheme="https://eastsheng.ink/categories/Visualization-Software/Ovito/"/>
+    
+    
+      <category term="Ovito" scheme="https://eastsheng.ink/tags/Ovito/"/>
+    
+  </entry>
+  
+  <entry>
     <title>控制Tecplot里的原子间距</title>
-    <link href="https://eastsheng.ink/Tecplot/Tecplot-1/"/>
-    <id>https://eastsheng.ink/Tecplot/Tecplot-1/</id>
+    <link href="https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/"/>
+    <id>https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/</id>
     <published>2020-05-08T11:49:48.000Z</published>
-    <updated>2020-07-07T05:08:39.449Z</updated>
+    <updated>2020-07-08T05:43:37.225Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul><li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  </li></ul><ul><li><p>独立操作x,y,z的Size Factors</p><img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" /></li><li><p>调原子间距效果</p></li></ul><img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" /><h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul><li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li><li>一般这种可视化软件，不应该都在很明显的位置嘛？</li><li>这个就不明显，藏在这里：<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>View&gt;Rotate</td><td>3D Rotate</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td><td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td></tr></tbody></table></li></ul><h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul><li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li><li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li><li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -482,7 +515,9 @@
     </summary>
     
     
-      <category term="Tecplot" scheme="https://eastsheng.ink/categories/Tecplot/"/>
+      <category term="Visualization Software" scheme="https://eastsheng.ink/categories/Visualization-Software/"/>
+    
+      <category term="Tecplot" scheme="https://eastsheng.ink/categories/Visualization-Software/Tecplot/"/>
     
     
       <category term="Tecplot" scheme="https://eastsheng.ink/tags/Tecplot/"/>
@@ -543,39 +578,6 @@
     
     
       <category term="GULP Problems" scheme="https://eastsheng.ink/tags/GULP-Problems/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>诡异之---温度分层多出一层</title>
-    <link href="https://eastsheng.ink/Lammps/Bug/2019-Lammps6/"/>
-    <id>https://eastsheng.ink/Lammps/Bug/2019-Lammps6/</id>
-    <published>2019-12-16T10:11:45.000Z</published>
-    <updated>2020-07-07T05:08:39.443Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-温度分层多出一层"><a href="#1-温度分层多出一层" class="headerlink" title="1. 温度分层多出一层"></a>1. 温度分层多出一层</h4><ul><li>正如题目所说的一样，有些诡异。</li></ul><ol><li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li><li>诡异的来了，分的有些层数，输出的结果会多出一层；</li><li>比如，分了120层，输出的结果有121层；</li><li>但是，有些就很正常，比如分了200层；</li></ol><h4 id="2-猜测的原因"><a href="#2-猜测的原因" class="headerlink" title="2. 猜测的原因"></a>2. 猜测的原因</h4><ul><li>是边边上有多余的部分没有被分到？自动分了？</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;1-温度分层多出一层&quot;&gt;&lt;a href=&quot;#1-温度分层多出一层&quot; class=&quot;headerlink&quot; title=&quot;1. 温度分层多出一层&quot;&gt;&lt;/a&gt;1. 温度分层多出一层&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;正如题目所说的一样，有些诡异。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol
-      
-    
-    </summary>
-    
-    
-      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
-    
-      <category term="Bug" scheme="https://eastsheng.ink/categories/Lammps/Bug/"/>
-    
-    
-      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
-    
-      <category term="诡异" scheme="https://eastsheng.ink/tags/%E8%AF%A1%E5%BC%82/"/>
     
   </entry>
   
