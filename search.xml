@@ -831,7 +831,7 @@
   </entry>
   <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
-    <url>/Python/Python2/</url>
+    <url>/Python/Python-2/</url>
     <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
 <li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
 </ul>
@@ -1082,7 +1082,7 @@
   </entry>
   <entry>
     <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/Python/2019-Python1/</url>
+    <url>/Python/2019-Python-1/</url>
     <content><![CDATA[<div class="notification is-info">
 <p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
 </div>
