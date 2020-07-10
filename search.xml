@@ -809,27 +809,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python numpy常用</title>
-    <url>/Python/numpy/Python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、矩阵拼接"><a href="#一、矩阵拼接" class="headerlink" title="一、矩阵拼接"></a><strong>一、矩阵拼接</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-</ol>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>Python</category>
-        <category>numpy</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
     <url>/Python/Python-2/</url>
     <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
