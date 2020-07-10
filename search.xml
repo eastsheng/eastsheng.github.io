@@ -87,7 +87,7 @@
 <hr>
 <h3 id="五、软件合集"><a href="#五、软件合集" class="headerlink" title="五、软件合集"></a><strong>五、软件合集</strong></h3><hr>
 <ol>
-<li>分子模拟软件<a href="https://lammps.sandia.gov/index.html">Lammps</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,以及在线<a href="https://lammps.sandia.gov/doc/Manual.html">手册</a></li>
+<li>分子模拟软件<a href="https://lammps.sandia.gov/index.html">Lammps</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,以及在线<a href="https://lammps.sandia.gov/doc/Manual.html">手册</a>,<a href="http://editor.lammps.org/">Lammps Online Editor</a></li>
 <li>傅里叶快速变换<a href="http://www.fftw.org/download.html">FFTW</a>.</li>
 <li>晶格动力学软件<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">GULP</a>,<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#scan_cell">在线Manual</a></li>
 <li>一个可以发现很多好软件的<a href="https://www.cuiuc.com">网站</a></li>
@@ -831,6 +831,37 @@
       </categories>
       <tags>
         <tag>GULP Problems</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lammps安装</title>
+    <url>/Lammps/Install/2019-Lammps-install/</url>
+    <content><![CDATA[<h4 id="1-Windows下安装"><a href="#1-Windows下安装" class="headerlink" title="1. Windows下安装"></a>1. Windows下安装</h4><ol>
+<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
+<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
+<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
+<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
+<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
+<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
+<li>怎么设置环境变量：<blockquote>
+<ul>
+<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
+<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+</ul>
+</blockquote>
+</li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
+</ol>
+<h4 id="2-Linux下安装"><a href="#2-Linux下安装" class="headerlink" title="2. Linux下安装"></a>2. Linux下安装</h4><center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>Lammps</category>
+        <category>Install</category>
+      </categories>
+      <tags>
+        <tag>lammps install</tag>
       </tags>
   </entry>
   <entry>
