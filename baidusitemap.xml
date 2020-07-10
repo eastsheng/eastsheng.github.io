@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eastsheng.ink/Computer/Linux/LinuxCommand/</loc>
+    <lastmod>2020-07-10</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/Computer/Windows/mklink/</loc>
+    <lastmod>2020-07-10</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/Computer/Windows/Problems/</loc>
+    <lastmod>2020-07-10</lastmod>
+  </url>  <url>
     <loc>https://eastsheng.ink/Lammps/Install/2019-Lammps-install/</loc>
     <lastmod>2020-07-10</lastmod>
   </url>  <url>
@@ -31,9 +40,6 @@
     <loc>https://eastsheng.ink/Lammps/potential/snaperror/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Computer/mklink/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
     <loc>https://eastsheng.ink/Git-Command/git-command/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
@@ -43,19 +49,16 @@
     <loc>https://eastsheng.ink/VScode/Vscode1/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Computer/Problems/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
     <loc>https://eastsheng.ink/Lammps/Error-summary/Struct-ComeApart/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Lammps/potential/Lammpsinput/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Hexo/Hexo-command/</loc>
+    <loc>https://eastsheng.ink/Hexo/Hexo-icarus/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Hexo/Hexo-icarus/</loc>
+    <loc>https://eastsheng.ink/Hexo/Hexo-command/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Python/Python-2/</loc>
@@ -67,16 +70,16 @@
     <loc>https://eastsheng.ink/Lammps/Bug/2019-Lammps6/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/Lammps/Bug/2019-Lammps4/</loc>
-    <lastmod>2020-07-07</lastmod>
-  </url>  <url>
     <loc>https://eastsheng.ink/Lammps/Error-summary/2019-Lammps5/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/GULP/Run-GULP/2019-GULP-2/</loc>
+    <loc>https://eastsheng.ink/Lammps/Bug/2019-Lammps4/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/</loc>
+    <lastmod>2020-07-07</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.ink/GULP/Run-GULP/2019-GULP-2/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/Fortran/Runtime-error/2019-Fortran-1/</loc>

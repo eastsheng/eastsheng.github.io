@@ -208,6 +208,42 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux Common Commands</title>
+    <url>/Computer/Linux/LinuxCommand/</url>
+    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
+<li>查看空间大小：<code>df -h</code>；</li>
+<li>查看该目录下文件大小：<code>du -sh *</code></li>
+</ol>
+<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
+<li>创建文件夹：<code>mkdir filename</code>；</li>
+<li>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</li>
+<li>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></li>
+<li>删除文件；<code>rm -f filename</code></li>
+<li>删除空文件夹：<code>rmdir foldername</code>；</li>
+<li>删除有文件的文件夹：<code>rm -rf foldername</code>；</li>
+<li>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</li>
+<li>返回上一级目录：<code>cd ..</code>；</li>
+<li>显示当前工作路径：<code>pwd</code>；</li>
+<li>查看当前目录中的文件/文件夹<code>ls</code>；</li>
+</ol>
+<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4><ol>
+<li>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</li>
+<li>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</li>
+</ol>
+<p><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">更多</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>Computer</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hueman主题</title>
     <url>/Hexo/Hexo-hueman/</url>
     <content><![CDATA[<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
@@ -338,7 +374,7 @@
   </entry>
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <url>/Computer/mklink/</url>
+    <url>/Computer/Windows/mklink/</url>
     <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
 <li>目的是要把C盘的一个文件夹链接到E盘，</li>
 <li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
@@ -365,6 +401,7 @@
 </center>]]></content>
       <categories>
         <category>Computer</category>
+        <category>Windows</category>
       </categories>
       <tags>
         <tag>mklink</tag>
@@ -414,13 +451,14 @@
   </entry>
   <entry>
     <title>没有解决的问题</title>
-    <url>/Computer/Problems/</url>
+    <url>/Computer/Windows/Problems/</url>
     <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
         <category>Computer</category>
+        <category>Windows</category>
       </categories>
       <tags>
         <tag>没有解决的问题</tag>

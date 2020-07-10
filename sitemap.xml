@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/Computer/Linux/LinuxCommand/</loc>
+    
+    <lastmod>2020-07-10T12:00:44.333Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Computer/Windows/mklink/</loc>
+    
+    <lastmod>2020-07-10T11:57:40.856Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Computer/Windows/Problems/</loc>
+    
+    <lastmod>2020-07-10T11:19:32.703Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/Lammps/Install/2019-Lammps-install/</loc>
     
     <lastmod>2020-07-10T05:46:31.266Z</lastmod>
@@ -135,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/Computer/mklink/</loc>
-    
-    <lastmod>2020-07-07T05:08:39.472Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.ink/Git-Command/git-delfile/</loc>
     
     <lastmod>2020-07-07T05:08:39.471Z</lastmod>
@@ -159,13 +173,6 @@
     <loc>https://eastsheng.ink/VScode/Vscode1/</loc>
     
     <lastmod>2020-07-07T05:08:39.470Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Computer/Problems/</loc>
-    
-    <lastmod>2020-07-07T05:08:39.469Z</lastmod>
     
   </url>
   

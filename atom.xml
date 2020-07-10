@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.ink/"/>
-  <updated>2020-07-07T09:44:16.125Z</updated>
+  <updated>2020-07-10T12:00:44.333Z</updated>
   <id>https://eastsheng.ink/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux Common Commands</title>
+    <link href="https://eastsheng.ink/Computer/Linux/LinuxCommand/"/>
+    <id>https://eastsheng.ink/Computer/Linux/LinuxCommand/</id>
+    <published>2020-07-10T11:20:36.000Z</published>
+    <updated>2020-07-10T12:00:44.333Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol><li>查看空间大小：<code>df -h</code>；</li><li>查看该目录下文件大小：<code>du -sh *</code></li></ol><h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol><li>创建文件夹：<code>mkdir filename</code>；</li><li>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</li><li>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></li><li>删除文件；<code>rm -f filename</code></li><li>删除空文件夹：<code>rmdir foldername</code>；</li><li>删除有文件的文件夹：<code>rm -rf foldername</code>；</li><li>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</li><li>返回上一级目录：<code>cd ..</code>；</li><li>显示当前工作路径：<code>pwd</code>；</li><li>查看当前目录中的文件/文件夹<code>ls</code>；</li></ol><h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4><ol><li>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</li><li>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</li></ol><p><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">更多</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;一、空间&quot;&gt;&lt;a href=&quot;#一、空间&quot; class=&quot;headerlink&quot; title=&quot;一、空间&quot;&gt;&lt;/a&gt;一、空间&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;查看空间大小：&lt;code&gt;df -h&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;查看该目录下文件大小：&lt;code&gt;du 
+      
+    
+    </summary>
+    
+    
+      <category term="Computer" scheme="https://eastsheng.ink/categories/Computer/"/>
+    
+      <category term="Linux" scheme="https://eastsheng.ink/categories/Computer/Linux/"/>
+    
+    
+      <category term="Linux Command" scheme="https://eastsheng.ink/tags/Linux-Command/"/>
+    
+  </entry>
   
   <entry>
     <title>Hueman主题</title>
@@ -125,10 +155,10 @@
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.ink/Computer/mklink/"/>
-    <id>https://eastsheng.ink/Computer/mklink/</id>
+    <link href="https://eastsheng.ink/Computer/Windows/mklink/"/>
+    <id>https://eastsheng.ink/Computer/Windows/mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
-    <updated>2020-07-07T05:08:39.472Z</updated>
+    <updated>2020-07-10T11:57:40.856Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul><li>目的是要把C盘的一个文件夹链接到E盘，</li><li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure><h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径</span><br><span class="line">正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure><h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul><li>因为PowerShell中没有mklink命令</li></ul><h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul><li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure><h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</span><br></pre></td></tr></table></figure><p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -145,6 +175,8 @@
     
     
       <category term="Computer" scheme="https://eastsheng.ink/categories/Computer/"/>
+    
+      <category term="Windows" scheme="https://eastsheng.ink/categories/Computer/Windows/"/>
     
     
       <category term="mklink" scheme="https://eastsheng.ink/tags/mklink/"/>
@@ -205,10 +237,10 @@
   
   <entry>
     <title>没有解决的问题</title>
-    <link href="https://eastsheng.ink/Computer/Problems/"/>
-    <id>https://eastsheng.ink/Computer/Problems/</id>
+    <link href="https://eastsheng.ink/Computer/Windows/Problems/"/>
+    <id>https://eastsheng.ink/Computer/Windows/Problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
-    <updated>2020-07-07T05:08:39.469Z</updated>
+    <updated>2020-07-10T11:19:32.703Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
     
@@ -223,6 +255,8 @@
     
     
       <category term="Computer" scheme="https://eastsheng.ink/categories/Computer/"/>
+    
+      <category term="Windows" scheme="https://eastsheng.ink/categories/Computer/Windows/"/>
     
     
       <category term="没有解决的问题" scheme="https://eastsheng.ink/tags/%E6%B2%A1%E6%9C%89%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/"/>
@@ -548,36 +582,6 @@
     
     
       <category term="Python" scheme="https://eastsheng.ink/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GULP 问题记录</title>
-    <link href="https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/"/>
-    <id>https://eastsheng.ink/GULP/GULP-Problems/2019-GULP-1/</id>
-    <published>2019-12-30T10:40:54.000Z</published>
-    <updated>2020-07-07T05:08:39.441Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li><li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li></ul><h4 id="dispersion-amp-DOS"><a href="#dispersion-amp-DOS" class="headerlink" title="dispersion &amp; DOS"></a>dispersion &amp; DOS</h4><ul><li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li><li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure><ul><li>官网给出的解释是：</li><li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li><li>并不清楚为什么加了这条命令之后DOS为空。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;GULP (General Utility Lattice Program)&lt;a href=&quot;http://gulp.curtin.edu.au/gulp/request.cfm?rel=download&quot;&gt;晶格动力学软件&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在线&lt;a h
-      
-    
-    </summary>
-    
-    
-      <category term="GULP" scheme="https://eastsheng.ink/categories/GULP/"/>
-    
-      <category term="GULP Problems" scheme="https://eastsheng.ink/categories/GULP/GULP-Problems/"/>
-    
-    
-      <category term="GULP Problems" scheme="https://eastsheng.ink/tags/GULP-Problems/"/>
     
   </entry>
   
