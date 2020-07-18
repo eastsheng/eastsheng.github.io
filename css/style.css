@@ -12294,7 +12294,7 @@ article.article .article-meta {
   top: 0;
 }
 body {
-  background: url("https://source.unsplash.com/random/1600x1000?wallpapers");
+  background: url("http://api.mtyqx.cn/api/random.php");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
