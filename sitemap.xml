@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/Git-Command/git-command/</loc>
+    
+    <lastmod>2020-07-18T08:49:29.647Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/photos/index.html</loc>
     
     <lastmod>2020-07-18T08:02:22.807Z</lastmod>
@@ -110,13 +117,6 @@
     <loc>https://eastsheng.ink/Git-Command/git-delfile/</loc>
     
     <lastmod>2020-07-13T14:07:55.174Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Git-Command/git-command/</loc>
-    
-    <lastmod>2020-07-13T14:07:55.155Z</lastmod>
     
   </url>
   
