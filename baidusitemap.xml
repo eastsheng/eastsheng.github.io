@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eastsheng.gitee.io/Hexo/Hexo-command/</loc>
-    <lastmod>2020-07-18</lastmod>
-  </url>  <url>
     <loc>https://eastsheng.gitee.io/%E5%B0%8F%E6%8A%80%E5%B7%A7/sitecollect/</loc>
+    <lastmod>2020-07-19</lastmod>
+  </url>  <url>
+    <loc>https://eastsheng.gitee.io/Hexo/Hexo-command/</loc>
     <lastmod>2020-07-18</lastmod>
   </url>  <url>
     <loc>https://eastsheng.gitee.io/Hexo/Hexo-hueman/</loc>
