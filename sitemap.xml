@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/npm/Npm-1/</loc>
+    
+    <lastmod>2020-07-23T08:02:44.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Git-Command/GitPushError/</loc>
+    
+    <lastmod>2020-07-23T08:02:38.945Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Hexo/Hexo-hueman/</loc>
+    
+    <lastmod>2020-07-23T08:02:33.809Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Computer/Linux/LinuxCommand/</loc>
+    
+    <lastmod>2020-07-23T08:02:26.862Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/%E5%B0%8F%E6%8A%80%E5%B7%A7/sitecollect/</loc>
     
     <lastmod>2020-07-23T03:47:31.533Z</lastmod>
@@ -33,34 +61,6 @@
     <loc>https://eastsheng.ink/photos/index.html</loc>
     
     <lastmod>2020-07-18T12:22:22.999Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Hexo/Hexo-hueman/</loc>
-    
-    <lastmod>2020-07-18T12:09:13.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Computer/Linux/LinuxCommand/</loc>
-    
-    <lastmod>2020-07-18T12:09:08.781Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/npm/Npm-1/</loc>
-    
-    <lastmod>2020-07-18T12:09:03.952Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/Git-Command/GitPushError/</loc>
-    
-    <lastmod>2020-07-18T12:06:33.127Z</lastmod>
     
   </url>
   
