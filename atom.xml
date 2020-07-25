@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.ink/"/>
-  <updated>2020-07-24T13:13:33.073Z</updated>
+  <updated>2020-07-25T15:11:37.892Z</updated>
   <id>https://eastsheng.ink/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Potential errors</title>
+    <link href="https://eastsheng.ink/Lammps/potential/Perror/"/>
+    <id>https://eastsheng.ink/Lammps/potential/Perror/</id>
+    <published>2020-07-25T15:00:15.000Z</published>
+    <updated>2020-07-25T15:11:37.892Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p><ul><li>是由于势函数文件里少了一部分没给出来。</li><li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li><li>但是，如果少给其中一个就会报此错误。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-missing-an-entry&quot;&gt;&lt;a href=&quot;#1-missing-an-entry&quot; class=&quot;headerlink&quot; title=&quot;1. missing an entry&quot;&gt;&lt;/a&gt;&lt;strong&gt;1. missing an entry&lt;/st
+      
+    
+    </summary>
+    
+    
+      <category term="Lammps" scheme="https://eastsheng.ink/categories/Lammps/"/>
+    
+      <category term="potential" scheme="https://eastsheng.ink/categories/Lammps/potential/"/>
+    
+    
+      <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
+    
+      <category term="potential" scheme="https://eastsheng.ink/tags/potential/"/>
+    
+  </entry>
   
   <entry>
     <title>Learning Notes</title>
@@ -560,34 +590,6 @@
     
     
       <category term="Ovito" scheme="https://eastsheng.ink/tags/Ovito/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>控制Tecplot里的原子间距</title>
-    <link href="https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/"/>
-    <id>https://eastsheng.ink/Visualization-Software/Tecplot/Tecplot-1/</id>
-    <published>2020-05-08T11:49:48.000Z</published>
-    <updated>2020-07-13T14:07:55.012Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul><li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  </li></ul><ul><li><p>独立操作x,y,z的Size Factors</p><img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" /></li><li><p>调原子间距效果</p></li></ul><img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" /><h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul><li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li><li>一般这种可视化软件，不应该都在很明显的位置嘛？</li><li>这个就不明显，藏在这里：<table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>View&gt;Rotate</td><td>3D Rotate</td></tr><tr><td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td><td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td></tr></tbody></table></li></ul><h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul><li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li><li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li><li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li></ul><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors&quot;&gt;&lt;a href=&quot;#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors&quot; class=&quot;headerlink&quot; title=&quot;1. Plot&amp;lt;A
-      
-    
-    </summary>
-    
-    
-      <category term="Visualization Software" scheme="https://eastsheng.ink/categories/Visualization-Software/"/>
-    
-      <category term="Tecplot" scheme="https://eastsheng.ink/categories/Visualization-Software/Tecplot/"/>
-    
-    
-      <category term="Tecplot" scheme="https://eastsheng.ink/tags/Tecplot/"/>
     
   </entry>
   
