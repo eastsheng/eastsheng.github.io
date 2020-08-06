@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/Hexo/Hexo-command/</loc>
+    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/sitecollect/</loc>
     
-    <lastmod>2020-08-03T08:12:51.728Z</lastmod>
+    <lastmod>2020-08-06T03:02:33.138Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/sitecollect/</loc>
+    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/Hexo/Hexo-command/</loc>
     
-    <lastmod>2020-08-03T08:11:51.217Z</lastmod>
+    <lastmod>2020-08-03T08:12:51.728Z</lastmod>
     
   </url>
   
@@ -261,14 +261,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
+    <loc>https://eastsheng.ink/categories/index.html</loc>
     
     <lastmod>2020-07-27T12:50:35.933Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/index.html</loc>
+    <loc>https://eastsheng.ink/about/index.html</loc>
     
     <lastmod>2020-07-27T12:50:35.933Z</lastmod>
     
