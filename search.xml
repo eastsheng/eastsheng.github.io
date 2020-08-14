@@ -20,23 +20,20 @@
 <li>一个在线科研分析包网站<a href="https://nanohub.org">nanoHUB</a></li>
 <li>Google<a href="https://translate.google.cn">翻译</a></li>
 <li>Origin简单<a href="https://mp.weixin.qq.com/s/JGi0CbRup6Yv8Dx3pq3l-w">操作</a></li>
-<li><a href="https://www.koushare.com">蔻享</a>,一个前沿科学讲座会议视频网站.</li>
-<li>上交的<a href="http://cms.sjtu.edu.cn">计算材料课程</a></li>
 <li>科研社交朋友圈<a href="https://www.researchgate.net/">researchgate</a></li>
 <li>集合了各种期刊论文的最新动态<a href="https://www.researcher-app.com/">Researcher</a></li>
-<li><a href="https://www.materialscloud.org/work/tools/options">计算工具</a>，自己探索</li>
-<li><a href="https://ecee.colorado.edu/~bart/book/book/title.htm">Principles of Semiconductor Sevices</a>, by Bart Van Zeghbroeck,一本讲半导体设备的在线书籍</li>
+<li><a href="https://www.materialscloud.org/work/tools/options">计算工具</a></li>
 <li><a href="https://github.com/Tingliangstu/Lammps_tools">从UFF获取LJ势</a></li>
 <li><a href="http://muchong.com/bbs/">小木虫</a></li>
 <li><a href="http://www.sciencenet.cn/">科学网</a></li>
 <li><a href="http://bbs.keinsci.com/forum.php">计算化学公社</a></li>
 <li><a href="http://mdbbs.org/">分子模拟论坛</a></li>
-<li><a href="https://scholar.google.com.hk/citations?user=bsOhaEAAAAAJ&hl=zh-CN&oi=ao">Zheyong Fan</a>老师写的MD模拟程序 <strong>GPUMD</strong> <a href="http://gpumd.zheyongfan.org/index.php/Main_Page">在线Manual</a>,源代码<a href="https://github.com/brucefan1983/GPUMD">在这</a>，一本在写的MD模拟教材<a href="http://gpumd.zheyongfan.org/index.php/Molecular_Dynamics_Simulaiton">Molecular Dynamics Simulaiton</a></li>
 </ol>
 <blockquote>
 <p> <strong>学术讲座🎉</strong></p>
 </blockquote>
 <ol>
+<li><a href="https://www.koushare.com">蔻享</a></li>
 <li><a href="https://space.bilibili.com/609834262?spm_id_from=333.788.b_765f7570696e666f.1">微纳传热</a></li>
 <li><a href="https://www.koushare.com/video/videodetail/5710">科技论文写作与投稿审稿经验分享</a></li>
 </ol>
@@ -46,6 +43,12 @@
 <ol>
 <li><a href="http://bolvan.ph.utexas.edu/~vadim/">Dr. Vadim Kaplunovsky</a>，会记录一些关于<code>Supersymmetry, String Theory and String Dualities, Holographic QCD</code>领域的一些知识。</li>
 <li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/index.html">HyperPhysics</a></li>
+<li><a href="https://scc.ustc.edu.cn/zlsc/">中科大超算资料手册</a></li>
+<li><a href="https://www.vasp.at/">VASP</a>，<a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理</a>，<a href="http://sobereva.com/455">vasp安装</a></li>
+<li><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a></li>
+<li>上交的<a href="http://cms.sjtu.edu.cn">计算材料课程</a></li>
+<li><a href="https://ecee.colorado.edu/~bart/book/book/title.htm">Principles of Semiconductor Sevices</a>, by Bart Van Zeghbroeck,一本讲半导体设备的在线书籍</li>
+<li><a href="https://scholar.google.com.hk/citations?user=bsOhaEAAAAAJ&hl=zh-CN&oi=ao">Zheyong Fan</a>老师写的 <strong>GPUMD</strong> <a href="http://gpumd.zheyongfan.org/index.php/Main_Page">在线Manual</a>,源代码<a href="https://github.com/brucefan1983/GPUMD">在这</a>，MD模拟教材<a href="http://gpumd.zheyongfan.org/index.php/Molecular_Dynamics_Simulaiton">Molecular Dynamics Simulaiton</a></li>
 </ol>
 <hr>
 <h3 id="二、程序📃"><a href="#二、程序📃" class="headerlink" title="二、程序📃"></a><strong>二、程序📃</strong></h3><hr>
@@ -188,6 +191,7 @@
 <h4 id="图书馆🏣"><a href="#图书馆🏣" class="headerlink" title="图书馆🏣"></a><strong>图书馆🏣</strong></h4></blockquote>
 <ol>
 <li><a href="https://www.wdl.org/zh/">世界数字图书馆</a></li>
+<li><a href="http://gen.lib.rus.ec/">Library Genesis</a></li>
 </ol>
 <hr>
 <h3 id="十、好玩的网站😀"><a href="#十、好玩的网站😀" class="headerlink" title="十、好玩的网站😀"></a><strong>十、好玩的网站😀</strong></h3><hr>
@@ -225,7 +229,7 @@
 <blockquote>
 <h4 id="好用免费远程控制"><a href="#好用免费远程控制" class="headerlink" title="好用免费远程控制"></a><strong>好用免费远程控制</strong></h4></blockquote>
 <ol>
-<li><a href="https://anydesk.com/zhs">AnyDesk</a>,好像键盘不太灵，而且不能传文件，但是很流畅。</li>
+<li><a href="https://anydesk.com/zhs">AnyDesk</a></li>
 <li><a href="https://sunlogin.oray.com/">向日葵</a></li>
 <li><a href="https://www.todesk.com/">ToDesk</a></li>
 <li><a href="https://www.teamviewer.cn/cn/">TeamViewer</a></li>
