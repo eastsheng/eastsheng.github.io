@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/about/index.html</loc>
+    
+    <lastmod>2020-08-22T03:43:46.773Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/plans/index.html</loc>
+    
+    <lastmod>2020-08-20T04:16:27.251Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/Learning-Notes/2020/Notes/</loc>
     
     <lastmod>2020-08-19T16:13:08.205Z</lastmod>
@@ -16,23 +30,9 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
-    
-    <lastmod>2020-08-17T03:10:42.101Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.ink/photos/index.html</loc>
     
     <lastmod>2020-08-16T03:41:25.073Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/plans/index.html</loc>
-    
-    <lastmod>2020-08-16T03:29:25.929Z</lastmod>
     
   </url>
   
