@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.ink/"/>
-  <updated>2020-07-30T11:58:44.170Z</updated>
+  <updated>2020-08-27T02:22:41.511Z</updated>
   <id>https://eastsheng.ink/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <link href="https://eastsheng.ink/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/"/>
+    <id>https://eastsheng.ink/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</id>
+    <published>2020-08-27T02:11:06.000Z</published>
+    <updated>2020-08-27T02:22:41.511Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a>1. Code</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from matplotlib.collections import LineCollection</span><br><span class="line"></span><br><span class="line">x &#x3D; np.linspace(0, 2*np.pi, 100)</span><br><span class="line">y &#x3D; np.sin(x)</span><br><span class="line">z &#x3D; np.cos(x)#上色数据</span><br><span class="line"></span><br><span class="line">points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)</span><br><span class="line">segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)</span><br><span class="line"></span><br><span class="line">fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))</span><br><span class="line">fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界</span><br><span class="line"></span><br><span class="line">norm &#x3D; plt.Normalize(min(z),max(z))</span><br><span class="line">lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)</span><br><span class="line">lc.set_array(z)</span><br><span class="line">lc.set_linewidth(2)</span><br><span class="line">line &#x3D; ax.add_collection(lc)</span><br><span class="line">fig.colorbar(line)</span><br><span class="line"></span><br><span class="line">plt.xlim(0,2*np.pi)</span><br><span class="line">plt.ylim(-1,1)</span><br><span class="line">plt.savefig(&#39;fig1.png&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><h4 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a>2. Figure</h4><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" /><h4 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a>3. Ref.</h4><p><a href="https://www.matplotlib.org.cn/">参考</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;1-Code&quot;&gt;&lt;a href=&quot;#1-Code&quot; class=&quot;headerlink&quot; title=&quot;1. Code&quot;&gt;&lt;/a&gt;1. Code&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;g
+      
+    
+    </summary>
+    
+    
+      <category term="编程语言" scheme="https://eastsheng.ink/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="Python" scheme="https://eastsheng.ink/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/"/>
+    
+    
+      <category term="Matlibplot" scheme="https://eastsheng.ink/tags/Matlibplot/"/>
+    
+  </entry>
   
   <entry>
     <title>Potential errors</title>
@@ -587,35 +615,6 @@
     
     
       <category term="Hexo command" scheme="https://eastsheng.ink/tags/Hexo-command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ovito</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/Ovito/Ovito/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/Ovito/Ovito/</id>
-    <published>2020-05-09T11:49:48.000Z</published>
-    <updated>2020-07-30T12:01:45.457Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul><li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li></ul><img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" /><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;1-去掉盒子&quot;&gt;&lt;a href=&quot;#1-去掉盒子&quot; class=&quot;headerlink&quot; title=&quot;1. 去掉盒子&quot;&gt;&lt;/a&gt;1. 去掉盒子&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;直接把&lt;code&gt;Display&lt;/code&gt;下的&lt;code&gt;Simulation Cell
-      
-    
-    </summary>
-    
-    
-      <category term="科研软件" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/"/>
-    
-      <category term="Ovito" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/Ovito/"/>
-    
-    
-      <category term="Ovito" scheme="https://eastsheng.ink/tags/Ovito/"/>
     
   </entry>
   
