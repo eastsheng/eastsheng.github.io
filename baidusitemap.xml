@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/Computer/Linux/LinuxCommand/</loc>
+    <lastmod>2020-09-09</lastmod>
+  </url>  <url>
     <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/sitecollect/</loc>
     <lastmod>2020-09-06</lastmod>
   </url>  <url>
@@ -41,9 +44,6 @@
     <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/Hexo/Hexo-hueman/</loc>
-    <lastmod>2020-08-03</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/%E5%85%B6%E4%BB%96/Computer/Linux/LinuxCommand/</loc>
     <lastmod>2020-08-03</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E8%BD%AF%E4%BB%B6/Origin/Origin-1/</loc>
