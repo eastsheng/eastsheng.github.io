@@ -1005,6 +1005,9 @@
 <li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
 <li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
 </ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+</ol>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
