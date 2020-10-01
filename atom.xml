@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.ink/"/>
-  <updated>2020-08-27T02:36:44.158Z</updated>
+  <updated>2020-10-01T02:37:31.144Z</updated>
   <id>https://eastsheng.ink/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LINUX系统安装FFTW数学库</title>
+    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Install/fftw/"/>
+    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Install/fftw/</id>
+    <published>2020-10-01T02:22:58.000Z</published>
+    <updated>2020-10-01T02:37:31.144Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li><li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li><li>配置<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure></li><li>重新编译<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure></li></ol><p>参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;官网下载(&lt;a href=&quot;http://www.fftw.org/download.html&quot;&gt;http://www.fftw.org/download.html&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;解压并cd到该文件夹&lt;br&gt;&lt;code&gt;tar zxvf fftw-
+      
+    
+    </summary>
+    
+    
+      <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="Install" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Install/"/>
+    
+    
+      <category term="FFTW" scheme="https://eastsheng.ink/tags/FFTW/"/>
+    
+  </entry>
   
   <entry>
     <title>通过 Matlibplot 给曲线自定义绘色</title>
@@ -575,34 +605,6 @@
       <category term="snap" scheme="https://eastsheng.ink/tags/snap/"/>
     
       <category term="potential" scheme="https://eastsheng.ink/tags/potential/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-command/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-command/</id>
-    <published>2020-06-17T16:00:00.000Z</published>
-    <updated>2020-10-01T02:08:03.897Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><p><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a><br><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a><br><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a><br><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a><br><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;1-Create-a-new-post&quot;&gt;&lt;a href=&quot;#1-Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;1. Create a new post&quot;&gt;&lt;/a&gt;1. Create a new post&lt;/h3&gt;&lt;fi
-      
-    
-    </summary>
-    
-    
-      <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
-    
-      <category term="Hexo" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Hexo/"/>
-    
-    
-      <category term="Hexo command" scheme="https://eastsheng.ink/tags/Hexo-command/"/>
     
   </entry>
   

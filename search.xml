@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>LINUX系统安装FFTW数学库</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Install/fftw/</url>
+    <content><![CDATA[<ol>
+<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
+<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
+<li>配置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure></li>
+<li>重新编译<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Install</category>
+      </categories>
+      <tags>
+        <tag>FFTW</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通过 Matlibplot 给曲线自定义绘色</title>
     <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</url>
     <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from matplotlib.collections import LineCollection</span><br><span class="line"></span><br><span class="line">x &#x3D; np.linspace(0, 2*np.pi, 100)</span><br><span class="line">y &#x3D; np.sin(x)</span><br><span class="line">z &#x3D; np.cos(x)#上色数据</span><br><span class="line"></span><br><span class="line">points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)</span><br><span class="line">segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)</span><br><span class="line"></span><br><span class="line">fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))</span><br><span class="line">fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界</span><br><span class="line"></span><br><span class="line">norm &#x3D; plt.Normalize(min(z),max(z))</span><br><span class="line">lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)</span><br><span class="line">lc.set_array(z)</span><br><span class="line">lc.set_linewidth(2)</span><br><span class="line">line &#x3D; ax.add_collection(lc)</span><br><span class="line">fig.colorbar(line)</span><br><span class="line"></span><br><span class="line">plt.xlim(0,2*np.pi)</span><br><span class="line">plt.ylim(-1,1)</span><br><span class="line">plt.savefig(&#39;fig1.png&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
