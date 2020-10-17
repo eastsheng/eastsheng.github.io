@@ -478,9 +478,10 @@
       </tags>
   </entry>
   <entry>
-    <title>没有解决的问题</title>
-    <url>/%E6%9D%82%E8%B0%88/Windows/Problems/</url>
+    <title>Windows相关</title>
+    <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
     <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
