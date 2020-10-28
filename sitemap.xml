@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/about/index.html</loc>
+    
+    <lastmod>2020-10-28T03:58:13.665Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</loc>
     
     <lastmod>2020-10-28T03:50:11.682Z</lastmod>
@@ -215,13 +222,6 @@
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Ovito/Ovito/</loc>
     
     <lastmod>2020-10-01T02:02:20.623Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
-    
-    <lastmod>2020-09-22T02:59:12.948Z</lastmod>
     
   </url>
   
