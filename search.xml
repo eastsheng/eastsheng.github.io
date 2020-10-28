@@ -100,6 +100,7 @@
 <ol>
 <li><a href="http://learnenglish.britishcouncil.org">BritishCouncil</a></li>
 <li><a href="https://aimwriting.mtutor.engkoo.com">微软小英写作</a></li>
+<li><a href="http://www.phrasebank.manchester.ac.uk/">Academic prasebank</a></li>
 </ol>
 <hr>
 <h3 id="四、软件合集🈴"><a href="#四、软件合集🈴" class="headerlink" title="四、软件合集🈴"></a><strong>四、软件合集🈴</strong></h3><hr>
@@ -249,6 +250,31 @@
       </categories>
       <tags>
         <tag>实用网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>gpumd-1</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</url>
+    <content><![CDATA[<h3 id="GPUMD"><a href="#GPUMD" class="headerlink" title="GPUMD"></a>GPUMD</h3><h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- line0:N M cutoff 0 has_velocity number_of_grouping_methods</span><br><span class="line">N(原子数) </span><br><span class="line">M(最大近邻原子数) </span><br><span class="line">cutoff(构建neighbor list的时候的初始截断距离) </span><br><span class="line">0(0&#x3D;正交盒子，1&#x3D;三斜盒子) </span><br><span class="line">has_velocity(0&#x3D;不包含，1&#x3D;包含初始速度) </span><br><span class="line">number_of_grouping_methods(0或正整数)</span><br><span class="line"></span><br><span class="line">- line1(正交盒子):pbc_x pbc_y pbc_z L_x L_y L_z</span><br><span class="line">pbc_x pbc_y pbc_z(边界条件，1&#x3D;周期性边界条件，0&#x3D;自由边界条件)</span><br><span class="line">L_x L_y L_z(初始尺寸)</span><br><span class="line">- line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z</span><br><span class="line">pbc_a pbc_b pbc_c(边界条件，1&#x3D;周期性边界条件，0&#x3D;自由边界条件)</span><br><span class="line">a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</span><br><span class="line"></span><br><span class="line">- line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]...</span><br><span class="line">t0(原子类型)</span><br><span class="line">x0 y0 z0(0原子的坐标)</span><br><span class="line">m0(0原子的质量)</span><br><span class="line">[vx0] [vy0] [vz0](如果has_velocity&#x3D;1，0原子的速度分量)</span><br><span class="line">[group0_0] [group1_0] [group2_0](如果number_of_grouping_methods&gt;0,group1_0表示0原子被分到第1组)</span><br></pre></td></tr></table></figure>
+
+<h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
+<li>Input Error:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GPUMD</category>
+      </categories>
+      <tags>
+        <tag>GPUMD</tag>
       </tags>
   </entry>
   <entry>
@@ -454,7 +480,15 @@
 </li>
 <li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
 </li>
+<li><p>top命令</p>
+</li>
 </ol>
+<ul>
+<li>Linux查看cpu总数，在top后的界面按1，or<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;proc&#x2F;cpuinfo | grep processor</span><br></pre></td></tr></table></figure></li>
+<li>查看进程绝对路径<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">top c</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
 <h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4><ol>
 <li><p>CUDA driver version is insufficient for CUDA runtime version</p>
 <blockquote>
@@ -484,7 +518,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">matlab -nodesktop -nosplash -r matlabfile(parameters)</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li></li>
+<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
 </ol>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
@@ -877,7 +911,14 @@
   <entry>
     <title>Git Command-branch</title>
     <url>/%E6%9D%82%E8%B0%88/Git-Command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
@@ -1079,7 +1120,9 @@
 <li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
 <li>numpy求平均<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
 <li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure>
+<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
+<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
+
 
 </li>
 </ol>
@@ -1332,6 +1375,9 @@
 
 <ul>
 <li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
 </ul>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
