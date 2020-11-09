@@ -394,7 +394,7 @@
 </blockquote>
 </li>
 </ol>
-<h2 id="2020-08"><a href="#2020-08" class="headerlink" title="2020-08"></a><strong>2020-08</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
+<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
 <ol>
 <li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
 <blockquote>
@@ -422,8 +422,16 @@
 <li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
 </li>
 </ol>
+<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
+<ol>
+<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
+<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
+</ol>
 <h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
 <li>Bohr=0.52917706 angstrom</li>
+</ol>
+<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
+<li>The dominant width of phonon wave-packets is also called coherent length.</li>
 </ol>
 ]]></content>
       <categories>
@@ -961,8 +969,8 @@
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>snap</tag>
         <tag>potential</tag>
+        <tag>snap</tag>
       </tags>
   </entry>
   <entry>
@@ -1013,8 +1021,8 @@
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>snap</tag>
         <tag>potential</tag>
+        <tag>snap</tag>
       </tags>
   </entry>
   <entry>
