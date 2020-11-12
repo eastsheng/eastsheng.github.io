@@ -1411,10 +1411,10 @@
       </tags>
   </entry>
   <entry>
-    <title>诡异之---Lammps输入文件中变量k</title>
+    <title>Lammps输入文件中变量k</title>
     <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps4/</url>
     <content><![CDATA[<p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
-<h4 id="为什么说它诡异呢？"><a href="#为什么说它诡异呢？" class="headerlink" title="为什么说它诡异呢？"></a>为什么说它诡异呢？</h4><ol>
+<h4 id="问题？"><a href="#问题？" class="headerlink" title="问题？"></a>问题？</h4><ol>
 <li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure>
@@ -1425,6 +1425,7 @@
 <li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
 <li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
 </ol>
+<h4 id="已解决"><a href="#已解决" class="headerlink" title="已解决"></a>已解决</h4><p>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1</code>即可 </p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
@@ -1435,7 +1436,6 @@
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>诡异</tag>
       </tags>
   </entry>
   <entry>
