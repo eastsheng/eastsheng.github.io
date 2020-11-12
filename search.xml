@@ -1425,7 +1425,7 @@
 <li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
 <li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
 </ol>
-<h4 id="已解决"><a href="#已解决" class="headerlink" title="已解决"></a>已解决</h4><p>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1</code>即可 </p>
+<h4 id="已解决"><a href="#已解决" class="headerlink" title="已解决"></a>已解决</h4><p>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
