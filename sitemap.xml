@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</loc>
+    
+    <lastmod>2020-11-13T11:08:24.724Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/Learning-Notes/2020/EnglishNote/</loc>
     
     <lastmod>2020-11-13T08:42:43.116Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</loc>
     
     <lastmod>2020-10-28T03:50:11.682Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</loc>
-    
-    <lastmod>2020-10-28T03:41:22.403Z</lastmod>
     
   </url>
   
