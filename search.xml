@@ -503,7 +503,9 @@
 
 </li>
 </ol>
+<blockquote>
 <p>5.1 具体操作：</p>
+</blockquote>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;profile</span><br><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</span><br><span class="line">Esc（键盘）</span><br><span class="line">:wq 或（快捷键）shift+ZZ 保存并退出；</span><br><span class="line">:q 不保存退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">source &#x2F;etc&#x2F;profile(使生效)</span><br></pre></td></tr></table></figure>
 <ol start="6">
 <li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
