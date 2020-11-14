@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/</loc>
+    
+    <lastmod>2020-11-14T03:24:57.910Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</loc>
     
     <lastmod>2020-11-13T11:18:51.711Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-11-09T03:04:20.075Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/</loc>
-    
-    <lastmod>2020-11-03T14:34:55.033Z</lastmod>
     
   </url>
   
