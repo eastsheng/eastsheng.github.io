@@ -459,8 +459,10 @@
 </li>
 <li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
 <li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in</li>
-<li>会得到xxx.fcs和xxx.xml,</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
 </ul>
 ]]></content>
       <categories>
