@@ -440,8 +440,19 @@
 <li>Bohr=0.52917706 angstrom</li>
 </ol>
 <h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
-<li>The dominant width of phonon wave-packets is also called coherent length.<h3 id="11-13"><a href="#11-13" class="headerlink" title="11-13"></a><strong>11-13</strong></h3></li>
+<li>The dominant width of phonon wave-packets is also called coherent length.<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3></li>
 </ol>
+<p><strong>用LAMMPS的data，alamode</strong></p>
+<blockquote>
+<ol>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code></li>
+<li>用alamode自带的displace.py，生成harm.lammps和cubic.lammps </li>
+<li>用脚本运行lammps,in.sw,使harm.lammps和cubic.lammps 分别生成XFSET.harm和XFSET.cubic</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in</li>
+<li>会得到xxx.fcs和xxx.xml,</li>
+</ol>
+</blockquote>
 ]]></content>
       <categories>
         <category>Learning Notes</category>
