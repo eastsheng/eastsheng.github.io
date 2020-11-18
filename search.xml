@@ -442,17 +442,26 @@
 <h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
 <li>The dominant width of phonon wave-packets is also called coherent length.</li>
 </ol>
-<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>用LAMMPS的data，alamode</strong></p>
-<blockquote>
+<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
+<ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
 <ol>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code></li>
-<li>用alamode自带的displace.py，生成harm.lammps和cubic.lammps </li>
-<li>用脚本运行lammps,in.sw,使harm.lammps和cubic.lammps 分别生成XFSET.harm和XFSET.cubic</li>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
 <li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
 <li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in</li>
 <li>会得到xxx.fcs和xxx.xml,</li>
-</ol>
-</blockquote>
+</ul>
 ]]></content>
       <categories>
         <category>Learning Notes</category>
