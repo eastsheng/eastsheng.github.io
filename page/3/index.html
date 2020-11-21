@@ -538,7 +538,7 @@
 <li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
 <li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
 </ol>
-<p>** 已解决**<br>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</p>
+<p><strong>已解决</strong><br>**把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</p>
 <h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
 
 <p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
