@@ -516,15 +516,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux Common Commands</title>
-    <url>/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-
-<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
+    <title>Linux 汇总</title>
+    <url>/%E6%9D%82%E8%B0%88/Linux/Linux-1/</url>
+    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
 <li>查看空间大小：<code>df -h</code>；</li>
 <li>查看该目录下文件大小：<code>du -sh *</code></li>
 </ol>
@@ -602,8 +596,8 @@
 <li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt</code><br><code>nvcc -V</code></p>
 </li>
 </ol>
-<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a>1. alamode安装参考</h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a>2. linux安装MATLAB步骤参考</h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
+<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
 <blockquote>
 <p>在linux启动和终止matlab</p>
 </blockquote>
@@ -612,7 +606,7 @@
 <ol start="3">
 <li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
 </ol>
-<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a>3. LINUX系统安装FFTW数学库</h5><ol>
+<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
 <li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
 <li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
 <li>配置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure></li>
@@ -621,6 +615,8 @@
 </li>
 </ol>
 <p>参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></p>
+<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
@@ -1656,13 +1652,20 @@
       </tags>
   </entry>
   <entry>
-    <title>GULP 问题记录</title>
+    <title>GULP 汇总</title>
     <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</url>
     <content><![CDATA[<ul>
 <li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
 <li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
 </ul>
-<h4 id="dispersion-amp-DOS"><a href="#dispersion-amp-DOS" class="headerlink" title="dispersion &amp; DOS"></a>dispersion &amp; DOS</h4><ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
 <li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
 <li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
 </ul>
@@ -1681,124 +1684,7 @@
         <category>GULP</category>
       </categories>
       <tags>
-        <tag>GULP Problems</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Lammps安装</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps_install/</url>
-    <content><![CDATA[<h4 id="1-Windows下安装"><a href="#1-Windows下安装" class="headerlink" title="1. Windows下安装"></a>1. Windows下安装</h4><ol>
-<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
-<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
-<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
-<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
-<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
-<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
-<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
-<li>怎么设置环境变量：<blockquote>
-<ul>
-<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
-<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
-</ul>
-</blockquote>
-</li>
-<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
-</ol>
-<h4 id="2-Linux下安装"><a href="#2-Linux下安装" class="headerlink" title="2. Linux下安装"></a>2. Linux下安装</h4><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
-<p><strong>ALMODE</strong><br>参考:<a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps install</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>诡异之---温度分层多出一层</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps6/</url>
-    <content><![CDATA[<h4 id="1-温度分层多出一层"><a href="#1-温度分层多出一层" class="headerlink" title="1. 温度分层多出一层"></a>1. 温度分层多出一层</h4><ul>
-<li>正如题目所说的一样，有些诡异。</li>
-</ul>
-<ol>
-<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
-<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
-<li>比如，分了120层，输出的结果有121层；</li>
-<li>但是，有些就很正常，比如分了200层；</li>
-</ol>
-<h4 id="2-猜测的原因"><a href="#2-猜测的原因" class="headerlink" title="2. 猜测的原因"></a>2. 猜测的原因</h4><ul>
-<li>是边边上有多余的部分没有被分到？自动分了？</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>诡异</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>这些错误实属粗心大意-放在这警示自己</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps5/</url>
-    <content><![CDATA[<h4 id="1-data文件格式问题"><a href="#1-data文件格式问题" class="headerlink" title="1. data文件格式问题"></a>1. data文件格式问题</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
-
-<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="2-NPT时，系统的边界条件必须为周期性边界条件"><a href="#2-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="2. NPT时，系统的边界条件必须为周期性边界条件"></a>2. NPT时，系统的边界条件必须为周期性边界条件</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">boundary	p p p</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-Nose-Hoover"><a href="#3-Nose-Hoover" class="headerlink" title="3. Nose-Hoover"></a>3. Nose-Hoover</h4><ul>
-<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
-<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
-<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
-</ul>
-<h4 id="4-区域分组：group"><a href="#4-区域分组：group" class="headerlink" title="4. 区域分组：group"></a>4. 区域分组：group</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">group	g_ID	region	reg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure>
-<ul>
-<li>所分的组的个数不能大于32个。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Run GULP Command</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-2/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="Run-GULP-Command"><a href="#Run-GULP-Command" class="headerlink" title="Run GULP Command"></a>Run GULP Command</h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
-
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
-      </categories>
-      <tags>
-        <tag>Run GULP Command</tag>
+        <tag>GULP</tag>
       </tags>
   </entry>
   <entry>
@@ -1830,10 +1716,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Lammps输入文件中变量k</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps4/</url>
-    <content><![CDATA[<p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
-<h4 id="问题？"><a href="#问题？" class="headerlink" title="问题？"></a>问题？</h4><ol>
+    <title>Lammps 汇总</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-1/</url>
+    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
+<li>Windows下安装</li>
+</ul>
+<ol>
+<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
+<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
+<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
+<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
+<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
+<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
+<li>怎么设置环境变量：<blockquote>
+<ul>
+<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
+<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+</ul>
+</blockquote>
+</li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
+</ol>
+<ul>
+<li>Linux下安装</li>
+</ul>
+<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
+<p> <strong>问题？</strong></p>
+<ol>
 <li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure>
@@ -1844,7 +1755,31 @@
 <li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
 <li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
 </ol>
-<h4 id="已解决"><a href="#已解决" class="headerlink" title="已解决"></a>已解决</h4><p>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</p>
+<p>** 已解决**<br>** 把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</p>
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
+
+<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">boundary	p p p</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
+<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
+<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
+<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
+</ul>
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">group	g_ID	region	reg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure>
+<ul>
+<li>所分的组的个数不能大于32个。</li>
+</ul>
+<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
+<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
+<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
+<li>比如，分了120层，输出的结果有121层；</li>
+<li>但是，有些就很正常，比如分了200层；</li>
+<li>猜测的原因</li>
+</ol>
+<ul>
+<li>是边边上有多余的部分没有被分到？自动分了？</li>
+</ul>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>
