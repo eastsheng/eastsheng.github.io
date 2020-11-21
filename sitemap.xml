@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://eastsheng.ink/Learning-Notes/2020/Notes/</loc>
+    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</loc>
     
-    <lastmod>2020-11-18T08:45:21.828Z</lastmod>
+    <lastmod>2020-11-21T15:13:12.433Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</loc>
+    
+    <lastmod>2020-11-21T15:11:58.399Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/</loc>
     
-    <lastmod>2020-11-18T04:39:03.762Z</lastmod>
+    <lastmod>2020-11-21T15:06:25.760Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/Learning-Notes/2020/Notes/</loc>
+    
+    <lastmod>2020-11-18T08:45:21.828Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>https://eastsheng.ink/plans/index.html</loc>
     
     <lastmod>2020-11-15T13:15:19.987Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/LinuxCommand/</loc>
-    
-    <lastmod>2020-11-13T11:18:51.711Z</lastmod>
     
   </url>
   

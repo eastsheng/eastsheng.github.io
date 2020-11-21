@@ -32,6 +32,7 @@
 <li><a href="https://share.zjuqsc.com/">Share.学习交流平台</a></li>
 <li><a href="https://www.qsc.zju.edu.cn/box/">求是潮云U盘</a></li>
 <li><a href="https://www.materialscloud.org/work/tools/seekpath">SeekPath</a></li>
+<li><a href="http://qchem.pw/">量子化学软件中文网</a></li>
 </ol>
 <blockquote>
 <p> <strong>学术讲座🎉</strong></p>
@@ -262,6 +263,71 @@
       </categories>
       <tags>
         <tag>实用网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>alamode-1</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</url>
+    <content><![CDATA[<h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a>1. alamode安装参考</h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<p>Alamode 运行</p>
+<ul>
+<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
+<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
+</blockquote>
+</li>
+<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
+<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
+</blockquote>
+</li>
+<li>plot</li>
+</ul>
+<h3 id="2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："><a href="#2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：" class="headerlink" title="2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："></a>2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：</h3><ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm（XFSET.cubic）提取到DESET_harmonic（DFSET_cubic）中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<p><strong>注意：</strong></p>
+<ul>
+<li>cutoff 的值可以从log中查看</li>
+</ul>
+<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a>3. Alamode在训练的时候出现的错误：</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terminate called after throwing an instance of &#39;std::bad_alloc&#39;</span><br><span class="line">  what():  std::bad_alloc</span><br><span class="line">Aborted (core dumped)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol>
+<li>主要是由于运行内存不足；</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>总结两种原因，一种是运行的task太多导致，另一种是一个task的数据量太大了（比如这里选的截断半径太大）</li>
+</ol>
+</li>
+</ul>
+<h3 id="4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候Fitting error (%) : 100,找不到原因"></a>4. Alamode中拟合力常数的时候<code>Fitting error (%) : 100</code>,找不到原因</h3><ul>
+<li>截断半径的原因？怎么设置cutoff?</li>
+<li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Alamode</category>
+      </categories>
+      <tags>
+        <tag>Alamode</tag>
       </tags>
   </entry>
   <entry>
@@ -561,18 +627,6 @@
 </li>
 </ol>
 <h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a>1. alamode安装参考</h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<p>Alamode 运行</p>
-<ul>
-<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
-<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
-</blockquote>
-</li>
-<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
-<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
-</blockquote>
-</li>
-<li>plot</li>
-</ul>
 <h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a>2. linux安装MATLAB步骤参考</h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
 <blockquote>
 <p>在linux启动和终止matlab</p>
