@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</loc>
+    <lastmod>2020-11-21</lastmod>
+  </url>  <url>
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-1/</loc>
     <lastmod>2020-11-21</lastmod>
   </url>  <url>
@@ -37,13 +40,7 @@
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</loc>
     <lastmod>2020-10-17</lastmod>
   </url>  <url>
-    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammpsinput/</loc>
-    <lastmod>2020-10-01</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/snaperror/</loc>
-    <lastmod>2020-10-01</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Perror/</loc>
+    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</loc>
     <lastmod>2020-10-01</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-hueman/</loc>
@@ -68,9 +65,6 @@
     <lastmod>2020-10-01</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Vscode1/</loc>
-    <lastmod>2020-10-01</lastmod>
-  </url>  <url>
-    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Struct-ComeApart/</loc>
     <lastmod>2020-10-01</lastmod>
   </url>  <url>
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</loc>

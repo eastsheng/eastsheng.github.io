@@ -385,7 +385,7 @@
   </entry>
   <entry>
     <title>Potential errors</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Perror/</url>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</url>
     <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
 <ul>
 <li>是由于势函数文件里少了一部分没给出来。</li>
@@ -877,27 +877,6 @@
       </tags>
   </entry>
   <entry>
-    <title>跑MD结构散了</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Struct-ComeApart/</url>
-    <content><![CDATA[<h4 id="跑MD结构结构散了，常见原因总结："><a href="#跑MD结构结构散了，常见原因总结：" class="headerlink" title="跑MD结构结构散了，常见原因总结："></a>跑MD结构结构散了，常见原因总结：</h4><h6 id="1-势函数的问题，调研一下该势函数是否有人模拟过成果过。"><a href="#1-势函数的问题，调研一下该势函数是否有人模拟过成果过。" class="headerlink" title="1. 势函数的问题，调研一下该势函数是否有人模拟过成果过。"></a>1. 势函数的问题，调研一下该势函数是否有人模拟过成果过。</h6><h6 id="2-原子结构不稳定导致的，例如："><a href="#2-原子结构不稳定导致的，例如：" class="headerlink" title="2. 原子结构不稳定导致的，例如："></a>2. 原子结构不稳定导致的，例如：</h6><ul>
-<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
-<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
-</ul>
-<h6 id="3-势参数设置出错，例如："><a href="#3-势参数设置出错，例如：" class="headerlink" title="3. 势参数设置出错，例如："></a>3. 势参数设置出错，例如：</h6><ul>
-<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
-</ul>
-<h6 id="3-是否有足够的真空层"><a href="#3-是否有足够的真空层" class="headerlink" title="3. 是否有足够的真空层"></a>3. 是否有足够的真空层</h6><center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Origin Integrate</title>
     <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</url>
     <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
@@ -1029,32 +1008,10 @@
       </tags>
   </entry>
   <entry>
-    <title>snap使用常见错误解决方法</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/snaperror/</url>
-    <content><![CDATA[<h3 id="1-cannot-open-SNAP-coefficient-snap"><a href="#1-cannot-open-SNAP-coefficient-snap" class="headerlink" title="1. cannot open SNAP coefficient snap"></a>1. cannot open SNAP coefficient snap</h3><p>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
-<h3 id="2-Incorrect-SNAP-parameter-file"><a href="#2-Incorrect-SNAP-parameter-file" class="headerlink" title="2. Incorrect SNAP parameter file"></a>2. Incorrect SNAP parameter file</h3><p>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>snap</tag>
-        <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>经验势snap的使用</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammpsinput/</url>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</url>
     <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
-<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a>一、栗子</h3><p>官网举的是“磷化铟”的栗子：</p>
+<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
 <ol>
 <li><p>第一行应该很明了了，就是个指定potential的style的。</p>
@@ -1069,7 +1026,7 @@
 
 </li>
 </ol>
-<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a>二、InP.snapcoeff 系数文件</h3><p>文件内容类似：</p>
+<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure>
 <p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
 <ol>
@@ -1077,20 +1034,24 @@
 <li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
 <li>下面的31行就是系数了。</li>
 </ol>
-<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a>补充1</h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
+<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure>
-<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a>三、InP.snapparam 参数文件</h3><p>类似：</p>
+<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure>
 <ol>
 <li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
 <li>其他的为可选项，根据具体情况而定。</li>
 </ol>
-<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a>补充2：</h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
+<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure>
 <p>ps:学习笔记，以供查阅。</p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
+<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a>四、snap使用常见错误解决方法：</h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
+<p>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
+<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -1780,9 +1741,26 @@
 <ul>
 <li>是边边上有多余的部分没有被分到？自动分了？</li>
 </ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
+<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
+<ol>
+<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
+</li>
+<li><p>原子结构不稳定导致的，例如：</p>
+</li>
+</ol>
+<ul>
+<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
+<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
+</ul>
+<ol start="3">
+<li>势参数设置出错，例如：</li>
+</ol>
+<ul>
+<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
+</ul>
+<ol start="4">
+<li>是否有足够的真空层</li>
+</ol>
 ]]></content>
       <categories>
         <category>科研学习</category>
