@@ -91,6 +91,7 @@
 <li><a href="http://www.html580.com/">HTML580</a></li>
 <li><a href="https://wiki.jikexueyuan.com/">极客学院</a></li>
 <li><a href="http://tools.jb51.net/">在线工具1</a>、<a href="https://www.sojson.com/">在线工具2</a></li>
+<li><a href="http://liao.cpython.org/">Python学习园</a></li>
 </ol>
 <blockquote>
 <h4 id="好用编辑器📃"><a href="#好用编辑器📃" class="headerlink" title="好用编辑器📃"></a><strong>好用编辑器📃</strong></h4></blockquote>
@@ -122,6 +123,8 @@
 <li><a href="http://googlehelper.net/">谷歌助手Ghelper</a></li>
 <li><a href="https://www.appinn.com/">小众软件</a></li>
 <li><a href="http://www.carrotchou.blog/">胡萝卜周</a></li>
+<li><a href="https://www.disktool.cn/">分区助手</a></li>
+<li><a href="https://huajiakeji.com/">画夹插件&amp;软件</a></li>
 </ol>
 <hr>
 <h3 id="五、搜索🔍"><a href="#五、搜索🔍" class="headerlink" title="五、搜索🔍"></a><strong>五、搜索🔍</strong></h3><hr>
@@ -136,6 +139,7 @@
 <li><a href="https://gotolink.cn/general">沟渠网</a>，很全的网站导航</li>
 <li><a href="https://www.tianyancha.com/">天眼查</a>, 可以查询是否是虚假企业</li>
 <li><a href="https://search.chongbuluo.com/">虫部落.快搜</a></li>
+<li><a href="https://cloud.tencent.com/developer/article/1471481">以图检索文献</a></li>
 </ol>
 <hr>
 <h3 id="六、Pictures"><a href="#六、Pictures" class="headerlink" title="六、Pictures"></a><strong>六、Pictures</strong></h3><hr>
@@ -159,6 +163,7 @@
 <li><a href="https://simpleicons.org/">Free SVG icons</a></li>
 <li><a href="https://primer.style/">GitHub 网站上用的图标库</a></li>
 <li><a href="http://chuangzaoshi.com/icon/">🍓CaoMei Icon</a></li>
+<li><a href="http://wallls.com/">Wallls</a></li>
 </ol>
 <blockquote>
 <h4 id="图床🛏"><a href="#图床🛏" class="headerlink" title="图床🛏"></a><strong>图床🛏</strong></h4></blockquote>
@@ -202,6 +207,7 @@
 <li><a href="https://www.wdl.org/zh/">世界数字图书馆</a></li>
 <li><a href="http://gen.lib.rus.ec/">Library Genesis</a></li>
 <li><a href="https://www.jiumodiary.com/">鸠摩搜索</a></li>
+<li><a href="http://www.stats.gov.cn/">国家统计局（National Bureau of Statistics）</a></li>
 </ol>
 <hr>
 <h3 id="十、好玩的网站😀"><a href="#十、好玩的网站😀" class="headerlink" title="十、好玩的网站😀"></a><strong>十、好玩的网站😀</strong></h3><hr>
@@ -250,6 +256,14 @@
 <h4 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a><strong>资料库</strong></h4></blockquote>
 <ol>
 <li><a href="http://www.chendandan.ys168.com/">陈蛋蛋的宝藏库</a></li>
+</ol>
+<blockquote>
+<h4 id="论文降重"><a href="#论文降重" class="headerlink" title="论文降重"></a><strong>论文降重</strong></h4></blockquote>
+<ol>
+<li><a href="http://www.cnkis.net/">学术不端网</a></li>
+<li><a href="http://www.papereasy.com/">Papereasy</a></li>
+<li><a href="https://www.beiying.online/">贝影论文修改助手</a></li>
+<li><a href="https://www.bigan.net/">笔杆</a></li>
 </ol>
 <hr>
 <!--访客小地球
@@ -527,7 +541,13 @@
 </ul>
 <ol start="2">
 <li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
+<li>绝热近似（Born-Oppenheimer）：</li>
 </ol>
+<ul>
+<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
+<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
+<li>考虑原子核的运动则不考虑周围电子的分布。</li>
+</ul>
 ]]></content>
       <categories>
         <category>Learning Notes</category>
@@ -886,6 +906,7 @@
     <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
     <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
 <h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
