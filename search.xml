@@ -1,141 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learning Notes</title>
-    <url>/Learning-Notes/2020/Notes/</url>
-    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
-<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
-<blockquote>
-<ul>
-<li>Full width at half maximum (FWHM) equals 2Γ</li>
-<li>τ = 1/2Γ.</li>
-</ul>
-</blockquote>
-</li>
-<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
-</li>
-</ol>
-<ul>
-<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
-<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
-<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
-<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
-</ul>
-<ol start="3">
-<li><strong><a href="https://baike.baidu.com/item/杂化">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
-</ol>
-<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
-<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
-</ol>
-<blockquote>
-<ul>
-<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
-<li>搞不懂啊……</li>
-</ul>
-</blockquote>
-<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
-<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
-<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/费米子">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
-<ul>
-<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
-<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
-<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
-<li>玻色子一般有：光子、</li>
-<li>费米子一般有：电子、中子、质子……</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
-<ol>
-<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
-<blockquote>
-<ul>
-<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
-<li>表述2：第一类永动机是不可能的造成的。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第二定律：</p>
-<blockquote>
-<ul>
-<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
-<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
-</ul>
-</blockquote>
-</li>
-<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
-<blockquote>
-<ul>
-<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
-</li>
-</ol>
-<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
-<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
-<ol>
-<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
-<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
-</ol>
-<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
-<li>Bohr=0.52917706 angstrom</li>
-</ol>
-<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
-<li>The dominant width of phonon wave-packets is also called coherent length.</li>
-</ol>
-<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
-<ul>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
-<ol>
-<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
-<li>其他信息修改参照官网</li>
-</ol>
-</blockquote>
-</li>
-<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
-<ol>
-<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
-</ol>
-</blockquote>
-</li>
-<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
-<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
-<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
-<li>同样获得pdos</li>
-<li>具体参见官网</li>
-</ul>
-<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
-<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
-</ol>
-<ul>
-<li>不同材料的不同phase的稳定性不同；</li>
-<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
-<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
-<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
-</ul>
-<ol start="2">
-<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
-<li>绝热近似（Born-Oppenheimer）：</li>
-</ol>
-<ul>
-<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
-<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
-<li>考虑原子核的运动则不考虑周围电子的分布。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2020</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Learning English Notes</title>
     <url>/Learning-Notes/2020/EnglishNote/</url>
     <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
@@ -561,6 +426,141 @@
       </tags>
   </entry>
   <entry>
+    <title>Learning Notes</title>
+    <url>/Learning-Notes/2020/Notes/</url>
+    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
+<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
+<blockquote>
+<ul>
+<li>Full width at half maximum (FWHM) equals 2Γ</li>
+<li>τ = 1/2Γ.</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
+</li>
+</ol>
+<ul>
+<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
+<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
+<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
+<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
+</ul>
+<ol start="3">
+<li><strong><a href="https://baike.baidu.com/item/杂化">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
+</ol>
+<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
+<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
+</ol>
+<blockquote>
+<ul>
+<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
+<li>搞不懂啊……</li>
+</ul>
+</blockquote>
+<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
+<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
+<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/费米子">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
+<ul>
+<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
+<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
+<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
+<li>玻色子一般有：光子、</li>
+<li>费米子一般有：电子、中子、质子……</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
+<ol>
+<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
+<blockquote>
+<ul>
+<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
+<li>表述2：第一类永动机是不可能的造成的。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第二定律：</p>
+<blockquote>
+<ul>
+<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
+<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
+</ul>
+</blockquote>
+</li>
+<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
+<blockquote>
+<ul>
+<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
+</li>
+</ol>
+<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
+<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
+<ol>
+<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
+<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
+</ol>
+<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
+<li>Bohr=0.52917706 angstrom</li>
+</ol>
+<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
+<li>The dominant width of phonon wave-packets is also called coherent length.</li>
+</ol>
+<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
+<ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
+<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
+</ol>
+<ul>
+<li>不同材料的不同phase的稳定性不同；</li>
+<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
+<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
+<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
+</ul>
+<ol start="2">
+<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
+<li>绝热近似（Born-Oppenheimer）：</li>
+</ol>
+<ul>
+<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
+<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
+<li>考虑原子核的运动则不考虑周围电子的分布。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2020</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>实用网站合集</title>
     <url>/%E6%9D%82%E8%B0%88/sitecollect/</url>
     <content><![CDATA[<div class="notification is-info">
@@ -745,6 +745,7 @@
 <li><a href="https://www.5ifxw.com">我爱分享网</a></li>
 <li><a href="https://edu.aliyun.com/">阿里云大学</a></li>
 <li><a href="https://zhishitu.com/">知识兔</a></li>
+<li><a href="http://www.oioio.pro/">甲骨数字</a></li>
 </ol>
 <hr>
 <h3 id="八、灵异👻"><a href="#八、灵异👻" class="headerlink" title="八、灵异👻"></a><strong>八、灵异👻</strong></h3><hr>
@@ -850,103 +851,43 @@
       </tags>
   </entry>
   <entry>
-    <title>Fortran Runtime error</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Fortran/Fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Fortran runtime error: Bad value during floating point read</span><br><span class="line">$ Fortran runtime error: Bad integer for item 1 in list input</span><br><span class="line">$ Bad real number in item 4 of list input</span><br></pre></td></tr></table></figure>
+    <title>Git Push Everything up-to-date错误</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
 
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
+<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git Push origin master之后</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
+<li>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</li>
+<li>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</li>
+<li>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</li>
 </ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Warning: Extension: REAL array index at (1)</span><br><span class="line">$ Warning: Deleted feature: Loop variable at (1) must be integer</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
+<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3. 解决"></a>3. 解决</h3><ul>
+<li>所以，正确的做法是：</li>
 </ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &#39;your commits&#39;</span><br><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
 
 
-<ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure>
 
 
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
+</center>
+
+
+
+
+
+]]></content>
       <categories>
-        <category>编程语言</category>
-        <category>Python</category>
+        <category>杂谈</category>
+        <category>Git Command</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GULP 汇总</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
-
-
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
-      </categories>
-      <tags>
-        <tag>GULP</tag>
+        <tag>Git Push Everything up-to-date</tag>
       </tags>
   </entry>
   <entry>
@@ -1035,91 +976,17 @@
       </tags>
   </entry>
   <entry>
-    <title>Lammps 汇总</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-1/</url>
-    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
-<li>Windows下安装</li>
-</ul>
-<ol>
-<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
-<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
-<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
-<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
-<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
-<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
-<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
-<li>怎么设置环境变量：<blockquote>
+    <title>Potential errors</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
 <ul>
-<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
-<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
 </ul>
-</blockquote>
-</li>
-<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
-</ol>
-<ul>
-<li>Linux下安装</li>
-</ul>
-<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
-<p> <strong>问题？</strong></p>
-<ol>
-<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
-<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
-<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
-<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
-</ol>
-<p><strong>已解决</strong></p>
-<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
-<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
-
-<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">boundary	p p p</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
-<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
-<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
-<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
-</ul>
-<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">group	g_ID	region	reg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure>
-<ul>
-<li>所分的组的个数不能大于32个。</li>
-</ul>
-<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
-<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
-<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
-<li>比如，分了120层，输出的结果有121层；</li>
-<li>但是，有些就很正常，比如分了200层；</li>
-<li>猜测的原因</li>
-</ol>
-<ul>
-<li>是边边上有多余的部分没有被分到？自动分了？</li>
-</ul>
-<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
-<ol>
-<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
-</li>
-<li><p>原子结构不稳定导致的，例如：</p>
-</li>
-</ol>
-<ul>
-<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
-<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
-</ul>
-<ol start="3">
-<li>势参数设置出错，例如：</li>
-</ol>
-<ul>
-<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
-</ul>
-<ol start="4">
-<li>是否有足够的真空层</li>
-</ol>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -1127,6 +994,7 @@
       </categories>
       <tags>
         <tag>lammps</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -1158,257 +1026,24 @@
       </tags>
   </entry>
   <entry>
-    <title>经验势snap的使用</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</url>
-    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
-<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
-</li>
-<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
-</li>
-<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
-</li>
-<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure>
-<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
-<ol>
-<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
-<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
-<li>下面的31行就是系数了。</li>
-</ol>
-<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure>
-<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure>
-<ol>
-<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
-<li>其他的为可选项，根据具体情况而定。</li>
-</ol>
-<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure>
-<p>ps:学习笔记，以供查阅。</p>
-<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
-<p>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
-<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>snap</tag>
-        <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/%E6%9D%82%E8%B0%88/npm/Npm-1/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
-
-
-<p><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm install ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 画双y轴</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/</url>
-    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
-<li>选中数据并，plot&gt;line 画出图</li>
+    <title>Ovito</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Ovito/Ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
-</tr>
-</tbody></table>
-<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
-<li>如图figure3,可以得到figure4–双y轴</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure3</td>
-<td>figure4</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
-</tr>
-</tbody></table>
-<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
-<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
-<li>调一下格式就可以得到最后的图片</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure5</td>
-<td>figure6</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
-</tr>
-</tbody></table>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+
+
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
         <category>科研学习</category>
-        <category>Origin</category>
+        <category>Ovito</category>
       </categories>
       <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Push Everything up-to-date错误</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git Push origin master之后</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
-<li>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</li>
-<li>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</li>
-<li>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</li>
-</ul>
-<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3. 解决"></a>3. 解决</h3><ul>
-<li>所以，正确的做法是：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &#39;your commits&#39;</span><br><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
-
-
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git Push Everything up-to-date</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Potential errors</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
+        <tag>Ovito</tag>
       </tags>
   </entry>
   <entry>
@@ -1527,24 +1162,66 @@
       </tags>
   </entry>
   <entry>
-    <title>Ovito</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Ovito/Ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+    <title>Origin Integrate</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
 </ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-
-
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
         <category>科研学习</category>
-        <category>Ovito</category>
+        <category>Origin</category>
       </categories>
       <tags>
-        <tag>Ovito</tag>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/%E6%9D%82%E8%B0%88/npm/Npm-1/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+
+
+<p><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm install ERROR</tag>
       </tags>
   </entry>
   <entry>
@@ -1565,6 +1242,272 @@
       </categories>
       <tags>
         <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 画双y轴</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/</url>
+    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
+<li>选中数据并，plot&gt;line 画出图</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
+</tr>
+</tbody></table>
+<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
+<li>如图figure3,可以得到figure4–双y轴</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure3</td>
+<td>figure4</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
+</tr>
+</tbody></table>
+<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
+<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
+<li>调一下格式就可以得到最后的图片</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure5</td>
+<td>figure6</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
+</tr>
+</tbody></table>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode常用快捷键</title>
+    <url>/%E6%9D%82%E8%B0%88/Vscode1/</url>
+    <content><![CDATA[<ol>
+<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
+<li><code>F11</code>全屏模式。</li>
+</ol>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验势snap的使用</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</url>
+    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
+<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
+</li>
+<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
+</li>
+<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
+</li>
+<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure>
+<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
+<ol>
+<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
+<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
+<li>下面的31行就是系数了。</li>
+</ol>
+<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure>
+<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure>
+<ol>
+<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
+<li>其他的为可选项，根据具体情况而定。</li>
+</ol>
+<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure>
+<p>ps:学习笔记，以供查阅。</p>
+<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
+<p>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
+<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
+        <tag>snap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python常用</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
+<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li><p>获得当前文件所在目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure></li>
+<li><p>在当前文件夹生成文件夹，以时间命名</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())</span><br><span class="line">folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())</span><br><span class="line">os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改当前工作路径</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>判断一个路径是否存在</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">print(path_yesno)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取目录中所有文件及文件夹list</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)</span><br><span class="line">print(PATH)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建和删除子目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line">os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line"></span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改文件名</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Fortran/Fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Fortran runtime error: Bad value during floating point read</span><br><span class="line">$ Fortran runtime error: Bad integer for item 1 in list input</span><br><span class="line">$ Bad real number in item 4 of list input</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Warning: Extension: REAL array index at (1)</span><br><span class="line">$ Warning: Deleted feature: Loop variable at (1) must be integer</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-branch</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-command/</url>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git command-branch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>没有解决的问题</tag>
+        <tag>Network Connections</tag>
       </tags>
   </entry>
   <entry>
@@ -1620,115 +1563,6 @@
       </categories>
       <tags>
         <tag>Tecplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode常用快捷键</title>
-    <url>/%E6%9D%82%E8%B0%88/Vscode1/</url>
-    <content><![CDATA[<ol>
-<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
-<li><code>F11</code>全屏模式。</li>
-</ol>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>VScode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python常用</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
-<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li><p>获得当前文件所在目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure></li>
-<li><p>在当前文件夹生成文件夹，以时间命名</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())</span><br><span class="line">folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())</span><br><span class="line">os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改当前工作路径</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>判断一个路径是否存在</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">print(path_yesno)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取目录中所有文件及文件夹list</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)</span><br><span class="line">print(PATH)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建和删除子目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line">os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line"></span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>改文件名</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-branch</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
-<li>可以命令查看用户名：<code>git config user.name</code></li>
-<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
-<li>查看邮箱：<code>git config user.email</code></li>
-<li>查看配置信息：<code>git config --list</code></li>
-<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
-</ul>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git command-branch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows相关</title>
-    <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>没有解决的问题</tag>
-        <tag>Network Connections</tag>
       </tags>
   </entry>
   <entry>
@@ -1797,6 +1631,39 @@
       </tags>
   </entry>
   <entry>
+    <title>GPUMD学习</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</url>
+    <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
+<li><p>line0:N M cutoff 0 has_velocity number_of_grouping_methods<br>N(原子数)<br>M(最大近邻原子数)<br>cutoff(构建neighbor list的时候的初始截断距离)<br>0(0=正交盒子，1=三斜盒子)<br>has_velocity(0=不包含，1=包含初始速度)<br>number_of_grouping_methods(0或正整数)</p>
+</li>
+<li><p>line1(正交盒子):pbc_x pbc_y pbc_z L_x L_y L_z<br>pbc_x pbc_y pbc_z(边界条件，1=周期性边界条件，0=自由边界条件)<br>L_x L_y L_z(初始尺寸)</p>
+</li>
+<li><p>line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z<br>pbc_a pbc_b pbc_c(边界条件，1=周期性边界条件，0=自由边界条件)<br>a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</p>
+</li>
+<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="如果has_velocity=1，0原子的速度分量">vz0</a><br>[group0_0] [group1_0] <a href="如果number_of_grouping_methods>0,group1_0表示0原子被分到第1组">group2_0</a></p>
+</li>
+</ul>
+<h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
+<li>Input Error:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GPUMD</category>
+      </categories>
+      <tags>
+        <tag>GPUMD</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
     <url>/%E6%9D%82%E8%B0%88/Windows/mklink/</url>
     <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
@@ -1832,36 +1699,158 @@
       </tags>
   </entry>
   <entry>
-    <title>GPUMD学习</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</url>
-    <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
-<li><p>line0:N M cutoff 0 has_velocity number_of_grouping_methods<br>N(原子数)<br>M(最大近邻原子数)<br>cutoff(构建neighbor list的时候的初始截断距离)<br>0(0=正交盒子，1=三斜盒子)<br>has_velocity(0=不包含，1=包含初始速度)<br>number_of_grouping_methods(0或正整数)</p>
-</li>
-<li><p>line1(正交盒子):pbc_x pbc_y pbc_z L_x L_y L_z<br>pbc_x pbc_y pbc_z(边界条件，1=周期性边界条件，0=自由边界条件)<br>L_x L_y L_z(初始尺寸)</p>
-</li>
-<li><p>line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z<br>pbc_a pbc_b pbc_c(边界条件，1=周期性边界条件，0=自由边界条件)<br>a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</p>
-</li>
-<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="如果has_velocity=1，0原子的速度分量">vz0</a><br>[group0_0] [group1_0] <a href="如果number_of_grouping_methods>0,group1_0表示0原子被分到第1组">group2_0</a></p>
-</li>
-</ul>
-<h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
-<li>Input Error:</li>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<ol>
+<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
+<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
-</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>然后，在此文件夹里打开cmd，输入：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>最后，安装此模块到本地，输入：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure>
+
+
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
+</center>]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-delete file</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
+
+
+
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git delete file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lammps 汇总</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-1/</url>
+    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
+<li>Windows下安装</li>
+</ul>
+<ol>
+<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
+<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
+<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
+<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
+<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
+<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
+<li>怎么设置环境变量：<blockquote>
+<ul>
+<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
+<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+</ul>
+</blockquote>
+</li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
+</ol>
+<ul>
+<li>Linux下安装</li>
+</ul>
+<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
+<p> <strong>问题？</strong></p>
+<ol>
+<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
+<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
+<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
+<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
+</ol>
+<p><strong>已解决</strong></p>
+<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
+
+<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">boundary	p p p</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
+<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
+<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
+<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
+</ul>
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">group	g_ID	region	reg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure>
+<ul>
+<li>所分的组的个数不能大于32个。</li>
+</ul>
+<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
+<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
+<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
+<li>比如，分了120层，输出的结果有121层；</li>
+<li>但是，有些就很正常，比如分了200层；</li>
+<li>猜测的原因</li>
+</ol>
+<ul>
+<li>是边边上有多余的部分没有被分到？自动分了？</li>
+</ul>
+<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
+<ol>
+<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
+</li>
+<li><p>原子结构不稳定导致的，例如：</p>
+</li>
+</ol>
+<ul>
+<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
+<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
+</ul>
+<ol start="3">
+<li>势参数设置出错，例如：</li>
+</ol>
+<ul>
+<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
+</ul>
+<ol start="4">
+<li>是否有足够的真空层</li>
+</ol>
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>GPUMD</category>
+        <category>Lammps</category>
       </categories>
       <tags>
-        <tag>GPUMD</tag>
+        <tag>lammps</tag>
       </tags>
   </entry>
   <entry>
@@ -1921,27 +1910,39 @@
       </tags>
   </entry>
   <entry>
-    <title>Git Command-delete file</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure>
+    <title>GULP 汇总</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
+</ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
 
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure>
 
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure>
 
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
-
-
-
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+</ul>
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
+        <category>科研学习</category>
+        <category>GULP</category>
       </categories>
       <tags>
-        <tag>Git delete file</tag>
+        <tag>GULP</tag>
       </tags>
   </entry>
 </search>
