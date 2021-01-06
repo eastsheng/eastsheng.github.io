@@ -147,7 +147,7 @@
 <h4 id="字体✍-amp-图片🔗"><a href="#字体✍-amp-图片🔗" class="headerlink" title="字体✍&amp;图片🔗"></a><strong>字体✍&amp;图片🔗</strong></h4></blockquote>
 <ol>
 <li>包含图标、高清图片、字体等<a href="http://sc.chinaz.com">下载</a></li>
-<li><a href="http://www.zitiweb.com">字体网</a></li>
+<li><a href="http://www.zitiweb.com">字体网</a><a href="https://www.100font.com/">免费商用字体</a><a href="https://fonts.safe.360.cn/">360查字体</a></li>
 <li><a href="https://www.asqql.com/">动图基地</a></li>
 <li><a href="https://icon.52112.com/">寻图.标</a></li>
 <li><a href="https://pixabay.com/zh/">免费正版高清图片素材库</a></li>
@@ -276,9 +276,12 @@
 <li><a href="https://bbs.leyuz.net/">乐愚社区</a></li>
 </ol>
 <blockquote>
-<h4 id="Videos"><a href="#Videos" class="headerlink" title="Videos"></a><strong>Videos</strong></h4></blockquote>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a><strong>其他</strong></h4></blockquote>
 <ol>
 <li>[youtube视频下载] (<a href="https://zh.savefrom.net/7/">https://zh.savefrom.net/7/</a>)</li>
+<li><a href="https://taira-komori.jpn.org/freesoundcn.html">小森平的免费下载音效</a></li>
+<li><a href="https://moises.ai/">Moises人工智能分离音乐音轨</a></li>
+<li><a href="https://mixkit.co/">mixkit免费视频,音乐,模板</a></li>
 </ol>
 <hr>
 <!--访客小地球
@@ -295,146 +298,6 @@
       </categories>
       <tags>
         <tag>实用网站</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Alamode</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</url>
-    <content><![CDATA[<h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<p>Alamode 运行</p>
-<ul>
-<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
-<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
-</blockquote>
-</li>
-<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
-<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
-</blockquote>
-</li>
-<li>plot</li>
-</ul>
-<h3 id="2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："><a href="#2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：" class="headerlink" title="2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："></a><strong>2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：</strong></h3><ul>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
-<ol>
-<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
-<li>其他信息修改参照官网</li>
-</ol>
-</blockquote>
-</li>
-<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
-<ol>
-<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
-</ol>
-</blockquote>
-</li>
-<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
-<li>最后使用alamode自带的extract.py，从XFSET.harm（XFSET.cubic）提取到DESET_harmonic（DFSET_cubic）中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
-<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
-<li>同样获得pdos</li>
-<li>具体参见官网</li>
-</ul>
-<p><strong>注意：</strong></p>
-<ul>
-<li>cutoff 的值可以从log中查看</li>
-</ul>
-<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terminate called after throwing an instance of &#39;std::bad_alloc&#39;</span><br><span class="line">  what():  std::bad_alloc</span><br><span class="line">Aborted (core dumped)</span><br></pre></td></tr></table></figure>
-<ul>
-<li><ol>
-<li>主要是由于运行内存不足；</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>总结两种原因，一种是运行的task太多导致，另一种是一个task的数据量太大了（比如这里选的截断半径太大）</li>
-</ol>
-</li>
-</ul>
-<h3 id="4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
-<li>截断半径的原因？怎么设置cutoff?</li>
-<li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Alamode</category>
-      </categories>
-      <tags>
-        <tag>Alamode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GPUMD学习</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</url>
-    <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
-<li><p>line0:N M cutoff 0 has_velocity number_of_grouping_methods<br>N(原子数)<br>M(最大近邻原子数)<br>cutoff(构建neighbor list的时候的初始截断距离)<br>0(0=正交盒子，1=三斜盒子)<br>has_velocity(0=不包含，1=包含初始速度)<br>number_of_grouping_methods(0或正整数)</p>
-</li>
-<li><p>line1(正交盒子):pbc_x pbc_y pbc_z L_x L_y L_z<br>pbc_x pbc_y pbc_z(边界条件，1=周期性边界条件，0=自由边界条件)<br>L_x L_y L_z(初始尺寸)</p>
-</li>
-<li><p>line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z<br>pbc_a pbc_b pbc_c(边界条件，1=周期性边界条件，0=自由边界条件)<br>a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</p>
-</li>
-<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="如果has_velocity=1，0原子的速度分量">vz0</a><br>[group0_0] [group1_0] <a href="如果number_of_grouping_methods>0,group1_0表示0原子被分到第1组">group2_0</a></p>
-</li>
-</ul>
-<h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
-<li>Input Error:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
-<ul>
-<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GPUMD</category>
-      </categories>
-      <tags>
-        <tag>GPUMD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from matplotlib.collections import LineCollection</span><br><span class="line"></span><br><span class="line">x &#x3D; np.linspace(0, 2*np.pi, 100)</span><br><span class="line">y &#x3D; np.sin(x)</span><br><span class="line">z &#x3D; np.cos(x)#上色数据</span><br><span class="line"></span><br><span class="line">points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)</span><br><span class="line">segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)</span><br><span class="line"></span><br><span class="line">fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))</span><br><span class="line">fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界</span><br><span class="line"></span><br><span class="line">norm &#x3D; plt.Normalize(min(z),max(z))</span><br><span class="line">lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)</span><br><span class="line">lc.set_array(z)</span><br><span class="line">lc.set_linewidth(2)</span><br><span class="line">line &#x3D; ax.add_collection(lc)</span><br><span class="line">fig.colorbar(line)</span><br><span class="line"></span><br><span class="line">plt.xlim(0,2*np.pi)</span><br><span class="line">plt.ylim(-1,1)</span><br><span class="line">plt.savefig(&#39;fig1.png&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
-</ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
-
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Potential errors</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -570,766 +433,6 @@
       </categories>
       <tags>
         <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 汇总</title>
-    <url>/%E6%9D%82%E8%B0%88/Linux/Linux-1/</url>
-    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
-<li>查看空间大小：<code>df -h</code>；</li>
-<li>查看该目录下文件大小：<code>du -sh *</code></li>
-</ol>
-<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
-<li><p>创建文件夹：<code>mkdir filename</code>；</p>
-</li>
-<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
-</li>
-<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
-</li>
-<li><p>删除文件；<code>rm -f filename</code></p>
-</li>
-<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
-</li>
-<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
-</li>
-<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
-</li>
-<li><p>返回上一级目录：<code>cd ..</code>；</p>
-</li>
-<li><p>显示当前工作路径：<code>pwd</code>；</p>
-</li>
-<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
-</li>
-<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
-<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
-<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
-</li>
-<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
-</li>
-</ol>
-<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
-<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
-<ol>
-<li><p>删除’/dev/loop0…’文件:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt purge snapd</span><br></pre></td></tr></table></figure></li>
-<li><p>开启ssh:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br><span class="line">service ssh start</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看已设环境变量:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo $PATH</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置临时环境变量:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;...&#x2F;bin:$PATH;export PATH</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件最后加上环境变量: </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<blockquote>
-<p>5.1 具体操作：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;profile</span><br><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</span><br><span class="line">Esc（键盘）</span><br><span class="line">:wq 或（快捷键）shift+ZZ 保存并退出；</span><br><span class="line">:q 不保存退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">source &#x2F;etc&#x2F;profile(使生效)</span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
-</li>
-<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
-</li>
-<li><p>top命令</p>
-</li>
-</ol>
-<ul>
-<li>Linux查看cpu总数，在top后的界面按1，or<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;proc&#x2F;cpuinfo | grep processor</span><br></pre></td></tr></table></figure></li>
-<li>查看进程绝对路径<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">top c</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4><ol>
-<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
-<blockquote>
-<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
-</blockquote>
-</li>
-<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt</code><br><code>nvcc -V</code></p>
-</li>
-</ol>
-<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
-<blockquote>
-<p>在linux启动和终止matlab</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">matlab -nodesktop -nosplash -r matlabfile(parameters)</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
-</ol>
-<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
-<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
-<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
-<li>配置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure></li>
-<li>重新编译<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></p>
-<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux Command</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hueman主题</title>
-    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-hueman/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-
-<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</span><br></pre></td></tr></table></figure>
-<p><strong>注：</strong></p>
-<ul>
-<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
-</ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: hueman</span><br></pre></td></tr></table></figure>
-<p><strong>注：</strong></p>
-<ul>
-<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
-<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
-</ul>
-<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
-<li>第一个坑</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:  </span><br><span class="line">    People: &#x2F;people</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure></li>
-<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
-<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
-</ol>
-<ul>
-<li>第二个坑</li>
-</ul>
-<ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png" alt=""></p>
-</li>
-<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
-</li>
-<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
-</li>
-<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title:  </span><br><span class="line">categories:</span><br><span class="line">- Technology</span><br><span class="line">- Github</span><br></pre></td></tr></table></figure>
-
-<ol start="8">
-<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
-</ol>
-<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
-<ul>
-<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Push Everything up-to-date错误</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git Push origin master之后</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
-<li>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</li>
-<li>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</li>
-<li>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</li>
-</ul>
-<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3. 解决"></a>3. 解决</h3><ul>
-<li>所以，正确的做法是：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &#39;your commits&#39;</span><br><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
-
-
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git Push Everything up-to-date</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/%E6%9D%82%E8%B0%88/npm/Npm-1/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
-
-
-<p><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm install ERROR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode常用快捷键</title>
-    <url>/%E6%9D%82%E8%B0%88/Vscode1/</url>
-    <content><![CDATA[<ol>
-<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
-<li><code>F11</code>全屏模式。</li>
-</ol>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>VScode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无法将“mklink”项识别为 cmdlet</title>
-    <url>/%E6%9D%82%E8%B0%88/Windows/mklink/</url>
-    <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
-<li>目的是要把C盘的一个文件夹链接到E盘，</li>
-<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径</span><br><span class="line">正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
-<li>因为PowerShell中没有mklink命令</li>
-</ul>
-<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
-<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
-
-
-<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</span><br></pre></td></tr></table></figure>
-
-
-<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>mklink</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);</span><br><span class="line"> 	background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">	background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-delete file</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
-
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git delete file</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows相关</title>
-    <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>没有解决的问题</tag>
-        <tag>Network Connections</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 画双y轴</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/</url>
-    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
-<li>选中数据并，plot&gt;line 画出图</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
-</tr>
-</tbody></table>
-<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
-<li>如图figure3,可以得到figure4–双y轴</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure3</td>
-<td>figure4</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
-</tr>
-</tbody></table>
-<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
-<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
-<li>调一下格式就可以得到最后的图片</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure5</td>
-<td>figure6</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
-</tr>
-</tbody></table>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-branch</title>
-    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
-<li>可以命令查看用户名：<code>git config user.name</code></li>
-<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
-<li>查看邮箱：<code>git config user.email</code></li>
-<li>查看配置信息：<code>git config --list</code></li>
-<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
-</ul>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git command-branch</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经验势snap的使用</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</url>
-    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
-<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
-</li>
-<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
-</li>
-<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
-</li>
-<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure>
-<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
-<ol>
-<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
-<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
-<li>下面的31行就是系数了。</li>
-</ol>
-<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure>
-<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure>
-<ol>
-<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
-<li>其他的为可选项，根据具体情况而定。</li>
-</ol>
-<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure>
-<p>ps:学习笔记，以供查阅。</p>
-<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
-<p>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
-<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
-<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
-        <tag>snap</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-command/</url>
-    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><p><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a><br><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a><br><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a><br><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a><br><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></p>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo command</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Ovito/Ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>控制Tecplot里的原子间距</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Tecplot/Tecplot-1/</url>
-    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
-<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
-
-
-</li>
-</ul>
-<ul>
-<li><p>独立操作x,y,z的Size Factors</p>
-<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
-</li>
-<li><p>调原子间距效果</p>
-</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
-
-<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
-<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
-<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
-<li>这个就不明显，藏在这里：<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>View&gt;Rotate</td>
-<td>3D Rotate</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
-<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
-<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
-<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Tecplot</category>
-      </categories>
-      <tags>
-        <tag>Tecplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python常用</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
-<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li><p>获得当前文件所在目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure></li>
-<li><p>在当前文件夹生成文件夹，以时间命名</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())</span><br><span class="line">folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())</span><br><span class="line">os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改当前工作路径</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>判断一个路径是否存在</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">print(path_yesno)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取目录中所有文件及文件夹list</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)</span><br><span class="line">print(PATH)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建和删除子目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line">os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line"></span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>改文件名</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包exe可执行文件</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-2/</url>
-    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
-<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
-</ul>
-<ol>
-<li>安装第三方包pyinstaller</li>
-<li>在cmd命令行输入:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pyinstaller</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br></pre></td></tr></table></figure>
-<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
-<blockquote>
-<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;</span><br><span class="line"> </span><br><span class="line">[install]</span><br><span class="line">trusted-host&#x3D;mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>(5). 然后可以试试快不快</p>
-</blockquote>
-<ol start="4">
-<li>cmd执行：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -F filename.py</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>还可以给程序加个图标：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py</span><br></pre></td></tr></table></figure>
-
-<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -h             为查看help命令</span><br><span class="line">pyinstaller --clean        为清理打包过程中的临时文件</span><br><span class="line">pyinstaller -D,--onedir    为默认值，生成dist文件夹</span><br><span class="line">pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件</span><br><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</span><br></pre></td></tr></table></figure>
-
-<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
-<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#画个太极阴阳鱼</span><br><span class="line">import turtle</span><br><span class="line">turtle.setup(0.5,0.6,0,0)</span><br><span class="line">turtle.speed(10)</span><br><span class="line"># #大圆</span><br><span class="line"># turtle.penup()</span><br><span class="line"># turtle.goto(0,-160)</span><br><span class="line"># turtle.pendown()</span><br><span class="line"># turtle.circle(180)</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,200)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(90,180)</span><br><span class="line">turtle.circle(-90,180)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">#白眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;white&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,80)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#黑眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#太极</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,0)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;太&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,-50)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;极&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(200,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;---2020&#x2F;3&#x2F;17&quot;,font&#x3D;(&quot;方正&quot;,12,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(250,-150)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;sheng&quot;,font&#x3D;(&quot;华文行楷&quot;,12,&quot;normal&quot;))</span><br><span class="line"></span><br><span class="line">turtle.hideturtle()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
-
-
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1758,67 +861,107 @@
       </tags>
   </entry>
   <entry>
-    <title>GULP 汇总</title>
-    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
 
 
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure>
+<ol>
+<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
+<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
-</ul>
-<center class="half">
-<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
-</center>]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
-      </categories>
-      <tags>
-        <tag>GULP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Fortran/Fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Fortran runtime error: Bad value during floating point read</span><br><span class="line">$ Fortran runtime error: Bad integer for item 1 in list input</span><br><span class="line">$ Bad real number in item 4 of list input</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>然后，在此文件夹里打开cmd，输入：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Warning: Extension: REAL array index at (1)</span><br><span class="line">$ Warning: Deleted feature: Loop variable at (1) must be integer</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>最后，安装此模块到本地，输入：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
+
 <center class="half">
 <img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
 </center>]]></content>
       <categories>
         <category>编程语言</category>
-        <category>Fortran</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>Fortran运行error</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Push Everything up-to-date错误</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Git Push origin master之后</span><br><span class="line">Everything up-to-date</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
+<li>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</li>
+<li>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</li>
+<li>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</li>
+</ul>
+<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3. 解决"></a>3. 解决</h3><ul>
+<li>所以，正确的做法是：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &#39;your commits&#39;</span><br><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
+
+
+
+
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git Push Everything up-to-date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Common Commands of Hexo</title>
+    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-command/</url>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><p><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a><br><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a><br><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a><br><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a><br><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo command</tag>
       </tags>
   </entry>
   <entry>
@@ -1917,28 +1060,474 @@
       </tags>
   </entry>
   <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
+    <title>Potential errors</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GULP 汇总</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
+</ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
 
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GULP</category>
+      </categories>
+      <tags>
+        <tag>GULP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Fortran/Fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Fortran runtime error: Bad value during floating point read</span><br><span class="line">$ Fortran runtime error: Bad integer for item 1 in list input</span><br><span class="line">$ Bad real number in item 4 of list input</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ Warning: Extension: REAL array index at (1)</span><br><span class="line">$ Warning: Deleted feature: Loop variable at (1) must be integer</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hueman主题</title>
+    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-hueman/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+
+<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong></p>
+<ul>
+<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
+</ul>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">theme: hueman</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong></p>
+<ul>
+<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
+<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
+</ul>
+<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
+<li>第一个坑</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure>
 
 <ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:  </span><br><span class="line">    People: &#x2F;people</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure></li>
+<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
+<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>第二个坑</li>
+</ul>
+<ol>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png" alt=""></p>
+</li>
+<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
+</li>
+<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
+</li>
+<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title:  </span><br><span class="line">categories:</span><br><span class="line">- Technology</span><br><span class="line">- Github</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
+</ol>
+<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
+<ul>
+<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hueman</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验势snap的使用</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-2-snap/</url>
+    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
+<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_style snap</span><br><span class="line">$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
+</li>
+<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
+</li>
+<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
+</li>
+<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)</span><br><span class="line">$ # Generated by Materials Virtual Lab</span><br><span class="line">$ 1 31</span><br><span class="line">$ Mo 0.5 1</span><br><span class="line">$ -17.2757958404</span><br><span class="line">$ 0.00431015861472</span><br><span class="line">$ 0.0657685117891</span><br><span class="line">$ 0.477733335702</span><br><span class="line">$ 0.0152688837211</span><br><span class="line">$ 0.77559888196</span><br><span class="line">$ 0.284846429566</span><br><span class="line">$ 0.148804982644</span><br><span class="line">$ 0.0573702179736</span><br><span class="line">$ 0.19281989434</span><br><span class="line">$ 0.323441703578</span><br><span class="line">$ 0.101324335724</span><br><span class="line">$ 0.0139639846514</span><br><span class="line">$ -0.0324444749083</span><br><span class="line">$ 0.0349797952779</span><br><span class="line">$ 0.0613023441282</span><br><span class="line">$ 0.0881078513046</span><br><span class="line">$ 0.118716074611</span><br><span class="line">$ 0.0069662975532</span><br><span class="line">$ -0.0174658914685</span><br><span class="line">$ -0.0178902177779</span><br><span class="line">$ 0.0195993756659</span><br><span class="line">$ 0.0719238160707</span><br><span class="line">$ 0.0344832661036</span><br><span class="line">$ -0.0358616891662</span><br><span class="line">$ -0.0292380783172</span><br><span class="line">$ -0.0334933909866</span><br><span class="line">$ 0.00595462520243</span><br><span class="line">$ 0.0754556638328</span><br><span class="line">$ -0.000972545258845</span><br><span class="line">$ -0.0100170422751</span><br></pre></td></tr></table></figure>
+<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
+<ol>
+<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
+<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
+<li>下面的31行就是系数了。</li>
+</ol>
+<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ 元素个数(n个) 系数个数</span><br><span class="line">$ 元素类型1 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ 元素类型2 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br><span class="line">$ ......</span><br><span class="line">$ 元素类型n 元素的半径 元素权重</span><br><span class="line">$ ...</span><br><span class="line">$ 系数</span><br><span class="line">$ ...</span><br></pre></td></tr></table></figure>
+<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]</span><br><span class="line">$ # </span><br><span class="line">$ # required</span><br><span class="line">$ rcutfac 4.73442</span><br><span class="line">$ twojmax 8</span><br><span class="line">$ </span><br><span class="line">$ # optional</span><br><span class="line">$ </span><br><span class="line">$ rfac0 0.99363</span><br><span class="line">$ rmin0 0</span><br><span class="line">$ bzeroflag 0</span><br><span class="line">$ quadraticflag 0</span><br></pre></td></tr></table></figure>
+<ol>
+<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
+<li>其他的为可选项，根据具体情况而定。</li>
+</ol>
+<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># Definition of SNAP potential.</span><br><span class="line">pair_style snap</span><br><span class="line">pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo</span><br></pre></td></tr></table></figure>
+<p>ps:学习笔记，以供查阅。</p>
+<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
+<p>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cannot open SNAP coefficient snap</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
+<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Incorrect SNAP parameter file  (..&#x2F;pair_snap.cpp:705);</span><br><span class="line">The file cannot be parsed correctly, check its internal syntax.</span><br></pre></td></tr></table></figure>
+<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
+        <tag>snap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/%E6%9D%82%E8%B0%88/Hexo/Hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);</span><br><span class="line"> 	background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">	background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin Integrate</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/%E6%9D%82%E8%B0%88/npm/Npm-1/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
+
+
+<p><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm install ERROR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 汇总</title>
+    <url>/%E6%9D%82%E8%B0%88/Linux/Linux-1/</url>
+    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
+<li>查看空间大小：<code>df -h</code>；</li>
+<li>查看该目录下文件大小：<code>du -sh *</code></li>
+</ol>
+<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
+<li><p>创建文件夹：<code>mkdir filename</code>；</p>
+</li>
+<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
+</li>
+<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
+</li>
+<li><p>删除文件；<code>rm -f filename</code></p>
+</li>
+<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
+</li>
+<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
+</li>
+<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
+</li>
+<li><p>返回上一级目录：<code>cd ..</code>；</p>
+</li>
+<li><p>显示当前工作路径：<code>pwd</code>；</p>
+</li>
+<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
+</li>
+<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
+<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
+<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
+</li>
+<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
+</li>
+</ol>
+<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
+<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
+<ol>
+<li><p>删除’/dev/loop0…’文件:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt purge snapd</span><br></pre></td></tr></table></figure></li>
+<li><p>开启ssh:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br><span class="line">service ssh start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看已设环境变量:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo $PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置临时环境变量:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;...&#x2F;bin:$PATH;export PATH</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件最后加上环境变量: </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<blockquote>
+<p>5.1 具体操作：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;profile</span><br><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</span><br><span class="line">Esc（键盘）</span><br><span class="line">:wq 或（快捷键）shift+ZZ 保存并退出；</span><br><span class="line">:q 不保存退出</span><br><span class="line">:q! 强制退出</span><br><span class="line">source &#x2F;etc&#x2F;profile(使生效)</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
+</li>
+<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
+</li>
+<li><p>top命令</p>
+</li>
+</ol>
+<ul>
+<li>Linux查看cpu总数，在top后的界面按1，or<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;proc&#x2F;cpuinfo | grep processor</span><br></pre></td></tr></table></figure></li>
+<li>查看进程绝对路径<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">top c</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4><ol>
+<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
+<blockquote>
+<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
+</blockquote>
+</li>
+<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt</code><br><code>nvcc -V</code></p>
+</li>
+</ol>
+<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
+<blockquote>
+<p>在linux启动和终止matlab</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">matlab -nodesktop -nosplash -r matlabfile(parameters)</span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
+<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure>
+<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
+<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
+<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
+<li>配置<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br><span class="line">make clean</span><br></pre></td></tr></table></figure></li>
+<li>重新编译<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
 
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
+</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure>
+<p>参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></p>
+<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ovito</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Ovito/Ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+
+
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包exe可执行文件</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python-2/</url>
+    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
+<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
+</ul>
+<ol>
+<li>安装第三方包pyinstaller</li>
+<li>在cmd命令行输入:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pyinstaller</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br></pre></td></tr></table></figure>
+<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
+<blockquote>
+<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;</span><br><span class="line"> </span><br><span class="line">[install]</span><br><span class="line">trusted-host&#x3D;mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>(5). 然后可以试试快不快</p>
+</blockquote>
+<ol start="4">
+<li>cmd执行：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -F filename.py</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>还可以给程序加个图标：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pyinstaller -h             为查看help命令</span><br><span class="line">pyinstaller --clean        为清理打包过程中的临时文件</span><br><span class="line">pyinstaller -D,--onedir    为默认值，生成dist文件夹</span><br><span class="line">pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件</span><br><span class="line">pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</span><br></pre></td></tr></table></figure>
+
+<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
+<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#画个太极阴阳鱼</span><br><span class="line">import turtle</span><br><span class="line">turtle.setup(0.5,0.6,0,0)</span><br><span class="line">turtle.speed(10)</span><br><span class="line"># #大圆</span><br><span class="line"># turtle.penup()</span><br><span class="line"># turtle.goto(0,-160)</span><br><span class="line"># turtle.pendown()</span><br><span class="line"># turtle.circle(180)</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,200)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(90,180)</span><br><span class="line">turtle.circle(-90,180)</span><br><span class="line">turtle.left(180)</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#画阴鱼</span><br><span class="line">turtle.circle(180,180)</span><br><span class="line">#白眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;white&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,80)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#黑眼</span><br><span class="line">turtle.begin_fill()</span><br><span class="line">turtle.fillcolor(&#39;black&#39;)</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(0,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.circle(40)</span><br><span class="line">turtle.end_fill()</span><br><span class="line">#太极</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,0)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;太&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(-275,-50)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;极&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(200,-120)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;---2020&#x2F;3&#x2F;17&quot;,font&#x3D;(&quot;方正&quot;,12,&quot;normal&quot;))</span><br><span class="line">turtle.penup()</span><br><span class="line">turtle.goto(250,-150)</span><br><span class="line">turtle.pendown()</span><br><span class="line">turtle.write(&quot;sheng&quot;,font&#x3D;(&quot;华文行楷&quot;,12,&quot;normal&quot;))</span><br><span class="line"></span><br><span class="line">turtle.hideturtle()</span><br><span class="line">turtle.done()</span><br></pre></td></tr></table></figure>
 
 
 <center class="half">
@@ -1950,6 +1539,420 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 画双y轴</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/</url>
+    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
+<li>选中数据并，plot&gt;line 画出图</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
+</tr>
+</tbody></table>
+<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
+<li>如图figure3,可以得到figure4–双y轴</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure3</td>
+<td>figure4</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
+</tr>
+</tbody></table>
+<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
+<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
+<li>调一下格式就可以得到最后的图片</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure5</td>
+<td>figure6</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
+</tr>
+</tbody></table>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python常用</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/Python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
+<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li><p>获得当前文件所在目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure></li>
+<li><p>在当前文件夹生成文件夹，以时间命名</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())</span><br><span class="line">folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())</span><br><span class="line">os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改当前工作路径</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>判断一个路径是否存在</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">print(path_yesno)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取目录中所有文件及文件夹list</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)</span><br><span class="line">print(PATH)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建和删除子目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line">os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line"></span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>改文件名</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from matplotlib.collections import LineCollection</span><br><span class="line"></span><br><span class="line">x &#x3D; np.linspace(0, 2*np.pi, 100)</span><br><span class="line">y &#x3D; np.sin(x)</span><br><span class="line">z &#x3D; np.cos(x)#上色数据</span><br><span class="line"></span><br><span class="line">points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)</span><br><span class="line">segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)</span><br><span class="line"></span><br><span class="line">fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))</span><br><span class="line">fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界</span><br><span class="line"></span><br><span class="line">norm &#x3D; plt.Normalize(min(z),max(z))</span><br><span class="line">lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)</span><br><span class="line">lc.set_array(z)</span><br><span class="line">lc.set_linewidth(2)</span><br><span class="line">line &#x3D; ax.add_collection(lc)</span><br><span class="line">fig.colorbar(line)</span><br><span class="line"></span><br><span class="line">plt.xlim(0,2*np.pi)</span><br><span class="line">plt.ylim(-1,1)</span><br><span class="line">plt.savefig(&#39;fig1.png&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode常用快捷键</title>
+    <url>/%E6%9D%82%E8%B0%88/Vscode1/</url>
+    <content><![CDATA[<ol>
+<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
+<li><code>F11</code>全屏模式。</li>
+</ol>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制Tecplot里的原子间距</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Tecplot/Tecplot-1/</url>
+    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
+<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
+
+
+</li>
+</ul>
+<ul>
+<li><p>独立操作x,y,z的Size Factors</p>
+<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
+</li>
+<li><p>调原子间距效果</p>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
+
+<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
+<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
+<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
+<li>这个就不明显，藏在这里：<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View&gt;Rotate</td>
+<td>3D Rotate</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
+<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
+<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
+<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Tecplot</category>
+      </categories>
+      <tags>
+        <tag>Tecplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>没有解决的问题</tag>
+        <tag>Network Connections</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-branch</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-command/</url>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch xxx   #xxx 分支名，第一种方法</span><br><span class="line">$ git checkout -b xxx #第二种方法</span><br></pre></td></tr></table></figure></code></pre><h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -D xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin --delete xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch -a</span><br></pre></td></tr></table></figure></code></pre><h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git branch</span><br></pre></td></tr></table></figure></code></pre><h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout xxx</span><br></pre></td></tr></table></figure></code></pre><h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git checkout --orphan xxx #创建本地分支并进入到该分支</span><br><span class="line">$ git rm -rf #删除该分支的所有内容</span><br><span class="line"></span><br><span class="line">$ git add . </span><br><span class="line">$ git commit -am &quot;评论内容&quot;</span><br><span class="line">$ git push origin xxx</span><br><span class="line">$ git pull</span><br><span class="line">$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span><br><span class="line">$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支</span><br><span class="line">$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span><br></pre></td></tr></table></figure></code></pre><h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span><br><span class="line">$ git commit -m &quot;blog source code&quot;</span><br><span class="line">或者一步到位：</span><br><span class="line">$ git commit -a -m &quot;blog source code&quot;</span><br><span class="line">$ git push origin xxx #如果不成功执行下一条</span><br><span class="line">$ git push origin xxx -f #不管3721直接push，谨慎操作。</span><br></pre></td></tr></table></figure></code></pre><h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span><br></pre></td></tr></table></figure></code></pre><h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ mkdir foldername #创建文件夹</span><br><span class="line">$ git merge yourbranch # 把分支合并到master</span><br><span class="line">$ git reset --merge #退回合并前</span><br></pre></td></tr></table></figure></code></pre><h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git command-branch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-delete file</title>
+    <url>/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
+
+
+
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git delete file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Alamode</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</url>
+    <content><![CDATA[<h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<p>Alamode 运行</p>
+<ul>
+<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
+<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
+</blockquote>
+</li>
+<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
+<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
+</blockquote>
+</li>
+<li>plot</li>
+</ul>
+<h3 id="2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："><a href="#2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：" class="headerlink" title="2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："></a><strong>2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：</strong></h3><ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm（XFSET.cubic）提取到DESET_harmonic（DFSET_cubic）中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<p><strong>注意：</strong></p>
+<ul>
+<li>cutoff 的值可以从log中查看</li>
+</ul>
+<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">terminate called after throwing an instance of &#39;std::bad_alloc&#39;</span><br><span class="line">  what():  std::bad_alloc</span><br><span class="line">Aborted (core dumped)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ol>
+<li>主要是由于运行内存不足；</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>总结两种原因，一种是运行的task太多导致，另一种是一个task的数据量太大了（比如这里选的截断半径太大）</li>
+</ol>
+</li>
+</ul>
+<h3 id="4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
+<li>截断半径的原因？怎么设置cutoff?</li>
+<li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Alamode</category>
+      </categories>
+      <tags>
+        <tag>Alamode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GPUMD学习</title>
+    <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</url>
+    <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
+<li><p>line0:N M cutoff 0 has_velocity number_of_grouping_methods<br>N(原子数)<br>M(最大近邻原子数)<br>cutoff(构建neighbor list的时候的初始截断距离)<br>0(0=正交盒子，1=三斜盒子)<br>has_velocity(0=不包含，1=包含初始速度)<br>number_of_grouping_methods(0或正整数)</p>
+</li>
+<li><p>line1(正交盒子):pbc_x pbc_y pbc_z L_x L_y L_z<br>pbc_x pbc_y pbc_z(边界条件，1=周期性边界条件，0=自由边界条件)<br>L_x L_y L_z(初始尺寸)</p>
+</li>
+<li><p>line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z<br>pbc_a pbc_b pbc_c(边界条件，1=周期性边界条件，0=自由边界条件)<br>a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</p>
+</li>
+<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="如果has_velocity=1，0原子的速度分量">vz0</a><br>[group0_0] [group1_0] <a href="如果number_of_grouping_methods>0,group1_0表示0原子被分到第1组">group2_0</a></p>
+</li>
+</ul>
+<h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
+<li>Input Error:</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
+<ul>
+<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
+</ul>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GPUMD</category>
+      </categories>
+      <tags>
+        <tag>GPUMD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>无法将“mklink”项识别为 cmdlet</title>
+    <url>/%E6%9D%82%E8%B0%88/Windows/mklink/</url>
+    <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
+<li>目的是要把C盘的一个文件夹链接到E盘，</li>
+<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径</span><br><span class="line">正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
+<li>因为PowerShell中没有mklink命令</li>
+</ul>
+<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
+<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</span><br></pre></td></tr></table></figure>
+
+
+<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
+<center class="half">
+<img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" />
+</center>]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>mklink</tag>
       </tags>
   </entry>
 </search>
