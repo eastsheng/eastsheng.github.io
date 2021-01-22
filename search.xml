@@ -246,18 +246,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/Learning-Notes/2021/EnglishNote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Lammps Notes</title>
     <url>/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-Notes/</url>
-    <content><![CDATA[<ol>
-<li><code>neighbor 2.0 multi</code></li>
-</ol>
-<ul>
+    <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi"></a>1. <code>neighbor 2.0 multi</code></h3><ul>
 <li>neighbor skin style</li>
 <li>此命令用于设置cutoff distance;</li>
 <li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li>
 <li>一般使用<code>bin</code>较多；</li>
 <li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li>
-<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系</li>
+<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li>
 </ul>
 ]]></content>
       <categories>
