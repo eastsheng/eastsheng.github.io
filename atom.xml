@@ -47,12 +47,12 @@
   
   <entry>
     <title>Lammps Notes</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-Notes/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-Notes/</id>
+    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/DailyNotes2021/"/>
+    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/DailyNotes2021/</id>
     <published>2021-01-22T10:11:28.000Z</published>
-    <updated>2021-01-22T11:17:55.866Z</updated>
+    <updated>2021-01-23T03:29:58.231Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi"></a>1. <code>neighbor 2.0 multi</code></h3><ul><li>neighbor skin style</li><li>此命令用于设置cutoff distance;</li><li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li><li>一般使用<code>bin</code>较多；</li><li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li><li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi"></a>1. <code>neighbor 2.0 multi</code></h3><ul><li>neighbor skin style</li><li>此命令用于设置cutoff distance;</li><li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li><li>一般使用<code>bin</code>较多；</li><li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li><li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li></ul><h3 id="2-只要使用键盘我的Materials-Studio就卡住"><a href="#2-只要使用键盘我的Materials-Studio就卡住" class="headerlink" title="2. 只要使用键盘我的Materials Studio就卡住"></a>2. 只要使用键盘我的Materials Studio就卡住</h3><ul><li>解决方法：在微软拼音输入法的“中”(或“英”)字上右击鼠标，然后点“设置”，在弹出界面中点“常规”，在新界面中向下滚动动底部，有个兼容性，打开兼容性，然后就OK了。</li><li>参考链接 <a href="http://muchong.com/t-14329827-1">http://muchong.com/t-14329827-1</a></li></ul><h3 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h3>]]></content>
     
     <summary type="html">
     
