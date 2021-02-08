@@ -933,7 +933,7 @@
 <li><a href="https://lammps.sandia.gov/index.html">LAMMPS</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,<a href="https://lammps.sandia.gov/doc/Manual.html">在线手册</a>,<a href="http://editor.lammps.org/">Lammps Online Editor</a></li>
 <li>傅里叶快速变换<a href="http://www.fftw.org/download.html">FFTW</a> | <a href="http://m3g.iqm.unicamp.br/packmol/home.shtml">PACKMOL</a> | 晶格动力学软件<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">GULP</a>,<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#scan_cell">在线Manual</a></li>
 <li>可视化软件<a href="https://www.ovito.org/">OVITO</a>、<a href="http://jp-minerals.org/vesta/en/">VESTA</a>、<a href="http://www.ks.uiuc.edu/Research/vmd/">VMD</a>、<a href="http://avogadro.cc/">Avogadro</a> | <a href="http://zarbi.chem.yale.edu/ligpargen/">LigParGen</a></li>
-<li><a href="https://mathpix.com">mathpix</a>，<blockquote>
+<li><a href="https://mathpix.com">mathpix</a> | <a href="https://nanotheorygroup.github.io/kaldo/docsource/introduction.html">kALDo</a><blockquote>
 <h4 id="合集"><a href="#合集" class="headerlink" title="合集"></a><strong>合集</strong></h4></blockquote>
 </li>
 <li><a href="https://www.cuiuc.com">一个可以发现很多好软件的网站</a> | <a href="https://www.cccitu.com">玩机大学</a> | <a href="https://tool.lu">在线工具</a></li>
@@ -1103,8 +1103,8 @@
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>snap</tag>
         <tag>potential</tag>
+        <tag>snap</tag>
       </tags>
   </entry>
   <entry>
