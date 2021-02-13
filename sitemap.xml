@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eastsheng.ink/about/index.html</loc>
+    
+    <lastmod>2021-02-13T06:24:21.734Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/media/galleries/index.html</loc>
+    
+    <lastmod>2021-02-13T05:53:52.273Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/media/books/index.html</loc>
+    
+    <lastmod>2021-02-13T05:36:18.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/media/musics/index.html</loc>
+    
+    <lastmod>2021-02-13T05:32:16.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/media/movies/index.html</loc>
+    
+    <lastmod>2021-02-13T05:32:16.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</loc>
+    
+    <lastmod>2021-02-13T04:26:58.748Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/self-talking/index.html</loc>
+    
+    <lastmod>2021-02-13T02:57:25.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/plans/index.html</loc>
+    
+    <lastmod>2021-02-13T02:57:19.078Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/photos/index.html</loc>
+    
+    <lastmod>2021-02-13T02:57:13.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://eastsheng.ink/friend/index.html</loc>
+    
+    <lastmod>2021-02-13T02:56:59.198Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/</loc>
     
     <lastmod>2021-02-08T09:46:43.081Z</lastmod>
@@ -33,13 +103,6 @@
     <loc>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/Linux-1/</loc>
     
     <lastmod>2021-01-18T14:36:56.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/plans/index.html</loc>
-    
-    <lastmod>2021-01-11T09:43:00.490Z</lastmod>
     
   </url>
   
@@ -82,20 +145,6 @@
     <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GULP/GULP-1/</loc>
     
     <lastmod>2020-11-21T15:49:15.162Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</loc>
-    
-    <lastmod>2020-11-21T15:27:20.609Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/about/index.html</loc>
-    
-    <lastmod>2020-11-18T02:42:01.905Z</lastmod>
     
   </url>
   
@@ -212,30 +261,9 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/self-talking/index.html</loc>
-    
-    <lastmod>2020-09-17T02:26:48.823Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://eastsheng.ink/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</loc>
     
     <lastmod>2020-08-27T02:36:44.158Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/media/index.html</loc>
-    
-    <lastmod>2020-08-18T06:16:47.415Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/photos/index.html</loc>
-    
-    <lastmod>2020-08-16T03:41:25.073Z</lastmod>
     
   </url>
   
@@ -257,13 +285,6 @@
     <loc>https://eastsheng.ink/tags/index.html</loc>
     
     <lastmod>2020-07-27T12:50:36.270Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eastsheng.ink/friend/index.html</loc>
-    
-    <lastmod>2020-07-27T12:50:35.934Z</lastmod>
     
   </url>
   
