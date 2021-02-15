@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="视频收藏, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title></title>
+    <title>视频收藏 | null</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/head.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/awesome/css/all.css">
@@ -113,13 +113,31 @@
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
       
-      <span>Medias</span>
+      <span>其他</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/media/galleries">
+        <a href="/other/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>VIDEOS</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/other/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/other/galleries">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -218,14 +236,34 @@
 			
 				<i class="fa-fw fas fa-list"></i>
 			
-			Medias
+			其他
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
               
                 <li>
 
-                  <a href="/media/galleries " style="margin-left:75px">
+                  <a href="/other/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>VIDEOS</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/other/books " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/other/galleries " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
@@ -264,12 +302,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">视频收藏</h1>
                 </div>
             </div>
         </div>
@@ -279,10 +317,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -310,21 +442,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-13
+                    2021-02-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -344,7 +476,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h3 id="学习视频"><a href="#学习视频" class="headerlink" title="学习视频"></a><strong>学习视频</strong></h3><blockquote>
+<h4 id="讲座"><a href="#讲座" class="headerlink" title="讲座"></a>讲座</h4><p><a href="https://www.koushare.com" target="_blank" rel="noopener">蔻享</a><br><a href="https://space.bilibili.com/609834262?spm_id_from=333.788.b_765f7570696e666f.1" target="_blank" rel="noopener">微纳传热</a></p>
+</blockquote>
+<blockquote>
+<h4 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h4><p><a href="https://app.cailiaoren.com/view/series/detail?id=48&vid=189" target="_blank" rel="noopener">VMD软件基础使用讲解</a><br><a href="https://www.koushare.com/video/videodetail/5710" target="_blank" rel="noopener">科技论文写作与投稿审稿经验分享</a><br><a href="http://cms.sjtu.edu.cn" target="_blank" rel="noopener">上交计算材料课程</a><br><a href="https://www.icourse163.org" target="_blank" rel="noopener">慕课</a><br><a href="https://www.51zxw.net" target="_blank" rel="noopener">我要自学网</a><br><a href="http://v.dxsbb.com" target="_blank" rel="noopener">大学生自学网</a><br><a href="http://www.fanshuxueyuan.com" target="_blank" rel="noopener">番薯学院</a><br><a href="http://www.kgc.cn" target="_blank" rel="noopener">课工场</a><br><a href="https://phet.colorado.edu/zh_CN/" target="_blank" rel="noopener">免费的在线物理、化学、生物、地理及数学仿真程序</a><br><a href="https://www.5ifxw.com" target="_blank" rel="noopener">我爱分享网</a><br><a href="https://edu.aliyun.com/" target="_blank" rel="noopener">阿里云大学</a><br><a href="https://zhishitu.com/" target="_blank" rel="noopener">知识兔</a><br><a href="http://www.oioio.pro/" target="_blank" rel="noopener">甲骨数字</a><br><a href="http://www.zf3d.com/" target="_blank" rel="noopener">朱峰社区</a></p>
+</blockquote>
+<h3 id="观影记录"><a href="#观影记录" class="headerlink" title="观影记录"></a><strong>观影记录</strong></h3><blockquote>
+<h4 id="剧情-悬疑-惊悚-恐怖-犯罪"><a href="#剧情-悬疑-惊悚-恐怖-犯罪" class="headerlink" title="剧情/悬疑/惊悚/恐怖/犯罪"></a>剧情/悬疑/惊悚/恐怖/犯罪</h4><p><a href="https://movie.douban.com/subject/27119724/" target="_blank" rel="noopener">《小丑》</a>|剧情 / 惊悚 / 犯罪|<br><a href="https://movie.douban.com/subject/3008247/" target="_blank" rel="noopener">《穿条纹睡衣的男孩》</a>|剧情|<br><a href="https://movie.douban.com/subject/3819877/" target="_blank" rel="noopener">《活埋》</a>|剧情 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/3011308/" target="_blank" rel="noopener">《孤儿怨》</a><br><a href="https://movie.douban.com/subject/1418752/" target="_blank" rel="noopener">《万能钥匙》</a>|剧情 / 悬疑 / 恐怖|<br><a href="https://movie.douban.com/subject/3614963/" target="_blank" rel="noopener">《不明身份》</a>|剧情 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/3428500/" target="_blank" rel="noopener">《潜伏者》</a>|剧情 / 传记 / 犯罪|<br><a href="https://movie.douban.com/subject/1820156/" target="_blank" rel="noopener">《我是传奇》</a>|剧情 / 科幻 / 惊悚|<br><a href="https://movie.douban.com/subject/1298744/" target="_blank" rel="noopener">《十二猴子》</a>|科幻 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/1895119/" target="_blank" rel="noopener">《非法制裁》</a>|剧情 / 动作 / 惊悚 / 犯罪|<br><a href="https://movie.douban.com/subject/26694472/" target="_blank" rel="noopener">《狮女传说》</a>|剧情|<br><a href="https://movie.douban.com/subject/1303562/" target="_blank" rel="noopener">《死囚越狱》</a>|剧情 / 惊悚 / 战争|<br><a href="https://movie.douban.com/subject/26996734/" target="_blank" rel="noopener">《一个母亲的复仇》</a>|剧情 / 犯罪|<br><a href="https://movie.douban.com/subject/30334073/" target="_blank" rel="noopener">《调音师》</a>|喜剧 / 悬疑 / 惊悚 / 犯罪|<br><a href="https://movie.douban.com/subject/5258036/" target="_blank" rel="noopener">《觉醒》</a>|悬疑 / 惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/1297630/" target="_blank" rel="noopener">《灵异第六感》</a>|剧情 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/4016948/" target="_blank" rel="noopener">《黑洞》</a>|剧情 / 短片 / 犯罪|<br><a href="https://movie.douban.com/subject/26997663/" target="_blank" rel="noopener">《寂静之地》</a>|惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/1293181/" target="_blank" rel="noopener">《惊魂记》</a>|悬疑 / 惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/1293213/" target="_blank" rel="noopener">《恶魔》</a>|剧情 / 悬疑 / 惊悚 / 犯罪|<br><a href="https://movie.douban.com/subject/1292225/" target="_blank" rel="noopener">《闪灵》</a>|剧情 / 悬疑 / 恐怖|<br><a href="https://movie.douban.com/subject/1904722/" target="_blank" rel="noopener">《宠物坟场》</a>|悬疑 / 惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/3604148/" target="_blank" rel="noopener">《小丑回魂》</a>|剧情 / 儿童 / 恐怖|<br><a href="https://movie.douban.com/subject/26599107/" target="_blank" rel="noopener">《麻木》</a>|悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/3524289/" target="_blank" rel="noopener">《病院惊魂》</a>|恐怖 / 惊悚|<br><a href="https://movie.douban.com/subject/27050133/" target="_blank" rel="noopener">《死寂逃亡》</a>|恐怖|<br><a href="https://movie.douban.com/subject/26928198/" target="_blank" rel="noopener">《红衣小女孩》</a>|惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/1300077/" target="_blank" rel="noopener">《鬼娃回魂》</a>|惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/34818507/" target="_blank" rel="noopener">《我不好惹》</a>|动作 / 惊悚|<br><a href="https://movie.douban.com/subject/1305046/" target="_blank" rel="noopener">《双瞳》</a>|剧情 / 犯罪 / 悬疑 / 惊悚|</p>
+</blockquote>
+<blockquote>
+<h4 id="历史-战争-灾难-纪录片-剧情-家庭"><a href="#历史-战争-灾难-纪录片-剧情-家庭" class="headerlink" title="历史/战争/灾难/纪录片/剧情/家庭"></a>历史/战争/灾难/纪录片/剧情/家庭</h4><p><a href="https://movie.douban.com/subject/6011805/" target="_blank" rel="noopener">《一九四二》</a>|剧情 / 历史 / 战争 / 灾难|<br><a href="https://movie.douban.com/subject/26325320/" target="_blank" rel="noopener">《血战钢锯岭》</a>|剧情 / 传记 / 历史 / 战争|<br><a href="https://movie.douban.com/subject/4122328/" target="_blank" rel="noopener">《玄奘大师》</a>|纪录片|<br><a href="https://movie.douban.com/subject/3596502/" target="_blank" rel="noopener">《唐山大地》</a>|剧情 / 历史 / 灾难|<br><a href="https://movie.douban.com/subject/1418200/" target="_blank" rel="noopener">《傲慢与偏见》</a>|剧情 / 爱情|<br><a href="https://movie.douban.com/subject/25805039/" target="_blank" rel="noopener">《云端之上》</a>|剧情 / 家庭|<br><a href="https://movie.douban.com/subject/27622447/" target="_blank" rel="noopener">《小偷家族》</a>|剧情 / 家庭 / 犯罪|<br><a href="https://movie.douban.com/subject/30170448/" target="_blank" rel="noopener">《何以为家》</a>|剧情|<br><a href="https://movie.douban.com/subject/1306861/" target="_blank" rel="noopener">《我是山姆》</a>|剧情 / 家庭|<br><a href="https://movie.douban.com/subject/27663742/" target="_blank" rel="noopener">《老师.好》</a>|剧情|<br><a href="https://movie.douban.com/subject/1300992/" target="_blank" rel="noopener">《完美的世界》</a>|剧情 / 犯罪|<br><a href="https://movie.douban.com/subject/1293172/" target="_blank" rel="noopener">《末代皇帝》</a>|剧情 / 传记 / 历史|<br><a href="https://movie.douban.com/subject/35155748/" target="_blank" rel="noopener">《金刚川》</a>|战争|<br><a href="https://movie.douban.com/subject/26754233/" target="_blank" rel="noopener">《八佰》</a>|剧情 / 历史 / 战争|</p>
+</blockquote>
+<blockquote>
+<h4 id="科幻-奇幻-喜剧-动作-冒险"><a href="#科幻-奇幻-喜剧-动作-冒险" class="headerlink" title="科幻/奇幻/喜剧/动作/冒险"></a>科幻/奇幻/喜剧/动作/冒险</h4><p><a href="https://movie.douban.com/subject/20278505/" target="_blank" rel="noopener">《前目的地》</a>|科幻 / 悬疑|<br><a href="https://movie.douban.com/subject/27073057/" target="_blank" rel="noopener">《鼠胆英雄》</a>|喜剧|<br><a href="https://movie.douban.com/subject/2999913/" target="_blank" rel="noopener">《保罗》</a>|喜剧 / 科幻 / 冒险|<br><a href="https://movie.douban.com/subject/27605698/" target="_blank" rel="noopener">《西红柿首富》</a><br><a href="https://movie.douban.com/subject/30175306/" target="_blank" rel="noopener">《追龙二》</a>|剧情 / 动作 / 犯罪|<br><a href="https://movie.douban.com/subject/1302827/" target="_blank" rel="noopener">《人工智能》</a>|剧情 / 科幻|<br><a href="https://movie.douban.com/subject/20495023/" target="_blank" rel="noopener">《寻梦环游记》</a>|喜剧 / 动画 / 音乐 / 奇幻|<br><a href="https://movie.douban.com/subject/1485260/" target="_blank" rel="noopener">《返老还童》</a>|剧情 / 爱情 / 奇幻|<br><a href="https://movie.douban.com/subject/3878007/" target="_blank" rel="noopener">《海王》</a>|动作 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/1292274/" target="_blank" rel="noopener">《幸福终点站》</a>|剧情 / 喜剧 / 爱情|<br><a href="https://movie.douban.com/subject/2244426/" target="_blank" rel="noopener">《雷霆沙赞》</a>|动作 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/25864085/" target="_blank" rel="noopener">《火星救援》</a>| 剧情 / 科幻 / 冒险|<br><a href="https://movie.douban.com/subject/2359450/" target="_blank" rel="noopener">《夺帅》</a>|动作 / 犯罪|<br><a href="https://movie.douban.com/subject/4844731/" target="_blank" rel="noopener">《境.界》</a>|动作 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/27060077/" target="_blank" rel="noopener">《绿皮书》</a>|剧情 / 喜剧 / 传记|<br><a href="https://movie.douban.com/subject/22266126/" target="_blank" rel="noopener">《王牌保镖》</a>|喜剧 / 动作 / 犯罪|<br><a href="https://movie.douban.com/subject/26367602/" target="_blank" rel="noopener">《龙牌之谜》</a>|动作 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/26835471/" target="_blank" rel="noopener">《大侦探皮卡丘》</a>|喜剧 / 动画 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/1309135/" target="_blank" rel="noopener">《虎兄虎弟》</a>|: 剧情 / 冒险|<br><a href="https://movie.douban.com/subject/1293639/" target="_blank" rel="noopener">《欢喜两重天》</a>|喜剧 / 奇幻|<br><a href="https://movie.douban.com/subject/27110296/" target="_blank" rel="noopener">《无名之辈》</a>|剧情 / 喜剧|<br><a href="https://movie.douban.com/subject/26266893/" target="_blank" rel="noopener">《流浪地球》</a>|科幻 / 冒险 / 灾难|<br><a href="https://movie.douban.com/subject/2977957/" target="_blank" rel="noopener">《科洛弗道10号》</a>|科幻 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/30164448/" target="_blank" rel="noopener">《海市蜃楼》</a>|科幻 / 悬疑 / 惊悚|<br><a href="https://movie.douban.com/subject/22266012/" target="_blank" rel="noopener">《全球风暴》</a>|动作 / 科幻 / 灾难|<br><a href="https://movie.douban.com/subject/3683409/" target="_blank" rel="noopener">《夜店》</a>|喜剧|<br><a href="https://movie.douban.com/subject/1306607/" target="_blank" rel="noopener">《K星异客》</a>|剧情 / 科幻|<br><a href="https://movie.douban.com/subject/1293171/" target="_blank" rel="noopener">《入侵脑细胞》</a>|科幻 / 惊悚 / 恐怖|<br><a href="https://movie.douban.com/subject/26752088/" target="_blank" rel="noopener">《我不是药神》</a>|剧情 / 喜剧|<br><a href="https://movie.douban.com/subject/26985127/" target="_blank" rel="noopener">《一出好戏》</a>|剧情 / 喜剧|<br><a href="https://movie.douban.com/subject/1292001/" target="_blank" rel="noopener">《海上钢琴师》</a>|剧情 / 音乐|<br><a href="https://movie.douban.com/subject/6011806/" target="_blank" rel="noopener">《厨子戏子痞子》</a>| 喜剧 / 动作|<br><a href="https://movie.douban.com/subject/27150225/" target="_blank" rel="noopener">《狂暴凶狮》</a>|喜剧 / 惊悚|<br><a href="https://movie.douban.com/subject/26966580/" target="_blank" rel="noopener">《妖铃铃》</a>|喜剧 / 惊悚|<br><a href="https://movie.douban.com/subject/26882457/" target="_blank" rel="noopener">《断片之险途夺宝》</a>|喜剧 / 冒险 / 断片儿|<br><a href="https://movie.douban.com/subject/26741061/" target="_blank" rel="noopener">《胡桃夹子和四个国王》</a>|奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/1482077/" target="_blank" rel="noopener">《灵魂战车》1</a>-<a href="https://movie.douban.com/subject/3077408/" target="_blank" rel="noopener">2</a>| 动作 / 奇幻 / 惊悚|<br><a href="https://movie.douban.com/subject/30413052/" target="_blank" rel="noopener">《攀登者》</a>|剧情 / 爱情 / 冒险|<br><a href="https://movie.douban.com/subject/34900792/" target="_blank" rel="noopener">《大蛇2》</a>|冒险|<br><a href="https://movie.douban.com/subject/30309287/" target="_blank" rel="noopener">《道师爷》</a>|喜剧 / 奇幻|<br><a href="https://movie.douban.com/subject/21327493/" target="_blank" rel="noopener">《精灵旅社2》</a>|喜剧 / 动画 / 奇幻|<br><a href="https://movie.douban.com/subject/1652592/" target="_blank" rel="noopener">《阿丽塔：战斗天使 Alita: Battle Angel》</a>|动作 / 科幻 / 冒险|<br><a href="https://movie.douban.com/subject/26705567/" target="_blank" rel="noopener">《征途》</a>|动作 / 奇幻 / 冒险|<br><a href="https://movie.douban.com/subject/26884354/" target="_blank" rel="noopener">《狮子王》</a>|剧情 / 动画 / 冒险|<br><a href="https://movie.douban.com/subject/26931786/" target="_blank" rel="noopener">《Spider-Man: Far from Home》</a>|动作 / 科幻 / 冒险|<br><a href="https://movie.douban.com/subject/21349338/" target="_blank" rel="noopener">《爱与怪物 Love and Monsters》</a>|冒险|<br><a href="https://movie.douban.com/subject/26887069/" target="_blank" rel="noopener">《祖孙大战 The War with Grandpa》</a>|喜剧|<br><a href="https://movie.douban.com/subject/25907124/" target="_blank" rel="noopener">《姜子牙 (2020)》</a>|剧情 / 动画 / 奇幻|</p>
+</blockquote>
+</br>
+
+<h3 id="Drama-series"><a href="#Drama-series" class="headerlink" title="Drama series"></a><strong>Drama series</strong></h3><blockquote>
+</blockquote>
+<p><a href="https://movie.douban.com/subject/30424374/" target="_blank" rel="noopener">《爱，死亡和机器人第一季》</a>|喜剧 / 科幻 / 动画 / 恐怖 / 奇幻|<br><a href="https://movie.douban.com/subject/30394004/" target="_blank" rel="noopener">《失踪人口第一季》</a>|悬疑|<br><a href="https://movie.douban.com/subject/27163282/" target="_blank" rel="noopener">《家有超能迪翁》第一季</a>|剧情 / 科幻|<br><a href="https://movie.douban.com/subject/26421478/" target="_blank" rel="noopener">《天才在左疯子在右》</a>|剧情 / 爱情 / 悬疑|<br><a href="https://movie.douban.com/subject/26336778/" target="_blank" rel="noopener">《新阴阳魔界第二季》</a>|剧情 / 科幻 / 悬疑 / 惊悚 / 恐怖 / 奇幻|<br><a href="https://movie.douban.com/subject/27180943/" target="_blank" rel="noopener">《盗墓笔记-重启之极海听雷》</a>|悬疑 / 冒险|<br><a href="https://search.douban.com/movie/subject_search?search_text=%E7%BB%9D%E5%91%BD%E6%AF%92%E5%B8%88&cat=1002" target="_blank" rel="noopener">《绝命毒师》</a>|剧情 / 犯罪|<br><a href="https://movie.douban.com/subject/25885410/" target="_blank" rel="noopener">《初来乍到》</a>|喜剧|<br><a href="https://movie.douban.com/subject/1422098/" target="_blank" rel="noopener">《鬼语者》</a>|剧情 / 奇幻|<br><a href="https://movie.douban.com/subject/27043023/" target="_blank" rel="noopener">《紧急呼救 第一季》</a>|剧情 / 动作 / 惊悚|<br><a href="https://movie.douban.com/subject/27097841/" target="_blank" rel="noopener">《恶行 The Act (2019)》</a>|剧情 / 犯罪|<br><a href="https://movie.douban.com/subject/27148168/" target="_blank" rel="noopener">《赘婿》</a><br><a href="https://movie.douban.com/subject/30228394/" target="_blank" rel="noopener">《觉醒年代》</a><br></br></p>
+
                 
             </div>
             <hr/>
@@ -532,13 +684,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/media/musics/index.html">
+                <a href="/other/movies/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="视频收藏">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">视频收藏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -570,13 +722,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/media/musics/index.html">
+                <a href="/other/movies/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="视频收藏">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">视频收藏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -626,6 +778,100 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -703,7 +949,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.9k</span>&nbsp;字
+                class="white-color">13.6k</span>&nbsp;字
             
             
             

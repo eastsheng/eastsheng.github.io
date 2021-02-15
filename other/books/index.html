@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="书籍收藏, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title></title>
+    <title>书籍收藏 | null</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/head.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/awesome/css/all.css">
@@ -113,13 +113,31 @@
       
       <i class="fas fa-list" style="zoom: 0.6;"></i>
       
-      <span>Medias</span>
+      <span>其他</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/media/galleries">
+        <a href="/other/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>VIDEOS</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/other/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/other/galleries">
           
           <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -218,14 +236,34 @@
 			
 				<i class="fa-fw fas fa-list"></i>
 			
-			Medias
+			其他
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
               
                 <li>
 
-                  <a href="/media/galleries " style="margin-left:75px">
+                  <a href="/other/movies " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>VIDEOS</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/other/books " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/other/galleries " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
 			      
@@ -269,7 +307,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">书籍收藏</h1>
                 </div>
             </div>
         </div>
@@ -279,10 +317,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -303,21 +435,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-13
+                    2020-06-18
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-13
+                    2021-02-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    12
+                    390
                 </div>
                 
 
@@ -344,20 +476,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-</br>
-</br>
-<center><font size=200 face="STCAIYUN">相册</font></center>
-</br>
+                <h3 id="在线BOOKS-amp-Links"><a href="#在线BOOKS-amp-Links" class="headerlink" title="在线BOOKS &amp; Links"></a><strong>在线BOOKS &amp; Links</strong></h3><blockquote>
+<h4 id="图书馆"><a href="#图书馆" class="headerlink" title="图书馆"></a>图书馆</h4><p><a href="https://www.wdl.org/zh/" target="_blank" rel="noopener">世界数字图书馆</a><br><a href="http://gen.lib.rus.ec/" target="_blank" rel="noopener">Library Genesis</a><br><a href="https://www.jiumodiary.com/" target="_blank" rel="noopener">鸠摩搜索</a><br><a href="http://www.stats.gov.cn/" target="_blank" rel="noopener">国家统计局（National Bureau of Statistics）</a><br><a href="https://www.cdstm.cn/" target="_blank" rel="noopener">中国数字科技馆</a></p>
+</blockquote>
+<blockquote>
+<h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p><a href="https://www.python.org/" target="_blank" rel="noopener">Python官网</a>,<a href="https://www.python.org/ftp/python/" target="_blank" rel="noopener">下载</a><br><a href="https://www.cnblogs.com/simuhunluo/p/7704765.html" target="_blank" rel="noopener">Centos 7安装python3 </a><br><a href="https://wizardforcel.gitbooks.io/matplotlib-intro-tut/content/" target="_blank" rel="noopener">《Python 数据科学入门教程》</a><br><a href="http://www.pythondoc.com/" target="_blank" rel="noopener">Python中文学习大本营</a><br><a href="https://learnpythonthehardway.org/" target="_blank" rel="noopener">Learn python the hard way</a><br><a href="http://python.itcarlow.ie/resources.html" target="_blank" rel="noopener">Learn Python 3 with Head First - Resources</a><br><a href="https://www.programcreek.com/python/" target="_blank" rel="noopener">Python code example</a><br><a href="https://www.numpy.org.cn/" target="_blank" rel="noopener">NumPy 中文</a><br><a href="https://www.pypandas.cn/" target="_blank" rel="noopener">Pandas 中文</a><br><a href="https://www.matplotlib.org.cn/" target="_blank" rel="noopener">Matplotlib 中文</a><br><a href="http://djangobook.py3k.cn/2.0/" target="_blank" rel="noopener">The Django Book</a><br><a href="http://www.ipaomi.com/" target="_blank" rel="noopener">包含：python、Kivy、深度学习等</a><br><a href="http://liao.cpython.org/" target="_blank" rel="noopener">Python学习园</a><br><a href="https://kivy.org/#home" target="_blank" rel="noopener">kivy官网</a></p>
+</blockquote>
+<blockquote>
+<h4 id="Fortran"><a href="#Fortran" class="headerlink" title="Fortran"></a>Fortran</h4><p><a href="http://micro.ustc.edu.cn/Fortran/" target="_blank" rel="noopener">Fortran资源</a><br><a href="http://krsna.lamost.org/popular/fortran/fortran.htm" target="_blank" rel="noopener">科学计算的语言Fortran</a><br><a href="http://fcode.cn/" target="_blank" rel="noopener">Fortran论坛</a></p>
+</blockquote>
+<blockquote>
+<h4 id="英语"><a href="#英语" class="headerlink" title="英语"></a>英语</h4><p><a href="http://learnenglish.britishcouncil.org" target="_blank" rel="noopener">BritishCouncil</a> |<br><a href="https://aimwriting.mtutor.engkoo.com" target="_blank" rel="noopener">微软小英写作</a> |<br><a href="http://www.phrasebank.manchester.ac.uk/" target="_blank" rel="noopener">Academic prasebank</a> |<br><a href="http://www.kekenet.com" target="_blank" rel="noopener">keke</a></p>
+</blockquote>
+<blockquote>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p><a href="http://gtwlx.jpkc.fudan.edu.cn/solid.html" target="_blank" rel="noopener">《固体物理》</a><br><a href="https://ecee.colorado.edu/~bart/book/book/title.htm" target="_blank" rel="noopener">Principles of Semiconductor Sevices</a>, by Bart Van Zeghbroeck,一本讲半导体设备的在线书籍<br> <a href="http://gpumd.zheyongfan.org/index.php/Main_Page" target="_blank" rel="noopener"><strong>GPUMD</strong>在线Manual</a>,<a href="https://github.com/brucefan1983/GPUMD" target="_blank" rel="noopener">源码</a><br><a href="http://gpumd.zheyongfan.org/index.php/Molecular_Dynamics_Simulaiton" target="_blank" rel="noopener">MD模拟教材 Molecular Dynamics Simulaiton</a><br><a href="https://markdown-zh.readthedocs.io/en/latest/" target="_blank" rel="noopener">Markdown中文文档</a><br><a href="http://mahua.jser.me/" target="_blank" rel="noopener">Markdown在线编辑器</a><br><a href="https://www.runoob.com/" target="_blank" rel="noopener">RUNOOB菜鸟教程</a><br><a href="https://www.liaoxuefeng.com/" target="_blank" rel="noopener">廖雪峰的官方网站</a><br><a href="https://www.w3cschool.cn/" target="_blank" rel="noopener">W3Cschool</a><br><a href="https://wiki.jikexueyuan.com/" target="_blank" rel="noopener">极客学院</a><br><a href="https://www.yanxishe.com/" target="_blank" rel="noopener">AI研习社</a><br><a href="https://www.v2ex.com/" target="_blank" rel="noopener">V2EX</a><br><a href="https://juejin.im/" target="_blank" rel="noopener">掘金</a><br><a href="http://net.pku.edu.cn/~yhf/tutorial/html/html.htm" target="_blank" rel="noopener">北大HTML教程</a><br><a href="http://www.divcss5.com/" target="_blank" rel="noopener">DIVCSS5</a> | <a href="http://www.html580.com/" target="_blank" rel="noopener">HTML580</a><br><a href="https://hellogithub.com/" target="_blank" rel="noopener">HelloGithub</a><br><a href="https://tool.lu/" target="_blank" rel="noopener">程序员工具箱</a><br><a href="https://justcode.ikeepstudying.com/" target="_blank" rel="noopener">justcode</a><br><a href="http://sofasofa.io/" target="_blank" rel="noopener">数据科学社区</a><br><a href="https://juejin.im/" target="_blank" rel="noopener">掘金</a><br><a href="https://www.ilovematlab.cn/forum.php?mod=home" target="_blank" rel="noopener">Matlab论坛</a></p>
+</blockquote>
+<h3 id="小说"><a href="#小说" class="headerlink" title="小说"></a><strong>小说</strong></h3><blockquote>
+<h4 id="武侠"><a href="#武侠" class="headerlink" title="武侠"></a>武侠</h4><p><a href="https://www.weibo.com/u/3218434004" target="_blank" rel="noopener">《英雄志》未完…… -孙晓</a><br><a href="https://www.weibo.com/u/3218434004" target="_blank" rel="noopener">隆庆天下-孙晓</a><br><a href="https://www.weibo.com/fenggekunlun" target="_blank" rel="noopener">《昆仑》-凤歌</a><br><a href="https://www.weibo.com/fenggekunlun" target="_blank" rel="noopener">《沧海》-凤歌</a><br>《乱世铜炉》-又是十三<br><a href="https://mp.weixin.qq.com/s/BLUgI_hz289yvLbnoyhnxQ" target="_blank" rel="noopener">《天之下》第一部 -三弦大天使</a><br><a href="https://www.weibo.com/fenggekunlun" target="_blank" rel="noopener">《灵飞经》-凤歌</a></p>
+</blockquote>
 </br>
 
-<p><marquee>同心一人去，坐觉长安空。</marquee></p>
-<center class="half">
-    <img src=https://s1.ax1x.com/2020/08/16/dES6w8.jpg width="600" alt="SleeplessTown--2019/06/08">
-</center>
 
+<blockquote>
+<h4 id="历史-架空"><a href="#历史-架空" class="headerlink" title="历史/架空"></a>历史/架空</h4><p><a href="https://h5.17k.com/book/21409.html" target="_blank" rel="noopener">《家园》-酒徒</a><br><a href="https://book.qidian.com/info/1015508346" target="_blank" rel="noopener">《北颂》-圣诞稻草人</a><br><a href="https://book.qidian.com/info/1509007" target="_blank" rel="noopener">《曹贼》-庚新</a><br><a href="https://book.qidian.com/info/1009616" target="_blank" rel="noopener">《恶汉》-庚新</a></p>
+</blockquote>
+</br>
 
-
+<blockquote>
+<h4 id="悬疑-奇幻"><a href="#悬疑-奇幻" class="headerlink" title="悬疑/奇幻"></a>悬疑/奇幻</h4><p><a href="https://weibo.com/u/1877674995" target="_blank" rel="noopener">《无心法师》-尼罗</a><br><a href="https://book.qidian.com/info/1017325994" target="_blank" rel="noopener">《天才在左，疯子在右》-高铭</a><br><a href="https://book.qidian.com/info/1025008634" target="_blank" rel="noopener">《民国诡案录.1</a> <a href="https://book.qidian.com/info/1025008636" target="_blank" rel="noopener">2</a> <a href="https://book.qidian.com/info/1025008638" target="_blank" rel="noopener">3</a>》-张佳竹<br><a href="https://book.qidian.com/info/1016629825" target="_blank" rel="noopener">《天行健》-燕垒生</a><br><a href="https://www.17k.com/book/465602.html" target="_blank" rel="noopener">《残袍》- 风御九秋|奇幻/民国|</a><br><a href="https://book.qidian.com/info/1017311037" target="_blank" rel="noopener">《白骨西游记》-理发的小强2</a><br><a href="https://book.qidian.com/info/1018417757" target="_blank" rel="noopener">《花果山的余孽》-供月</a><br></br></p>
+</blockquote>
+<blockquote>
+<h4 id="玄幻"><a href="#玄幻" class="headerlink" title="玄幻"></a>玄幻</h4><p><a href="https://www.17k.com/book/715640.html" target="_blank" rel="noopener">《紫阳》- 风御九秋|东方/玄幻|</a><br><a href="https://www.17k.com/book/2065918.html" target="_blank" rel="noopener">《参天》- 风御九秋|东方/玄幻|</a><br><a href="https://book.qidian.com/info/1017125042" target="_blank" rel="noopener">《临渊行》-宅猪|架空/玄幻|</a><br><a href="https://book.qidian.com/info/1023501483" target="_blank" rel="noopener">《仙箓》-布谷聊</a><br></br></p>
+</blockquote>
 
                 
             </div>
@@ -546,13 +696,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/photos/index.html">
+                <a href="/other/books/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="书籍收藏">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">书籍收藏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -563,7 +713,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-18
                             </span>
                         <span class="publish-author">
                             
@@ -584,13 +734,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/photos/index.html">
+                <a href="/other/books/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="书籍收藏">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">书籍收藏</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -601,7 +751,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-18
                             </span>
                         <span class="publish-author">
                             
@@ -640,6 +790,100 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -717,7 +961,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">13.9k</span>&nbsp;字
+                class="white-color">13.6k</span>&nbsp;字
             
             
             
