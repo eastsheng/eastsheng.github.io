@@ -454,9 +454,9 @@
     <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/"/>
     <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
-    <updated>2020-12-29T04:46:33.303Z</updated>
+    <updated>2021-02-15T06:52:30.071Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p><h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554" target="_blank" rel="noopener">https://blog.csdn.net/COCO56/article/details/108634554</a> </p><center class="half"><img src="https://s1.ax1x.com/2020/06/22/NGwqBQ.png" alt="END" border="0" width="10%" /></center>]]></content>
+    <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p><h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554" target="_blank" rel="noopener">https://blog.csdn.net/COCO56/article/details/108634554</a> </p><h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul><li>打开命令提示符（管理员）</li><li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li><li>也可以关闭：<code>net user administrator /active:no</code></li></ul>]]></content>
     
     <summary type="html">
     
@@ -473,9 +473,7 @@
       <category term="Windows" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Windows/"/>
     
     
-      <category term="没有解决的问题" scheme="https://eastsheng.ink/tags/%E6%B2%A1%E6%9C%89%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-    
-      <category term="Network Connections" scheme="https://eastsheng.ink/tags/Network-Connections/"/>
+      <category term="Windows problems" scheme="https://eastsheng.ink/tags/Windows-problems/"/>
     
   </entry>
   
