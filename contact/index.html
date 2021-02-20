@@ -460,15 +460,14 @@
     }
     .deng-box {
         position: fixed;
-       /* top: -30px; */
-        top: 13px;
-        right: -20px;
+        top: -10px;
+        right: 100px;
         z-index: 999;
     }
     .deng-box1 {
         position: fixed;
-        top: 13px;
-        /* right: 10px; */
+        top: -10px;
+        right: 1200px;
         z-index: 999;
     }
     .deng-box1 .deng {
@@ -651,7 +650,7 @@
 </script>
 
 
-<!--
+<!--原始header
 <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -1124,7 +1123,7 @@
         time: "0.5s",                   // default: '0.3s'
         mixColor: "#fff",               // default: '#fff'
         backgroundColor: "#fff",        // default: '#fff'
-        buttonColorDark: "#100f2c",     // default: '#100f2c'
+        buttonColorDark: "#7977a8",     // default: '#100f2c'
         buttonColorLight: "#fff",       // default: '#fff'
         saveInCookies: true,            // default: true,
         label: "👀",                    // default: '🌓'
@@ -1570,6 +1569,20 @@ $(function () {
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
 
+
+    <!-- 天气接口控件   -->
+    
+        <script type="text/javascript">
+        WIDGET = {FID: 'zLkJSQpqsh'}
+        </script>
+    <!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      if (windowWidth > 768) {
+          document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+      }
+    </script>
+    
 </body>
 
 </html>
