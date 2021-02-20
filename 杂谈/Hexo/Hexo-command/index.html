@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    162
+                    166
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,25 +566,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] <span class="string">"My New Post"</span></span><br><span class="line"><span class="built_in">where</span> layout: post; page; draft</span><br><span class="line">default layout==post</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">or</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">or</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">or</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
+where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
+default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
+or
+$ hexo s</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
+or
+$ hexo g</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
+or
+$ hexo d</code></pre>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
-<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be" target="_blank" rel="noopener">建站参考链接</a></li>
-<li><a href="https://www.jianshu.com/p/79bd6fb15790" target="_blank" rel="noopener">Hexo同时部署在GitHub、Coding、Gitee</a></li>
-<li><a href="https://www.jianshu.com/p/7d3d87b52ad7" target="_blank" rel="noopener">Hexo博客提交百度和Google收录参考链接</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/111796666" target="_blank" rel="noopener">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/149843912" target="_blank" rel="noopener">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
-<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html" target="_blank" rel="noopener">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
+<li>自定义一个不使用主题模板渲染的独立页面 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
 </ul>
 
                 
@@ -940,6 +952,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1110,7 +1124,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1217,7 +1231,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

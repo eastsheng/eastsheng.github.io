@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    878
+                    882
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -563,7 +570,7 @@
 <li>Windows下安装</li>
 </ul>
 <ol>
-<li><a href="http://packages.lammps.org/windows.html" target="_blank" rel="noopener">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li><a target="_blank" rel="noopener" href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
 <li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
 <li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
 <li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
@@ -577,19 +584,24 @@
 </ul>
 </blockquote>
 </li>
-<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html" target="_blank" rel="noopener">官网</a></li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a target="_blank" rel="noopener" href="http://packages.lammps.org/windows.html">官网</a></li>
 </ol>
 <ul>
 <li>Linux下安装</li>
 </ul>
-<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1484595</a></p>
+<p><strong>LAMMPS</strong><br>参考:<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
 <h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
 <p> <strong>问题？</strong></p>
 <ol>
 <li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">variable k  index 1 2 3 </span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">clear</span><br><span class="line">next k</span><br><span class="line">jump inputfile.in</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
+...
+...
+...
+clear
+next k
+jump inputfile.in</code></pre>
 <ol start="2">
 <li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
 <li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
@@ -598,17 +610,17 @@
 </ol>
 <p><strong>已解决</strong></p>
 <p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
-<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</span><br></pre></td></tr></table></figure>
-
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
 <p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">boundary	p p p</span><br></pre></td></tr></table></figure>
-
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
 <h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
 <li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
 <li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
 <li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
 </ul>
-<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">group	g_ID	region	reg_ID</span><br><span class="line">or</span><br><span class="line">group   g_ID    type 1 2 #atom type</span><br></pre></td></tr></table></figure>
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
+or
+group   g_ID    type 1 2 #atom type</code></pre>
 <ul>
 <li>所分的组的个数不能大于32个。</li>
 </ul>
@@ -995,6 +1007,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1165,7 +1179,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1272,7 +1286,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

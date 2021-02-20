@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -566,15 +573,21 @@
 </li>
 <li><p>line1(triclinic盒子):pbc_a pbc_b pbc_c a_x a_y a_z b_x b_y b_z c_x c_y c_z<br>pbc_a pbc_b pbc_c(边界条件，1=周期性边界条件，0=自由边界条件)<br>a_x a_y a_z b_x b_y b_z c_x c_y c_z(矢量a,b,c的分量)</p>
 </li>
-<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="如果has_velocity=1，0原子的速度分量">vz0</a><br>[group0_0] [group1_0] <a href="如果number_of_grouping_methods>0,group1_0表示0原子被分到第1组">group2_0</a></p>
+<li><p>line2:t0 x0 y0 z0 m0 [vx0] [vy0] [vz0] [group0_0] [group1_0] [group2_0]…<br>t0(原子类型)<br>x0 y0 z0(0原子的坐标)<br>m0(0原子的质量)<br>[vx0] [vy0] <a href="%E5%A6%82%E6%9E%9Chas_velocity=1%EF%BC%8C0%E5%8E%9F%E5%AD%90%E7%9A%84%E9%80%9F%E5%BA%A6%E5%88%86%E9%87%8F">vz0</a><br>[group0_0] [group1_0] <a href="%E5%A6%82%E6%9E%9Cnumber_of_grouping_methods%3E0,group1_0%E8%A1%A8%E7%A4%BA0%E5%8E%9F%E5%AD%90%E8%A2%AB%E5%88%86%E5%88%B0%E7%AC%AC1%E7%BB%84">group2_0</a></p>
 </li>
 </ul>
 <h4 id="GPUMD里的error"><a href="#GPUMD里的error" class="headerlink" title="GPUMD里的error"></a>GPUMD里的error</h4><ol>
 <li>Input Error:</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Input Error:</span><br><span class="line">    File:       model&#x2F;neighbor.cu</span><br><span class="line">    Line:       236</span><br><span class="line">    Error text: Number of bins is larger than number of atoms.</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">Input Error:
+    File:       model&#x2F;neighbor.cu
+    Line:       236
+    Error text: Number of bins is larger than number of atoms.</code></pre>
 <ul>
-<li>找到neighbor.cu<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;</span><br><span class="line">if (num_bins &gt; N) &#123;</span><br><span class="line">  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>找到neighbor.cu<pre class="language-none"><code class="language-none">int num_bins &#x3D; cell_n_x * cell_n_y * cell_n_z;
+if (num_bins &gt; N) &#123;
+  PRINT_INPUT_ERROR(&quot;Number of bins is larger than number of atoms.\n&quot;);
+&#125;</code></pre></li>
 <li>发现是由于num_bins &gt; N，这里改了z方向的边界条件为自由边界条件就好了</li>
 </ul>
 
@@ -928,6 +941,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1098,7 +1113,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1205,7 +1220,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

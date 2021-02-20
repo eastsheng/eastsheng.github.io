@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,7 +566,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line"> 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);</span><br><span class="line"> 	background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">	background-size: cover</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+                <h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
 <ol>
 <li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
 <li>这里使用的是unsplash，刷新后自动更换美图。</li>
@@ -918,6 +932,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1088,7 +1104,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1195,7 +1211,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

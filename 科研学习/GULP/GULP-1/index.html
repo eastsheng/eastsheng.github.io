@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    151
+                    149
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -560,22 +567,20 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download" target="_blank">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow" target="_blank" rel="noopener">Manual</a></li>
+<li>GULP (General Utility Lattice Program)<a target="_blank" href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a target="_blank" rel="noopener" href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
 </ul>
 <h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
 <li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
 <li>例如：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
 
 <h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
 <li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
 <li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ shrink  24 24 1</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
 <ul>
 <li>官网给出的解释是：</li>
 <li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
@@ -933,6 +938,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1103,7 +1110,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1210,7 +1217,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

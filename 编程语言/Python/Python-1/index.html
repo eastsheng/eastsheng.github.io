@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    163
+                    160
                 </div>
                 
 
@@ -548,6 +552,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
         
 
         
@@ -568,18 +575,26 @@
 <li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
 <li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ from distutils.core import setup</span><br><span class="line"></span><br><span class="line">$ setup(</span><br><span class="line">$ name         &#x3D; &#39;thermal_conductivity&#39;,</span><br><span class="line">$ version      &#x3D; &#39;1.0.0&#39;,</span><br><span class="line">$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],</span><br><span class="line">$ author       &#x3D; &#39;eastsheng&#39;,</span><br><span class="line">$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,</span><br><span class="line">$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,</span><br><span class="line">$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">$ from distutils.core import setup
 
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
 <ol start="3">
 <li>然后，在此文件夹里打开cmd，输入：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py sdist</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
 <ol start="4">
 <li>最后，安装此模块到本地，输入：</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ python setup.py install</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
 
                 
             </div>
@@ -934,6 +949,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1104,7 +1121,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1211,7 +1228,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

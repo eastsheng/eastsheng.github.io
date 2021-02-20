@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    296
+                    295
                 </div>
                 
 
@@ -548,6 +552,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
         
 
         
@@ -565,35 +572,33 @@
 <h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
 <li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
 <li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">np.mean(array,axis&#x3D;1) #行平均</span><br><span class="line">np.mean(array,axis&#x3D;0) #列平均</span><br></pre></td></tr></table></figure></li>
+<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
+np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
 <li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">np.insert(x,3,0,axis&#x3D;1)</span><br></pre></td></tr></table></figure></li>
-<li>按照第一列对矩阵fe进行排序<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</span><br></pre></td></tr></table></figure>
-
+<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
 
 </li>
 </ol>
 <h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li><p>获得当前文件所在目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure></li>
-<li><p>在当前文件夹生成文件夹，以时间命名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())</span><br><span class="line">folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())</span><br><span class="line">os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更改当前工作路径</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>判断一个路径是否存在</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)</span><br><span class="line">print(path_yesno)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>获取目录中所有文件及文件夹list</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)</span><br><span class="line">print(PATH)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建和删除子目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line">os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)</span><br><span class="line"></span><br><span class="line">path&#x3D;os.getcwd()</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>改文件名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</span><br></pre></td></tr></table></figure>
-</li>
+<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
+folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
+os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
+<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+print(path_yesno)</code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
+print(PATH)</code></pre></li>
+<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
 </ol>
 
                 
@@ -948,6 +953,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1118,7 +1125,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1225,7 +1232,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

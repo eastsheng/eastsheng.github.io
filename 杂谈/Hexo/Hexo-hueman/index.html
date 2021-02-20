@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    590
+                    591
                 </div>
                 
 
@@ -548,6 +552,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
         
 
         
@@ -566,12 +573,12 @@
 
 
 <p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</span><br></pre></td></tr></table></figure>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
 <p><strong>注：</strong></p>
 <ul>
 <li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
 </ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: hueman</span><br></pre></td></tr></table></figure>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
 <p><strong>注：</strong></p>
 <ul>
 <li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
@@ -580,10 +587,20 @@
 <h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
 <li>第一个坑</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:
+    About: &#x2F;about&#x2F;index.html</code></pre>
 <ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Menus</span><br><span class="line">menu:</span><br><span class="line">    Home: &#x2F;</span><br><span class="line">    # Delete this row if you don&#39;t want categories in your header nav bar</span><br><span class="line">    Categories:  </span><br><span class="line">    People: &#x2F;people</span><br><span class="line">    About: &#x2F;about&#x2F;index.html</span><br></pre></td></tr></table></figure></li>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:  
+    People: &#x2F;people
+    About: &#x2F;about&#x2F;index.html</code></pre></li>
 <li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
 <li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
 </ol>
@@ -591,7 +608,7 @@
 <li>第二个坑</li>
 </ul>
 <ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png" alt=""></p>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
 </li>
 <li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
 </li>
@@ -600,14 +617,16 @@
 <li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title:  </span><br><span class="line">categories:</span><br><span class="line">- Technology</span><br><span class="line">- Github</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">title:  
+categories:
+- Technology
+- Github</code></pre>
 <ol start="8">
 <li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
 </ol>
 <h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
 <ul>
-<li><a href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">附上主题源码</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
 </ul>
 
                 
@@ -960,6 +979,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1130,7 +1151,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1237,7 +1258,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

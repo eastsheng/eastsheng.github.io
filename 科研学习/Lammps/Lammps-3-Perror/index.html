@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -536,7 +540,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    85
+                    90
                 </div>
                 
 
@@ -553,6 +557,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -566,7 +573,14 @@
                 <h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
 <ul>
 <li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Mo S  S</span><br><span class="line">S  Mo Mo</span><br><span class="line">Mo Mo Mo</span><br><span class="line">Mo Mo S </span><br><span class="line">Mo S  Mo</span><br><span class="line">S  Mo S </span><br><span class="line">S  S  Mo</span><br><span class="line">S  S  S</span><br></pre></td></tr></table></figure></li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
 <li>但是，如果少给其中一个就会报此错误。</li>
 </ul>
 
@@ -924,6 +938,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1094,7 +1110,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1201,7 +1217,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    241
+                    240
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -563,23 +570,26 @@
 <li>目的是要把C盘的一个文件夹链接到E盘，</li>
 <li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径</span><br><span class="line">正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure>
-
+<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
+<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+正确，然后再试一次。
+所在位置 行:1 字符: 1
++ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...
++ ~~~~~~
+    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+</code></pre>
 <h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
 <li>因为PowerShell中没有mklink命令</li>
 </ul>
 <h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
 <li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</span><br></pre></td></tr></table></figure>
+<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
 
+<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre>
 
-<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</span><br></pre></td></tr></table></figure>
-
-
-<p><a href="https://cloud.tencent.com/developer/article/1341325" target="_blank" rel="noopener">参考链接</a></p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
 
                 
             </div>
@@ -928,6 +938,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1098,7 +1110,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1205,7 +1217,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

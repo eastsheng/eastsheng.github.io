@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -489,8 +493,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/npm-install-ERROR/">
-                                <span class="chip bg-color">npm install ERROR</span>
+                            <a href="/tags/npm/">
+                                <span class="chip bg-color">npm</span>
                             </a>
                         
                     </div>
@@ -525,14 +529,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-16
+                    2021-02-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    45
+                    57
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,19 +566,26 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
+                <h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
 
-<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-目的"><a href="#2-目的" class="headerlink" title="2. 目的"></a>2. 目的</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm cache clean --force</span><br></pre></td></tr></table></figure>
 
 
-<p><a href="https://blog.csdn.net/idomyway/article/details/84327567" target="_blank" rel="noopener">参考链接</a></p>
+
+
+
+
+
+
+
 
                 
             </div>
@@ -586,8 +600,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/npm-install-ERROR/">
-                                    <span class="chip bg-color">npm install ERROR</span>
+                                <a href="/tags/npm/">
+                                    <span class="chip bg-color">npm</span>
                                 </a>
                             
                         </div>
@@ -920,6 +934,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1090,7 +1106,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1197,7 +1213,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

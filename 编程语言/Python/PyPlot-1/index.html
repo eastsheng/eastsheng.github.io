@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    167
+                    170
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,14 +566,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line">from matplotlib.collections import LineCollection</span><br><span class="line"></span><br><span class="line">x &#x3D; np.linspace(0, 2*np.pi, 100)</span><br><span class="line">y &#x3D; np.sin(x)</span><br><span class="line">z &#x3D; np.cos(x)#上色数据</span><br><span class="line"></span><br><span class="line">points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)</span><br><span class="line">segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)</span><br><span class="line"></span><br><span class="line">fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))</span><br><span class="line">fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界</span><br><span class="line"></span><br><span class="line">norm &#x3D; plt.Normalize(min(z),max(z))</span><br><span class="line">lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)</span><br><span class="line">lc.set_array(z)</span><br><span class="line">lc.set_linewidth(2)</span><br><span class="line">line &#x3D; ax.add_collection(lc)</span><br><span class="line">fig.colorbar(line)</span><br><span class="line"></span><br><span class="line">plt.xlim(0,2*np.pi)</span><br><span class="line">plt.ylim(-1,1)</span><br><span class="line">plt.savefig(&#39;fig1.png&#39;)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+                <h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
 
+x &#x3D; np.linspace(0, 2*np.pi, 100)
+y &#x3D; np.sin(x)
+z &#x3D; np.cos(x)#上色数据
+
+points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
+segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
+
+fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
+fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
+
+norm &#x3D; plt.Normalize(min(z),max(z))
+lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
+lc.set_array(z)
+lc.set_linewidth(2)
+line &#x3D; ax.add_collection(lc)
+fig.colorbar(line)
+
+plt.xlim(0,2*np.pi)
+plt.ylim(-1,1)
+plt.savefig(&#39;fig1.png&#39;)
+plt.show()
+</code></pre>
 <ul>
 <li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
 </ul>
 <h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
 
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/" target="_blank" rel="noopener">参考</a></p>
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a target="_blank" rel="noopener" href="https://www.matplotlib.org.cn/">参考</a></p>
 
                 
             </div>
@@ -923,6 +954,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1093,7 +1126,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1200,7 +1233,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

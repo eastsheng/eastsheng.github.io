@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    74
+                    76
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,14 +566,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout yourbranch</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm yourfile</span><br><span class="line">or</span><br><span class="line">git rm -r yourfolder&#x2F;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;your modify comment&quot;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin yourbranch</span><br></pre></td></tr></table></figure>
-
+                <h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-none"><code class="language-none">git rm yourfile
+or
+git rm -r yourfolder&#x2F;
+</code></pre>
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-none"><code class="language-none">git commit -m &quot;your modify comment&quot;
+</code></pre>
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-none"><code class="language-none">git push origin yourbranch
+</code></pre>
 
 
 
@@ -920,6 +928,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1090,7 +1100,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1197,7 +1207,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">

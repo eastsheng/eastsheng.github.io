@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/jquery/jquery.min.js"></script>
 	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -413,6 +413,9 @@
     .toc-widget {
         width: 345px;
         padding-left: 20px;
+		background-color: rgb(255, 255, 255,0.7);
+		border-radius: 10px;
+		box-shadow: 0 10px 35px 2px rgba(0, 0, 0, .15), 0 5px 15px rgba(0, 0, 0, .07),0 2px 5px -5px rgba(0, 0, 0, .1) !important;
     }
 
     .toc-widget .toc-title {
@@ -430,6 +433,7 @@
     #toc-content {
         padding-bottom: 30px;
         overflow: auto;
+		margin-bottom: 20px;
     }
 
     #toc-content ol {
@@ -532,7 +536,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    454
+                    456
                 </div>
                 
 
@@ -549,6 +553,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -559,7 +566,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/145873368</a></p>
+                <h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
 <p>Alamode 运行</p>
 <ul>
 <li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
@@ -597,7 +604,9 @@
 <ul>
 <li>cutoff 的值可以从log中查看</li>
 </ul>
-<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">terminate called after throwing an instance of &#39;std::bad_alloc&#39;</span><br><span class="line">  what():  std::bad_alloc</span><br><span class="line">Aborted (core dumped)</span><br></pre></td></tr></table></figure>
+<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><pre class="language-none"><code class="language-none">terminate called after throwing an instance of &#39;std::bad_alloc&#39;
+  what():  std::bad_alloc
+Aborted (core dumped)</code></pre>
 <ul>
 <li><ol>
 <li>主要是由于运行内存不足；</li>
@@ -608,7 +617,7 @@
 </ol>
 </li>
 </ul>
-<h3 id="4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
+<h3 id="4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候  Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>  Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
 <li>截断半径的原因？怎么设置cutoff?</li>
 <li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
 </ul>
@@ -963,6 +972,8 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/libs/codeBlock/codeShrink.js"></script>
 
 
+<!-- 代码块折行 -->
+
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
@@ -1133,7 +1144,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             
@@ -1240,7 +1251,6 @@
 </footer>
 
 <div class="progress-bar"></div>
-
 
     <!-- 搜索遮罩框 -->
 <div id="searchModal" class="modal">
