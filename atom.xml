@@ -18,8 +18,8 @@
   
   <entry>
     <title>Daily Notes</title>
-    <link href="https://eastsheng.ink/Learning-Notes/2021/DailyNotes2021/"/>
-    <id>https://eastsheng.ink/Learning-Notes/2021/DailyNotes2021/</id>
+    <link href="https://eastsheng.ink/learning-notes/2021/dailynotes2021/"/>
+    <id>https://eastsheng.ink/learning-notes/2021/dailynotes2021/</id>
     <published>2021-01-22T10:11:28.000Z</published>
     <updated>2021-02-16T07:24:34.365Z</updated>
     
@@ -44,8 +44,8 @@
   
   <entry>
     <title>Learning English Notes</title>
-    <link href="https://eastsheng.ink/Learning-Notes/2021/EnglishNote2021/"/>
-    <id>https://eastsheng.ink/Learning-Notes/2021/EnglishNote2021/</id>
+    <link href="https://eastsheng.ink/learning-notes/2021/englishnote2021/"/>
+    <id>https://eastsheng.ink/learning-notes/2021/englishnote2021/</id>
     <published>2020-12-31T16:00:00.000Z</published>
     <updated>2021-02-16T03:06:35.253Z</updated>
     
@@ -71,8 +71,8 @@
   
   <entry>
     <title>Alamode</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/alamode-1/</id>
+    <link href="https://eastsheng.ink/ke-yan-xue-xi/alamode/alamode-1/"/>
+    <id>https://eastsheng.ink/ke-yan-xue-xi/alamode/alamode-1/</id>
     <published>2020-11-21T15:07:16.000Z</published>
     <updated>2021-02-16T03:13:05.797Z</updated>
     
@@ -97,8 +97,8 @@
   
   <entry>
     <title>GPUMD学习</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/gpumd-1/</id>
+    <link href="https://eastsheng.ink/ke-yan-xue-xi/gpumd/gpumd-1/"/>
+    <id>https://eastsheng.ink/ke-yan-xue-xi/gpumd/gpumd-1/</id>
     <published>2020-10-28T03:35:45.000Z</published>
     <updated>2021-02-16T03:13:36.392Z</updated>
     
@@ -123,8 +123,8 @@
   
   <entry>
     <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <link href="https://eastsheng.ink/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/"/>
-    <id>https://eastsheng.ink/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/PyPlot-1/</id>
+    <link href="https://eastsheng.ink/bian-cheng-yu-yan/python/pyplot-1/"/>
+    <id>https://eastsheng.ink/bian-cheng-yu-yan/python/pyplot-1/</id>
     <published>2020-08-27T02:11:06.000Z</published>
     <updated>2021-02-16T03:11:47.197Z</updated>
     
@@ -149,8 +149,8 @@
   
   <entry>
     <title>Potential errors</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/Lammps-3-Perror/</id>
+    <link href="https://eastsheng.ink/ke-yan-xue-xi/lammps/lammps-3-perror/"/>
+    <id>https://eastsheng.ink/ke-yan-xue-xi/lammps/lammps-3-perror/</id>
     <published>2020-07-25T15:00:15.000Z</published>
     <updated>2021-02-16T03:22:48.238Z</updated>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>Learning Notes</title>
-    <link href="https://eastsheng.ink/Learning-Notes/2020/Notes/"/>
-    <id>https://eastsheng.ink/Learning-Notes/2020/Notes/</id>
+    <link href="https://eastsheng.ink/learning-notes/2020/notes/"/>
+    <id>https://eastsheng.ink/learning-notes/2020/notes/</id>
     <published>2020-07-22T16:00:00.000Z</published>
     <updated>2021-02-16T03:07:59.012Z</updated>
     
@@ -203,8 +203,8 @@
   
   <entry>
     <title>Linux 汇总</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/Linux-1/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Linux/Linux-1/</id>
+    <link href="https://eastsheng.ink/za-tan/linux/linux-1/"/>
+    <id>https://eastsheng.ink/za-tan/linux/linux-1/</id>
     <published>2020-07-10T11:20:36.000Z</published>
     <updated>2021-02-16T03:01:43.712Z</updated>
     
@@ -231,8 +231,8 @@
   
   <entry>
     <title>Hueman主题</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-hueman/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-hueman/</id>
+    <link href="https://eastsheng.ink/za-tan/hexo/hexo-hueman/"/>
+    <id>https://eastsheng.ink/za-tan/hexo/hexo-hueman/</id>
     <published>2020-07-07T05:20:22.000Z</published>
     <updated>2021-02-16T03:24:51.337Z</updated>
     
@@ -259,8 +259,8 @@
   
   <entry>
     <title>Git Push Everything up-to-date错误</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/GitPushError/</id>
+    <link href="https://eastsheng.ink/za-tan/git-command/gitpusherror/"/>
+    <id>https://eastsheng.ink/za-tan/git-command/gitpusherror/</id>
     <published>2020-07-02T15:27:05.000Z</published>
     <updated>2021-02-17T06:31:11.318Z</updated>
     
@@ -285,8 +285,8 @@
   
   <entry>
     <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/npm/Npm-1/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/npm/Npm-1/</id>
+    <link href="https://eastsheng.ink/za-tan/npm/npm-1/"/>
+    <id>https://eastsheng.ink/za-tan/npm/npm-1/</id>
     <published>2020-07-01T06:50:16.000Z</published>
     <updated>2021-02-20T03:37:17.164Z</updated>
     
@@ -311,8 +311,8 @@
   
   <entry>
     <title>Vscode常用</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Vscode1/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Vscode1/</id>
+    <link href="https://eastsheng.ink/za-tan/vscode1/"/>
+    <id>https://eastsheng.ink/za-tan/vscode1/</id>
     <published>2020-06-30T03:03:46.000Z</published>
     <updated>2021-02-16T03:24:14.521Z</updated>
     
@@ -337,8 +337,8 @@
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/mklink/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/mklink/</id>
+    <link href="https://eastsheng.ink/za-tan/windows/mklink/"/>
+    <id>https://eastsheng.ink/za-tan/windows/mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
     <updated>2021-02-16T03:23:00.741Z</updated>
     
@@ -365,8 +365,8 @@
   
   <entry>
     <title>给icarus主题换背景图片</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-icarus/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Hexo/Hexo-icarus/</id>
+    <link href="https://eastsheng.ink/za-tan/hexo/hexo-icarus/"/>
+    <id>https://eastsheng.ink/za-tan/hexo/hexo-icarus/</id>
     <published>2020-06-28T16:00:34.000Z</published>
     <updated>2021-02-16T03:22:28.521Z</updated>
     
@@ -391,8 +391,8 @@
   
   <entry>
     <title>Git Command-delete file</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/git-delfile/</id>
+    <link href="https://eastsheng.ink/za-tan/git-command/git-delfile/"/>
+    <id>https://eastsheng.ink/za-tan/git-command/git-delfile/</id>
     <published>2020-06-26T05:22:24.000Z</published>
     <updated>2021-02-16T03:24:36.478Z</updated>
     
@@ -417,8 +417,8 @@
   
   <entry>
     <title>Windows相关</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Windows/WindowsProblems/</id>
+    <link href="https://eastsheng.ink/za-tan/windows/windowsproblems/"/>
+    <id>https://eastsheng.ink/za-tan/windows/windowsproblems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
     <updated>2021-02-16T03:20:35.548Z</updated>
     
@@ -443,8 +443,8 @@
   
   <entry>
     <title>Origin Integrate</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-2/</id>
+    <link href="https://eastsheng.ink/ke-yan-xue-xi/origin/origin-2/"/>
+    <id>https://eastsheng.ink/ke-yan-xue-xi/origin/origin-2/</id>
     <published>2020-06-22T11:16:25.000Z</published>
     <updated>2021-02-16T03:23:29.076Z</updated>
     
@@ -471,8 +471,8 @@
   
   <entry>
     <title>Origin 画双y轴</title>
-    <link href="https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/"/>
-    <id>https://eastsheng.ink/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/Origin-1/</id>
+    <link href="https://eastsheng.ink/ke-yan-xue-xi/origin/origin-1/"/>
+    <id>https://eastsheng.ink/ke-yan-xue-xi/origin/origin-1/</id>
     <published>2020-06-22T07:21:49.000Z</published>
     <updated>2021-02-16T03:23:17.830Z</updated>
     
@@ -499,8 +499,8 @@
   
   <entry>
     <title>Git Command-branch</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/git-command/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/Git-Command/git-command/</id>
+    <link href="https://eastsheng.ink/za-tan/git-command/git-command/"/>
+    <id>https://eastsheng.ink/za-tan/git-command/git-command/</id>
     <published>2020-06-21T10:34:23.000Z</published>
     <updated>2021-02-16T03:24:31.957Z</updated>
     
@@ -525,8 +525,8 @@
   
   <entry>
     <title>实用网站合集</title>
-    <link href="https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/"/>
-    <id>https://eastsheng.ink/%E6%9D%82%E8%B0%88/sitecollect/</id>
+    <link href="https://eastsheng.ink/za-tan/sitecollect/"/>
+    <id>https://eastsheng.ink/za-tan/sitecollect/</id>
     <published>2020-06-19T00:50:09.000Z</published>
     <updated>2021-02-16T03:28:54.718Z</updated>
     
