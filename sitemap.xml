@@ -382,14 +382,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Hexo-command/</loc>
+    <loc>https://eastsheng.ink/tags/Hueman/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Hueman/</loc>
+    <loc>https://eastsheng.ink/tags/Hexo-command/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -417,14 +417,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Linux-Command/</loc>
+    <loc>https://eastsheng.ink/tags/npm/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/npm/</loc>
+    <loc>https://eastsheng.ink/tags/Linux-Command/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -452,14 +452,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Tecplot/</loc>
+    <loc>https://eastsheng.ink/tags/Python-numpy/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Python-numpy/</loc>
+    <loc>https://eastsheng.ink/tags/Tecplot/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -473,14 +473,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Windows-problems/</loc>
+    <loc>https://eastsheng.ink/tags/Alamode/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/tags/Alamode/</loc>
+    <loc>https://eastsheng.ink/tags/Windows-problems/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -580,7 +580,7 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Linux/</loc>
+    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/npm/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -594,7 +594,7 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/npm/</loc>
+    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Linux/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -636,14 +636,14 @@
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Windows/</loc>
+    <loc>https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/</loc>
+    <loc>https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Windows/</loc>
     <lastmod>2021-02-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
