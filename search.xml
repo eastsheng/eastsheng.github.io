@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Daily Notes</title>
+    <url>/learning-notes/2021/dailynotes2021/</url>
+    <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
+<li>neighbor skin style</li>
+<li>此命令用于设置cutoff distance;</li>
+<li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li>
+<li>一般使用<code>bin</code>较多；</li>
+<li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li>
+<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li>
+</ul>
+<h3 id="2-只要使用键盘Materials-Studio就卡住"><a href="#2-只要使用键盘Materials-Studio就卡住" class="headerlink" title="2. 只要使用键盘Materials Studio就卡住"></a>2. 只要使用键盘Materials Studio就卡住</h3><ul>
+<li>解决方法：在微软拼音输入法的“中”(或“英”)字上右击鼠标，然后点“设置”，在弹出界面中点“常规”，在新界面中向下滚动动底部，有个兼容性，打开兼容性，然后就OK了。</li>
+<li>参考链接 <a href="http://muchong.com/t-14329827-1">http://muchong.com/t-14329827-1</a></li>
+</ul>
+<h3 id="3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法"><a href="#3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法" class="headerlink" title="3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法"></a>3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法</h3><ul>
+<li>重装了Win10 20H2以后，右键此电脑后的属性面板变了，要彻底换回经典的属性面板方法。</li>
+<li>（1）打开注册表，直接搜索<code>注册表</code>、或者<code>Win+R</code>，然后输入<code>regedit</code>；</li>
+<li>（2）找到路径<code>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\0\2093230218</code>;</li>
+<li>（3）将EnabledState的数值数据修改为 <code>1</code> 即可。</li>
+<li>（4）参考链接：<a href="https://www.bilibili.com/read/cv8197364">https://www.bilibili.com/read/cv8197364</a></li>
+</ul>
+<h3 id="4-虚拟机不显示ip地址的解决方法"><a href="#4-虚拟机不显示ip地址的解决方法" class="headerlink" title="4. 虚拟机不显示ip地址的解决方法"></a>4. 虚拟机不显示ip地址的解决方法</h3><ul>
+<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
+<li>然后即可查看ip:<code>ifconfig</code></li>
+<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
+</ul>
+<h3 id="5-OPLS-optimized-potentials-for-liquid-simulations"><a href="#5-OPLS-optimized-potentials-for-liquid-simulations" class="headerlink" title="5. OPLS(optimized potentials for liquid simulations)"></a>5. OPLS(optimized potentials for liquid simulations)</h3><ul>
+<li>参考链接(<a href="https://blog.csdn.net/qq_31346429/article/details/106358251">https://blog.csdn.net/qq_31346429/article/details/106358251</a>)</li>
+</ul>
+<h3 id="6-AMBER基础教程B0：AMBER分子动力学模拟入门"><a href="#6-AMBER基础教程B0：AMBER分子动力学模拟入门" class="headerlink" title="6. [AMBER基础教程B0：AMBER分子动力学模拟入门]"></a>6. [AMBER基础教程B0：AMBER分子动力学模拟入门]</h3><ul>
+<li><a href="https://jerkwin.github.io/2018/01/17/AMBER%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8BB0-AMBER%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%85%A5%E9%97%A8/">参考链接</a></li>
+</ul>
+<h3 id="7-国内9大免费CDN汇总-转"><a href="#7-国内9大免费CDN汇总-转" class="headerlink" title="7. 国内9大免费CDN汇总 转"></a>7. 国内9大免费CDN汇总 转</h3><ul>
+<li>转 <a href="https://cloud.tencent.com/developer/article/1352398">https://cloud.tencent.com/developer/article/1352398</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Daily Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>实用网站合集</title>
     <url>/za-tan/sitecollect/</url>
     <content><![CDATA[<div class="notification is-info">
@@ -168,48 +213,203 @@
       </tags>
   </entry>
   <entry>
-    <title>Daily Notes</title>
-    <url>/learning-notes/2021/dailynotes2021/</url>
-    <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
-<li>neighbor skin style</li>
-<li>此命令用于设置cutoff distance;</li>
-<li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li>
-<li>一般使用<code>bin</code>较多；</li>
-<li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li>
-<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
+$ Fortran runtime error: Bad integer for item 1 in list input
+$ Bad real number in item 4 of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
 </ul>
-<h3 id="2-只要使用键盘Materials-Studio就卡住"><a href="#2-只要使用键盘Materials-Studio就卡住" class="headerlink" title="2. 只要使用键盘Materials Studio就卡住"></a>2. 只要使用键盘Materials Studio就卡住</h3><ul>
-<li>解决方法：在微软拼音输入法的“中”(或“英”)字上右击鼠标，然后点“设置”，在弹出界面中点“常规”，在新界面中向下滚动动底部，有个兼容性，打开兼容性，然后就OK了。</li>
-<li>参考链接 <a href="http://muchong.com/t-14329827-1">http://muchong.com/t-14329827-1</a></li>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
+$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
 </ul>
-<h3 id="3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法"><a href="#3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法" class="headerlink" title="3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法"></a>3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法</h3><ul>
-<li>重装了Win10 20H2以后，右键此电脑后的属性面板变了，要彻底换回经典的属性面板方法。</li>
-<li>（1）打开注册表，直接搜索<code>注册表</code>、或者<code>Win+R</code>，然后输入<code>regedit</code>；</li>
-<li>（2）找到路径<code>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\0\2093230218</code>;</li>
-<li>（3）将EnabledState的数值数据修改为 <code>1</code> 即可。</li>
-<li>（4）参考链接：<a href="https://www.bilibili.com/read/cv8197364">https://www.bilibili.com/read/cv8197364</a></li>
-</ul>
-<h3 id="4-虚拟机不显示ip地址的解决方法"><a href="#4-虚拟机不显示ip地址的解决方法" class="headerlink" title="4. 虚拟机不显示ip地址的解决方法"></a>4. 虚拟机不显示ip地址的解决方法</h3><ul>
-<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
-<li>然后即可查看ip:<code>ifconfig</code></li>
-<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
-</ul>
-<h3 id="5-OPLS-optimized-potentials-for-liquid-simulations"><a href="#5-OPLS-optimized-potentials-for-liquid-simulations" class="headerlink" title="5. OPLS(optimized potentials for liquid simulations)"></a>5. OPLS(optimized potentials for liquid simulations)</h3><ul>
-<li>参考链接(<a href="https://blog.csdn.net/qq_31346429/article/details/106358251">https://blog.csdn.net/qq_31346429/article/details/106358251</a>)</li>
-</ul>
-<h3 id="6-AMBER基础教程B0：AMBER分子动力学模拟入门"><a href="#6-AMBER基础教程B0：AMBER分子动力学模拟入门" class="headerlink" title="6. [AMBER基础教程B0：AMBER分子动力学模拟入门]"></a>6. [AMBER基础教程B0：AMBER分子动力学模拟入门]</h3><ul>
-<li><a href="https://jerkwin.github.io/2018/01/17/AMBER%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8BB0-AMBER%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%85%A5%E9%97%A8/">参考链接</a></li>
-</ul>
-<h3 id="7-国内9大免费CDN汇总-转"><a href="#7-国内9大免费CDN汇总-转" class="headerlink" title="7. 国内9大免费CDN汇总 转"></a>7. 国内9大免费CDN汇总 转</h3><ul>
-<li>转 <a href="https://cloud.tencent.com/developer/article/1352398">https://cloud.tencent.com/developer/article/1352398</a></li>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
+        <category>编程语言</category>
+        <category>Fortran</category>
       </categories>
       <tags>
-        <tag>Daily Notes</tag>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GULP 汇总</title>
+    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
+</ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GULP</category>
+      </categories>
+      <tags>
+        <tag>GULP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<ol>
+<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
+<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ from distutils.core import setup
+
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
+<ol start="3">
+<li>然后，在此文件夹里打开cmd，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<ol start="4">
+<li>最后，安装此模块到本地，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lammps 汇总</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-1/</url>
+    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
+<li>Windows下安装</li>
+</ul>
+<ol>
+<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
+<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
+<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
+<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
+<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
+<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
+<li>怎么设置环境变量：<blockquote>
+<ul>
+<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
+<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+</ul>
+</blockquote>
+</li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
+</ol>
+<ul>
+<li>Linux下安装</li>
+</ul>
+<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
+<p> <strong>问题？</strong></p>
+<ol>
+<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
+</ol>
+<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
+...
+...
+...
+clear
+next k
+jump inputfile.in</code></pre>
+<ol start="2">
+<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
+<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
+<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
+<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
+</ol>
+<p><strong>已解决</strong></p>
+<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
+<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
+<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
+<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
+<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
+<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
+</ul>
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
+or
+group   g_ID    type 1 2 #atom type</code></pre>
+<ul>
+<li>所分的组的个数不能大于32个。</li>
+</ul>
+<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
+<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
+<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
+<li>比如，分了120层，输出的结果有121层；</li>
+<li>但是，有些就很正常，比如分了200层；</li>
+<li>猜测的原因</li>
+</ol>
+<ul>
+<li>是边边上有多余的部分没有被分到？自动分了？</li>
+</ul>
+<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
+<ol>
+<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
+</li>
+<li><p>原子结构不稳定导致的，例如：</p>
+</li>
+</ol>
+<ul>
+<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
+<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
+</ul>
+<ol start="3">
+<li>势参数设置出错，例如：</li>
+</ol>
+<ul>
+<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
+</ul>
+<ol start="4">
+<li>是否有足够的真空层</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
       </tags>
   </entry>
   <entry>
@@ -280,6 +480,80 @@ $ hexo d</code></pre>
       </categories>
       <tags>
         <tag>Hexo command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hueman主题</title>
+    <url>/za-tan/hexo/hexo-hueman/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+
+<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
+<p><strong>注：</strong></p>
+<ul>
+<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
+</ul>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
+<p><strong>注：</strong></p>
+<ul>
+<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
+<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
+</ul>
+<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
+<li>第一个坑</li>
+</ul>
+<pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:
+    About: &#x2F;about&#x2F;index.html</code></pre>
+<ol>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:  
+    People: &#x2F;people
+    About: &#x2F;about&#x2F;index.html</code></pre></li>
+<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
+<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
+</ol>
+<ul>
+<li>第二个坑</li>
+</ul>
+<ol>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
+</li>
+<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
+</li>
+<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
+</li>
+<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
+</li>
+</ol>
+<pre class="language-none"><code class="language-none">title:  
+categories:
+- Technology
+- Github</code></pre>
+<ol start="8">
+<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
+</ol>
+<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
+<ul>
+<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hueman</tag>
       </tags>
   </entry>
   <entry>
@@ -426,112 +700,6 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Hueman主题</title>
-    <url>/za-tan/hexo/hexo-hueman/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-
-<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
-</ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
-<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
-</ul>
-<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
-<li>第一个坑</li>
-</ul>
-<pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:
-    About: &#x2F;about&#x2F;index.html</code></pre>
-<ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:  
-    People: &#x2F;people
-    About: &#x2F;about&#x2F;index.html</code></pre></li>
-<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
-<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
-</ol>
-<ul>
-<li>第二个坑</li>
-</ul>
-<ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
-</li>
-<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
-</li>
-<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
-</li>
-<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
-</li>
-</ol>
-<pre class="language-none"><code class="language-none">title:  
-categories:
-- Technology
-- Github</code></pre>
-<ol start="8">
-<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
-</ol>
-<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
-<ul>
-<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/za-tan/npm/npm-1/</url>
-    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
-<li>错误信息</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
-</code></pre>
-<ul>
-<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
-<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
-</ul>
-<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Potential errors</title>
     <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
     <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
@@ -555,39 +723,6 @@ S  S  S </code></pre></li>
       <tags>
         <tag>lammps</tag>
         <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -849,6 +984,38 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/za-tan/npm/npm-1/</url>
+    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
+<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 画双y轴</title>
     <url>/ke-yan-xue-xi/origin/origin-1/</url>
     <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
@@ -933,6 +1100,39 @@ sudo make install</code></pre>
       </categories>
       <tags>
         <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -1096,6 +1296,52 @@ turtle.done()
       </tags>
   </entry>
   <entry>
+    <title>Python常用</title>
+    <url>/bian-cheng-yu-yan/python/python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
+np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
+folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
+os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
+<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+print(path_yesno)</code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
+print(PATH)</code></pre></li>
+<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>控制Tecplot里的原子间距</title>
     <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
     <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
@@ -1164,52 +1410,6 @@ turtle.done()
       </tags>
   </entry>
   <entry>
-    <title>Python常用</title>
-    <url>/bian-cheng-yu-yan/python/python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
-np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
-<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
-folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
-os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
-<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-print(path_yesno)</code></pre></li>
-<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
-print(PATH)</code></pre></li>
-<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows相关</title>
     <url>/za-tan/windows/windowsproblems/</url>
     <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
@@ -1227,6 +1427,66 @@ print(path)</code></pre></li>
       </categories>
       <tags>
         <tag>Windows problems</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-branch</title>
+    <url>/za-tan/git-command/git-command/</url>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch xxx   #xxx 分支名，第一种方法
+$ git checkout -b xxx #第二种方法</code></pre>
+</code></pre>
+<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin xxx</code></pre>
+</code></pre>
+<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -D xxx</code></pre>
+</code></pre>
+<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin --delete xxx</code></pre>
+</code></pre>
+<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -a</code></pre>
+</code></pre>
+<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch </code></pre>
+</code></pre>
+<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout xxx</code></pre>
+</code></pre>
+<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout --orphan xxx #创建本地分支并进入到该分支
+$ git rm -rf #删除该分支的所有内容
+
+$ git add . 
+$ git commit -am &quot;评论内容&quot;
+$ git push origin xxx
+$ git pull
+$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来
+$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支
+$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</code></pre>
+</code></pre>
+<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹
+$ git commit -m &quot;blog source code&quot;
+或者一步到位：
+$ git commit -a -m &quot;blog source code&quot;
+$ git push origin xxx #如果不成功执行下一条
+$ git push origin xxx -f #不管3721直接push，谨慎操作。</code></pre>
+</code></pre>
+<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-none"><code class="language-none">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</code></pre>
+</code></pre>
+<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-none"><code class="language-none">$ mkdir foldername #创建文件夹
+$ git merge yourbranch # 把分支合并到master
+$ git reset --merge #退回合并前
+</code></pre>
+</code></pre>
+<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git command-branch</tag>
       </tags>
   </entry>
   <entry>
@@ -1297,66 +1557,6 @@ Aborted (core dumped)</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Git Command-branch</title>
-    <url>/za-tan/git-command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch xxx   #xxx 分支名，第一种方法
-$ git checkout -b xxx #第二种方法</code></pre>
-</code></pre>
-<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin xxx</code></pre>
-</code></pre>
-<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -D xxx</code></pre>
-</code></pre>
-<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin --delete xxx</code></pre>
-</code></pre>
-<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -a</code></pre>
-</code></pre>
-<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch </code></pre>
-</code></pre>
-<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout xxx</code></pre>
-</code></pre>
-<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout --orphan xxx #创建本地分支并进入到该分支
-$ git rm -rf #删除该分支的所有内容
-
-$ git add . 
-$ git commit -am &quot;评论内容&quot;
-$ git push origin xxx
-$ git pull
-$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来
-$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支
-$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</code></pre>
-</code></pre>
-<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹
-$ git commit -m &quot;blog source code&quot;
-或者一步到位：
-$ git commit -a -m &quot;blog source code&quot;
-$ git push origin xxx #如果不成功执行下一条
-$ git push origin xxx -f #不管3721直接push，谨慎操作。</code></pre>
-</code></pre>
-<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-none"><code class="language-none">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</code></pre>
-</code></pre>
-<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-none"><code class="language-none">$ mkdir foldername #创建文件夹
-$ git merge yourbranch # 把分支合并到master
-$ git reset --merge #退回合并前
-</code></pre>
-</code></pre>
-<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
-<li>可以命令查看用户名：<code>git config user.name</code></li>
-<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
-<li>查看邮箱：<code>git config user.email</code></li>
-<li>查看配置信息：<code>git config --list</code></li>
-<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
-</ul>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git command-branch</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git Command-delete file</title>
     <url>/za-tan/git-command/git-delfile/</url>
     <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
@@ -1377,65 +1577,6 @@ git rm -r yourfolder&#x2F;
       </categories>
       <tags>
         <tag>Git delete file</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
-$ Fortran runtime error: Bad integer for item 1 in list input
-$ Bad real number in item 4 of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
-$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GULP 汇总</title>
-    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
-
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
-<ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
-      </categories>
-      <tags>
-        <tag>GULP</tag>
       </tags>
   </entry>
   <entry>
@@ -1475,106 +1616,6 @@ if (num_bins &gt; N) &#123;
       </tags>
   </entry>
   <entry>
-    <title>Lammps 汇总</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-1/</url>
-    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
-<li>Windows下安装</li>
-</ul>
-<ol>
-<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
-<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
-<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
-<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
-<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
-<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
-<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
-<li>怎么设置环境变量：<blockquote>
-<ul>
-<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
-<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
-</ul>
-</blockquote>
-</li>
-<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
-</ol>
-<ul>
-<li>Linux下安装</li>
-</ul>
-<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
-<p> <strong>问题？</strong></p>
-<ol>
-<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
-</ol>
-<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
-...
-...
-...
-clear
-next k
-jump inputfile.in</code></pre>
-<ol start="2">
-<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
-<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
-<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
-<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
-</ol>
-<p><strong>已解决</strong></p>
-<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
-<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
-<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
-<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
-<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
-<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
-<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
-</ul>
-<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
-or
-group   g_ID    type 1 2 #atom type</code></pre>
-<ul>
-<li>所分的组的个数不能大于32个。</li>
-</ul>
-<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
-<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
-<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
-<li>比如，分了120层，输出的结果有121层；</li>
-<li>但是，有些就很正常，比如分了200层；</li>
-<li>猜测的原因</li>
-</ol>
-<ul>
-<li>是边边上有多余的部分没有被分到？自动分了？</li>
-</ul>
-<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
-<ol>
-<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
-</li>
-<li><p>原子结构不稳定导致的，例如：</p>
-</li>
-</ol>
-<ul>
-<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
-<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
-</ul>
-<ol start="3">
-<li>势参数设置出错，例如：</li>
-</ol>
-<ul>
-<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
-</ul>
-<ol start="4">
-<li>是否有足够的真空层</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
     <url>/za-tan/windows/mklink/</url>
     <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
@@ -1608,47 +1649,6 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </categories>
       <tags>
         <tag>mklink</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ from distutils.core import setup
-
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
-</code></pre>
-<ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
