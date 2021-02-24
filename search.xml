@@ -46,144 +46,30 @@
       </tags>
   </entry>
   <entry>
-    <title>实用网站合集</title>
-    <url>/za-tan/sitecollect/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong><center>干啥啥不行，收藏第一名</center></strong></p>
-</div>
-
-<center>
-<img src="https://s1.ax1x.com/2020/06/24/Nd051H.gif" width="30%">
-</center>
-
-<h3 id="一、科研学习💯"><a href="#一、科研学习💯" class="headerlink" title="一、科研学习💯"></a><strong>一、科研学习💯</strong></h3><hr>
-<blockquote>
-<p> <strong>资料</strong></p>
-</blockquote>
-<ol>
-<li><a href="http://bolvan.ph.utexas.edu/~vadim/">Dr. Vadim Kaplunovsky</a>，会记录一些关于<code>Supersymmetry, String Theory and String Dualities, Holographic QCD</code>领域的一些知识。</li>
-<li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/index.html">HyperPhysics</a></li>
-<li><a href="https://scc.ustc.edu.cn/zlsc/">中科大超算资料手册</a></li>
-<li><a href="https://www.vasp.at/">VASP</a>，<a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理</a>，<a href="http://sobereva.com/455">vasp安装</a></li>
-<li><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a></li>
-</ol>
-<hr>
-<h3 id="二、好用编辑器📃"><a href="#二、好用编辑器📃" class="headerlink" title="二、好用编辑器📃"></a><strong>二、好用编辑器📃</strong></h3><ul>
-<li><a href="https://www.bccn.net/run/">在线编程</a> | <a href="http://tools.jb51.net/">在线工具1</a> | <a href="https://www.sojson.com/">在线工具2</a></li>
-<li><a href="https://code.visualstudio.com/">VScode</a> | <a href="https://www.sublimetext.com/3">Sublime Text</a> | <a href="http://www.codeblocks.org/downloads">Codeblocks</a> | <a href="https://cd.big-news.cn/index.php?user/publicLink&fid=931exlMLfQH7HFc7zuVz5fheK3Pcp37-0c5DuJJHgRXQ1jZW3gmEo03nIj1iiJKEWQrjsjFxVlg9CnF_fT-7JHvXUfVqyhDrIpgCrFHGGr2mxF3k4hDTVaPKjh1d480om9CR3DceEPbF8Oz5DBgIms-79M0ou78GhgdUn40EfQ&file_name=/notepad++.7.7.1.Installer.x64.exe">Notepad++</a> | <a href="https://www.dcloud.io/">HBuilder</a></li>
-</ul>
-<hr>
-<h3 id="三、软件合集🈴"><a href="#三、软件合集🈴" class="headerlink" title="三、软件合集🈴"></a><strong>三、软件合集🈴</strong></h3><hr>
-<blockquote>
-<h4 id="软件"><a href="#软件" class="headerlink" title="软件"></a><strong>软件</strong></h4></blockquote>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
+$ Fortran runtime error: Bad integer for item 1 in list input
+$ Bad real number in item 4 of list input</code></pre>
 <ul>
-<li><a href="https://lammps.sandia.gov/index.html">LAMMPS</a>,软件<a href="https://lammps.sandia.gov/download.html">下载</a>, 老版本<a href="https://lammps.sandia.gov/tars/?C=M;O=D">下载</a>,<a href="https://lammps.sandia.gov/doc/Manual.html">在线手册</a>,<a href="http://editor.lammps.org/">Lammps Online Editor</a></li>
-<li>傅里叶快速变换<a href="http://www.fftw.org/download.html">FFTW</a> | <a href="http://m3g.iqm.unicamp.br/packmol/home.shtml">PACKMOL</a> | 晶格动力学软件<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">GULP</a>,<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#scan_cell">在线Manual</a></li>
-<li>可视化软件<a href="https://www.ovito.org/">OVITO</a>、<a href="http://jp-minerals.org/vesta/en/">VESTA</a>、<a href="http://www.ks.uiuc.edu/Research/vmd/">VMD</a>、<a href="http://avogadro.cc/">Avogadro</a> | <a href="http://zarbi.chem.yale.edu/ligpargen/">LigParGen</a></li>
-<li><a href="https://mathpix.com/">mathpix</a> | <a href="https://nanotheorygroup.github.io/kaldo/docsource/introduction.html">kALDo</a><blockquote>
-<h4 id="合集"><a href="#合集" class="headerlink" title="合集"></a><strong>合集</strong></h4></blockquote>
-</li>
-<li><a href="https://www.cuiuc.com/">一个可以发现很多好软件的网站</a> | <a href="https://www.cccitu.com/">玩机大学</a> | <a href="https://tool.lu/">在线工具</a></li>
-<li><a href="http://googlehelper.net/">谷歌助手Ghelper</a> | <a href="https://www.appinn.com/">小众软件</a> | <a href="http://www.carrotchou.blog/">胡萝卜周</a> | <a href="https://www.disktool.cn/">分区助手</a></li>
-<li><a href="https://huajiakeji.com/">画夹插件&amp;软件</a> | <a href="https://www.yaomei.co/">幺妹儿</a></li>
-<li><a href="http://qchem.pw/">量子化学软件中文网</a></li>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
 </ul>
-<hr>
-<h3 id="四、搜索-amp-导航🔍"><a href="#四、搜索-amp-导航🔍" class="headerlink" title="四、搜索&amp;导航🔍"></a><strong>四、搜索&amp;导航🔍</strong></h3><hr>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
+$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
 <ul>
-<li><a href="https://cn.bing.com/?FORM=BEHPTB">必应Bing</a> | <a href="http://www.gaokeyan.com/">科研导航</a> | <a href="https://ac.scmor.com/">Google学术</a></li>
-<li><a href="http://ztflh.xhma.com/">中图分类号查询</a> | <a href="http://www.soopat.com/">专利查询</a> | <a href="https://www.fermitech.com.cn/wiki/doku.php?id=start">费米维基</a></li>
-<li><a href="https://www.rsc.org/periodic-table">在线的元素周期表</a> | <a href="https://gotolink.cn/general">沟渠网</a> | <a href="https://www.tianyancha.com/">天眼查（查询是否虚假企业）</a>, </li>
-<li><a href="https://search.chongbuluo.com/">虫部落.快搜</a> | <a href="https://cloud.tencent.com/developer/article/1471481">以图检索文献</a></li>
-<li><a href="https://ifun.cool/">趣导航</a> | <a href="https://www.24kdh.com/">24K导航</a> | <a href="https://www.cuiuc.com/">极客空间</a></li>
-<li><a href="http://nav.yundashi168.com/">程序员快速导航</a></li>
+<li>这种警告信息一般不影响程序运行。</li>
 </ul>
-<hr>
-<h3 id="五、Pictures"><a href="#五、Pictures" class="headerlink" title="五、Pictures"></a><strong>五、Pictures</strong></h3><hr>
-<blockquote>
-<h4 id="字体✍-amp-图片🔗"><a href="#字体✍-amp-图片🔗" class="headerlink" title="字体✍&amp;图片🔗"></a><strong>字体✍&amp;图片🔗</strong></h4></blockquote>
-<ul>
-<li><a href="http://sc.chinaz.com/">站长素材</a> | <a href="https://www.qt86.com/">QT86艺术字体</a> | <a href="http://www.zitiweb.com/">字体网</a> | <a href="https://www.100font.com/">免费商用字体</a> | <a href="https://fonts.safe.360.cn/">360查字体</a> | <a href="https://ziyouziti.com/">自由字体</a></li>
-<li><a href="https://www.asqql.com/">动图基地</a> | <a href="https://icon.52112.com/">寻图.标</a></li>
-<li><a href="https://pixabay.com/zh/">免费正版高清图片素材库</a> | <a href="https://www.pexels.com/zh-cn/">Pexels</a> | <a href="http://www.streetwill.co/">streetwill</a></li>
-<li><a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a> | <a href="https://www.yasuotu.com/mbuttonColor">压缩图</a>，可以在线去背景、证件照换背景等 | <a href="https://cli.im/">生成、美化二维码</a></li>
-<li><a href="https://fontawesome.com/icons?d=gallery">社交图标链接</a></li>
-<li><a href="https://simpleicons.org/">Free SVG icons</a> | <a href="https://primer.style/">GitHub 网站上用的图标库</a> | <a href="http://chuangzaoshi.com/icon/">🍓CaoMei Icon</a></li>
-<li><a href="https://www.besthdwallpaper.com/zh-CN">壁纸-Best HD Wallpaper</a> | <a href="http://wallls.com/">Wallls</a> | <a href="https://f01.co/wallpaper/">桌面壁纸</a> | <a href="https://desk.3gbizhi.com/">3G壁纸</a> | <a href="https://papers.co/">Papers</a> | <a href="https://bz.zzzmh.cn/">极简壁纸</a> | <a href="https://anime-pictures.net/">动漫壁纸</a> | <a href="https://www.gamewallpapers.com/">游戏壁纸</a> | <a href="https://www.dpm.org.cn/lights/royal.html">故宫壁纸</a> | <a href="https://www.eso.org/public/unitedkingdom/images/">太空壁纸</a></li>
-<li><a href="https://www.remove.bg/zh">自动抠图</a></li>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
 </ul>
-<blockquote>
-<h4 id="图床🛏"><a href="#图床🛏" class="headerlink" title="图床🛏"></a><strong>图床🛏</strong></h4></blockquote>
-<ul>
-<li><a href="https://imgchr.com/">路过图床</a> | <a href="https://hao.su/tu/">阿里图床</a> | <a href="https://sm.ms/?hao.su">sm.ms</a> | <a href="https://www.hualigs.cn/">遇见图床</a></li>
-</ul>
-<hr>
-<h3 id="六、网课😴"><a href="#六、网课😴" class="headerlink" title="六、网课😴"></a><strong>六、网课😴</strong></h3><hr>
-<ul>
-<li><a href="https://www.icourse163.org/">慕课</a> | <a href="https://www.51zxw.net/">我要自学网</a> | <a href="http://v.dxsbb.com/">大学生自学网</a> | <a href="http://www.fanshuxueyuan.com/">番薯学院</a> | <a href="http://www.kgc.cn/">课工场</a> | <a href="https://phet.colorado.edu/zh_CN/">免费的在线物理、化学、生物、地理及数学仿真程序</a></li>
-<li><a href="https://www.5ifxw.com/">我爱分享网</a> | <a href="https://edu.aliyun.com/">阿里云大学</a> | <a href="https://zhishitu.com/">知识兔</a> | <a href="http://www.oioio.pro/">甲骨数字</a></li>
-<li><a href="http://www.zf3d.com/">朱峰社区</a></li>
-</ul>
-<hr>
-<h3 id="七、书籍📖"><a href="#七、书籍📖" class="headerlink" title="七、书籍📖"></a><strong>七、书籍📖</strong></h3><hr>
-<blockquote>
-<h4 id="图书馆🏣"><a href="#图书馆🏣" class="headerlink" title="图书馆🏣"></a><strong>图书馆🏣</strong></h4></blockquote>
-<hr>
-<h3 id="八、好玩的网站😀"><a href="#八、好玩的网站😀" class="headerlink" title="八、好玩的网站😀"></a><strong>八、好玩的网站😀</strong></h3><hr>
-<ul>
-<li><a href="https://humanclock.com/">Human Clock</a>, 这个网站每隔一分钟就会刷新一次，并会展示这一分钟来自世界各地的图片。</li>
-<li><a href="https://www.autopiano.cn/">自由钢琴</a> | <a href="https://www.aichpoem.com/#/shisanbai/poem">AI作诗</a> | <a href="https://youquhome.com/">有趣网址之家</a></li>
-</ul>
-<hr>
-<h3 id="九、其他😳"><a href="#九、其他😳" class="headerlink" title="九、其他😳"></a><strong>九、其他😳</strong></h3><hr>
-<ul>
-<li><a href="http://www.lingyi.org/">中国灵异网</a> | <a href="http://www.lingyiwenhua.com/">灵异文化</a></li>
-<li><a href="https://ssl.zc.qq.com/v3/index-chs.html">9位数QQ号注册</a><a href="http://www.ypppt.com/">PPT模板</a></li>
-<li><a href="https://www.revolvermaps.com/">访客地球revolvermaps</a> | <a href="https://cloud.tencent.com/developer/article/1352398">国内9大免费CDN汇总 转</a></li>
-<li><a href="http://ping.chinaz.com/">站长工具Ping检测</a> | <a href="https://www.cloudflare.com/">CLOUDFLARE CDN</a> | <a href="https://zhuanlan.zhihu.com/p/105801731">cdn加速</a></li>
-<li><a href="https://cloud.tencent.com/">腾讯云</a> | <a href="https://console.dnspod.cn/">DNSPOD</a></li>
-<li><a href="https://bounty.github.com/">GitHub Security Bug Bounty</a> | <a href="https://hexo.io/zh-cn/">HEXO</a> | <a href="https://vuepress.vuejs.org/zh/">VuePress</a></li>
-<li><a href="https://spaces.ac.cn/">科学空间</a> | <a href="https://www.fastools.cn/">快用工具</a> </li>
-</ul>
-<blockquote>
-<h4 id="镜像"><a href="#镜像" class="headerlink" title="镜像"></a><strong>镜像</strong></h4></blockquote>
-<ul>
-<li><a href="http://mirrors.163.com/">网易开源镜像站</a> | <a href="https://developer.aliyun.com/mirror/">阿里镜像</a> | <a href="http://mirrors.sohu.com/">搜狐镜像</a> | <a href="http://npm.taobao.org/">淘宝镜像</a></li>
-</ul>
-<blockquote>
-<h4 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a><strong>远程控制</strong></h4></blockquote>
-<ul>
-<li><a href="https://anydesk.com/zhs">AnyDesk</a> | <a href="https://sunlogin.oray.com/">向日葵</a> | <a href="https://www.todesk.com/">ToDesk</a> | <a href="https://www.teamviewer.cn/cn/">TeamViewer</a></li>
-</ul>
-<blockquote>
-<h4 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a><strong>资料库</strong></h4></blockquote>
-<ul>
-<li><a href="http://www.chendandan.ys168.com/">陈蛋蛋的宝藏库</a> | <a href="https://videocopilot.net.cn/">Videocopilot</a></li>
-</ul>
-<blockquote>
-<h4 id="论文降重"><a href="#论文降重" class="headerlink" title="论文降重"></a><strong>论文降重</strong></h4></blockquote>
-<ul>
-<li><a href="http://www.cnkis.net/">学术不端网</a> | <a href="http://www.papereasy.com/">Papereasy</a> | <a href="https://www.beiying.online/">贝影论文修改助手</a> | <a href="https://www.bigan.net/">笔杆</a></li>
-</ul>
-<blockquote>
-<h4 id="云"><a href="#云" class="headerlink" title="云"></a><strong>云</strong></h4></blockquote>
-<ol>
-<li><a href="https://mega.nz/">MEGA</a></li>
-<li><a href="https://bbs.leyuz.net/">乐愚社区</a></li>
-</ol>
-<blockquote>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a><strong>其他</strong></h4></blockquote>
-<ul>
-<li><a href="https://zh.savefrom.net/7/">youtube视频下载</a> | <a href="https://taira-komori.jpn.org/freesoundcn.html">小森平的免费下载音效</a> | <a href="https://moises.ai/">Moises人工智能分离音乐音轨</a> | <a href="https://mixkit.co/">mixkit免费视频,音乐,模板</a></li>
-<li><a href="http://www.orangehd.com/">orangehd</a> | <a href="https://sfx.productioncrate.com/">Free Sound Effects  Royalty Free Music</a> | <a href="https://footagecrate.com/">VFX  Motion Elements</a></li>
-</ul>
-<hr>
 ]]></content>
       <categories>
-        <category>杂谈</category>
+        <category>编程语言</category>
+        <category>Fortran</category>
       </categories>
       <tags>
-        <tag>实用网站</tag>
+        <tag>Fortran运行error</tag>
       </tags>
   </entry>
   <entry>
@@ -210,33 +96,6 @@
       </categories>
       <tags>
         <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
-$ Fortran runtime error: Bad integer for item 1 in list input
-$ Bad real number in item 4 of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
-$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
       </tags>
   </entry>
   <entry>
@@ -269,47 +128,6 @@ $ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
       </categories>
       <tags>
         <tag>GULP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ from distutils.core import setup
-
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
-</code></pre>
-<ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -446,6 +264,47 @@ git push origin yourbranch</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<ol>
+<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
+<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ from distutils.core import setup
+
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
+<ol start="3">
+<li>然后，在此文件夹里打开cmd，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<ol start="4">
+<li>最后，安装此模块到本地，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Common Commands of Hexo</title>
     <url>/za-tan/hexo/hexo-command/</url>
     <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
@@ -483,80 +342,6 @@ $ hexo d</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Hueman主题</title>
-    <url>/za-tan/hexo/hexo-hueman/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-
-<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
-</ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
-<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
-</ul>
-<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
-<li>第一个坑</li>
-</ul>
-<pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:
-    About: &#x2F;about&#x2F;index.html</code></pre>
-<ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:  
-    People: &#x2F;people
-    About: &#x2F;about&#x2F;index.html</code></pre></li>
-<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
-<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
-</ol>
-<ul>
-<li>第二个坑</li>
-</ul>
-<ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
-</li>
-<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
-</li>
-<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
-</li>
-<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
-</li>
-</ol>
-<pre class="language-none"><code class="language-none">title:  
-categories:
-- Technology
-- Github</code></pre>
-<ol start="8">
-<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
-</ol>
-<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
-<ul>
-<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>给icarus主题换背景图片</title>
     <url>/za-tan/hexo/hexo-icarus/</url>
     <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
@@ -579,6 +364,32 @@ body &#123;
       </categories>
       <tags>
         <tag>Icarus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Potential errors</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -695,157 +506,82 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </categories>
       <tags>
         <tag>lammps</tag>
+        <tag>potential</tag>
         <tag>snap</tag>
-        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
-    <title>Potential errors</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+    <title>Hueman主题</title>
+    <url>/za-tan/hexo/hexo-hueman/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+
+<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
+<p><strong>注：</strong></p>
 <ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
-S  Mo Mo
-Mo Mo Mo
-Mo Mo S 
-Mo S  Mo
-S  Mo S 
-S  S  Mo
-S  S  S </code></pre></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
+<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
 </ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux 汇总</title>
-    <url>/za-tan/linux/linux-1/</url>
-    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
-<li>查看空间大小：<code>df -h</code>；</li>
-<li>查看该目录下文件大小：<code>du -sh *</code></li>
-</ol>
-<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
-<li><p>创建文件夹：<code>mkdir filename</code>；</p>
-</li>
-<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
-</li>
-<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
-</li>
-<li><p>删除文件；<code>rm -f filename</code></p>
-</li>
-<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
-</li>
-<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
-</li>
-<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
-</li>
-<li><p>返回上一级目录：<code>cd ..</code>；</p>
-</li>
-<li><p>显示当前工作路径：<code>pwd</code>；</p>
-</li>
-<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
-</li>
-<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
-<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
-<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
-</li>
-<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
-</li>
-</ol>
-<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
-<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
+<p><strong>注：</strong></p>
+<ul>
+<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
+<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
+</ul>
+<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
+<li>第一个坑</li>
+</ul>
+<pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:
+    About: &#x2F;about&#x2F;index.html</code></pre>
 <ol>
-<li><p>删除’/dev/loop0…’文件:</p>
-<pre class="language-none"><code class="language-none">sudo apt purge snapd</code></pre></li>
-<li><p>开启ssh:</p>
-<pre class="language-none"><code class="language-none">sudo apt-get install openssh-server
-service ssh start</code></pre></li>
-<li><p>查看已设环境变量:</p>
-<pre class="language-none"><code class="language-none">echo $PATH</code></pre></li>
-<li><p>设置临时环境变量:</p>
-<pre class="language-none"><code class="language-none">PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;...&#x2F;bin:$PATH;export PATH</code></pre></li>
-<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件最后加上环境变量: </p>
-<pre class="language-none"><code class="language-none">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</code></pre>
-<blockquote>
-<p>5.1 具体操作：</p>
-</blockquote>
-<pre class="language-none"><code class="language-none">vim &#x2F;etc&#x2F;profile
-export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;
-Esc（键盘）
-:wq 或（快捷键）shift+ZZ 保存并退出；
-:q 不保存退出
-:q! 强制退出
-source &#x2F;etc&#x2F;profile(使生效)</code></pre></li>
-<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
-</li>
-<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
-</li>
-<li><p>top命令</p>
-</li>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:  
+    People: &#x2F;people
+    About: &#x2F;about&#x2F;index.html</code></pre></li>
+<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
+<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
 </ol>
 <ul>
-<li>Linux查看cpu总数，在top后的界面按1，or<pre class="language-none"><code class="language-none">cat &#x2F;proc&#x2F;cpuinfo | grep processor</code></pre></li>
-<li>查看进程绝对路径<pre class="language-none"><code class="language-none">top c</code></pre>
-<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4></li>
+<li>第二个坑</li>
 </ul>
 <ol>
-<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
-<blockquote>
-<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
-</blockquote>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
 </li>
-<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt </code><br><code>nvcc -V</code></p>
+<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
 </li>
-<li><p>虚拟机不显示ip地址的解决方法：</p>
+<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
+</li>
+<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
 </li>
 </ol>
+<pre class="language-none"><code class="language-none">title:  
+categories:
+- Technology
+- Github</code></pre>
+<ol start="8">
+<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
+</ol>
+<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
 <ul>
-<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
-<li>然后即可查看ip:<code>ifconfig</code></li>
+<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
 </ul>
-<ol start="4">
-<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
-<li>双系统教程： <a href="https://www.cnblogs.com/masbay/p/10745170.html">https://www.cnblogs.com/masbay/p/10745170.html</a></li>
-</ol>
-<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
-<blockquote>
-<p>在linux启动和终止matlab</p>
-</blockquote>
-<pre class="language-none"><code class="language-none">matlab -nodesktop -nosplash -r matlabfile(parameters)
-exit</code></pre>
-<ol start="3">
-<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
-</ol>
-<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
-<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
-<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
-<li>配置<pre class="language-none"><code class="language-none">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes
-sudo make
-sudo make install
-make clean</code></pre></li>
-<li>重新编译<pre class="language-none"><code class="language-none">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes
-sudo make
-sudo make install</code></pre>
-参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></li>
-</ol>
-<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Linux</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Linux Command</tag>
+        <tag>Hueman</tag>
       </tags>
   </entry>
   <entry>
@@ -984,6 +720,146 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Linux 汇总</title>
+    <url>/za-tan/linux/linux-1/</url>
+    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
+<li>查看空间大小：<code>df -h</code>；</li>
+<li>查看该目录下文件大小：<code>du -sh *</code></li>
+</ol>
+<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
+<li><p>创建文件夹：<code>mkdir filename</code>；</p>
+</li>
+<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
+</li>
+<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
+</li>
+<li><p>删除文件；<code>rm -f filename</code></p>
+</li>
+<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
+</li>
+<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
+</li>
+<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
+</li>
+<li><p>返回上一级目录：<code>cd ..</code>；</p>
+</li>
+<li><p>显示当前工作路径：<code>pwd</code>；</p>
+</li>
+<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
+</li>
+<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
+<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
+<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
+</li>
+<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
+</li>
+</ol>
+<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
+<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
+<ol>
+<li><p>删除’/dev/loop0…’文件:</p>
+<pre class="language-none"><code class="language-none">sudo apt purge snapd</code></pre></li>
+<li><p>开启ssh:</p>
+<pre class="language-none"><code class="language-none">sudo apt-get install openssh-server
+service ssh start</code></pre></li>
+<li><p>查看已设环境变量:</p>
+<pre class="language-none"><code class="language-none">echo $PATH</code></pre></li>
+<li><p>设置临时环境变量:</p>
+<pre class="language-none"><code class="language-none">PATH&#x3D;&#x2F;usr&#x2F;local&#x2F;...&#x2F;bin:$PATH;export PATH</code></pre></li>
+<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件最后加上环境变量: </p>
+<pre class="language-none"><code class="language-none">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;</code></pre>
+<blockquote>
+<p>5.1 具体操作：</p>
+</blockquote>
+<pre class="language-none"><code class="language-none">vim &#x2F;etc&#x2F;profile
+export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;mpich-3.3.2&#x2F;bin:$PATH&quot;
+Esc（键盘）
+:wq 或（快捷键）shift+ZZ 保存并退出；
+:q 不保存退出
+:q! 强制退出
+source &#x2F;etc&#x2F;profile(使生效)</code></pre></li>
+<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
+</li>
+<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
+</li>
+<li><p>top命令</p>
+</li>
+</ol>
+<ul>
+<li>Linux查看cpu总数，在top后的界面按1，or<pre class="language-none"><code class="language-none">cat &#x2F;proc&#x2F;cpuinfo | grep processor</code></pre></li>
+<li>查看进程绝对路径<pre class="language-none"><code class="language-none">top c</code></pre>
+<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4></li>
+</ul>
+<ol>
+<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
+<blockquote>
+<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
+</blockquote>
+</li>
+<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt </code><br><code>nvcc -V</code></p>
+</li>
+<li><p>虚拟机不显示ip地址的解决方法：</p>
+</li>
+</ol>
+<ul>
+<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
+<li>然后即可查看ip:<code>ifconfig</code></li>
+</ul>
+<ol start="4">
+<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
+<li>双系统教程： <a href="https://www.cnblogs.com/masbay/p/10745170.html">https://www.cnblogs.com/masbay/p/10745170.html</a></li>
+</ol>
+<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
+<blockquote>
+<p>在linux启动和终止matlab</p>
+</blockquote>
+<pre class="language-none"><code class="language-none">matlab -nodesktop -nosplash -r matlabfile(parameters)
+exit</code></pre>
+<ol start="3">
+<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
+</ol>
+<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
+<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
+<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
+<li>配置<pre class="language-none"><code class="language-none">.&#x2F;configure  --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared&#x3D;yes
+sudo make
+sudo make install
+make clean</code></pre></li>
+<li>重新编译<pre class="language-none"><code class="language-none">.&#x2F;configure --enable-float --enable-type-prefix --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared&#x3D;yes
+sudo make
+sudo make install</code></pre>
+参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></li>
+</ol>
+<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux Command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>npm ERR! Unexpected end of JSON input while parsin</title>
     <url>/za-tan/npm/npm-1/</url>
     <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
@@ -1013,6 +889,39 @@ sudo make install</code></pre>
       </categories>
       <tags>
         <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -1083,100 +992,6 @@ sudo make install</code></pre>
       </categories>
       <tags>
         <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
-
-x &#x3D; np.linspace(0, 2*np.pi, 100)
-y &#x3D; np.sin(x)
-z &#x3D; np.cos(x)#上色数据
-
-points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
-segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
-
-fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
-fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
-
-norm &#x3D; plt.Normalize(min(z),max(z))
-lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
-lc.set_array(z)
-lc.set_linewidth(2)
-line &#x3D; ax.add_collection(lc)
-fig.colorbar(line)
-
-plt.xlim(0,2*np.pi)
-plt.ylim(-1,1)
-plt.savefig(&#39;fig1.png&#39;)
-plt.show()
-</code></pre>
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
-</ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
-
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Matlibplot</tag>
       </tags>
   </entry>
   <entry>
@@ -1342,6 +1157,65 @@ print(path)</code></pre></li>
       </tags>
   </entry>
   <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
+
+x &#x3D; np.linspace(0, 2*np.pi, 100)
+y &#x3D; np.sin(x)
+z &#x3D; np.cos(x)#上色数据
+
+points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
+segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
+
+fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
+fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
+
+norm &#x3D; plt.Normalize(min(z),max(z))
+lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
+lc.set_array(z)
+lc.set_linewidth(2)
+line &#x3D; ax.add_collection(lc)
+fig.colorbar(line)
+
+plt.xlim(0,2*np.pi)
+plt.ylim(-1,1)
+plt.savefig(&#39;fig1.png&#39;)
+plt.show()
+</code></pre>
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode常用</title>
+    <url>/za-tan/vscode1/</url>
+    <content><![CDATA[<ol>
+<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
+<li><code>F11</code>全屏模式。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>控制Tecplot里的原子间距</title>
     <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
     <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
@@ -1392,21 +1266,6 @@ print(path)</code></pre></li>
       </categories>
       <tags>
         <tag>Tecplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode常用</title>
-    <url>/za-tan/vscode1/</url>
-    <content><![CDATA[<ol>
-<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
-<li><code>F11</code>全屏模式。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>VScode</tag>
       </tags>
   </entry>
   <entry>
@@ -1557,6 +1416,42 @@ Aborted (core dumped)</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>无法将“mklink”项识别为 cmdlet</title>
+    <url>/za-tan/windows/mklink/</url>
+    <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
+<li>目的是要把C盘的一个文件夹链接到E盘，</li>
+<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
+</ul>
+<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
+<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+正确，然后再试一次。
+所在位置 行:1 字符: 1
++ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...
++ ~~~~~~
+    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+</code></pre>
+<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
+<li>因为PowerShell中没有mklink命令</li>
+</ul>
+<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
+<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
+</ul>
+<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
+
+<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre>
+
+<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>mklink</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git Command-delete file</title>
     <url>/za-tan/git-command/git-delfile/</url>
     <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
@@ -1613,42 +1508,6 @@ if (num_bins &gt; N) &#123;
       </categories>
       <tags>
         <tag>GPUMD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无法将“mklink”项识别为 cmdlet</title>
-    <url>/za-tan/windows/mklink/</url>
-    <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
-<li>目的是要把C盘的一个文件夹链接到E盘，</li>
-<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
-</ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
-<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
-正确，然后再试一次。
-所在位置 行:1 字符: 1
-+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...
-+ ~~~~~~
-    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-</code></pre>
-<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
-<li>因为PowerShell中没有mklink命令</li>
-</ul>
-<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
-<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
-</ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
-
-<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre>
-
-<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>mklink</tag>
       </tags>
   </entry>
   <entry>
