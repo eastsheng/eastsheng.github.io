@@ -1,0 +1,145 @@
+
+<!-- saved from url=(0049)http://www.colby.edu/chemistry/PChem/Hartree.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Energy Converter</title>
+
+<script language="JavaScript">
+<!--HIDE FROM OTHER BROWSERS
+
+//DEFINE METHODS
+function constants(conv) {
+    var numE = 7;
+          conv[0] = 1.000 ;
+// eV
+          conv[1] = 2.7211399E+01 ;
+// kJ/mol
+          conv[2] = 2.6255002E+03 ;
+// kcal/mol
+          conv[3] = conv[2]/4.184 ;
+// cm-1
+          conv[4] = 2.1947463E+05 ;
+// V
+          conv[5] = 2.6255002E+06/96484.6 ;
+// K
+          conv[6] =3.1577709E+05 ;
+// Boltzman
+          conv[7] = -conv[6] ;
+            return numE;
+}
+
+function displayInfo(form,field) {
+// find field index
+   for (var i=0; i<=nfields; i++) {
+   if ( form.elements[i].name == field ) {
+   idx = i ;
+   break;
+     }
+}
+// find number of characters in input string for significant figure functions
+    nchars = form.elements[idx].value.length +1 ;
+
+// calculate the base energy in Hartrees
+  if ( idx != 7) {
+   energy = form.elements[idx].value/conv[idx];
+						          } else {
+   energy = Math.log(form.elements[idx].value)*298.15/conv[idx];
+                      }
+
+// convert to other units
+for (var i=0; i<=nfields; i++) {
+   if ( i != idx ) {
+        if ( i != 7) {
+         form.elements[i].value = trunc(energy*conv[i],nchars) ;
+                   } else {
+        form.elements[i].value = trunc(Math.exp(energy*conv[i]/298.15),4) ;
+                   }
+     }
+   }
+   boltzman()
+}
+
+function boltzman() {
+// calculate boltzman fractions and voltage for general conditions
+      var T = document.Boltzman.T.value ;
+      var gj = document.Boltzman.gj.value ;
+      var gi = document.Boltzman.gi.value ;
+      var z= document.Boltzman.z.value ; 
+      var r = Math.exp(energy*conv[7]/T)*gj/gi ;
+      document.Boltzman.flow.value = trunc(1/(r+1)*100.0,3) ;
+         var fup = trunc(r/(r+1)*100.0,3) ;
+    if ( fup > 1e-20 ) {
+             document.Boltzman.fup.value = fup 
+                              } else {
+             document.Boltzman.fup.value = 0 }
+// Put in diagram poulations
+          var all = "-oooooooooo" ;
+          var molecules = Math.floor(r/(r+1)*10.0+0.5) ;
+            document.Boltzman.up.value = all.substring(0,molecules+1) + "-" ;
+            document.Boltzman.low.value = all.substring(0,11-molecules) + "-" ;
+// Voltage for z != 1
+      document.Boltzman.V.value = trunc(energy*conv[5]/z,nchars) ;
+}
+
+// Significant figure functions
+function ord(x) {
+   return Math.floor(Math.log(Math.abs(x+1e-35))/2.303)
+}
+// Truncate to n sign. figures
+function trunc(x,n) {
+   return Math.floor(x*Math.pow(10,-ord(x)+n-1)+.5)/Math.pow(10,-ord(x)+n-1)
+}
+
+// MAIN variable declarations
+ var energy = 0.000;
+ var nchars = 0;
+ var conv = new Array();
+ var nfields = constants(conv);
+
+// STOP HIDING FROM OTHER BROWSERS -->
+</script>
+
+</head>
+
+<body>
+<h3>Energy Units Converter</h3>
+Enter your energy value in the box with the appropriate units, then press "tab"
+or click outside of the input box.
+<p>
+</p><form name="Hartree" method="POST">
+
+<input type="text" name="H" value="0" onchange="displayInfo(this.form,this.name);">Hartrees<br>
+<input type="text" name="eV" value="0" onchange="displayInfo(this.form,this.name);">eV<br>
+<input type="text" name="kJ/mol" value="0" onchange="displayInfo(this.form,this.name);">kJ/mol<br>
+<input type="text" name="kcal/mol" value="0" onchange="displayInfo(this.form,this.name);">kcal/mol<br>
+<input type="text" name="cm-1" value="0" onchange="displayInfo(this.form,this.name);">cm<sup>-1</sup><br>
+<input type="text" name="V" value="0" onchange="displayInfo(this.form,this.name);">V for 1e<sup>-</sup> transfer<br>
+<input type="text" name="K" value="0" onchange="displayInfo(this.form,this.name);">K (equivalent temerature)<br>
+<input type="text" name="B" value="1" onchange="displayInfo(this.form,this.name);">Boltzman population ratio at 298.15K
+
+</form>
+<hr>
+<h5>Boltzman Populations</h5>
+Change the temperature and degeneracies:
+<form name="Boltzman" method="POST">
+<table>
+<tbody><tr><td><input type="text" name="T" size="6" value="298.15" onchange="boltzman();">K</td>
+<td></td><td></td></tr>
+<tr><td>
+upper degeneracy=<input type="text" name="gj" size="2" value="1" onchange="boltzman();"></td>
+<td><input type="text" name="fup" size="7" value="50.0" onfocus="blur();">%</td>
+<td><input type="text" name="up" size="12" value="-ooooo-" onfocus="blur();"></td></tr>
+<tr><td>
+lower degeneracy=<input type="text" name="gi" size="2" value="1" onchange="boltzman();"></td>
+<td><input type="text" name="flow" size="7" value="50.0" onfocus="blur();">%</td>
+<td><input type="text" name="low" size="12" value="-ooooo-" onfocus="blur();"></td></tr>
+</tbody></table>
+<h5>Electrochemical Voltage</h5>
+Change the number of electrons transferred, z=
+<input type="text" name="z" size="2" value="1" onchange="boltzman();"><br>
+Then, V=
+<input type="text" name="V" value="0" onfocus="blur();">V<br>
+
+</form>
+
+
+</body></html>
