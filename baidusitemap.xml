@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eastsheng.ink/linux/linux-kuorong/</loc>
+    <loc>https://eastsheng.ink/za-tan/linux/linux-1/</loc>
     <lastmod>2021-02-28</lastmod>
   </url>
   <url>
-    <loc>https://eastsheng.ink/za-tan/linux/linux-1/</loc>
-    <lastmod>2021-02-24</lastmod>
+    <loc>https://eastsheng.ink/za-tan/linux/linux-kuorong/</loc>
+    <lastmod>2021-02-28</lastmod>
   </url>
   <url>
     <loc>https://eastsheng.ink/za-tan/npm/npm-1/</loc>
