@@ -1580,7 +1580,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    348
+                    420
                 </div>
                 
 
@@ -1619,13 +1619,18 @@
 </ul>
 <h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
 <ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是是未分配状态，因此需要分配空间;</li>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
 <li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a target="_blank" rel="noopener" href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的磁盘，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘，就先右键<code>/dev/sda2</code>这一行扩容，然后发现<code>unallocated</code>并未分配，这里还需要再给它的子空间再分配一次。</li>
-<li>你会发现，如果直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给了一级的，然后再由一级分给二级的才可以。</li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
 </ul>
-<h3 id="3-终端查看df-h空间是否增加"><a href="#3-终端查看df-h空间是否增加" class="headerlink" title="3. 终端查看df -h空间是否增加"></a>3. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
 </ul>
 
@@ -2398,7 +2403,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             

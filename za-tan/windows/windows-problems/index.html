@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="无法将“mklink”项识别为 cmdlet, null">
+    <meta name="keywords" content="Windows相关, null">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>无法将“mklink”项识别为 cmdlet | null</title>
+    <title>Windows相关 | null</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/medias/head.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/libs/awesome/css/all.css">
@@ -1403,12 +1403,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://a-static.besthdwallpaper.com/de-windows-10cao-zuo-xi-tong-qiangzhi-1920x1200-2763_6.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">无法将“mklink”项识别为 cmdlet</h1>
+                    <h1 class="description center-align post-title">Windows相关</h1>
                 </div>
             </div>
         </div>
@@ -1529,8 +1529,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/mklink/">
-                                <span class="chip bg-color">mklink</span>
+                            <a href="/tags/Windows-problems/">
+                                <span class="chip bg-color">Windows problems</span>
                             </a>
                         
                     </div>
@@ -1558,21 +1558,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-30
+                    2020-06-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-02-16
+                    2021-02-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    240
+                    234
                 </div>
                 
 
@@ -1602,30 +1602,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
-<li>目的是要把C盘的一个文件夹链接到E盘，</li>
-<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
+                <h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
+<li>打开命令提示符（管理员）</li>
+<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
+<li>也可以关闭：<code>net user administrator /active:no</code></li>
 </ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
-<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
-正确，然后再试一次。
-所在位置 行:1 字符: 1
-+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...
-+ ~~~~~~
-    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
-</code></pre>
-<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
-<li>因为PowerShell中没有mklink命令</li>
+<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
+<li>参考：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
 </ul>
-<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
-<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
-</ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
-
-<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre>
-
-<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
 
                 
             </div>
@@ -1640,8 +1627,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/mklink/">
-                                    <span class="chip bg-color">mklink</span>
+                                <a href="/tags/Windows-problems/">
+                                    <span class="chip bg-color">Windows problems</span>
                                 </a>
                             
                         </div>
@@ -2083,13 +2070,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/za-tan/vscode1/">
+                <a href="/za-tan/git-command/git-delfile/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/medias/featureimages/2.jpg" class="responsive-img" alt="Vscode常用">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/medias/featureimages/1.jpg" class="responsive-img" alt="Git Command-delete file">
                         
-                        <span class="card-title">Vscode常用</span>
+                        <span class="card-title">Git Command-delete file</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2100,7 +2087,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-30
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
                         </span>
                         <span class="publish-author">
                             
@@ -2110,6 +2097,10 @@
                                     杂谈
                                 </a>
                             
+                            <a href="/categories/%E6%9D%82%E8%B0%88/Git-Command/" class="post-category">
+                                    Git Command
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -2117,8 +2108,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/VScode/">
-                        <span class="chip bg-color">VScode</span>
+                    <a href="/tags/Git-delete-file/">
+                        <span class="chip bg-color">Git delete file</span>
                     </a>
                     
                 </div>
@@ -2132,12 +2123,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/za-tan/hexo/hexo-icarus/">
+                <a href="/ke-yan-xue-xi/origin/origin-2/">
                     <div class="card-image">
                         
-                        <img src="https://s3.ax1x.com/2021/02/16/ycZHtP.jpg" class="responsive-img" alt="给icarus主题换背景图片">
                         
-                        <span class="card-title">给icarus主题换背景图片</span>
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io@1.0/medias/featureimages/15.jpg" class="responsive-img" alt="Origin Integrate">
+                        
+                        <span class="card-title">Origin Integrate</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2148,18 +2140,18 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-22
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                    杂谈
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    科研学习
                                 </a>
                             
-                            <a href="/categories/%E6%9D%82%E8%B0%88/Hexo/" class="post-category">
-                                    Hexo
+                            <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/" class="post-category">
+                                    Origin
                                 </a>
                             
                             
@@ -2169,8 +2161,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Icarus/">
-                        <span class="chip bg-color">Icarus</span>
+                    <a href="/tags/origin/">
+                        <span class="chip bg-color">origin</span>
                     </a>
                     
                 </div>
@@ -2375,7 +2367,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.7k</span>&nbsp;字
             
             
             

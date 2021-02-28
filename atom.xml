@@ -6,7 +6,7 @@
   <link href="https://eastsheng.ink/atom.xml" rel="self"/>
   
   <link href="https://eastsheng.ink/"/>
-  <updated>2021-02-28T07:16:25.698Z</updated>
+  <updated>2021-02-28T14:44:27.566Z</updated>
   <id>https://eastsheng.ink/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://eastsheng.ink/za-tan/linux/linux-kuorong/"/>
     <id>https://eastsheng.ink/za-tan/linux/linux-kuorong/</id>
     <published>2021-02-28T05:36:18.000Z</published>
-    <updated>2021-02-28T07:16:25.698Z</updated>
+    <updated>2021-02-28T14:44:27.566Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p><ul><li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li><li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li><li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li><li>耐心等……</li></ul><h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p><ul><li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是是未分配状态，因此需要分配空间;</li><li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li><li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的磁盘，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，再点击上方绿色对勾√；</li><li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘，就先右键<code>/dev/sda2</code>这一行扩容，然后发现<code>unallocated</code>并未分配，这里还需要再给它的子空间再分配一次。</li><li>你会发现，如果直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给了一级的，然后再由一级分给二级的才可以。</li></ul><h3 id="3-终端查看df-h空间是否增加"><a href="#3-终端查看df-h空间是否增加" class="headerlink" title="3. 终端查看df -h空间是否增加"></a>3. 终端查看<code>df -h</code>空间是否增加</h3><ul><li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p><ul><li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li><li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li><li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li><li>耐心等……</li></ul><h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p><ul><li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li><li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li><li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li><li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li><li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li></ul><h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p><ul><li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li><li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li></ul><h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul><li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li></ul>]]></content>
     
     
       
@@ -371,10 +371,10 @@
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.ink/za-tan/windows/mklink/"/>
-    <id>https://eastsheng.ink/za-tan/windows/mklink/</id>
+    <link href="https://eastsheng.ink/za-tan/windows/windows-mklink/"/>
+    <id>https://eastsheng.ink/za-tan/windows/windows-mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
-    <updated>2021-02-16T03:23:00.741Z</updated>
+    <updated>2021-02-28T13:19:42.129Z</updated>
     
     <content type="html"><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul><li>目的是要把C盘的一个文件夹链接到E盘，</li><li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li></ul><pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre><h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。所在位置 行:1 字符: 1+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...+ ~~~~~~    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException    + FullyQualifiedErrorId : CommandNotFoundException</code></pre><h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul><li>因为PowerShell中没有mklink命令</li></ul><h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul><li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li></ul><pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre><h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre><p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>]]></content>
     
@@ -451,12 +451,12 @@
   
   <entry>
     <title>Windows相关</title>
-    <link href="https://eastsheng.ink/za-tan/windows/windowsproblems/"/>
-    <id>https://eastsheng.ink/za-tan/windows/windowsproblems/</id>
+    <link href="https://eastsheng.ink/za-tan/windows/windows-problems/"/>
+    <id>https://eastsheng.ink/za-tan/windows/windows-problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
-    <updated>2021-02-16T03:20:35.548Z</updated>
+    <updated>2021-02-28T14:19:51.015Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p><h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p><h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul><li>打开命令提示符（管理员）</li><li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li><li>也可以关闭：<code>net user administrator /active:no</code></li></ul>]]></content>
+    <content type="html"><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p><h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p><h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p><h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul><li>打开命令提示符（管理员）</li><li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li><li>也可以关闭：<code>net user administrator /active:no</code></li></ul><h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul><li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li></ul>]]></content>
     
     
       
