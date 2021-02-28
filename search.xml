@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Daily Notes</title>
     <url>/learning-notes/2021/dailynotes2021/</url>
     <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
@@ -105,6 +79,32 @@ git push origin yourbranch</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Common Commands of Hexo</title>
     <url>/za-tan/hexo/hexo-command/</url>
     <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
@@ -139,31 +139,6 @@ $ hexo d</code></pre>
       </categories>
       <tags>
         <tag>Hexo command</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -238,6 +213,31 @@ categories:
       </categories>
       <tags>
         <tag>Hueman</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -355,6 +355,32 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       <tags>
         <tag>lammps</tag>
         <tag>snap</tag>
+        <tag>potential</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Potential errors</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
         <tag>potential</tag>
       </tags>
   </entry>
@@ -500,32 +526,6 @@ sudo make install</code></pre>
         <tag>Linux Command</tag>
         <tag>matlab</tag>
         <tag>alamode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Potential errors</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
-S  Mo Mo
-Mo Mo Mo
-Mo Mo S 
-Mo S  Mo
-S  Mo S 
-S  S  Mo
-S  S  S </code></pre></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -976,72 +976,6 @@ turtle.done()
       </tags>
   </entry>
   <entry>
-    <title>Python常用</title>
-    <url>/bian-cheng-yu-yan/python/python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
-np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
-<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
-folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
-os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
-<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-print(path_yesno)</code></pre></li>
-<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
-print(PATH)</code></pre></li>
-<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows相关</title>
-    <url>/za-tan/windows/windowsproblems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
-<li>打开命令提示符（管理员）</li>
-<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
-<li>也可以关闭：<code>net user administrator /active:no</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows problems</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>控制Tecplot里的原子间距</title>
     <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
     <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
@@ -1110,6 +1044,72 @@ print(path)</code></pre></li>
       </tags>
   </entry>
   <entry>
+    <title>Python常用</title>
+    <url>/bian-cheng-yu-yan/python/python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
+np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
+folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
+os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
+<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+print(path_yesno)</code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
+print(PATH)</code></pre></li>
+<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/za-tan/windows/windowsproblems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
+<li>打开命令提示符（管理员）</li>
+<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
+<li>也可以关闭：<code>net user administrator /active:no</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows problems</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Alamode</title>
     <url>/ke-yan-xue-xi/alamode/alamode-1/</url>
     <content><![CDATA[<h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
@@ -1174,66 +1174,6 @@ Aborted (core dumped)</code></pre>
       </categories>
       <tags>
         <tag>Alamode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-branch</title>
-    <url>/za-tan/git-command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch xxx   #xxx 分支名，第一种方法
-$ git checkout -b xxx #第二种方法</code></pre>
-</code></pre>
-<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin xxx</code></pre>
-</code></pre>
-<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -D xxx</code></pre>
-</code></pre>
-<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin --delete xxx</code></pre>
-</code></pre>
-<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -a</code></pre>
-</code></pre>
-<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch </code></pre>
-</code></pre>
-<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout xxx</code></pre>
-</code></pre>
-<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout --orphan xxx #创建本地分支并进入到该分支
-$ git rm -rf #删除该分支的所有内容
-
-$ git add . 
-$ git commit -am &quot;评论内容&quot;
-$ git push origin xxx
-$ git pull
-$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来
-$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支
-$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</code></pre>
-</code></pre>
-<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹
-$ git commit -m &quot;blog source code&quot;
-或者一步到位：
-$ git commit -a -m &quot;blog source code&quot;
-$ git push origin xxx #如果不成功执行下一条
-$ git push origin xxx -f #不管3721直接push，谨慎操作。</code></pre>
-</code></pre>
-<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-none"><code class="language-none">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</code></pre>
-</code></pre>
-<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-none"><code class="language-none">$ mkdir foldername #创建文件夹
-$ git merge yourbranch # 把分支合并到master
-$ git reset --merge #退回合并前
-</code></pre>
-</code></pre>
-<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
-<li>可以命令查看用户名：<code>git config user.name</code></li>
-<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
-<li>查看邮箱：<code>git config user.email</code></li>
-<li>查看配置信息：<code>git config --list</code></li>
-<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
-</ul>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git command-branch</tag>
       </tags>
   </entry>
   <entry>
@@ -1329,6 +1269,66 @@ if (num_bins &gt; N) &#123;
       </categories>
       <tags>
         <tag>GPUMD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-branch</title>
+    <url>/za-tan/git-command/git-command/</url>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch xxx   #xxx 分支名，第一种方法
+$ git checkout -b xxx #第二种方法</code></pre>
+</code></pre>
+<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin xxx</code></pre>
+</code></pre>
+<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -D xxx</code></pre>
+</code></pre>
+<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin --delete xxx</code></pre>
+</code></pre>
+<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -a</code></pre>
+</code></pre>
+<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch </code></pre>
+</code></pre>
+<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout xxx</code></pre>
+</code></pre>
+<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout --orphan xxx #创建本地分支并进入到该分支
+$ git rm -rf #删除该分支的所有内容
+
+$ git add . 
+$ git commit -am &quot;评论内容&quot;
+$ git push origin xxx
+$ git pull
+$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来
+$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支
+$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</code></pre>
+</code></pre>
+<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹
+$ git commit -m &quot;blog source code&quot;
+或者一步到位：
+$ git commit -a -m &quot;blog source code&quot;
+$ git push origin xxx #如果不成功执行下一条
+$ git push origin xxx -f #不管3721直接push，谨慎操作。</code></pre>
+</code></pre>
+<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-none"><code class="language-none">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</code></pre>
+</code></pre>
+<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-none"><code class="language-none">$ mkdir foldername #创建文件夹
+$ git merge yourbranch # 把分支合并到master
+$ git reset --merge #退回合并前
+</code></pre>
+</code></pre>
+<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git command-branch</tag>
       </tags>
   </entry>
   <entry>
@@ -1491,6 +1491,38 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
+<ul>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的磁盘，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘，就先右键<code>/dev/sda2</code>这一行扩容，然后发现<code>unallocated</code>并未分配，这里还需要再给它的子空间再分配一次。</li>
+<li>你会发现，如果直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给了一级的，然后再由一级分给二级的才可以。</li>
+</ul>
+<h3 id="3-终端查看df-h空间是否增加"><a href="#3-终端查看df-h空间是否增加" class="headerlink" title="3. 终端查看df -h空间是否增加"></a>3. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>把自己写的Python程序打包成可以引用的模块</title>
     <url>/bian-cheng-yu-yan/python/python-1/</url>
     <content><![CDATA[<div class="notification is-info">
@@ -1529,38 +1561,6 @@ $ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
-<ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
-</ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
-<ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的磁盘，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘，就先右键<code>/dev/sda2</code>这一行扩容，然后发现<code>unallocated</code>并未分配，这里还需要再给它的子空间再分配一次。</li>
-<li>你会发现，如果直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给了一级的，然后再由一级分给二级的才可以。</li>
-</ul>
-<h3 id="3-终端查看df-h空间是否增加"><a href="#3-终端查看df-h空间是否增加" class="headerlink" title="3. 终端查看df -h空间是否增加"></a>3. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
