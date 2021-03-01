@@ -3,11 +3,11 @@
   <title>EastSheng</title>
   
   
-  <link href="https://eastsheng.ink/atom.xml" rel="self"/>
+  <link href="https://eastsheng.github.io/atom.xml" rel="self"/>
   
-  <link href="https://eastsheng.ink/"/>
+  <link href="https://eastsheng.github.io/"/>
   <updated>2021-02-28T14:44:27.566Z</updated>
-  <id>https://eastsheng.ink/</id>
+  <id>https://eastsheng.github.io/</id>
   
   <author>
     <name>Eastsheng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>虚拟机扩容</title>
-    <link href="https://eastsheng.ink/za-tan/linux/linux-kuorong/"/>
-    <id>https://eastsheng.ink/za-tan/linux/linux-kuorong/</id>
+    <link href="https://eastsheng.github.io/za-tan/linux/linux-kuorong/"/>
+    <id>https://eastsheng.github.io/za-tan/linux/linux-kuorong/</id>
     <published>2021-02-28T05:36:18.000Z</published>
     <updated>2021-02-28T14:44:27.566Z</updated>
     
@@ -33,23 +33,23 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Linux" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Linux/"/>
+    <category term="Linux" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Linux/"/>
     
     
-    <category term="Linux" scheme="https://eastsheng.ink/tags/Linux/"/>
+    <category term="Linux" scheme="https://eastsheng.github.io/tags/Linux/"/>
     
-    <category term="虚拟机扩容" scheme="https://eastsheng.ink/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%89%A9%E5%AE%B9/"/>
+    <category term="虚拟机扩容" scheme="https://eastsheng.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%89%A9%E5%AE%B9/"/>
     
-    <category term="Ubuntu" scheme="https://eastsheng.ink/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://eastsheng.github.io/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>Daily Notes</title>
-    <link href="https://eastsheng.ink/learning-notes/2021/dailynotes2021/"/>
-    <id>https://eastsheng.ink/learning-notes/2021/dailynotes2021/</id>
+    <link href="https://eastsheng.github.io/learning-notes/2021/dailynotes2021/"/>
+    <id>https://eastsheng.github.io/learning-notes/2021/dailynotes2021/</id>
     <published>2021-01-22T10:11:28.000Z</published>
     <updated>2021-03-01T12:33:58.625Z</updated>
     
@@ -63,19 +63,19 @@
     
     
     
-    <category term="Learning Notes" scheme="https://eastsheng.ink/categories/Learning-Notes/"/>
+    <category term="Learning Notes" scheme="https://eastsheng.github.io/categories/Learning-Notes/"/>
     
-    <category term="2021" scheme="https://eastsheng.ink/categories/Learning-Notes/2021/"/>
+    <category term="2021" scheme="https://eastsheng.github.io/categories/Learning-Notes/2021/"/>
     
     
-    <category term="Daily Notes" scheme="https://eastsheng.ink/tags/Daily-Notes/"/>
+    <category term="Daily Notes" scheme="https://eastsheng.github.io/tags/Daily-Notes/"/>
     
   </entry>
   
   <entry>
     <title>Learning English Notes</title>
-    <link href="https://eastsheng.ink/learning-notes/2021/englishnote2021/"/>
-    <id>https://eastsheng.ink/learning-notes/2021/englishnote2021/</id>
+    <link href="https://eastsheng.github.io/learning-notes/2021/englishnote2021/"/>
+    <id>https://eastsheng.github.io/learning-notes/2021/englishnote2021/</id>
     <published>2020-12-31T16:00:00.000Z</published>
     <updated>2021-03-01T12:33:53.745Z</updated>
     
@@ -90,19 +90,19 @@
     
     
     
-    <category term="Learning Notes" scheme="https://eastsheng.ink/categories/Learning-Notes/"/>
+    <category term="Learning Notes" scheme="https://eastsheng.github.io/categories/Learning-Notes/"/>
     
-    <category term="2021" scheme="https://eastsheng.ink/categories/Learning-Notes/2021/"/>
+    <category term="2021" scheme="https://eastsheng.github.io/categories/Learning-Notes/2021/"/>
     
     
-    <category term="Learning Notes" scheme="https://eastsheng.ink/tags/Learning-Notes/"/>
+    <category term="Learning Notes" scheme="https://eastsheng.github.io/tags/Learning-Notes/"/>
     
   </entry>
   
   <entry>
     <title>Alamode</title>
-    <link href="https://eastsheng.ink/ke-yan-xue-xi/alamode/alamode-1/"/>
-    <id>https://eastsheng.ink/ke-yan-xue-xi/alamode/alamode-1/</id>
+    <link href="https://eastsheng.github.io/ke-yan-xue-xi/alamode/alamode-1/"/>
+    <id>https://eastsheng.github.io/ke-yan-xue-xi/alamode/alamode-1/</id>
     <published>2020-11-21T15:07:16.000Z</published>
     <updated>2021-03-01T12:35:23.889Z</updated>
     
@@ -116,19 +116,19 @@
     
     
     
-    <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    <category term="科研学习" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="Alamode" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/"/>
+    <category term="Alamode" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Alamode/"/>
     
     
-    <category term="Alamode" scheme="https://eastsheng.ink/tags/Alamode/"/>
+    <category term="Alamode" scheme="https://eastsheng.github.io/tags/Alamode/"/>
     
   </entry>
   
   <entry>
     <title>GPUMD学习</title>
-    <link href="https://eastsheng.ink/ke-yan-xue-xi/gpumd/gpumd-1/"/>
-    <id>https://eastsheng.ink/ke-yan-xue-xi/gpumd/gpumd-1/</id>
+    <link href="https://eastsheng.github.io/ke-yan-xue-xi/gpumd/gpumd-1/"/>
+    <id>https://eastsheng.github.io/ke-yan-xue-xi/gpumd/gpumd-1/</id>
     <published>2020-10-28T03:35:45.000Z</published>
     <updated>2021-03-01T12:35:38.369Z</updated>
     
@@ -142,19 +142,19 @@
     
     
     
-    <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    <category term="科研学习" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="GPUMD" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/"/>
+    <category term="GPUMD" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/GPUMD/"/>
     
     
-    <category term="GPUMD" scheme="https://eastsheng.ink/tags/GPUMD/"/>
+    <category term="GPUMD" scheme="https://eastsheng.github.io/tags/GPUMD/"/>
     
   </entry>
   
   <entry>
     <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <link href="https://eastsheng.ink/bian-cheng-yu-yan/python/pyplot-1/"/>
-    <id>https://eastsheng.ink/bian-cheng-yu-yan/python/pyplot-1/</id>
+    <link href="https://eastsheng.github.io/bian-cheng-yu-yan/python/pyplot-1/"/>
+    <id>https://eastsheng.github.io/bian-cheng-yu-yan/python/pyplot-1/</id>
     <published>2020-08-27T02:11:06.000Z</published>
     <updated>2021-03-01T12:36:21.538Z</updated>
     
@@ -168,19 +168,19 @@
     
     
     
-    <category term="编程语言" scheme="https://eastsheng.ink/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    <category term="编程语言" scheme="https://eastsheng.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
-    <category term="Python" scheme="https://eastsheng.ink/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/"/>
+    <category term="Python" scheme="https://eastsheng.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/"/>
     
     
-    <category term="Matlibplot" scheme="https://eastsheng.ink/tags/Matlibplot/"/>
+    <category term="Matlibplot" scheme="https://eastsheng.github.io/tags/Matlibplot/"/>
     
   </entry>
   
   <entry>
     <title>Potential errors</title>
-    <link href="https://eastsheng.ink/ke-yan-xue-xi/lammps/lammps-3-perror/"/>
-    <id>https://eastsheng.ink/ke-yan-xue-xi/lammps/lammps-3-perror/</id>
+    <link href="https://eastsheng.github.io/ke-yan-xue-xi/lammps/lammps-3-perror/"/>
+    <id>https://eastsheng.github.io/ke-yan-xue-xi/lammps/lammps-3-perror/</id>
     <published>2020-07-25T15:00:15.000Z</published>
     <updated>2021-03-01T12:35:52.601Z</updated>
     
@@ -194,21 +194,21 @@
     
     
     
-    <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    <category term="科研学习" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="Lammps" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/"/>
+    <category term="Lammps" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Lammps/"/>
     
     
-    <category term="lammps" scheme="https://eastsheng.ink/tags/lammps/"/>
+    <category term="lammps" scheme="https://eastsheng.github.io/tags/lammps/"/>
     
-    <category term="potential" scheme="https://eastsheng.ink/tags/potential/"/>
+    <category term="potential" scheme="https://eastsheng.github.io/tags/potential/"/>
     
   </entry>
   
   <entry>
     <title>Learning Notes</title>
-    <link href="https://eastsheng.ink/learning-notes/2020/notes/"/>
-    <id>https://eastsheng.ink/learning-notes/2020/notes/</id>
+    <link href="https://eastsheng.github.io/learning-notes/2020/notes/"/>
+    <id>https://eastsheng.github.io/learning-notes/2020/notes/</id>
     <published>2020-07-22T16:00:00.000Z</published>
     <updated>2021-03-01T12:36:00.954Z</updated>
     
@@ -222,19 +222,19 @@
     
     
     
-    <category term="Learning Notes" scheme="https://eastsheng.ink/categories/Learning-Notes/"/>
+    <category term="Learning Notes" scheme="https://eastsheng.github.io/categories/Learning-Notes/"/>
     
-    <category term="2020" scheme="https://eastsheng.ink/categories/Learning-Notes/2020/"/>
+    <category term="2020" scheme="https://eastsheng.github.io/categories/Learning-Notes/2020/"/>
     
     
-    <category term="Learning Notes" scheme="https://eastsheng.ink/tags/Learning-Notes/"/>
+    <category term="Learning Notes" scheme="https://eastsheng.github.io/tags/Learning-Notes/"/>
     
   </entry>
   
   <entry>
     <title>Linux 汇总</title>
-    <link href="https://eastsheng.ink/za-tan/linux/linux-1/"/>
-    <id>https://eastsheng.ink/za-tan/linux/linux-1/</id>
+    <link href="https://eastsheng.github.io/za-tan/linux/linux-1/"/>
+    <id>https://eastsheng.github.io/za-tan/linux/linux-1/</id>
     <published>2020-07-10T11:20:36.000Z</published>
     <updated>2021-03-01T12:35:55.162Z</updated>
     
@@ -250,51 +250,50 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Linux" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Linux/"/>
+    <category term="Linux" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Linux/"/>
     
     
-    <category term="Linux Command" scheme="https://eastsheng.ink/tags/Linux-Command/"/>
+    <category term="Linux Command" scheme="https://eastsheng.github.io/tags/Linux-Command/"/>
     
-    <category term="matlab" scheme="https://eastsheng.ink/tags/matlab/"/>
+    <category term="matlab" scheme="https://eastsheng.github.io/tags/matlab/"/>
     
-    <category term="alamode" scheme="https://eastsheng.ink/tags/alamode/"/>
+    <category term="alamode" scheme="https://eastsheng.github.io/tags/alamode/"/>
     
   </entry>
   
   <entry>
     <title>Hueman主题</title>
-    <link href="https://eastsheng.ink/za-tan/hexo/hexo-hueman/"/>
-    <id>https://eastsheng.ink/za-tan/hexo/hexo-hueman/</id>
+    <link href="https://eastsheng.github.io/za-tan/hexo/hexo-hueman/"/>
+    <id>https://eastsheng.github.io/za-tan/hexo/hexo-hueman/</id>
     <published>2020-07-07T05:20:22.000Z</published>
-    <updated>2021-03-01T12:35:43.826Z</updated>
+    <updated>2021-03-01T12:55:21.521Z</updated>
     
-    <content type="html"><![CDATA[<!--人体时钟背景透明--><center><script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script></center><p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre><p><strong>注：</strong></p><ul><li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li></ul><h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre><p><strong>注：</strong></p><ul><li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li><li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li></ul><h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul><li>第一个坑</li></ul><pre class="language-none"><code class="language-none"># Menusmenu:    Home: &#x2F;    # Delete this row if you don&#39;t want categories in your header nav bar    Categories:    About: &#x2F;about&#x2F;index.html</code></pre><ol><li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menusmenu:    Home: &#x2F;    # Delete this row if you don&#39;t want categories in your header nav bar    Categories:      People: &#x2F;people    About: &#x2F;about&#x2F;index.html</code></pre></li><li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li><li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li></ol><ul><li>第二个坑</li></ul><ol><li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p></li><li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p></li><li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p></li><li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p></li></ol><pre class="language-none"><code class="language-none">title:  categories:- Technology- Github</code></pre><ol start="8"><li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li></ol><h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p><ul><li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre><p><strong>注：</strong></p><ul><li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li></ul><h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre><p><strong>注：</strong></p><ul><li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li><li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li></ul><h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul><li>第一个坑</li></ul><pre class="language-none"><code class="language-none"># Menusmenu:    Home: &#x2F;    # Delete this row if you don&#39;t want categories in your header nav bar    Categories:    About: &#x2F;about&#x2F;index.html</code></pre><ol><li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menusmenu:    Home: &#x2F;    # Delete this row if you don&#39;t want categories in your header nav bar    Categories:      People: &#x2F;people    About: &#x2F;about&#x2F;index.html</code></pre></li><li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li><li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li></ol><ul><li>第二个坑</li></ul><ol><li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p></li><li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p></li><li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p></li><li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p></li></ol><pre class="language-none"><code class="language-none">title:  categories:- Technology- Github</code></pre><ol start="8"><li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li></ol><h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p><ul><li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;!--人体时钟背景透明--&gt;
-&lt;center&gt;
-&lt;script charset=&quot;Shift_JIS&quot; src=&quot;http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js&quot;&gt;&lt;/scrip</summary>
+    <summary type="html">&lt;p&gt;这个主题挺不错的，不过在配置的时候有些波折，记录一下。&lt;/p&gt;
+&lt;h4 id=&quot;1-安装&quot;&gt;&lt;a href=&quot;#1-安装&quot; class=&quot;headerlink&quot; title=&quot;1. 安装&quot;&gt;&lt;/a&gt;1. 安装&lt;/h4&gt;&lt;pre class=&quot;language-none&quot;&gt;&lt;</summary>
       
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Hexo" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Hexo/"/>
+    <category term="Hexo" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Hexo/"/>
     
     
-    <category term="Hueman" scheme="https://eastsheng.ink/tags/Hueman/"/>
+    <category term="Hueman" scheme="https://eastsheng.github.io/tags/Hueman/"/>
     
   </entry>
   
   <entry>
     <title>Git Push Everything up-to-date错误</title>
-    <link href="https://eastsheng.ink/za-tan/git-command/gitpusherror/"/>
-    <id>https://eastsheng.ink/za-tan/git-command/gitpusherror/</id>
+    <link href="https://eastsheng.github.io/za-tan/git-command/gitpusherror/"/>
+    <id>https://eastsheng.github.io/za-tan/git-command/gitpusherror/</id>
     <published>2020-07-02T15:27:05.000Z</published>
     <updated>2021-03-01T12:35:35.537Z</updated>
     
@@ -308,19 +307,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Git Command" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
+    <category term="Git Command" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
     
     
-    <category term="Git Push Everything up-to-date" scheme="https://eastsheng.ink/tags/Git-Push-Everything-up-to-date/"/>
+    <category term="Git Push Everything up-to-date" scheme="https://eastsheng.github.io/tags/Git-Push-Everything-up-to-date/"/>
     
   </entry>
   
   <entry>
     <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <link href="https://eastsheng.ink/za-tan/npm/npm-1/"/>
-    <id>https://eastsheng.ink/za-tan/npm/npm-1/</id>
+    <link href="https://eastsheng.github.io/za-tan/npm/npm-1/"/>
+    <id>https://eastsheng.github.io/za-tan/npm/npm-1/</id>
     <published>2020-07-01T06:50:16.000Z</published>
     <updated>2021-03-01T12:36:05.576Z</updated>
     
@@ -334,19 +333,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="npm" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/npm/"/>
+    <category term="npm" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/npm/"/>
     
     
-    <category term="npm" scheme="https://eastsheng.ink/tags/npm/"/>
+    <category term="npm" scheme="https://eastsheng.github.io/tags/npm/"/>
     
   </entry>
   
   <entry>
     <title>Vscode常用</title>
-    <link href="https://eastsheng.ink/za-tan/vscode1/"/>
-    <id>https://eastsheng.ink/za-tan/vscode1/</id>
+    <link href="https://eastsheng.github.io/za-tan/vscode1/"/>
+    <id>https://eastsheng.github.io/za-tan/vscode1/</id>
     <published>2020-06-30T03:03:46.000Z</published>
     <updated>2021-03-01T12:36:33.121Z</updated>
     
@@ -362,17 +361,17 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-    <category term="VScode" scheme="https://eastsheng.ink/tags/VScode/"/>
+    <category term="VScode" scheme="https://eastsheng.github.io/tags/VScode/"/>
     
   </entry>
   
   <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
-    <link href="https://eastsheng.ink/za-tan/windows/windows-mklink/"/>
-    <id>https://eastsheng.ink/za-tan/windows/windows-mklink/</id>
+    <link href="https://eastsheng.github.io/za-tan/windows/windows-mklink/"/>
+    <id>https://eastsheng.github.io/za-tan/windows/windows-mklink/</id>
     <published>2020-06-29T16:25:26.000Z</published>
     <updated>2021-03-01T12:36:36.713Z</updated>
     
@@ -388,19 +387,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Windows" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Windows/"/>
+    <category term="Windows" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Windows/"/>
     
     
-    <category term="mklink" scheme="https://eastsheng.ink/tags/mklink/"/>
+    <category term="mklink" scheme="https://eastsheng.github.io/tags/mklink/"/>
     
   </entry>
   
   <entry>
     <title>给icarus主题换背景图片</title>
-    <link href="https://eastsheng.ink/za-tan/hexo/hexo-icarus/"/>
-    <id>https://eastsheng.ink/za-tan/hexo/hexo-icarus/</id>
+    <link href="https://eastsheng.github.io/za-tan/hexo/hexo-icarus/"/>
+    <id>https://eastsheng.github.io/za-tan/hexo/hexo-icarus/</id>
     <published>2020-06-28T16:00:34.000Z</published>
     <updated>2021-03-01T12:35:47.137Z</updated>
     
@@ -414,19 +413,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Hexo" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Hexo/"/>
+    <category term="Hexo" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Hexo/"/>
     
     
-    <category term="Icarus" scheme="https://eastsheng.ink/tags/Icarus/"/>
+    <category term="Icarus" scheme="https://eastsheng.github.io/tags/Icarus/"/>
     
   </entry>
   
   <entry>
     <title>Git Command-delete file</title>
-    <link href="https://eastsheng.ink/za-tan/git-command/git-delfile/"/>
-    <id>https://eastsheng.ink/za-tan/git-command/git-delfile/</id>
+    <link href="https://eastsheng.github.io/za-tan/git-command/git-delfile/"/>
+    <id>https://eastsheng.github.io/za-tan/git-command/git-delfile/</id>
     <published>2020-06-26T05:22:24.000Z</published>
     <updated>2021-03-01T12:35:32.761Z</updated>
     
@@ -440,19 +439,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Git Command" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
+    <category term="Git Command" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
     
     
-    <category term="Git delete file" scheme="https://eastsheng.ink/tags/Git-delete-file/"/>
+    <category term="Git delete file" scheme="https://eastsheng.github.io/tags/Git-delete-file/"/>
     
   </entry>
   
   <entry>
     <title>Windows相关</title>
-    <link href="https://eastsheng.ink/za-tan/windows/windows-problems/"/>
-    <id>https://eastsheng.ink/za-tan/windows/windows-problems/</id>
+    <link href="https://eastsheng.github.io/za-tan/windows/windows-problems/"/>
+    <id>https://eastsheng.github.io/za-tan/windows/windows-problems/</id>
     <published>2020-06-24T03:29:49.000Z</published>
     <updated>2021-03-01T12:35:19.169Z</updated>
     
@@ -466,19 +465,19 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Windows" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Windows/"/>
+    <category term="Windows" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Windows/"/>
     
     
-    <category term="Windows problems" scheme="https://eastsheng.ink/tags/Windows-problems/"/>
+    <category term="Windows problems" scheme="https://eastsheng.github.io/tags/Windows-problems/"/>
     
   </entry>
   
   <entry>
     <title>Origin Integrate</title>
-    <link href="https://eastsheng.ink/ke-yan-xue-xi/origin/origin-2/"/>
-    <id>https://eastsheng.ink/ke-yan-xue-xi/origin/origin-2/</id>
+    <link href="https://eastsheng.github.io/ke-yan-xue-xi/origin/origin-2/"/>
+    <id>https://eastsheng.github.io/ke-yan-xue-xi/origin/origin-2/</id>
     <published>2020-06-22T11:16:25.000Z</published>
     <updated>2021-03-01T12:36:11.193Z</updated>
     
@@ -494,19 +493,19 @@
     
     
     
-    <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    <category term="科研学习" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="Origin" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/"/>
+    <category term="Origin" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/"/>
     
     
-    <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
+    <category term="origin" scheme="https://eastsheng.github.io/tags/origin/"/>
     
   </entry>
   
   <entry>
     <title>Origin 画双y轴</title>
-    <link href="https://eastsheng.ink/ke-yan-xue-xi/origin/origin-1/"/>
-    <id>https://eastsheng.ink/ke-yan-xue-xi/origin/origin-1/</id>
+    <link href="https://eastsheng.github.io/ke-yan-xue-xi/origin/origin-1/"/>
+    <id>https://eastsheng.github.io/ke-yan-xue-xi/origin/origin-1/</id>
     <published>2020-06-22T07:21:49.000Z</published>
     <updated>2021-03-01T12:36:08.713Z</updated>
     
@@ -522,19 +521,19 @@
     
     
     
-    <category term="科研学习" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    <category term="科研学习" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="Origin" scheme="https://eastsheng.ink/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/"/>
+    <category term="Origin" scheme="https://eastsheng.github.io/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/Origin/"/>
     
     
-    <category term="origin" scheme="https://eastsheng.ink/tags/origin/"/>
+    <category term="origin" scheme="https://eastsheng.github.io/tags/origin/"/>
     
   </entry>
   
   <entry>
     <title>Git Command-branch</title>
-    <link href="https://eastsheng.ink/za-tan/git-command/git-command/"/>
-    <id>https://eastsheng.ink/za-tan/git-command/git-command/</id>
+    <link href="https://eastsheng.github.io/za-tan/git-command/git-command/"/>
+    <id>https://eastsheng.github.io/za-tan/git-command/git-command/</id>
     <published>2020-06-21T10:34:23.000Z</published>
     <updated>2021-03-01T12:35:29.890Z</updated>
     
@@ -548,12 +547,12 @@
     
     
     
-    <category term="杂谈" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/"/>
+    <category term="杂谈" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/"/>
     
-    <category term="Git Command" scheme="https://eastsheng.ink/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
+    <category term="Git Command" scheme="https://eastsheng.github.io/categories/%E6%9D%82%E8%B0%88/Git-Command/"/>
     
     
-    <category term="Git command-branch" scheme="https://eastsheng.ink/tags/Git-command-branch/"/>
+    <category term="Git command-branch" scheme="https://eastsheng.github.io/tags/Git-command-branch/"/>
     
   </entry>
   
