@@ -46,6 +46,96 @@
       </tags>
   </entry>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
+$ Fortran runtime error: Bad integer for item 1 in list input
+$ Bad real number in item 4 of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
+$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
+<ul>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+</ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GULP 汇总</title>
     <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
     <content><![CDATA[<ul>
@@ -78,29 +168,114 @@
       </tags>
   </entry>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
+    <title>Git Push Everything up-to-date错误</title>
+    <url>/za-tan/git-command/gitpusherror/</url>
+    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
+Everything up-to-date</code></pre>
+<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
+<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
+</li>
+<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
+</li>
+<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
+</li>
+<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
+</li>
+</ul>
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
+<li>一般情况下，正确的做法是：</li>
+</ul>
+<pre class="language-none"><code class="language-none">git add .
+git commit -m &#39;your commits&#39;
+git push origin yourbranch</code></pre>
+<ul>
+<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
+        <category>杂谈</category>
+        <category>Git Command</category>
       </categories>
       <tags>
-        <tag>Learning Notes</tag>
+        <tag>Git Push Everything up-to-date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<ol>
+<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
+<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ from distutils.core import setup
+
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
+<ol start="3">
+<li>然后，在此文件夹里打开cmd，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<ol start="4">
+<li>最后，安装此模块到本地，输入：</li>
+</ol>
+<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Common Commands of Hexo</title>
+    <url>/za-tan/hexo/hexo-command/</url>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
+where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
+default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
+or
+$ hexo s</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
+or
+$ hexo g</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
+or
+$ hexo d</code></pre>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
+<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
+<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
+<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
+<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo command</tag>
       </tags>
   </entry>
   <entry>
@@ -204,96 +379,69 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
+    <title>Hueman主题</title>
+    <url>/za-tan/hexo/hexo-hueman/</url>
+    <content><![CDATA[<!--人体时钟背景透明-->
+<center>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+</center>
+
+
+<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
+<p><strong>注：</strong></p>
 <ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
+<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
 </ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
+<p><strong>注：</strong></p>
 <ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
-<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
+<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
 </ul>
-<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
+<li>第一个坑</li>
+</ul>
+<pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:
+    About: &#x2F;about&#x2F;index.html</code></pre>
+<ol>
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
+menu:
+    Home: &#x2F;
+    # Delete this row if you don&#39;t want categories in your header nav bar
+    Categories:  
+    People: &#x2F;people
+    About: &#x2F;about&#x2F;index.html</code></pre></li>
+<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
+<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
+</ol>
 <ul>
-<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
-<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+<li>第二个坑</li>
 </ul>
-<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
-$ Fortran runtime error: Bad integer for item 1 in list input
-$ Bad real number in item 4 of list input</code></pre>
+<ol>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
+</li>
+<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
+</li>
+<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
+</li>
+<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
+</li>
+</ol>
+<pre class="language-none"><code class="language-none">title:  
+categories:
+- Technology
+- Github</code></pre>
+<ol start="8">
+<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
+</ol>
+<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
 <ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
-$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <url>/za-tan/hexo/hexo-command/</url>
-    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
-where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
-default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
-or
-$ hexo s</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
-or
-$ hexo g</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
-or
-$ hexo d</code></pre>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
-<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
-<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
-<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
-<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
 </ul>
 ]]></content>
       <categories>
@@ -301,81 +449,32 @@ $ hexo d</code></pre>
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo command</tag>
+        <tag>Hueman</tag>
       </tags>
   </entry>
   <entry>
-    <title>Git Push Everything up-to-date错误</title>
-    <url>/za-tan/git-command/gitpusherror/</url>
-    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
-Everything up-to-date</code></pre>
-<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
-<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
-</li>
-<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
-</li>
-<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
-</li>
-<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
-</li>
-</ul>
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
-<li>一般情况下，正确的做法是：</li>
-</ul>
-<pre class="language-none"><code class="language-none">git add .
-git commit -m &#39;your commits&#39;
-git push origin yourbranch</code></pre>
-<ul>
-<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
-</ul>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Git Command</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Git Push Everything up-to-date</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ from distutils.core import setup
-
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
-</code></pre>
-<ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
+        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -497,240 +596,6 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Hueman主题</title>
-    <url>/za-tan/hexo/hexo-hueman/</url>
-    <content><![CDATA[<!--人体时钟背景透明-->
-<center>
-<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
-</center>
-
-
-<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
-</ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
-<p><strong>注：</strong></p>
-<ul>
-<li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
-<li>也别忘了把主题目录下的<code>config.yml.example</code>名字改成<code>config.yml</code></li>
-</ul>
-<h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
-<li>第一个坑</li>
-</ul>
-<pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:
-    About: &#x2F;about&#x2F;index.html</code></pre>
-<ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
-menu:
-    Home: &#x2F;
-    # Delete this row if you don&#39;t want categories in your header nav bar
-    Categories:  
-    People: &#x2F;people
-    About: &#x2F;about&#x2F;index.html</code></pre></li>
-<li>但是，经过<code>hexo s</code> 预览<code>http://localhost:4000/</code>会发现，在菜单栏下面的people没有显示<code>People</code>,而是显示了<code>index.people</code>。</li>
-<li>解决方法—找到主题下的<code>languages</code>文件夹，比如打开en.yml,在相应位置添加<code>people: &quot;People&quot;</code>就可以了。</li>
-</ol>
-<ul>
-<li>第二个坑</li>
-</ul>
-<ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
-</li>
-<li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
-</li>
-<li><p>之前，没有注意到下面menu有个<code>Categories:</code>,应该是在新建post里添加Categories就会在菜单栏里显示分类，而这个主题的下拉菜单并不是真正的下拉菜单，而是分类放到了菜单栏里。</p>
-</li>
-<li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
-</li>
-</ol>
-<pre class="language-none"><code class="language-none">title:  
-categories:
-- Technology
-- Github</code></pre>
-<ol start="8">
-<li>还可以通过删除<code>Categories:</code>,不在菜单栏里显示分类；而且那个<code>Categories:</code>在哪放着，你的分类菜单栏就会在哪显示，合理配置。</li>
-</ol>
-<h4 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h4><p><strong>与其去google@baidu,不如好好看manual，不然费时又费精力，最后还得看manual……手动滑稽</strong></p>
-<ul>
-<li><a href="https://github.com/ppoffice/hexo-theme-hueman">附上主题源码</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Learning Notes</title>
-    <url>/learning-notes/2020/notes/</url>
-    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
-<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
-<blockquote>
-<ul>
-<li>Full width at half maximum (FWHM) equals 2Γ</li>
-<li>τ = 1/2Γ.</li>
-</ul>
-</blockquote>
-</li>
-<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
-</li>
-</ol>
-<ul>
-<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
-<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
-<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
-<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
-</ul>
-<ol start="3">
-<li><strong><a href="https://baike.baidu.com/item/%E6%9D%82%E5%8C%96">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
-</ol>
-<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
-<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
-</ol>
-<blockquote>
-<ul>
-<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
-<li>搞不懂啊……</li>
-</ul>
-</blockquote>
-<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
-<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
-<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/%E8%B4%B9%E7%B1%B3%E5%AD%90">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
-<ul>
-<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
-<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
-<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
-<li>玻色子一般有：光子、</li>
-<li>费米子一般有：电子、中子、质子……</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
-<ol>
-<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
-<blockquote>
-<ul>
-<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
-<li>表述2：第一类永动机是不可能的造成的。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第二定律：</p>
-<blockquote>
-<ul>
-<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
-<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
-</ul>
-</blockquote>
-</li>
-<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
-<blockquote>
-<ul>
-<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
-</li>
-</ol>
-<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
-<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
-<ol>
-<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
-<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
-</ol>
-<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
-<li>Bohr=0.52917706 angstrom</li>
-</ol>
-<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
-<li>The dominant width of phonon wave-packets is also called coherent length.</li>
-</ol>
-<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
-<ul>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
-<ol>
-<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
-<li>其他信息修改参照官网</li>
-</ol>
-</blockquote>
-</li>
-<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
-<ol>
-<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
-</ol>
-</blockquote>
-</li>
-<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
-<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
-<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
-<li>同样获得pdos</li>
-<li>具体参见官网</li>
-</ul>
-<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
-<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
-</ol>
-<ul>
-<li>不同材料的不同phase的稳定性不同；</li>
-<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
-<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
-<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
-</ul>
-<ol start="2">
-<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
-<li>绝热近似（Born-Oppenheimer）：</li>
-</ol>
-<ul>
-<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
-<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
-<li>考虑原子核的运动则不考虑周围电子的分布。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2020</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Potential errors</title>
     <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
     <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
@@ -754,6 +619,38 @@ S  S  S </code></pre></li>
       <tags>
         <tag>lammps</tag>
         <tag>potential</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/za-tan/npm/npm-1/</url>
+    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
+<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
       </tags>
   </entry>
   <entry>
@@ -971,6 +868,174 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learning Notes</title>
+    <url>/learning-notes/2020/notes/</url>
+    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
+<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
+<blockquote>
+<ul>
+<li>Full width at half maximum (FWHM) equals 2Γ</li>
+<li>τ = 1/2Γ.</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
+</li>
+</ol>
+<ul>
+<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
+<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
+<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
+<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
+</ul>
+<ol start="3">
+<li><strong><a href="https://baike.baidu.com/item/%E6%9D%82%E5%8C%96">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
+</ol>
+<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
+<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
+</ol>
+<blockquote>
+<ul>
+<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
+<li>搞不懂啊……</li>
+</ul>
+</blockquote>
+<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
+<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
+<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/%E8%B4%B9%E7%B1%B3%E5%AD%90">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
+<ul>
+<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
+<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
+<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
+<li>玻色子一般有：光子、</li>
+<li>费米子一般有：电子、中子、质子……</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
+<ol>
+<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
+<blockquote>
+<ul>
+<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
+<li>表述2：第一类永动机是不可能的造成的。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第二定律：</p>
+<blockquote>
+<ul>
+<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
+<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
+</ul>
+</blockquote>
+</li>
+<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
+<blockquote>
+<ul>
+<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
+</li>
+</ol>
+<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
+<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
+<ol>
+<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
+<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
+</ol>
+<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
+<li>Bohr=0.52917706 angstrom</li>
+</ol>
+<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
+<li>The dominant width of phonon wave-packets is also called coherent length.</li>
+</ol>
+<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
+<ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
+<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
+</ol>
+<ul>
+<li>不同材料的不同phase的稳定性不同；</li>
+<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
+<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
+<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
+</ul>
+<ol start="2">
+<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
+<li>绝热近似（Born-Oppenheimer）：</li>
+</ol>
+<ul>
+<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
+<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
+<li>考虑原子核的运动则不考虑周围电子的分布。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2020</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ovito</title>
     <url>/ke-yan-xue-xi/ovito/ovito/</url>
     <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
@@ -985,6 +1050,164 @@ sudo make install</code></pre>
       </categories>
       <tags>
         <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
+
+x &#x3D; np.linspace(0, 2*np.pi, 100)
+y &#x3D; np.sin(x)
+z &#x3D; np.cos(x)#上色数据
+
+points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
+segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
+
+fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
+fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
+
+norm &#x3D; plt.Normalize(min(z),max(z))
+lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
+lc.set_array(z)
+lc.set_linewidth(2)
+line &#x3D; ax.add_collection(lc)
+fig.colorbar(line)
+
+plt.xlim(0,2*np.pi)
+plt.ylim(-1,1)
+plt.savefig(&#39;fig1.png&#39;)
+plt.show()
+</code></pre>
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制Tecplot里的原子间距</title>
+    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
+    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
+<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
+
+
+</li>
+</ul>
+<ul>
+<li><p>独立操作x,y,z的Size Factors</p>
+<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
+</li>
+<li><p>调原子间距效果</p>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
+
+<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
+<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
+<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
+<li>这个就不明显，藏在这里：<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View&gt;Rotate</td>
+<td>3D Rotate</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
+<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
+<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
+<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Tecplot</category>
+      </categories>
+      <tags>
+        <tag>Tecplot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python常用</title>
+    <url>/bian-cheng-yu-yan/python/python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
+np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
+folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
+os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
+<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
+print(path_yesno)</code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
+print(PATH)</code></pre></li>
+<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+
+path&#x3D;os.getcwd()
+print(path)</code></pre></li>
+<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode常用</title>
+    <url>/za-tan/vscode1/</url>
+    <content><![CDATA[<ol>
+<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
+<li><code>F11</code>全屏模式。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>VScode</tag>
       </tags>
   </entry>
   <entry>
@@ -1101,199 +1324,6 @@ turtle.done()
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/za-tan/npm/npm-1/</url>
-    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
-<li>错误信息</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
-</code></pre>
-<ul>
-<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
-<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
-</ul>
-<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
-
-x &#x3D; np.linspace(0, 2*np.pi, 100)
-y &#x3D; np.sin(x)
-z &#x3D; np.cos(x)#上色数据
-
-points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
-segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
-
-fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
-fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
-
-norm &#x3D; plt.Normalize(min(z),max(z))
-lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
-lc.set_array(z)
-lc.set_linewidth(2)
-line &#x3D; ax.add_collection(lc)
-fig.colorbar(line)
-
-plt.xlim(0,2*np.pi)
-plt.ylim(-1,1)
-plt.savefig(&#39;fig1.png&#39;)
-plt.show()
-</code></pre>
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
-</ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
-
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python常用</title>
-    <url>/bian-cheng-yu-yan/python/python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
-np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
-<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
-folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
-os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
-<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-print(path_yesno)</code></pre></li>
-<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
-print(PATH)</code></pre></li>
-<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode常用</title>
-    <url>/za-tan/vscode1/</url>
-    <content><![CDATA[<ol>
-<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
-<li><code>F11</code>全屏模式。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>VScode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-delete file</title>
-    <url>/za-tan/git-command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-none"><code class="language-none">git rm yourfile
-or
-git rm -r yourfolder&#x2F;
-</code></pre>
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-none"><code class="language-none">git commit -m &quot;your modify comment&quot;
-</code></pre>
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-none"><code class="language-none">git push origin yourbranch
-</code></pre>
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git delete file</tag>
       </tags>
   </entry>
   <entry>
@@ -1424,79 +1454,26 @@ $ git reset --merge #退回合并前
       </tags>
   </entry>
   <entry>
-    <title>控制Tecplot里的原子间距</title>
-    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
-    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
-<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
+    <title>Git Command-delete file</title>
+    <url>/za-tan/git-command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-none"><code class="language-none">git rm yourfile
+or
+git rm -r yourfolder&#x2F;
+</code></pre>
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-none"><code class="language-none">git commit -m &quot;your modify comment&quot;
+</code></pre>
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-none"><code class="language-none">git push origin yourbranch
+</code></pre>
 
 
-</li>
-</ul>
-<ul>
-<li><p>独立操作x,y,z的Size Factors</p>
-<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
-</li>
-<li><p>调原子间距效果</p>
-</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
-
-<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
-<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
-<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
-<li>这个就不明显，藏在这里：<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>View&gt;Rotate</td>
-<td>3D Rotate</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
-<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
-<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
-<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Tecplot</category>
-      </categories>
-      <tags>
-        <tag>Tecplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows相关</title>
-    <url>/za-tan/windows/windows-problems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
-<li>打开命令提示符（管理员）</li>
-<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
-<li>也可以关闭：<code>net user administrator /active:no</code></li>
-</ul>
-<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
-<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
-</ul>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Windows</category>
+        <category>Git Command</category>
       </categories>
       <tags>
-        <tag>Windows problems</tag>
+        <tag>Git delete file</tag>
       </tags>
   </entry>
   <entry>
@@ -1533,6 +1510,29 @@ $ git reset --merge #退回合并前
       </categories>
       <tags>
         <tag>mklink</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/za-tan/windows/windows-problems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
+<li>打开命令提示符（管理员）</li>
+<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
+<li>也可以关闭：<code>net user administrator /active:no</code></li>
+</ul>
+<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
+<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows problems</tag>
       </tags>
   </entry>
   <entry>

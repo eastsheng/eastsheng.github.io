@@ -1363,16 +1363,16 @@
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
 <script>
     var options = {
-        bottom: "138px",                 // default: '32px' 调整高度
+        bottom: "75px",                 // default: '32px' 调整高度
         right: "18px",                  // default: '32px' 调整左右距离
         left: "unset",                  // default: 'unset'
         time: "0.5s",                   // default: '0.3s'
         mixColor: "#fff",               // default: '#fff'
         backgroundColor: "#fff",        // default: '#fff'
-        buttonColorDark: "#7977a8",     // default: '#100f2c'
+        buttonColorDark: "#313136",     // default: '#100f2c'
         buttonColorLight: "#fff",       // default: '#fff'
         saveInCookies: true,            // default: true,
-        label: "👀",                    // default: '🌓'
+        label: "🌙",                    // default: '👀🌓🌙💡☯'<i class="fas fa-lightbulb"></i>
         autoMatchOsTheme: true,         // default: true
 
     };
@@ -1465,7 +1465,7 @@
         list-style: none;
     }
 
-    #toc-content {
+    toc-content {
         padding-bottom: 30px;
         overflow: auto;
         height: calc(100vh - 250px);
@@ -1502,7 +1502,7 @@
     #floating-toc-btn {
         position: fixed;
         right: 15px;
-        bottom: 76px;
+        bottom: 133px;
         padding-top: 15px;
         margin-bottom: 0;
         z-index: 998;
@@ -1584,6 +1584,11 @@
                 
 
                 
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -2436,7 +2441,7 @@
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/eastsheng" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github fa-spin"></i>
+        <i class="fab fa-github"></i>
     </a>
 
 
@@ -2583,7 +2588,7 @@ $(function () {
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-hand-pointer"></i>
     </a>
 </div>
 
