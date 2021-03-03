@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Daily Notes</title>
     <url>/learning-notes/2021/dailynotes2021/</url>
     <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
@@ -72,6 +46,59 @@
       </tags>
   </entry>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
+$ Fortran runtime error: Bad integer for item 1 in list input
+$ Bad real number in item 4 of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
+$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GULP 汇总</title>
     <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
     <content><![CDATA[<ul>
@@ -104,30 +131,34 @@
       </tags>
   </entry>
   <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
-$ Fortran runtime error: Bad integer for item 1 in list input
-$ Bad real number in item 4 of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
-$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
+
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
 ]]></content>
       <categories>
         <category>编程语言</category>
-        <category>Fortran</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>Fortran运行error</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -231,74 +262,6 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
-<ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
-</ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
-<ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
-<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
-</ul>
-<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
-<ul>
-<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
-<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
-</ul>
-<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
-
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
-</code></pre>
-<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Common Commands of Hexo</title>
     <url>/za-tan/hexo/hexo-command/</url>
     <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
@@ -369,28 +332,66 @@ Everything up-to-date</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
+<ul>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+</ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Hexo</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Icarus</tag>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Potential errors</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -575,8 +576,217 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>snap</tag>
         <tag>potential</tag>
+        <tag>snap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learning Notes</title>
+    <url>/learning-notes/2020/notes/</url>
+    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
+<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
+<blockquote>
+<ul>
+<li>Full width at half maximum (FWHM) equals 2Γ</li>
+<li>τ = 1/2Γ.</li>
+</ul>
+</blockquote>
+</li>
+<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
+</li>
+</ol>
+<ul>
+<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
+<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
+<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
+<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
+</ul>
+<ol start="3">
+<li><strong><a href="https://baike.baidu.com/item/%E6%9D%82%E5%8C%96">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
+</ol>
+<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
+<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
+</ol>
+<blockquote>
+<ul>
+<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
+<li>搞不懂啊……</li>
+</ul>
+</blockquote>
+<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
+<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
+<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/%E8%B4%B9%E7%B1%B3%E5%AD%90">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
+<ul>
+<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
+<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
+<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
+<li>玻色子一般有：光子、</li>
+<li>费米子一般有：电子、中子、质子……</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
+<ol>
+<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
+<blockquote>
+<ul>
+<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
+<li>表述2：第一类永动机是不可能的造成的。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第二定律：</p>
+<blockquote>
+<ul>
+<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
+<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
+</ul>
+</blockquote>
+</li>
+<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
+<blockquote>
+<ul>
+<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
+</li>
+</ol>
+<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
+<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
+<ol>
+<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
+<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
+</ol>
+<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
+<li>Bohr=0.52917706 angstrom</li>
+</ol>
+<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
+<li>The dominant width of phonon wave-packets is also called coherent length.</li>
+</ol>
+<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
+<ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
+<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
+</ol>
+<ul>
+<li>不同材料的不同phase的稳定性不同；</li>
+<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
+<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
+<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
+</ul>
+<ol start="2">
+<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
+<li>绝热近似（Born-Oppenheimer）：</li>
+</ol>
+<ul>
+<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
+<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
+<li>考虑原子核的运动则不考虑周围电子的分布。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2020</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/za-tan/npm/npm-1/</url>
+    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
+<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
       </tags>
   </entry>
   <entry>
@@ -724,213 +934,36 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Potential errors</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
-S  Mo Mo
-Mo Mo Mo
-Mo Mo S 
-Mo S  Mo
-S  Mo S 
-S  S  Mo
-S  S  S </code></pre></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>Lammps</category>
+        <category>Origin</category>
       </categories>
       <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/za-tan/npm/npm-1/</url>
-    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
-<li>错误信息</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
-</code></pre>
-<ul>
-<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
-<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
-</ul>
-<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Learning Notes</title>
-    <url>/learning-notes/2020/notes/</url>
-    <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
-<li><p><strong>声子线宽<code>Γ</code>(phonon linewidth):</strong>  声子线宽与声子的寿命<code>τ</code>(lifetime or relaxtion time)有关,<code>声子寿命(τ)=1/2*半高宽(FWHM)</code>。</p>
-<blockquote>
-<ul>
-<li>Full width at half maximum (FWHM) equals 2Γ</li>
-<li>τ = 1/2Γ.</li>
-</ul>
-</blockquote>
-</li>
-<li><p><strong>拉曼光谱(raman spectra)：</strong> 利用光子与原子产生的散射光来研究振动能量方式的。<br><a href="https://imgchr.com/i/DLMRr6"><img src="https://s3.ax1x.com/2020/12/05/DLMRr6.png" alt="拉曼散射.png"></a></p>
-</li>
-</ol>
-<ul>
-<li>在拉曼散射中，入射光子与原子发生非弹性散射，进行能量交换而产生拉曼信号。</li>
-<li>产生的散射光中小于原入射光子频率的称为斯托克斯（Stokes）偏移，</li>
-<li>大于入射光子频率的称为反斯托克斯（Anti-Stokes）偏移。</li>
-<li>等于入射光子频率的称为瑞利（Rayleigh）偏移。</li>
-</ul>
-<ol start="3">
-<li><strong><a href="https://baike.baidu.com/item/%E6%9D%82%E5%8C%96">杂化(hybridization)：</a></strong> 在成键过程中，由于原子间的相互影响，同一原子中几个能量相近的不同类型的原子轨道（即波函数），可以进行线性组合，重新分配能量和确定空间方向，组成数目相等的新的原子轨道，这种轨道重新组合的过程称为杂化（hybridization），杂化后形成的新轨道称为 杂化轨道（hybrid orbital）。</li>
-</ol>
-<h3 id="07-24"><a href="#07-24" class="headerlink" title="07-24"></a><strong>07-24</strong></h3><ol>
-<li><strong>散射相空间<code>SPS</code>(scattering phase space)：</strong> <a href="http://bolvan.ph.utexas.edu/~vadim/Classes/2016f/phase-space.pdf">相空间(phase space)</a> ，<a href="https://doi.org/10.1117/12.2309519">相空间的散射理论</a></li>
-</ol>
-<blockquote>
-<ul>
-<li>相空间在数学与物理学中，是一个用以表示出一系统所有可能状态的空间；系统每个可能的状态都有一相对应的相空间的点。</li>
-<li>搞不懂啊……</li>
-</ul>
-</blockquote>
-<h3 id="07-27"><a href="#07-27" class="headerlink" title="07-27"></a><strong>07-27</strong></h3><ol>
-<li>1 amu(Atomic Mass Unit) (<sup>12</sup>C/12)是电子静止质量的1822.83倍。</li>
-<li>泡利不相容原理(Pauli exclusion principe): 在<a href="https://baike.baidu.com/item/%E8%B4%B9%E7%B1%B3%E5%AD%90">费米子</a>组成的系统中，不能有两个或两个以上的粒子处于完全相同的状态。<blockquote>
-<ul>
-<li>通俗的说就是，两个相同的粒子不能处于同一个状态。</li>
-<li>费米子(玻色子)满足(不满足)泡利不相容原理。</li>
-<li>自旋为整数(0,1,2……)的是玻色子，为半奇数(1/2,3/2,5/2……)的为费米子。</li>
-<li>玻色子一般有：光子、</li>
-<li>费米子一般有：电子、中子、质子……</li>
-</ul>
-</blockquote>
-</li>
-</ol>
-<h2 id="2020-08-11"><a href="#2020-08-11" class="headerlink" title="2020-(08~11)"></a><strong>2020-(08~11)</strong></h2><h3 id="08-19"><a href="#08-19" class="headerlink" title="08-19"></a><strong>08-19</strong></h3><p>老是记不住，参考自：《热力学.统计物理》第五版—汪志诚</p>
-<ol>
-<li><p>热力学第一定律：能量守恒定律，公式：U1-U2=W+Q，系统在终态2和初态1的内能之差（U1-U2）等于在过程中外界对系统所作的功W与系统从外界吸收的热量Q之和。（也即是，在过程中通过作功和传热两种方式所传递的能量，都转化为系统的内能）</p>
-<blockquote>
-<ul>
-<li>表述1：自然界一切物质都具有能量，能量有各种不同的形式，可以从一种形式转化为另一种形式，从一个物体传递到另一个物体，在传递和转化中能量的数量不变。</li>
-<li>表述2：第一类永动机是不可能的造成的。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第二定律：</p>
-<blockquote>
-<ul>
-<li>克氏表述：不可能把热量从低温物体传到高温物体而不引起其他变化。</li>
-<li>开氏表述：不可能从单一热源吸热使之完全变成有用的功而不引起其他变化。（或者，第二类永动机是不可能造成的。）</li>
-</ul>
-</blockquote>
-</li>
-<li><p>卡诺定理：所有工作于两个一定温度之间的热机，以可逆机的效率最高。</p>
-<blockquote>
-<ul>
-<li>推论：所有工作于两个一定温度之间的可逆热机，其效率相等。</li>
-</ul>
-</blockquote>
-</li>
-<li><p>热力学第三定律：不可能通过有限的步骤使一个物体冷却到热力学温度的零度（绝对零度）。</p>
-</li>
-</ol>
-<h3 id="09-1"><a href="#09-1" class="headerlink" title="09-1"></a><strong>09-1</strong></h3><p><a href="http://isaacs.sourceforge.net/phys/rdfs.html">The radial distribution function(RDF)</a><br>通俗的讲就是，局部的密度与全局的密度的比值。</p>
-<h3 id="09-08"><a href="#09-08" class="headerlink" title="09-08"></a><strong>09-08</strong></h3><p>极化（polarization）：</p>
-<ol>
-<li>在原始晶体材料中，正常的模，都是具有明确极化的声子模；</li>
-<li>当材料变得越无序的时候，给定模式的原子振动方向就会变得越不像波、well-defined、越随机。也即是，极化越弱，波矢量的定义缺失。</li>
-</ol>
-<h3 id="10-12"><a href="#10-12" class="headerlink" title="10-12"></a><strong>10-12</strong></h3><ol>
-<li>Bohr=0.52917706 angstrom</li>
-</ol>
-<h3 id="11-02"><a href="#11-02" class="headerlink" title="11-02"></a><strong>11-02</strong></h3><ol>
-<li>The dominant width of phonon wave-packets is also called coherent length.</li>
-</ol>
-<h3 id="11-17"><a href="#11-17" class="headerlink" title="11-17"></a><strong>11-17</strong></h3><p><strong>使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等</strong></p>
-<ul>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
-<ol>
-<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
-<li>其他信息修改参照官网</li>
-</ol>
-</blockquote>
-</li>
-<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
-<ol>
-<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
-</ol>
-</blockquote>
-</li>
-<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
-<li>最后使用alamode自带的extract.py，从XFSET.harm和XFSET.cubic提取到DESET_harmonic中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
-<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
-<li>同样获得pdos</li>
-<li>具体参见官网</li>
-</ul>
-<h3 id="12-07"><a href="#12-07" class="headerlink" title="12-07"></a><strong>12-07</strong></h3><ol>
-<li>TMDs的H-phase和T-phase,表示不同结构<br><a href="https://imgchr.com/i/DLlPte"><img src="https://s3.ax1x.com/2020/12/05/DLlPte.jpg" alt="DLlPte.jpg"></a><br>图片引用自：DOI: 10.1021/acsnano.6b00148</li>
-</ol>
-<ul>
-<li>不同材料的不同phase的稳定性不同；</li>
-<li>例如MoTe2在H-phase更稳定；而WTe2在T-phase更稳定</li>
-<li>两个phase的能量差不是很大，所以两项可以共存（coexistence），</li>
-<li>却有不同的电子性质，比如在H-phase是半导体，在T-phase可能是半金属或者拓扑绝缘体,跟层数有关。</li>
-</ul>
-<ol start="2">
-<li><a href="http://www.wuli.ac.cn/fileup/PDF/2013-42-09-011.pdf">简并（Degeneration&amp;Entartung）</a>，<a href="https://www.zhihu.com/question/27824623">简并</a></li>
-<li>绝热近似（Born-Oppenheimer）：</li>
-</ol>
-<ul>
-<li>将原子核与电子的运动分开考虑，认为电子能绝热于原子核的运动。</li>
-<li>也即是，在考虑电子运动时，原子核处于静止状态（电子的运动速度比原子核高出几个量级）；</li>
-<li>考虑原子核的运动则不考虑周围电子的分布。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2020</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -1048,155 +1081,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包exe可执行文件</title>
-    <url>/bian-cheng-yu-yan/python/python-2/</url>
-    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
-<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
-</ul>
-<ol>
-<li>安装第三方包pyinstaller</li>
-<li>在cmd命令行输入:</li>
-</ol>
-<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller</code></pre>
-<ol start="3">
-<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
-</ol>
-<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</code></pre>
-<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
-<blockquote>
-<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
-</blockquote>
-<pre class="language-pip.ini" data-language="pip.ini"><code class="language-pip.ini">[global]
-index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;
- 
-[install]
-trusted-host&#x3D;mirrors.aliyun.com</code></pre>
-<blockquote>
-<p>(5). 然后可以试试快不快</p>
-</blockquote>
-<ol start="4">
-<li>cmd执行：</li>
-</ol>
-<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -F filename.py </code></pre>
-<ol start="5">
-<li>还可以给程序加个图标：</li>
-</ol>
-<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -i &lt;图标名.ico&gt; -F filename.py
-</code></pre>
-<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -h             为查看help命令
-pyinstaller --clean        为清理打包过程中的临时文件
-pyinstaller -D,--onedir    为默认值，生成dist文件夹
-pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件
-pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</code></pre>
-<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
-<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
-
-
-<pre class="language-python" data-language="python"><code class="language-python"><span class="token comment">#画个太极阴阳鱼</span>
-<span class="token keyword">import</span> turtle
-turtle<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>speed<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
-<span class="token comment"># #大圆</span>
-<span class="token comment"># turtle.penup()</span>
-<span class="token comment"># turtle.goto(0,-160)</span>
-<span class="token comment"># turtle.pendown()</span>
-<span class="token comment"># turtle.circle(180)</span>
-<span class="token comment">#画阴鱼</span>
-turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment">#画阴鱼</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
-<span class="token comment">#白眼</span>
-turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'white'</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment">#黑眼</span>
-turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token comment">#太极</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"太"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"极"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"---2020/3/17"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"方正"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">150</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"sheng"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-turtle<span class="token punctuation">.</span>hideturtle<span class="token punctuation">(</span><span class="token punctuation">)</span>
-turtle<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python常用</title>
     <url>/bian-cheng-yu-yan/python/python3/</url>
     <content><![CDATA[<ul>
@@ -1240,59 +1124,6 @@ path<span class="token operator">=</span>os<span class="token punctuation">.</sp
       </categories>
       <tags>
         <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>控制Tecplot里的原子间距</title>
-    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
-    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
-<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
-
-
-</li>
-</ul>
-<ul>
-<li><p>独立操作x,y,z的Size Factors</p>
-<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
-</li>
-<li><p>调原子间距效果</p>
-</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
-
-<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
-<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
-<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
-<li>这个就不明显，藏在这里：<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>View&gt;Rotate</td>
-<td>3D Rotate</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
-<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
-<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
-<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Tecplot</category>
-      </categories>
-      <tags>
-        <tag>Tecplot</tag>
       </tags>
   </entry>
   <entry>
@@ -1360,6 +1191,59 @@ Aborted (core dumped)</code></pre>
       </categories>
       <tags>
         <tag>Alamode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制Tecplot里的原子间距</title>
+    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
+    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
+<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
+
+
+</li>
+</ul>
+<ul>
+<li><p>独立操作x,y,z的Size Factors</p>
+<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
+</li>
+<li><p>调原子间距效果</p>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
+
+<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
+<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
+<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
+<li>这个就不明显，藏在这里：<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View&gt;Rotate</td>
+<td>3D Rotate</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
+<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
+<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
+<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Tecplot</category>
+      </categories>
+      <tags>
+        <tag>Tecplot</tag>
       </tags>
   </entry>
   <entry>
@@ -1481,6 +1365,122 @@ or
       </categories>
       <tags>
         <tag>Windows problems</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包exe可执行文件</title>
+    <url>/bian-cheng-yu-yan/python/python-2/</url>
+    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
+<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
+</ul>
+<ol>
+<li>安装第三方包pyinstaller</li>
+<li>在cmd命令行输入:</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller</code></pre>
+<ol start="3">
+<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</code></pre>
+<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
+<blockquote>
+<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
+</blockquote>
+<pre class="language-pip.ini" data-language="pip.ini"><code class="language-pip.ini">[global]
+index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;
+ 
+[install]
+trusted-host&#x3D;mirrors.aliyun.com</code></pre>
+<blockquote>
+<p>(5). 然后可以试试快不快</p>
+</blockquote>
+<ol start="4">
+<li>cmd执行：</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -F filename.py </code></pre>
+<ol start="5">
+<li>还可以给程序加个图标：</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -i &lt;图标名.ico&gt; -F filename.py
+</code></pre>
+<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -h             为查看help命令
+pyinstaller --clean        为清理打包过程中的临时文件
+pyinstaller -D,--onedir    为默认值，生成dist文件夹
+pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件
+pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</code></pre>
+<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
+<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
+
+
+<pre class="language-python" data-language="python"><code class="language-python"><span class="token comment">#画个太极阴阳鱼</span>
+<span class="token keyword">import</span> turtle
+turtle<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>speed<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token comment"># #大圆</span>
+<span class="token comment"># turtle.penup()</span>
+<span class="token comment"># turtle.goto(0,-160)</span>
+<span class="token comment"># turtle.pendown()</span>
+<span class="token comment"># turtle.circle(180)</span>
+<span class="token comment">#画阴鱼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#画阴鱼</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+<span class="token comment">#白眼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'white'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#黑眼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#太极</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"太"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"极"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"---2020/3/17"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"方正"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">150</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"sheng"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+turtle<span class="token punctuation">.</span>hideturtle<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
