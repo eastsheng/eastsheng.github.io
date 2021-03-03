@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Daily Notes</title>
     <url>/learning-notes/2021/dailynotes2021/</url>
     <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
@@ -46,29 +72,35 @@
       </tags>
   </entry>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
+    <title>GULP 汇总</title>
+    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
+</ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+</ul>
 ]]></content>
       <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
+        <category>科研学习</category>
+        <category>GULP</category>
       </categories>
       <tags>
-        <tag>Learning Notes</tag>
+        <tag>GULP</tag>
       </tags>
   </entry>
   <entry>
@@ -199,35 +231,40 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>GULP 汇总</title>
-    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
-
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
 <ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+</ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
 </ul>
 ]]></content>
       <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
+        <category>杂谈</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>GULP</tag>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -238,11 +275,7 @@ group   g_ID    type 1 2 #atom type</code></pre>
 </div>
 
 
-<ol>
-<li>把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</li>
-<li>接着，在这个文件夹里写一个setup.py文件，文件内容例如：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ from distutils.core import setup
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
 
 $ setup(
 $ name         &#x3D; &#39;thermal_conductivity&#39;,
@@ -254,14 +287,8 @@ $ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
 $ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
 )
 </code></pre>
-<ol start="3">
-<li>然后，在此文件夹里打开cmd，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<ol start="4">
-<li>最后，安装此模块到本地，输入：</li>
-</ol>
-<pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
 ]]></content>
       <categories>
         <category>编程语言</category>
@@ -269,6 +296,101 @@ $ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Common Commands of Hexo</title>
+    <url>/za-tan/hexo/hexo-command/</url>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
+where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
+default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
+or
+$ hexo s</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
+or
+$ hexo g</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
+or
+$ hexo d</code></pre>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
+<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
+<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
+<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
+<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Push Everything up-to-date错误</title>
+    <url>/za-tan/git-command/gitpusherror/</url>
+    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
+Everything up-to-date</code></pre>
+<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
+<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
+</li>
+<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
+</li>
+<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
+</li>
+<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
+</li>
+</ul>
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
+<li>一般情况下，正确的做法是：</li>
+</ul>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">'your commits'</span>
+<span class="token function">git</span> push origin yourbranch</code></pre>
+<ul>
+<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git Push Everything up-to-date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -337,39 +459,6 @@ categories:
       </categories>
       <tags>
         <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Push Everything up-to-date错误</title>
-    <url>/za-tan/git-command/gitpusherror/</url>
-    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
-Everything up-to-date</code></pre>
-<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
-<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
-</li>
-<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
-</li>
-<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
-</li>
-<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
-</li>
-</ul>
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
-<li>一般情况下，正确的做法是：</li>
-</ul>
-<pre class="language-none"><code class="language-none">git add .
-git commit -m &#39;your commits&#39;
-git push origin yourbranch</code></pre>
-<ul>
-<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git Push Everything up-to-date</tag>
       </tags>
   </entry>
   <entry>
@@ -488,68 +577,6 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
         <tag>lammps</tag>
         <tag>snap</tag>
         <tag>potential</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <url>/za-tan/hexo/hexo-command/</url>
-    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
-where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
-default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
-or
-$ hexo s</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
-or
-$ hexo g</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
-or
-$ hexo d</code></pre>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
-<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
-<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
-<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
-<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo command</tag>
       </tags>
   </entry>
   <entry>
@@ -723,6 +750,38 @@ S  S  S </code></pre></li>
       </tags>
   </entry>
   <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/za-tan/npm/npm-1/</url>
+    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
+<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Learning Notes</title>
     <url>/learning-notes/2020/notes/</url>
     <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
@@ -858,35 +917,20 @@ S  S  S </code></pre></li>
       </tags>
   </entry>
   <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/za-tan/npm/npm-1/</url>
-    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
-<li>错误信息</li>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
 </ul>
-<pre class="language-none"><code class="language-none">$ npm install hexo-generator-baidu-sitemap --save npm ERR! Unexpected end of JSON input while parsin
-</code></pre>
-<ul>
-<li>解决方法<pre class="language-none"><code class="language-none">npm cache clean --force</code></pre></li>
-<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
-</ul>
-<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-none"><code class="language-none">npm config set registry https:&#x2F;&#x2F;registry.npm.taobao.org</code></pre>
-
-
-
-
-
-
-
-
-
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
 
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>npm</category>
+        <category>科研学习</category>
+        <category>Ovito</category>
       </categories>
       <tags>
-        <tag>npm</tag>
+        <tag>Ovito</tag>
       </tags>
   </entry>
   <entry>
@@ -960,6 +1004,50 @@ S  S  S </code></pre></li>
       </tags>
   </entry>
   <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
+
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
+
+points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
+
+norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin Integrate</title>
     <url>/ke-yan-xue-xi/origin/origin-2/</url>
     <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
@@ -993,64 +1081,119 @@ S  S  S </code></pre></li>
       </tags>
   </entry>
   <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
-
-x &#x3D; np.linspace(0, 2*np.pi, 100)
-y &#x3D; np.sin(x)
-z &#x3D; np.cos(x)#上色数据
-
-points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
-segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
-
-fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
-fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
-
-norm &#x3D; plt.Normalize(min(z),max(z))
-lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
-lc.set_array(z)
-lc.set_linewidth(2)
-line &#x3D; ax.add_collection(lc)
-fig.colorbar(line)
-
-plt.xlim(0,2*np.pi)
-plt.ylim(-1,1)
-plt.savefig(&#39;fig1.png&#39;)
-plt.show()
-</code></pre>
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+    <title>把自己写的Python程序打包exe可执行文件</title>
+    <url>/bian-cheng-yu-yan/python/python-2/</url>
+    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
+<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
 </ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+<ol>
+<li>安装第三方包pyinstaller</li>
+<li>在cmd命令行输入:</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller</code></pre>
+<ol start="3">
+<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</code></pre>
+<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
+<blockquote>
+<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
+</blockquote>
+<pre class="language-pip.ini" data-language="pip.ini"><code class="language-pip.ini">[global]
+index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;
+ 
+[install]
+trusted-host&#x3D;mirrors.aliyun.com</code></pre>
+<blockquote>
+<p>(5). 然后可以试试快不快</p>
+</blockquote>
+<ol start="4">
+<li>cmd执行：</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -F filename.py </code></pre>
+<ol start="5">
+<li>还可以给程序加个图标：</li>
+</ol>
+<pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -i &lt;图标名.ico&gt; -F filename.py
+</code></pre>
+<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><pre class="language-cmd" data-language="cmd"><code class="language-cmd">pyinstaller -h             为查看help命令
+pyinstaller --clean        为清理打包过程中的临时文件
+pyinstaller -D,--onedir    为默认值，生成dist文件夹
+pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件
+pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</code></pre>
+<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
+<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
 
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+
+<pre class="language-python" data-language="python"><code class="language-python"><span class="token comment">#画个太极阴阳鱼</span>
+<span class="token keyword">import</span> turtle
+turtle<span class="token punctuation">.</span>setup<span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>speed<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token comment"># #大圆</span>
+<span class="token comment"># turtle.penup()</span>
+<span class="token comment"># turtle.goto(0,-160)</span>
+<span class="token comment"># turtle.pendown()</span>
+<span class="token comment"># turtle.circle(180)</span>
+<span class="token comment">#画阴鱼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>left<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#画阴鱼</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">180</span><span class="token punctuation">,</span><span class="token number">180</span><span class="token punctuation">)</span>
+<span class="token comment">#白眼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'white'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">80</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#黑眼</span>
+turtle<span class="token punctuation">.</span>begin_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>fillcolor<span class="token punctuation">(</span><span class="token string">'black'</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>circle<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>end_fill<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#太极</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"太"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">275</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">50</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"极"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">30</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">120</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"---2020/3/17"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"方正"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>penup<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>goto<span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">150</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>pendown<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"sheng"</span><span class="token punctuation">,</span>font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">"华文行楷"</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">,</span><span class="token string">"normal"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+turtle<span class="token punctuation">.</span>hideturtle<span class="token punctuation">(</span><span class="token punctuation">)</span>
+turtle<span class="token punctuation">.</span>done<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
 ]]></content>
       <categories>
         <category>编程语言</category>
         <category>Python</category>
       </categories>
       <tags>
-        <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1062,33 +1205,33 @@ plt.show()
 <h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
 <li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
 <li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<pre class="language-none"><code class="language-none">np.mean(array,axis&#x3D;1) #行平均
-np.mean(array,axis&#x3D;0) #列平均</code></pre></li>
+<li>numpy求平均<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">#行平均</span>
+np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">#列平均</span></code></pre></li>
 <li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<pre class="language-none"><code class="language-none">np.insert(x,3,0,axis&#x3D;1)</code></pre></li>
-<li>按照第一列对矩阵fe进行排序<pre class="language-none"><code class="language-none">fe_sort &#x3D; fe[np.argsort(fe[:,0])]</code></pre>
+<li>给矩阵x在第三列插入一列0<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-python" data-language="python"><code class="language-python">fe_sort <span class="token operator">=</span> fe<span class="token punctuation">[</span>np<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span>fe<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span></code></pre>
 
 </li>
 </ol>
 <h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li>获得当前文件所在目录<pre class="language-none"><code class="language-none">path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>在当前文件夹生成文件夹，以时间命名<pre class="language-none"><code class="language-none">folder&#x3D;time.strftime(r&quot;%Y-%m-%d_%H-%M-%S&quot;,time.localtime())
-folder&#x3D;time.strftime(r&quot;%Y%m%d_%H%M%S&quot;,time.localtime())
-os.makedirs(r&#39;%s&#x2F;%s&#39;%(os.getcwd(),folder))</code></pre></li>
-<li>更改当前工作路径<pre class="language-none"><code class="language-none">os.chdir(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>判断一个路径是否存在<pre class="language-none"><code class="language-none">path_yesno &#x3D; os.path.exists(&#39;C:\\Users\\ASUS\\Desktop\\1&#39;)
-print(path_yesno)</code></pre></li>
-<li>获取目录中所有文件及文件夹list<pre class="language-none"><code class="language-none">PATH &#x3D; os.listdir(&#39;C:\\Users\\ASUS\\Desktop&#39;)
-print(PATH)</code></pre></li>
-<li>创建和删除子目录<pre class="language-none"><code class="language-none">os.makedirs(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
-os.rmdir(&#39;C:\\Users\\ASUS\\Desktop\\2&#39;)
+<li>获得当前文件所在目录<pre class="language-python" data-language="python"><code class="language-python">path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-python" data-language="python"><code class="language-python">folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y-%m-%d_%H-%M-%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y%m%d_%H%M%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">r'%s/%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>folder<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></li>
+<li>更改当前工作路径<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
+path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>判断一个路径是否存在<pre class="language-python" data-language="python"><code class="language-python">path_yesno <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path_yesno<span class="token punctuation">)</span></code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-python" data-language="python"><code class="language-python">PATH <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>PATH<span class="token punctuation">)</span></code></pre></li>
+<li>创建和删除子目录<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
+os<span class="token punctuation">.</span>rmdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
 
-path&#x3D;os.getcwd()
-print(path)</code></pre></li>
-<li>改文件名<pre class="language-none"><code class="language-none">os.rename(&#39;123.txt&#39;,&#39;000.txt&#39;)</code></pre></li>
+path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>改文件名<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>rename<span class="token punctuation">(</span><span class="token string">'123.txt'</span><span class="token punctuation">,</span><span class="token string">'000.txt'</span><span class="token punctuation">)</span></code></pre></li>
 </ol>
 ]]></content>
       <categories>
@@ -1097,137 +1240,6 @@ print(path)</code></pre></li>
       </categories>
       <tags>
         <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode常用</title>
-    <url>/za-tan/vscode1/</url>
-    <content><![CDATA[<ol>
-<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
-<li><code>F11</code>全屏模式。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-      </categories>
-      <tags>
-        <tag>VScode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包exe可执行文件</title>
-    <url>/bian-cheng-yu-yan/python/python-2/</url>
-    <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
-<li>打包后可以在Windows上运行，而不需要安装程序里需要的各种包。</li>
-</ul>
-<ol>
-<li>安装第三方包pyinstaller</li>
-<li>在cmd命令行输入:</li>
-</ol>
-<pre class="language-none"><code class="language-none">pip install pyinstaller</code></pre>
-<ol start="3">
-<li>如果嫌慢，或者失败，可以用国内镜像网址下载安装:</li>
-</ol>
-<pre class="language-none"><code class="language-none">pip install pyinstaller -i https:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</code></pre>
-<p>或者设置Windows国内镜像，具体参考<a href="http://www.ipaomi.com/2017/11/04/python-pip-%e4%b8%8b%e8%bd%bd%e9%80%9f%e5%ba%a6%e6%85%a2-windows-%e8%ae%be%e7%bd%ae-%e5%9b%bd%e5%86%85%e6%ba%90%ef%bc%8c%e7%94%a8-%e9%98%bf%e9%87%8c%e4%ba%91-%e5%9b%bd%e5%86%85%e9%95%9c%e5%83%8f/">这里</a>:</p>
-<blockquote>
-<p>(1). 在 windows “文件资源管理器” 地址栏 输入 <code>%APPDATA%</code> 回车；或者直接找到路径<code>C:\Users\yourcomputer\AppData\Roaming</code><br>(2). 创建名为<code>pip</code>的文件夹<br>(3). 在里面新建名为 <code>pip.ini</code> 的配置文件<br>(4). 在 pip.ini 文件中输入以下内容，然后保存</p>
-</blockquote>
-<pre class="language-none"><code class="language-none">[global]
-index-url&#x3D;http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;pypi&#x2F;simple&#x2F;
- 
-[install]
-trusted-host&#x3D;mirrors.aliyun.com</code></pre>
-<blockquote>
-<p>(5). 然后可以试试快不快</p>
-</blockquote>
-<ol start="4">
-<li>cmd执行：</li>
-</ol>
-<pre class="language-none"><code class="language-none">pyinstaller -F filename.py </code></pre>
-<ol start="5">
-<li>还可以给程序加个图标：</li>
-</ol>
-<pre class="language-none"><code class="language-none">pyinstaller -i &lt;图标名.ico&gt; -F filename.py
-</code></pre>
-<h3 id="二、其他需要用到的命令"><a href="#二、其他需要用到的命令" class="headerlink" title="二、其他需要用到的命令"></a><strong>二、其他需要用到的命令</strong></h3><pre class="language-none"><code class="language-none">pyinstaller -h             为查看help命令
-pyinstaller --clean        为清理打包过程中的临时文件
-pyinstaller -D,--onedir    为默认值，生成dist文件夹
-pyinstaller -F，--onefile  为在dist文件夹中只生成独立的打包文件
-pyinstaller -i &lt;图标名.ico&gt; -F filename.py为指定打包程序使用的图标文件</code></pre>
-<h3 id="三、附上一个小程序"><a href="#三、附上一个小程序" class="headerlink" title="三、附上一个小程序"></a><strong>三、附上一个小程序</strong></h3><ul>
-<li>画太极；打包后的<a href="https://github.com/eastsheng/Daily-file">exe文件</a></li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/NwZkjA.jpg" alt="太极" border="0" />
-
-
-<pre class="language-none"><code class="language-none">#画个太极阴阳鱼
-import turtle
-turtle.setup(0.5,0.6,0,0)
-turtle.speed(10)
-# #大圆
-# turtle.penup()
-# turtle.goto(0,-160)
-# turtle.pendown()
-# turtle.circle(180)
-#画阴鱼
-turtle.begin_fill()
-turtle.fillcolor(&#39;black&#39;)
-turtle.left(180)
-turtle.penup()
-turtle.goto(0,200)
-turtle.pendown()
-turtle.circle(90,180)
-turtle.circle(-90,180)
-turtle.left(180)
-turtle.circle(180,180)
-turtle.end_fill()
-#画阴鱼
-turtle.circle(180,180)
-#白眼
-turtle.begin_fill()
-turtle.fillcolor(&#39;white&#39;)
-turtle.penup()
-turtle.goto(0,80)
-turtle.pendown()
-turtle.circle(40)
-turtle.end_fill()
-#黑眼
-turtle.begin_fill()
-turtle.fillcolor(&#39;black&#39;)
-turtle.penup()
-turtle.goto(0,-120)
-turtle.pendown()
-turtle.circle(40)
-turtle.end_fill()
-#太极
-turtle.penup()
-turtle.goto(-275,0)
-turtle.pendown()
-turtle.write(&quot;太&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))
-turtle.penup()
-turtle.goto(-275,-50)
-turtle.pendown()
-turtle.write(&quot;极&quot;,font&#x3D;(&quot;华文行楷&quot;,30,&quot;normal&quot;))
-turtle.penup()
-turtle.goto(200,-120)
-turtle.pendown()
-turtle.write(&quot;---2020&#x2F;3&#x2F;17&quot;,font&#x3D;(&quot;方正&quot;,12,&quot;normal&quot;))
-turtle.penup()
-turtle.goto(250,-150)
-turtle.pendown()
-turtle.write(&quot;sheng&quot;,font&#x3D;(&quot;华文行楷&quot;,12,&quot;normal&quot;))
-
-turtle.hideturtle()
-turtle.done()
-</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1353,44 +1365,44 @@ Aborted (core dumped)</code></pre>
   <entry>
     <title>Git Command-branch</title>
     <url>/za-tan/git-command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch xxx   #xxx 分支名，第一种方法
-$ git checkout -b xxx #第二种方法</code></pre>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch xxx   <span class="token comment">#xxx 分支名，第一种方法</span>
+$ <span class="token function">git</span> checkout -b xxx <span class="token comment">#第二种方法</span></code></pre>
 </code></pre>
-<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin xxx</code></pre>
+<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin xxx</code></pre>
 </code></pre>
-<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -D xxx</code></pre>
+<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -D xxx</code></pre>
 </code></pre>
-<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git push origin --delete xxx</code></pre>
+<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin --delete xxx</code></pre>
 </code></pre>
-<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch -a</code></pre>
+<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -a</code></pre>
 </code></pre>
-<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-none"><code class="language-none">$ git branch </code></pre>
+<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch </code></pre>
 </code></pre>
-<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout xxx</code></pre>
+<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout xxx</code></pre>
 </code></pre>
-<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git checkout --orphan xxx #创建本地分支并进入到该分支
-$ git rm -rf #删除该分支的所有内容
+<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout --orphan xxx <span class="token comment">#创建本地分支并进入到该分支</span>
+$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#删除该分支的所有内容</span>
 
-$ git add . 
-$ git commit -am &quot;评论内容&quot;
-$ git push origin xxx
-$ git pull
-$ git clone git@github.com:yourname&#x2F;yourname.github.io.git #cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来
-$ git checkout xxx #进入clone下来的yourname.github.io，切换到要清空的分支
-$ git rm -rf #执行完这一步 在github 服务器上就会多出来个空的xxx的分支</code></pre>
+$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> 
+$ <span class="token function">git</span> commit -am <span class="token string">"评论内容"</span>
+$ <span class="token function">git</span> push origin xxx
+$ <span class="token function">git</span> pull
+$ <span class="token function">git</span> clone git@github.com:yourname/yourname.github.io.git <span class="token comment">#cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span>
+$ <span class="token function">git</span> checkout xxx <span class="token comment">#进入clone下来的yourname.github.io，切换到要清空的分支</span>
+$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span></code></pre>
 </code></pre>
-<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-none"><code class="language-none">$ git add . #cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹
-$ git commit -m &quot;blog source code&quot;
+<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> <span class="token comment">#cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span>
+$ <span class="token function">git</span> commit -m <span class="token string">"blog source code"</span>
 或者一步到位：
-$ git commit -a -m &quot;blog source code&quot;
-$ git push origin xxx #如果不成功执行下一条
-$ git push origin xxx -f #不管3721直接push，谨慎操作。</code></pre>
+$ <span class="token function">git</span> commit -a -m <span class="token string">"blog source code"</span>
+$ <span class="token function">git</span> push origin xxx <span class="token comment">#如果不成功执行下一条</span>
+$ <span class="token function">git</span> push origin xxx -f <span class="token comment">#不管3721直接push，谨慎操作。</span></code></pre>
 </code></pre>
-<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-none"><code class="language-none">$ git remote add origin git@github.com:yourname&#x2F;yourname.github.io.git  #(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</code></pre>
+<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:yourname/yourname.github.io.git  <span class="token comment">#(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span></code></pre>
 </code></pre>
-<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-none"><code class="language-none">$ mkdir foldername #创建文件夹
-$ git merge yourbranch # 把分支合并到master
-$ git reset --merge #退回合并前
+<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">mkdir</span> foldername <span class="token comment">#创建文件夹</span>
+$ <span class="token function">git</span> merge yourbranch <span class="token comment"># 把分支合并到master</span>
+$ <span class="token function">git</span> reset --merge <span class="token comment">#退回合并前</span>
 </code></pre>
 </code></pre>
 <h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
@@ -1408,6 +1420,67 @@ $ git reset --merge #退回合并前
       </categories>
       <tags>
         <tag>Git command-branch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-delete file</title>
+    <url>/za-tan/git-command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout yourbranch</code></pre>
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> yourfile
+or
+<span class="token function">git</span> <span class="token function">rm</span> -r yourfolder/
+</code></pre>
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"your modify comment"</span>
+</code></pre>
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin yourbranch
+</code></pre>
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git delete file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode常用</title>
+    <url>/za-tan/vscode1/</url>
+    <content><![CDATA[<ol>
+<li><code>Ctrl+Shift+P</code>或<code>F1</code>打开命令面板，例如输入<code>Configure Display Language</code>可以换语言，如选择<code>zh-cn</code>，切换为中文。</li>
+<li><code>F11</code>全屏模式。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+      </categories>
+      <tags>
+        <tag>VScode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/za-tan/windows/windows-problems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
+<li>打开命令提示符（管理员）</li>
+<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
+<li>也可以关闭：<code>net user administrator /active:no</code></li>
+</ul>
+<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
+<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows problems</tag>
       </tags>
   </entry>
   <entry>
@@ -1480,89 +1553,6 @@ if (num_bins &gt; N) &#123;
       </categories>
       <tags>
         <tag>mklink</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git Command-delete file</title>
-    <url>/za-tan/git-command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-none"><code class="language-none">git checkout yourbranch</code></pre>
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-none"><code class="language-none">git rm yourfile
-or
-git rm -r yourfolder&#x2F;
-</code></pre>
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-none"><code class="language-none">git commit -m &quot;your modify comment&quot;
-</code></pre>
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-none"><code class="language-none">git push origin yourbranch
-</code></pre>
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git delete file</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows相关</title>
-    <url>/za-tan/windows/windows-problems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
-<li>打开命令提示符（管理员）</li>
-<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
-<li>也可以关闭：<code>net user administrator /active:no</code></li>
-</ul>
-<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
-<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>Windows problems</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
-<ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
-</ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
-<ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
-<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
-</ul>
-<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
-<ul>
-<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
-<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
-</ul>
-<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>

@@ -141,6 +141,15 @@
       </li>
       
       <li>
+        <a href="https://eastsheng.github.io/MyDocs/">
+          
+          <i class="fas fa-folder-open" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我的文档</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/other/navigate">
           
           <i class="fas fa-search" style="margin-top: -20px; zoom: 0.6;"></i>
@@ -392,6 +401,16 @@
 				   <i class="fa fab fa-pagelines" style="position: absolute;left:28px" ></i>
 			      
 		          <span>引导页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="https://eastsheng.github.io/MyDocs/ " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-folder-open" style="position: absolute;left:28px" ></i>
+			      
+		          <span>我的文档</span>
                   </a>
                 </li>
               
@@ -868,6 +887,15 @@
       </li>
       
       <li>
+        <a href="https://eastsheng.github.io/MyDocs/">
+          
+          <i class="fas fa-folder-open" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我的文档</span>
+        </a>
+      </li>
+      
+      <li>
         <a href="/other/navigate">
           
           <i class="fas fa-search" style="margin-top: -20px; zoom: 0.6;"></i>
@@ -1119,6 +1147,16 @@
 				   <i class="fa fab fa-pagelines" style="position: absolute;left:28px" ></i>
 			      
 		          <span>引导页</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="https://eastsheng.github.io/MyDocs/ " style="margin-left:50px">
+				  
+				   <i class="fa fas fa-folder-open" style="position: absolute;left:28px" ></i>
+			      
+		          <span>我的文档</span>
                   </a>
                 </li>
               
@@ -1570,7 +1608,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    170
+                    151
                 </div>
                 
 
@@ -1600,31 +1638,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-none"><code class="language-none">import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
+                <h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
 
-x &#x3D; np.linspace(0, 2*np.pi, 100)
-y &#x3D; np.sin(x)
-z &#x3D; np.cos(x)#上色数据
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
 
-points &#x3D; np.array([x, y]).T.reshape(-1, 1, 2)
-segments &#x3D; np.concatenate([points[:-1], points[1:]], axis&#x3D;1)
+points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
 
-fig, ax &#x3D; plt.subplots(figsize&#x3D;(5,3))
-fig.subplots_adjust(bottom&#x3D;0.1,left&#x3D;0.2)##调整边界
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
 
-norm &#x3D; plt.Normalize(min(z),max(z))
-lc &#x3D; LineCollection(segments,cmap&#x3D;&#39;jet&#39;,norm&#x3D;norm)
-lc.set_array(z)
-lc.set_linewidth(2)
-line &#x3D; ax.add_collection(lc)
-fig.colorbar(line)
+norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
 
-plt.xlim(0,2*np.pi)
-plt.ylim(-1,1)
-plt.savefig(&#39;fig1.png&#39;)
-plt.show()
+plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
 <ul>
 <li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
@@ -2393,7 +2431,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.7k</span>&nbsp;字
+                class="white-color">13.6k</span>&nbsp;字
             
             
             
