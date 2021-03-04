@@ -1444,7 +1444,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/python.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1608,7 +1608,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    164
+                    140
                 </div>
                 
 
@@ -1643,20 +1643,20 @@
 </div>
 
 
-<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-python" data-language="python"><code class="language-python">$ <span class="token keyword">from</span> distutils<span class="token punctuation">.</span>core <span class="token keyword">import</span> setup
 
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
+$ setup<span class="token punctuation">(</span>
+$ name         <span class="token operator">=</span> <span class="token string">'thermal_conductivity'</span><span class="token punctuation">,</span>
+$ version      <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
+$ py_modules   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'thermal_conductivity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+$ author       <span class="token operator">=</span> <span class="token string">'eastsheng'</span><span class="token punctuation">,</span>
+$ author_email <span class="token operator">=</span> <span class="token string">'eastsheng@hotmail.com'</span><span class="token punctuation">,</span>
+$ url          <span class="token operator">=</span> <span class="token string">'https://github.com/eastsheng'</span><span class="token punctuation">,</span>
+$ description  <span class="token operator">=</span> <span class="token string">'Calculate thermal conductivity according to NEMD dump.'</span>
+<span class="token punctuation">)</span>
 </code></pre>
-<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py <span class="token function">install</span></code></pre>
 
                 
             </div>
@@ -2170,8 +2170,7 @@ $ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump
                 <a href="/bian-cheng-yu-yan/python/python-1/">
                     <div class="card-image">
                         
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="把自己写的Python程序打包成可以引用的模块">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/python.jpg" class="responsive-img" alt="把自己写的Python程序打包成可以引用的模块">
                         
                         <span class="card-title">把自己写的Python程序打包成可以引用的模块</span>
                     </div>
@@ -2416,7 +2415,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.5k</span>&nbsp;字
             
             
             

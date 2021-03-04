@@ -1444,7 +1444,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://a-static.besthdwallpaper.com/de-windows-10cao-zuo-xi-tong-qiangzhi-1920x1200-2763_6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/windows.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -1608,7 +1608,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    240
+                    221
                 </div>
                 
 
@@ -1638,28 +1638,28 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
+                <h4 id="1-目的"><a href="#1-目的" class="headerlink" title="1. 目的"></a>1. 目的</h4><ul>
 <li>目的是要把C盘的一个文件夹链接到E盘，</li>
 <li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
 </ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
-<h4 id="2-错误信息："><a href="#2-错误信息：" class="headerlink" title="2. 错误信息："></a>2. 错误信息：</h4><pre class="language-none"><code class="language-none">mklink : 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
+<h4 id="2-错误信息"><a href="#2-错误信息" class="headerlink" title="2. 错误信息"></a>2. 错误信息</h4><pre class="language-bash" data-language="bash"><code class="language-bash">mklink <span class="token builtin class-name">:</span> 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
 正确，然后再试一次。
-所在位置 行:1 字符: 1
-+ mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug ...
+所在位置 行:1 字符: <span class="token number">1</span>
++ mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> "E:<span class="token punctuation">\</span>VScodePlug <span class="token punctuation">..</span>.
 + ~~~~~~
-    + Cat##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
+    + Cat<span class="token comment">##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span>
+    + FullyQualifiedErrorId <span class="token builtin class-name">:</span> CommandNotFoundException
 </code></pre>
-<h4 id="3-错误原因："><a href="#3-错误原因：" class="headerlink" title="3. 错误原因："></a>3. 错误原因：</h4><ul>
+<h4 id="3-错误原因"><a href="#3-错误原因" class="headerlink" title="3. 错误原因"></a>3. 错误原因</h4><ul>
 <li>因为PowerShell中没有mklink命令</li>
 </ul>
-<h4 id="4-解决方法："><a href="#4-解决方法：" class="headerlink" title="4. 解决方法："></a>4. 解决方法：</h4><ul>
+<h4 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4. 解决方法"></a>4. 解决方法</h4><ul>
 <li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
 </ul>
-<pre class="language-none"><code class="language-none">mklink &#x2F;d &quot;C:\Users\yourcomputername\.vscode\extensions&quot; &quot;E:\VScodePlug\extensions\extensions&quot;</code></pre>
+<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
 
-<h4 id="5-成功提示："><a href="#5-成功提示：" class="headerlink" title="5. 成功提示："></a>5. 成功提示：</h4><pre class="language-none"><code class="language-none">为 C:\Users\yourcomputername\.vscode\extensions &lt;&lt;&#x3D;&#x3D;&#x3D;&gt;&gt; E:\VScodePlug\extensions 创建的符号链接</code></pre>
+<h4 id="5-成功提示"><a href="#5-成功提示" class="headerlink" title="5. 成功提示"></a>5. 成功提示</h4><pre class="language-bash" data-language="bash"><code class="language-bash">为 C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>yourcomputername<span class="token punctuation">\</span>.vscode<span class="token punctuation">\</span>extensions <span class="token operator">&lt;&lt;</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">>></span> E:<span class="token punctuation">\</span>VScodePlug<span class="token punctuation">\</span>extensions 创建的符号链接</code></pre>
 
 <p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
 
@@ -2122,8 +2122,7 @@
                 <a href="/za-tan/vscode1/">
                     <div class="card-image">
                         
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="Vscode常用">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/128706.png" class="responsive-img" alt="Vscode常用">
                         
                         <span class="card-title">Vscode常用</span>
                     </div>
@@ -2171,7 +2170,7 @@
                 <a href="/za-tan/hexo/hexo-icarus/">
                     <div class="card-image">
                         
-                        <img src="https://s3.ax1x.com/2021/02/16/ycZHtP.jpg" class="responsive-img" alt="给icarus主题换背景图片">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/128706.png" class="responsive-img" alt="给icarus主题换背景图片">
                         
                         <span class="card-title">给icarus主题换背景图片</span>
                     </div>
@@ -2415,7 +2414,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.5k</span>&nbsp;字
             
             
             

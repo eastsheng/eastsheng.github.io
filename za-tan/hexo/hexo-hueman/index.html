@@ -1608,7 +1608,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    591
+                    586
                 </div>
                 
 
@@ -1639,12 +1639,12 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
-<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;ppoffice&#x2F;hexo-theme-hueman.git themes&#x2F;hueman</code></pre>
+<h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman</code></pre>
 <p><strong>注：</strong></p>
 <ul>
 <li>这里说一下与这个主题无关的bug，<code>git clone</code>命令后面的目录<code>theme/hueman</code>,这个下载路径这么写的话是正常的<code>clone</code>到博客目录下的<code>theme</code>文件夹中，但是，如果这么写<code>/theme/hueman</code>, 那就会<code>clone</code>到<code>git</code>安装路径下的<code>theme</code>文件夹下。</li>
 </ul>
-<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-none"><code class="language-none">theme: hueman</code></pre>
+<h4 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2. 配置_config.yml"></a>2. 配置<code>_config.yml</code></h4><pre class="language-yml" data-language="yml"><code class="language-yml">theme: hueman</code></pre>
 <p><strong>注：</strong></p>
 <ul>
 <li>此处是在博客目录下的<code>_config.yml</code>修改，不是主题下的。</li>
@@ -1653,14 +1653,14 @@
 <h4 id="3-进入主题下的-config-yml"><a href="#3-进入主题下的-config-yml" class="headerlink" title="3. 进入主题下的_config.yml"></a>3. 进入主题下的<code>_config.yml</code></h4><ul>
 <li>第一个坑</li>
 </ul>
-<pre class="language-none"><code class="language-none"># Menus
+<pre class="language-yml" data-language="yml"><code class="language-yml"># Menus
 menu:
     Home: &#x2F;
     # Delete this row if you don&#39;t want categories in your header nav bar
     Categories:
     About: &#x2F;about&#x2F;index.html</code></pre>
 <ol>
-<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-none"><code class="language-none"># Menus
+<li>首先，按照以往的经验，直接在<code>menu</code>下添加菜单就可以，并在<code>git bash</code>下创建page，例如：<code>hexo new page people</code><pre class="language-yml" data-language="yml"><code class="language-yml"># Menus
 menu:
     Home: &#x2F;
     # Delete this row if you don&#39;t want categories in your header nav bar
@@ -1674,7 +1674,7 @@ menu:
 <li>第二个坑</li>
 </ul>
 <ol>
-<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://s1.ax1x.com/2020/07/07/UkmuFO.png"></p>
+<li><p>在heuman主题预览的菜单栏里，注意到有个<code>Technology</code>是有下拉菜单栏的，搞了好久没搞懂怎么搞。<br><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/UkmuFO.png"></p>
 </li>
 <li><p>最后，终于搞定了，原来是这么回事啊，都怪自己没有仔细看mamual. 也是因为测试主题的时候没有分类的post，没法一眼看出来。</p>
 </li>
@@ -1683,7 +1683,7 @@ menu:
 <li><p>比如下面的配置，就会显示<code>Technology</code>下拉菜单是<code>Github</code></p>
 </li>
 </ol>
-<pre class="language-none"><code class="language-none">title:  
+<pre class="language-yml" data-language="yml"><code class="language-yml">title:  
 categories:
 - Technology
 - Github</code></pre>
@@ -2154,7 +2154,7 @@ categories:
                 <a href="/za-tan/linux/linux-1/">
                     <div class="card-image">
                         
-                        <img src="https://s3.ax1x.com/2021/02/16/ycVoGT.jpg" class="responsive-img" alt="Linux 汇总">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/tux_linux_penguin_code_binary.jpg" class="responsive-img" alt="Linux 汇总">
                         
                         <span class="card-title">Linux 汇总</span>
                     </div>
@@ -2214,7 +2214,7 @@ categories:
                 <a href="/za-tan/git-command/gitpusherror/">
                     <div class="card-image">
                         
-                        <img src="https://s1.ax1x.com/2020/06/22/NG0V41.jpg" class="responsive-img" alt="Git Push Everything up-to-date错误">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/NG0V41.jpg" class="responsive-img" alt="Git Push Everything up-to-date错误">
                         
                         <span class="card-title">Git Push Everything up-to-date错误</span>
                     </div>
@@ -2458,7 +2458,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.5k</span>&nbsp;字
             
             
             

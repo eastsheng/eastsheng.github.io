@@ -1608,7 +1608,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    882
+                    881
                 </div>
                 
 
@@ -1667,7 +1667,7 @@
 <ol>
 <li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
 </ol>
-<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
+<pre class="language-in" data-language="in"><code class="language-in">variable k  index 1 2 3 
 ...
 ...
 ...
@@ -1682,15 +1682,15 @@ jump inputfile.in</code></pre>
 </ol>
 <p><strong>已解决</strong></p>
 <p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
-<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash">Incorrect atom <span class="token function">format</span> <span class="token keyword">in</span> data <span class="token function">file</span> <span class="token punctuation">(</span><span class="token punctuation">..</span>/atom.cpp:853<span class="token punctuation">)</span></code></pre>
 <p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-in" data-language="in"><code class="language-in">boundary	p p p</code></pre>
 <h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
 <li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
 <li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
 <li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
 </ul>
-<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-in" data-language="in"><code class="language-in">group	g_ID	region	reg_ID
 or
 group   g_ID    type 1 2 #atom type</code></pre>
 <ul>
@@ -2239,8 +2239,7 @@ group   g_ID    type 1 2 #atom type</code></pre>
                 <a href="/bian-cheng-yu-yan/python/python-1/">
                     <div class="card-image">
                         
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/eastsheng.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="把自己写的Python程序打包成可以引用的模块">
+                        <img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/bg/python.jpg" class="responsive-img" alt="把自己写的Python程序打包成可以引用的模块">
                         
                         <span class="card-title">把自己写的Python程序打包成可以引用的模块</span>
                     </div>
@@ -2484,7 +2483,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数❤️:&nbsp;<span
-                class="white-color">13.6k</span>&nbsp;字
+                class="white-color">13.5k</span>&nbsp;字
             
             
             
