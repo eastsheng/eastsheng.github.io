@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Daily Notes</title>
-    <url>/learning-notes/2021/dailynotes2021/</url>
-    <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
-<li>neighbor skin style</li>
-<li>此命令用于设置cutoff distance;</li>
-<li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li>
-<li>一般使用<code>bin</code>较多；</li>
-<li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li>
-<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li>
-</ul>
-<h3 id="2-只要使用键盘Materials-Studio就卡住"><a href="#2-只要使用键盘Materials-Studio就卡住" class="headerlink" title="2. 只要使用键盘Materials Studio就卡住"></a>2. 只要使用键盘Materials Studio就卡住</h3><ul>
-<li>解决方法：在微软拼音输入法的“中”(或“英”)字上右击鼠标，然后点“设置”，在弹出界面中点“常规”，在新界面中向下滚动动底部，有个兼容性，打开兼容性，然后就OK了。</li>
-<li>参考链接 <a href="http://muchong.com/t-14329827-1">http://muchong.com/t-14329827-1</a></li>
-</ul>
-<h3 id="3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法"><a href="#3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法" class="headerlink" title="3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法"></a>3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法</h3><ul>
-<li>重装了Win10 20H2以后，右键此电脑后的属性面板变了，要彻底换回经典的属性面板方法。</li>
-<li>（1）打开注册表，直接搜索<code>注册表</code>、或者<code>Win+R</code>，然后输入<code>regedit</code>；</li>
-<li>（2）找到路径<code>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\0\2093230218</code>;</li>
-<li>（3）将EnabledState的数值数据修改为 <code>1</code> 即可。</li>
-<li>（4）参考链接：<a href="https://www.bilibili.com/read/cv8197364">https://www.bilibili.com/read/cv8197364</a></li>
-</ul>
-<h3 id="4-虚拟机不显示ip地址的解决方法"><a href="#4-虚拟机不显示ip地址的解决方法" class="headerlink" title="4. 虚拟机不显示ip地址的解决方法"></a>4. 虚拟机不显示ip地址的解决方法</h3><ul>
-<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
-<li>然后即可查看ip:<code>ifconfig</code></li>
-<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
-</ul>
-<h3 id="5-OPLS-optimized-potentials-for-liquid-simulations"><a href="#5-OPLS-optimized-potentials-for-liquid-simulations" class="headerlink" title="5. OPLS(optimized potentials for liquid simulations)"></a>5. OPLS(optimized potentials for liquid simulations)</h3><ul>
-<li>参考链接(<a href="https://blog.csdn.net/qq_31346429/article/details/106358251">https://blog.csdn.net/qq_31346429/article/details/106358251</a>)</li>
-</ul>
-<h3 id="6-AMBER基础教程B0：AMBER分子动力学模拟入门"><a href="#6-AMBER基础教程B0：AMBER分子动力学模拟入门" class="headerlink" title="6. [AMBER基础教程B0：AMBER分子动力学模拟入门]"></a>6. [AMBER基础教程B0：AMBER分子动力学模拟入门]</h3><ul>
-<li><a href="https://jerkwin.github.io/2018/01/17/AMBER%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8BB0-AMBER%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%85%A5%E9%97%A8/">参考链接</a></li>
-</ul>
-<h3 id="7-国内9大免费CDN汇总-转"><a href="#7-国内9大免费CDN汇总-转" class="headerlink" title="7. 国内9大免费CDN汇总 转"></a>7. 国内9大免费CDN汇总 转</h3><ul>
-<li>转 <a href="https://cloud.tencent.com/developer/article/1352398">https://cloud.tencent.com/developer/article/1352398</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>Daily Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Learning English Notes</title>
     <url>/learning-notes/2021/englishnote2021/</url>
     <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
@@ -69,233 +24,6 @@
       </categories>
       <tags>
         <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
-$ Fortran runtime error: Bad integer for item 1 in list input
-$ Bad real number in item 4 of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
-$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
-
-$ setup(
-$ name         &#x3D; &#39;thermal_conductivity&#39;,
-$ version      &#x3D; &#39;1.0.0&#39;,
-$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
-$ author       &#x3D; &#39;eastsheng&#39;,
-$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
-$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
-$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
-)
-</code></pre>
-<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
-<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Lammps 汇总</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-1/</url>
-    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
-<li>Windows下安装</li>
-</ul>
-<ol>
-<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
-<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
-<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
-<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
-<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
-<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
-<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
-<li>怎么设置环境变量：<blockquote>
-<ul>
-<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
-<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
-</ul>
-</blockquote>
-</li>
-<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
-</ol>
-<ul>
-<li>Linux下安装</li>
-</ul>
-<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
-<p> <strong>问题？</strong></p>
-<ol>
-<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
-</ol>
-<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
-...
-...
-...
-clear
-next k
-jump inputfile.in</code></pre>
-<ol start="2">
-<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
-<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
-<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
-<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
-</ol>
-<p><strong>已解决</strong></p>
-<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
-<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
-<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
-<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
-<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
-<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
-<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
-<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
-</ul>
-<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
-or
-group   g_ID    type 1 2 #atom type</code></pre>
-<ul>
-<li>所分的组的个数不能大于32个。</li>
-</ul>
-<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
-<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
-<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
-<li>比如，分了120层，输出的结果有121层；</li>
-<li>但是，有些就很正常，比如分了200层；</li>
-<li>猜测的原因</li>
-</ol>
-<ul>
-<li>是边边上有多余的部分没有被分到？自动分了？</li>
-</ul>
-<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
-<ol>
-<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
-</li>
-<li><p>原子结构不稳定导致的，例如：</p>
-</li>
-</ol>
-<ul>
-<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
-<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
-</ul>
-<ol start="3">
-<li>势参数设置出错，例如：</li>
-</ol>
-<ul>
-<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
-</ul>
-<ol start="4">
-<li>是否有足够的真空层</li>
-</ol>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GULP 汇总</title>
-    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
-
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
-<ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
-      </categories>
-      <tags>
-        <tag>GULP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <url>/za-tan/hexo/hexo-command/</url>
-    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
-where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
-default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
-or
-$ hexo s</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
-or
-$ hexo g</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
-or
-$ hexo d</code></pre>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
-<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
-<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
-<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
-<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo command</tag>
       </tags>
   </entry>
   <entry>
@@ -400,91 +128,85 @@ categories:
       </tags>
   </entry>
   <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
-<ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
+    <title>Daily Notes</title>
+    <url>/learning-notes/2021/dailynotes2021/</url>
+    <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
+<li>neighbor skin style</li>
+<li>此命令用于设置cutoff distance;</li>
+<li>3种style代表不同的算法去构建list,<code>bin nsq multi</code></li>
+<li>一般使用<code>bin</code>较多；</li>
+<li><code>nsq</code>没有用过，手册上讲，在计算非周期性的盒子里的未溶解的小分子可能会更快；</li>
+<li><code>multi</code>多用于一些cutoff distance 差别大的体系，例如，聚合物与离子共存的体系。</li>
 </ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
-<ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
-<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+<h3 id="2-只要使用键盘Materials-Studio就卡住"><a href="#2-只要使用键盘Materials-Studio就卡住" class="headerlink" title="2. 只要使用键盘Materials Studio就卡住"></a>2. 只要使用键盘Materials Studio就卡住</h3><ul>
+<li>解决方法：在微软拼音输入法的“中”(或“英”)字上右击鼠标，然后点“设置”，在弹出界面中点“常规”，在新界面中向下滚动动底部，有个兼容性，打开兼容性，然后就OK了。</li>
+<li>参考链接 <a href="http://muchong.com/t-14329827-1">http://muchong.com/t-14329827-1</a></li>
 </ul>
-<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
-<ul>
-<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
-<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+<h3 id="3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法"><a href="#3-最新WIN10-20H2系统找回经典系统属性界面的最彻底的方法" class="headerlink" title="3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法"></a>3. 最新WIN10 20H2系统找回经典系统属性界面的最彻底的方法</h3><ul>
+<li>重装了Win10 20H2以后，右键此电脑后的属性面板变了，要彻底换回经典的属性面板方法。</li>
+<li>（1）打开注册表，直接搜索<code>注册表</code>、或者<code>Win+R</code>，然后输入<code>regedit</code>；</li>
+<li>（2）找到路径<code>HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FeatureManagement\Overrides\0\2093230218</code>;</li>
+<li>（3）将EnabledState的数值数据修改为 <code>1</code> 即可。</li>
+<li>（4）参考链接：<a href="https://www.bilibili.com/read/cv8197364">https://www.bilibili.com/read/cv8197364</a></li>
 </ul>
-<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+<h3 id="4-虚拟机不显示ip地址的解决方法"><a href="#4-虚拟机不显示ip地址的解决方法" class="headerlink" title="4. 虚拟机不显示ip地址的解决方法"></a>4. 虚拟机不显示ip地址的解决方法</h3><ul>
+<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
+<li>然后即可查看ip:<code>ifconfig</code></li>
+<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
+</ul>
+<h3 id="5-OPLS-optimized-potentials-for-liquid-simulations"><a href="#5-OPLS-optimized-potentials-for-liquid-simulations" class="headerlink" title="5. OPLS(optimized potentials for liquid simulations)"></a>5. OPLS(optimized potentials for liquid simulations)</h3><ul>
+<li>参考链接(<a href="https://blog.csdn.net/qq_31346429/article/details/106358251">https://blog.csdn.net/qq_31346429/article/details/106358251</a>)</li>
+</ul>
+<h3 id="6-AMBER基础教程B0：AMBER分子动力学模拟入门"><a href="#6-AMBER基础教程B0：AMBER分子动力学模拟入门" class="headerlink" title="6. [AMBER基础教程B0：AMBER分子动力学模拟入门]"></a>6. [AMBER基础教程B0：AMBER分子动力学模拟入门]</h3><ul>
+<li><a href="https://jerkwin.github.io/2018/01/17/AMBER%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8BB0-AMBER%E5%88%86%E5%AD%90%E5%8A%A8%E5%8A%9B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%85%A5%E9%97%A8/">参考链接</a></li>
+</ul>
+<h3 id="7-国内9大免费CDN汇总-转"><a href="#7-国内9大免费CDN汇总-转" class="headerlink" title="7. 国内9大免费CDN汇总 转"></a>7. 国内9大免费CDN汇总 转</h3><ul>
+<li>转 <a href="https://cloud.tencent.com/developer/article/1352398">https://cloud.tencent.com/developer/article/1352398</a></li>
 </ul>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
+        <category>Learning Notes</category>
+        <category>2021</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
+        <tag>Daily Notes</tag>
       </tags>
   </entry>
   <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+    <title>Common Commands of Hexo</title>
+    <url>/za-tan/hexo/hexo-command/</url>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
+where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
+default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
+or
+$ hexo s</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
+or
+$ hexo g</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
+or
+$ hexo d</code></pre>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
+<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
+<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
+<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
+<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>杂谈</category>
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Icarus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Potential errors</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
-S  Mo Mo
-Mo Mo Mo
-Mo Mo S 
-Mo S  Mo
-S  Mo S 
-S  S  Mo
-S  S  S </code></pre></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
+        <tag>Hexo command</tag>
       </tags>
   </entry>
   <entry>
@@ -601,78 +323,33 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>potential</tag>
         <tag>snap</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
-    <title>Origin 画双y轴</title>
-    <url>/ke-yan-xue-xi/origin/origin-1/</url>
-    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
-<li>选中数据并，plot&gt;line 画出图</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
-</tr>
-</tbody></table>
-<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
-<li>如图figure3,可以得到figure4–双y轴</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure3</td>
-<td>figure4</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
-</tr>
-</tbody></table>
-<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
-<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
-<li>调一下格式就可以得到最后的图片</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure5</td>
-<td>figure6</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
-</tr>
-</tbody></table>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-none"><code class="language-none">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
 ]]></content>
       <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
+        <category>杂谈</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>origin</tag>
+        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -808,6 +485,32 @@ The file cannot be parsed correctly, check its internal syntax.</code></pre>
       </categories>
       <tags>
         <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Potential errors</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -955,12 +658,10 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
+    <title>Origin 画双y轴</title>
+    <url>/ke-yan-xue-xi/origin/origin-1/</url>
+    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
+<li>选中数据并，plot&gt;line 画出图</li>
 </ul>
 <table>
 <thead>
@@ -974,8 +675,47 @@ sudo make install</code></pre>
 <td>figure2</td>
 </tr>
 <tr>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
-<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwjyR.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwvO1.jpg" width="80%"></td>
+</tr>
+</tbody></table>
+<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
+<li>如图figure3,可以得到figure4–双y轴</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure3</td>
+<td>figure4</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Sw6.jpg" width="80%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwXl9.jpg" width="100%"></td>
+</tr>
+</tbody></table>
+<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
+<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
+<li>调一下格式就可以得到最后的图片</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure5</td>
+<td>figure6</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/NdwOSJ.jpg" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Ndwzex.jpg" width="100%"></td>
 </tr>
 </tbody></table>
 ]]></content>
@@ -1020,6 +760,39 @@ sudo make install</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0Bp4.png" width="100%"></td>
+<td><img src="https://s1.ax1x.com/2020/06/24/Nd0D1J.png" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通过 Matlibplot 给曲线自定义绘色</title>
     <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
     <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
@@ -1061,122 +834,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </categories>
       <tags>
         <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python常用</title>
-    <url>/bian-cheng-yu-yan/python/python3/</url>
-    <content><![CDATA[<ul>
-<li>老是忘，放到这以便查阅。</li>
-</ul>
-<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
-<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
-<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
-<li>numpy求平均<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">#行平均</span>
-np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">#列平均</span></code></pre></li>
-<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
-<li>给矩阵x在第三列插入一列0<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre></li>
-<li>按照第一列对矩阵fe进行排序<pre class="language-python" data-language="python"><code class="language-python">fe_sort <span class="token operator">=</span> fe<span class="token punctuation">[</span>np<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span>fe<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span></code></pre>
-
-</li>
-</ol>
-<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
-<li>获得当前文件所在目录<pre class="language-python" data-language="python"><code class="language-python">path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
-<li>在当前文件夹生成文件夹，以时间命名<pre class="language-python" data-language="python"><code class="language-python">folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y-%m-%d_%H-%M-%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y%m%d_%H%M%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">r'%s/%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>folder<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></li>
-<li>更改当前工作路径<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
-path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
-<li>判断一个路径是否存在<pre class="language-python" data-language="python"><code class="language-python">path_yesno <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>path_yesno<span class="token punctuation">)</span></code></pre></li>
-<li>获取目录中所有文件及文件夹list<pre class="language-python" data-language="python"><code class="language-python">PATH <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop'</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>PATH<span class="token punctuation">)</span></code></pre></li>
-<li>创建和删除子目录<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
-os<span class="token punctuation">.</span>rmdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
-
-path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
-<li>改文件名<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>rename<span class="token punctuation">(</span><span class="token string">'123.txt'</span><span class="token punctuation">,</span><span class="token string">'000.txt'</span><span class="token punctuation">)</span></code></pre></li>
-</ol>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>控制Tecplot里的原子间距</title>
-    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
-    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
-<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
-
-
-</li>
-</ul>
-<ul>
-<li><p>独立操作x,y,z的Size Factors</p>
-<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
-</li>
-<li><p>调原子间距效果</p>
-</li>
-</ul>
-<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
-
-<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
-<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
-<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
-<li>这个就不明显，藏在这里：<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>View&gt;Rotate</td>
-<td>3D Rotate</td>
-</tr>
-<tr>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
-<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
-<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
-<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
-<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Tecplot</category>
-      </categories>
-      <tags>
-        <tag>Tecplot</tag>
       </tags>
   </entry>
   <entry>
@@ -1438,26 +1095,109 @@ $ <span class="token function">git</span> reset --merge <span class="token comme
       </tags>
   </entry>
   <entry>
-    <title>Git Command-delete file</title>
-    <url>/za-tan/git-command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout yourbranch</code></pre>
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> yourfile
-or
-<span class="token function">git</span> <span class="token function">rm</span> -r yourfolder/
-</code></pre>
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"your modify comment"</span>
-</code></pre>
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin yourbranch
-</code></pre>
-
-
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><a href="https://imgtu.com/i/694P1A"><img src="https://s3.ax1x.com/2021/02/28/694P1A.png"></a></p>
+<ul>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><p><a href="https://imgtu.com/i/695FC4"><img src="https://s3.ax1x.com/2021/02/28/695FC4.md.png"></a></p>
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code><br><a href="https://imgtu.com/i/69oE0x"><img src="https://s3.ax1x.com/2021/02/28/69oE0x.png"></a></li>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+</ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><a href="https://imgtu.com/i/6CHXlD"><img src="https://s3.ax1x.com/2021/02/28/6CHXlD.png" alt="6CHXlD.png"></a></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Git Command</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Git delete file</tag>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python常用</title>
+    <url>/bian-cheng-yu-yan/python/python3/</url>
+    <content><![CDATA[<ul>
+<li>老是忘，放到这以便查阅。</li>
+</ul>
+<h3 id="一、numpy常用"><a href="#一、numpy常用" class="headerlink" title="一、numpy常用"></a><strong>一、numpy常用</strong></h3><ol>
+<li>横向拼接：<code>np.hstack((matrix1,matrix2))</code></li>
+<li>纵向拼接：<code>np.vstack((matrix1,matrix2))</code></li>
+<li>numpy求平均<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">#行平均</span>
+np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>array<span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">#列平均</span></code></pre></li>
+<li>去除numpy数组里的相同值：<code>np.unique()</code></li>
+<li>给矩阵x在第三列插入一列0<pre class="language-python" data-language="python"><code class="language-python">np<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>x<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre></li>
+<li>按照第一列对矩阵fe进行排序<pre class="language-python" data-language="python"><code class="language-python">fe_sort <span class="token operator">=</span> fe<span class="token punctuation">[</span>np<span class="token punctuation">.</span>argsort<span class="token punctuation">(</span>fe<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span></code></pre>
+
+</li>
+</ol>
+<h3 id="二、其他"><a href="#二、其他" class="headerlink" title="二、其他"></a><strong>二、其他</strong></h3><ol>
+<li>获得当前文件所在目录<pre class="language-python" data-language="python"><code class="language-python">path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>在当前文件夹生成文件夹，以时间命名<pre class="language-python" data-language="python"><code class="language-python">folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y-%m-%d_%H-%M-%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+folder<span class="token operator">=</span>time<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">r"%Y%m%d_%H%M%S"</span><span class="token punctuation">,</span>time<span class="token punctuation">.</span>localtime<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">r'%s/%s'</span><span class="token operator">%</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>folder<span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></li>
+<li>更改当前工作路径<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
+path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>判断一个路径是否存在<pre class="language-python" data-language="python"><code class="language-python">path_yesno <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\1'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path_yesno<span class="token punctuation">)</span></code></pre></li>
+<li>获取目录中所有文件及文件夹list<pre class="language-python" data-language="python"><code class="language-python">PATH <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>PATH<span class="token punctuation">)</span></code></pre></li>
+<li>创建和删除子目录<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
+os<span class="token punctuation">.</span>rmdir<span class="token punctuation">(</span><span class="token string">'C:\\Users\\ASUS\\Desktop\\2'</span><span class="token punctuation">)</span>
+
+path<span class="token operator">=</span>os<span class="token punctuation">.</span>getcwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span></code></pre></li>
+<li>改文件名<pre class="language-python" data-language="python"><code class="language-python">os<span class="token punctuation">.</span>rename<span class="token punctuation">(</span><span class="token string">'123.txt'</span><span class="token punctuation">,</span><span class="token string">'000.txt'</span><span class="token punctuation">)</span></code></pre></li>
+</ol>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows相关</title>
+    <url>/za-tan/windows/windows-problems/</url>
+    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
+<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
+<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
+<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
+<li>打开命令提示符（管理员）</li>
+<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
+<li>也可以关闭：<code>net user administrator /active:no</code></li>
+</ul>
+<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
+<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows problems</tag>
       </tags>
   </entry>
   <entry>
@@ -1497,6 +1237,236 @@ if (num_bins &gt; N) &#123;
       </tags>
   </entry>
   <entry>
+    <title>Git Command-delete file</title>
+    <url>/za-tan/git-command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout yourbranch</code></pre>
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> yourfile
+or
+<span class="token function">git</span> <span class="token function">rm</span> -r yourfolder/
+</code></pre>
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"your modify comment"</span>
+</code></pre>
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin yourbranch
+</code></pre>
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git delete file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-none"><code class="language-none">$ Fortran runtime error: Bad value during floating point read
+$ Fortran runtime error: Bad integer for item 1 in list input
+$ Bad real number in item 4 of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-none"><code class="language-none">$ Warning: Extension: REAL array index at (1)
+$ Warning: Deleted feature: Loop variable at (1) must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GULP 汇总</title>
+    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
+</ul>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ &#x2F;home&#x2F;ubuntu&#x2F;GULP&#x2F;gulp-5.2&#x2F;Src&#x2F;gulp &lt;input.gin&gt;OUTfile</code></pre>
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<pre class="language-none"><code class="language-none">$ shrink  24 24 1</code></pre>
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>GULP</category>
+      </categories>
+      <tags>
+        <tag>GULP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lammps 汇总</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-1/</url>
+    <content><![CDATA[<h4 id="1-Lammps安装"><a href="#1-Lammps安装" class="headerlink" title="1. Lammps安装"></a><strong>1. Lammps安装</strong></h4><ul>
+<li>Windows下安装</li>
+</ul>
+<ol>
+<li><a href="http://packages.lammps.org/windows.html">官网下载Windows版Lammps,和并行包mpich2</a>；</li>
+<li>下载完成后，直接双击<code>LAMMPS-64bit-stable-MPI.exe</code>安装,可以自定义安装位置；</li>
+<li>Similarly，接着安装MPICH2<code>mpich2-1.4.1p1-win-x86-64.msi</code>；</li>
+<li>完了之后，进入到<code>Administrator</code>用户下操作，<code>win+R</code>输入<code>cmd</code>，调出cmd窗口；</li>
+<li><code>cd</code>到MPICH2安装目录的<code>bin</code>下，也即是<code>D:\Program Files\MPICH2\bin</code>；</li>
+<li>然后，输入命令：<code>smpd.exe -install -phrase behappy</code>；</li>
+<li>别忘记设置环境变量，即是将对应的Lammps@MPICH2路径加入到path中：<code>D:\Program Files\LAMMPS 64-bit 7Aug2019-MPI\bin</code>，<code>D:\Program Files\MPICH2\bin</code></li>
+<li>怎么设置环境变量：<blockquote>
+<ul>
+<li>鼠标右键<code>此电脑</code>；点开<code>高级系统设置</code>；找到<code>高级</code>；点开右下角<code>环境变量(N)</code>；</li>
+<li>在系统变量下<code>path</code>中找找看，是否已经设置；若没有，点击新建，将路径复制过来，确定即可</li>
+</ul>
+</blockquote>
+</li>
+<li>至此，完成，可以进入lammps目录下<code>Examples</code>中测试一下并行；例如：<code>mpiexec -np 8 lmp_mpi -i inputfile.in</code>；具体看<a href="http://packages.lammps.org/windows.html">官网</a></li>
+</ol>
+<ul>
+<li>Linux下安装</li>
+</ul>
+<p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<h4 id="2-Lammps输入文件中变量k"><a href="#2-Lammps输入文件中变量k" class="headerlink" title="2. Lammps输入文件中变量k"></a><strong>2. Lammps输入文件中变量<code>k</code></strong></h4><p>首先说一下，Lammps inputfile 的变量有很多，这里说的这个 <em>k</em> 是控制算几遍的那个变量。</p>
+<p> <strong>问题？</strong></p>
+<ol>
+<li>按理说，如果按照下面来写的话，它应该是正常运行，并且会计算三遍。</li>
+</ol>
+<pre class="language-none"><code class="language-none">variable k  index 1 2 3 
+...
+...
+...
+clear
+next k
+jump inputfile.in</code></pre>
+<ol start="2">
+<li>事实上，它也会算三遍，但是，我发现有一种情况，它是不会jump到下一个case的。</li>
+<li>这种情况：多个inputfile的时候，例如：驰豫(minimize,npt,nvt…)和记录结果分别用两个inputfile来表示。</li>
+<li>也即是，先从驰豫jump到记录结果，再让记录结果的inputfile自己jump自己。</li>
+<li>结果就是，记录结果的inputfile不会 next k  and  jump</li>
+</ol>
+<p><strong>已解决</strong></p>
+<p><strong>把第一个inputfile里的<code>variable k equal 1</code>改为 <code>variable k index 1 2 3</code>即可</strong></p>
+<h4 id="3-data文件格式问题"><a href="#3-data文件格式问题" class="headerlink" title="3. data文件格式问题"></a><strong>3. data文件格式问题</strong></h4><pre class="language-none"><code class="language-none">Incorrect atom format in data file (..&#x2F;atom.cpp:853)</code></pre>
+<p>data文件的格式是 <em>full</em> ，却在inputfile中使用了 <em>atomic</em> 格式。</p>
+<h4 id="4-NPT时，系统的边界条件必须为周期性边界条件"><a href="#4-NPT时，系统的边界条件必须为周期性边界条件" class="headerlink" title="4. NPT时，系统的边界条件必须为周期性边界条件"></a><strong>4. NPT时，系统的边界条件必须为周期性边界条件</strong></h4><pre class="language-none"><code class="language-none">boundary	p p p</code></pre>
+<h4 id="5-Nose-Hoover"><a href="#5-Nose-Hoover" class="headerlink" title="5. Nose-Hoover"></a><strong>5. Nose-Hoover</strong></h4><ul>
+<li>这个热库其实就是在热源和冷源加 <em>nvt</em> ，</li>
+<li>在跑非平衡分子动力学( <em>NEMD</em> )模拟时，由于Nose-Hoover具有演化的过程，但是NEMD也有演化，</li>
+<li>所以在跑nve的时候，不仅要排除fixed的区域，还要排除热源冷源区域。</li>
+</ul>
+<h4 id="6-区域分组：group"><a href="#6-区域分组：group" class="headerlink" title="6. 区域分组：group"></a><strong>6. 区域分组：group</strong></h4><pre class="language-none"><code class="language-none">group	g_ID	region	reg_ID
+or
+group   g_ID    type 1 2 #atom type</code></pre>
+<ul>
+<li>所分的组的个数不能大于32个。</li>
+</ul>
+<h4 id="7-温度分层多出一层"><a href="#7-温度分层多出一层" class="headerlink" title="7. 温度分层多出一层"></a><strong>7. 温度分层多出一层</strong></h4><ol>
+<li>在跑NEMD时，我们要记录温度，通过给系统分层，记录每一层的温度；</li>
+<li>诡异的来了，分的有些层数，输出的结果会多出一层；</li>
+<li>比如，分了120层，输出的结果有121层；</li>
+<li>但是，有些就很正常，比如分了200层；</li>
+<li>猜测的原因</li>
+</ol>
+<ul>
+<li>是边边上有多余的部分没有被分到？自动分了？</li>
+</ul>
+<h4 id="8-跑MD结构散了"><a href="#8-跑MD结构散了" class="headerlink" title="8. 跑MD结构散了"></a><strong>8. 跑MD结构散了</strong></h4><p><strong>跑MD结构结构散了，常见原因总结：</strong></p>
+<ol>
+<li><p>势函数的问题，调研一下该势函数是否有人模拟过成果过。</p>
+</li>
+<li><p>原子结构不稳定导致的，例如：</p>
+</li>
+</ol>
+<ul>
+<li>模拟 <strong>缺陷</strong> 的时候，缺陷过多导致结构不稳定；</li>
+<li>模拟 <strong>高温</strong> 或者 <strong>高压</strong> 环境下时，导致结构不稳定；</li>
+</ul>
+<ol start="3">
+<li>势参数设置出错，例如：</li>
+</ol>
+<ul>
+<li>data文件中原子类型与input文件中配置势参数时的原子类型顺序不一致；</li>
+</ul>
+<ol start="4">
+<li>是否有足够的真空层</li>
+</ol>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-none"><code class="language-none">$ from distutils.core import setup
+
+$ setup(
+$ name         &#x3D; &#39;thermal_conductivity&#39;,
+$ version      &#x3D; &#39;1.0.0&#39;,
+$ py_modules   &#x3D; [&#39;thermal_conductivity&#39;],
+$ author       &#x3D; &#39;eastsheng&#39;,
+$ author_email &#x3D; &#39;eastsheng@hotmail.com&#39;,
+$ url          &#x3D; &#39;https:&#x2F;&#x2F;github.com&#x2F;eastsheng&#39;,
+$ description  &#x3D; &#39;Calculate thermal conductivity according to NEMD dump.&#39;
+)
+</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-none"><code class="language-none">$ python setup.py install</code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/07/08/UViIln.png" alt="Display" border="0" />
+
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>无法将“mklink”项识别为 cmdlet</title>
     <url>/za-tan/windows/windows-mklink/</url>
     <content><![CDATA[<h4 id="1-目的："><a href="#1-目的：" class="headerlink" title="1. 目的："></a>1. 目的：</h4><ul>
@@ -1533,26 +1503,56 @@ if (num_bins &gt; N) &#123;
       </tags>
   </entry>
   <entry>
-    <title>Windows相关</title>
-    <url>/za-tan/windows/windows-problems/</url>
-    <content><![CDATA[<h4 id="1-自动获取-ip-地址，获取了-169-开头的ip地址？"><a href="#1-自动获取-ip-地址，获取了-169-开头的ip地址？" class="headerlink" title="1. 自动获取 ip 地址，获取了 169 开头的ip地址？"></a>1. 自动获取 ip 地址，获取了 169 开头的ip地址？</h4><p>自从家里来到学校之后，就连接不上校网，自动获取的ip地址老是169开头，但，电脑是可以连上路由器无线和网线的，就是在直接连校网的网线(需要登录账号密码)出现的这种问题。</p>
-<h4 id="2-windows定时关机"><a href="#2-windows定时关机" class="headerlink" title="2. windows定时关机"></a>2. windows定时关机</h4><p>定时3600s后关机：<code>shutdown -s -t 3600</code><br>取消：<code>shutdown -a</code></p>
-<h4 id="3-win10系统在重分析点缓冲区中的标记无效-的解决方法"><a href="#3-win10系统在重分析点缓冲区中的标记无效-的解决方法" class="headerlink" title="3. win10系统在重分析点缓冲区中的标记无效 的解决方法"></a>3. win10系统在重分析点缓冲区中的标记无效 的解决方法</h4><p><a href="https://blog.csdn.net/COCO56/article/details/108634554">https://blog.csdn.net/COCO56/article/details/108634554</a> </p>
-<h4 id="4-若在计算机管理中找不到解禁管理员时"><a href="#4-若在计算机管理中找不到解禁管理员时" class="headerlink" title="4. 若在计算机管理中找不到解禁管理员时"></a>4. 若在计算机管理中找不到解禁管理员时</h4><ul>
-<li>打开命令提示符（管理员）</li>
-<li>执行：<code>net user administrator /active:yes</code> 后回车即可解禁管理员账户</li>
-<li>也可以关闭：<code>net user administrator /active:no</code></li>
+    <title>控制Tecplot里的原子间距</title>
+    <url>/ke-yan-xue-xi/tecplot/tecplot-1/</url>
+    <content><![CDATA[<h4 id="1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors"><a href="#1-Plot-lt-Axis-lt-独立操作x-y-z的Size-Factors" class="headerlink" title="1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors"></a>1. Plot&lt;Axis&lt;独立操作x,y,z的Size Factors</h4><ul>
+<li>Plot&lt;Axis<img src="https://s1.ax1x.com/2020/06/24/NwmFeI.png" alt="Plot<Axis" border="0" />  
+
+
+</li>
 </ul>
-<h4 id="5-重装系统后经典属性界面找回"><a href="#5-重装系统后经典属性界面找回" class="headerlink" title="5. 重装系统后经典属性界面找回"></a>5. 重装系统后经典属性界面找回</h4><ul>
-<li>参考：<br><a href="https://www.bilibili.com/read/cv8197364/">最新WIN10 20H2系统找回经典系统属性界面的几种方法</a></li>
+<ul>
+<li><p>独立操作x,y,z的Size Factors</p>
+<img src="https://s1.ax1x.com/2020/06/24/NwmATP.png" alt="Size Factors" border="0" />
+</li>
+<li><p>调原子间距效果</p>
+</li>
+</ul>
+<img src="https://s1.ax1x.com/2020/06/24/Nwmx7q.png" alt="Energy" border="0" width="60%" />
+
+<h4 id="2-x-y-z方向的视角调整"><a href="#2-x-y-z方向的视角调整" class="headerlink" title="2. x,y,z方向的视角调整"></a>2. x,y,z方向的视角调整</h4><ul>
+<li>可以手动调，但正视图、侧视图、俯视图手动调可能不太好调</li>
+<li>一般这种可视化软件，不应该都在很明显的位置嘛？</li>
+<li>这个就不明显，藏在这里：<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>View&gt;Rotate</td>
+<td>3D Rotate</td>
+</tr>
+<tr>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRSVf.png" alt="View>Rotate" border="0" width="50%" /></td>
+<td><img src="https://s1.ax1x.com/2020/06/26/NsRbwV.png" alt="3D Rotate" border="0" width="200%" /></td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h4 id="3-很奇怪，也非常便捷的一个操作"><a href="#3-很奇怪，也非常便捷的一个操作" class="headerlink" title="3. 很奇怪，也非常便捷的一个操作"></a>3. 很奇怪，也非常便捷的一个操作</h4><ul>
+<li>采用Tecplot画能量图的时候，只要把之前画过的.lay文件，直接复制到另一个要画的文件夹里，就可以直接画出来。</li>
+<li>注意：这个.lay文件要与要画图的文件夹里你要画的那个文件名要一样，</li>
+<li>这样，直接复制粘贴过去，就可以直接画出来，里面的设置不变，很奇怪，但很便捷。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
+        <category>科研学习</category>
+        <category>Tecplot</category>
       </categories>
       <tags>
-        <tag>Windows problems</tag>
+        <tag>Tecplot</tag>
       </tags>
   </entry>
   <entry>
