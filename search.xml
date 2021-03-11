@@ -1,29 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
+    <title>虚拟机扩容</title>
+    <url>/za-tan/linux/linux-kuorong/</url>
+    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji.PNG"></p>
+<ul>
+<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
+<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
+<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
+<li>耐心等……</li>
+</ul>
+<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji2.png" height="500" width="500"/>
+
+<ul>
+<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
+<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji3.png"></p>
+<ul>
+<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
+<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
+<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
+</ul>
+<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji4.png"></p>
+<ul>
+<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
+<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
+</ul>
+<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
+<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
+        <category>杂谈</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>Learning Notes</tag>
+        <tag>Linux</tag>
+        <tag>虚拟机扩容</tag>
+        <tag>Ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -72,30 +87,61 @@
       </tags>
   </entry>
   <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Fortran runtime error: Bad value during floating point <span class="token builtin class-name">read</span>
-$ Fortran runtime error: Bad integer <span class="token keyword">for</span> item <span class="token number">1</span> <span class="token keyword">in</span> list input
-$ Bad real number <span class="token keyword">in</span> item <span class="token number">4</span> of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
+    <title>GULP 汇总</title>
+    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
+    <content><![CDATA[<ul>
+<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
+<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
 </ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Warning: Extension: REAL array index at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-$ Warning: Deleted feature: Loop variable at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
+<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
+<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
+<li>例如：</li>
 </ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+<pre class="language-bash" data-language="bash"><code class="language-bash">$ /home/ubuntu/GULP/gulp-5.2/Src/gulp <span class="token operator">&lt;</span>input.gin<span class="token operator">></span>OUTfile</code></pre>
+
+<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
+<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
+<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
+</ul>
+<pre class="language-gin" data-language="gin"><code class="language-gin">$ shrink  24 24 1</code></pre>
+<ul>
+<li>官网给出的解释是：</li>
+<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
+<li>并不清楚为什么加了这条命令之后DOS为空。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
+        <category>科研学习</category>
+        <category>GULP</category>
       </categories>
       <tags>
-        <tag>Fortran运行error</tag>
+        <tag>GULP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
       </tags>
   </entry>
   <entry>
@@ -199,6 +245,33 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Fortran runtime error: Bad value during floating point <span class="token builtin class-name">read</span>
+$ Fortran runtime error: Bad integer <span class="token keyword">for</span> item <span class="token number">1</span> <span class="token keyword">in</span> list input
+$ Bad real number <span class="token keyword">in</span> item <span class="token number">4</span> of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Warning: Extension: REAL array index at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+$ Warning: Deleted feature: Loop variable at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Common Commands of Hexo</title>
     <url>/za-tan/hexo/hexo-command/</url>
     <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
@@ -237,35 +310,59 @@ hexo clean &amp;&amp; hexo douban -bgm &amp;&amp; hexo g &amp;&amp; hexo d</code
       </tags>
   </entry>
   <entry>
-    <title>GULP 汇总</title>
-    <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
-    <content><![CDATA[<ul>
-<li>GULP (General Utility Lattice Program)<a href="http://gulp.curtin.edu.au/gulp/request.cfm?rel=download">晶格动力学软件</a></li>
-<li>在线<a href="http://gulp.curtin.edu.au/gulp/help/help_52_txt.html#opennewwindow">Manual</a></li>
-</ul>
-<h4 id="1-Run-GULP-Command"><a href="#1-Run-GULP-Command" class="headerlink" title="1. Run GULP Command"></a><strong>1. Run GULP Command</strong></h4><ul>
-<li>GULP 执行命令：<directory>gulp<inputfile>outputfile</li>
-<li>例如：</li>
-</ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash">$ /home/ubuntu/GULP/gulp-5.2/Src/gulp <span class="token operator">&lt;</span>input.gin<span class="token operator">></span>OUTfile</code></pre>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
 
-<h4 id="2-dispersion-amp-DOS"><a href="#2-dispersion-amp-DOS" class="headerlink" title="2. dispersion &amp; DOS"></a><strong>2. dispersion &amp; DOS</strong></h4><ul>
-<li>在计算dispersion的时候，会附带着输出DOS(Density of State)</li>
-<li>但是，如果加一条命令就可以使输出的DOS文件内容为空，即：</li>
-</ul>
-<pre class="language-gin" data-language="gin"><code class="language-gin">$ shrink  24 24 1</code></pre>
-<ul>
-<li>官网给出的解释是：</li>
-<li>指定倒易空间中的收缩因子，收缩系数越高，倒空间的采样范围越广。</li>
-<li>并不清楚为什么加了这条命令之后DOS为空。</li>
-</ul>
+
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-python" data-language="python"><code class="language-python">$ <span class="token keyword">from</span> distutils<span class="token punctuation">.</span>core <span class="token keyword">import</span> setup
+
+$ setup<span class="token punctuation">(</span>
+$ name         <span class="token operator">=</span> <span class="token string">'thermal_conductivity'</span><span class="token punctuation">,</span>
+$ version      <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
+$ py_modules   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'thermal_conductivity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+$ author       <span class="token operator">=</span> <span class="token string">'eastsheng'</span><span class="token punctuation">,</span>
+$ author_email <span class="token operator">=</span> <span class="token string">'eastsheng@hotmail.com'</span><span class="token punctuation">,</span>
+$ url          <span class="token operator">=</span> <span class="token string">'https://github.com/eastsheng'</span><span class="token punctuation">,</span>
+$ description  <span class="token operator">=</span> <span class="token string">'Calculate thermal conductivity according to NEMD dump.'</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py <span class="token function">install</span></code></pre>
 ]]></content>
       <categories>
-        <category>科研学习</category>
-        <category>GULP</category>
+        <category>编程语言</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>GULP</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-styl" data-language="styl"><code class="language-styl">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -299,63 +396,6 @@ Everything up-to-date</code></pre>
       </categories>
       <tags>
         <tag>Git Push Everything up-to-date</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-python" data-language="python"><code class="language-python">$ <span class="token keyword">from</span> distutils<span class="token punctuation">.</span>core <span class="token keyword">import</span> setup
-
-$ setup<span class="token punctuation">(</span>
-$ name         <span class="token operator">=</span> <span class="token string">'thermal_conductivity'</span><span class="token punctuation">,</span>
-$ version      <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
-$ py_modules   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'thermal_conductivity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-$ author       <span class="token operator">=</span> <span class="token string">'eastsheng'</span><span class="token punctuation">,</span>
-$ author_email <span class="token operator">=</span> <span class="token string">'eastsheng@hotmail.com'</span><span class="token punctuation">,</span>
-$ url          <span class="token operator">=</span> <span class="token string">'https://github.com/eastsheng'</span><span class="token punctuation">,</span>
-$ description  <span class="token operator">=</span> <span class="token string">'Calculate thermal conductivity according to NEMD dump.'</span>
-<span class="token punctuation">)</span>
-</code></pre>
-<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py sdist</code></pre>
-<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py <span class="token function">install</span></code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Potential errors</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
-    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
-<ul>
-<li>是由于势函数文件里少了一部分没给出来。</li>
-<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
-S  Mo Mo
-Mo Mo Mo
-Mo Mo S 
-Mo S  Mo
-S  Mo S 
-S  S  Mo
-S  S  S </code></pre></li>
-<li>但是，如果少给其中一个就会报此错误。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Lammps</category>
-      </categories>
-      <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -424,31 +464,6 @@ categories:
       </categories>
       <tags>
         <tag>Hueman</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-styl" data-language="styl"><code class="language-styl">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
       </tags>
   </entry>
   <entry>
@@ -565,8 +580,8 @@ The <span class="token function">file</span> cannot be parsed correctly, check i
       </categories>
       <tags>
         <tag>lammps</tag>
-        <tag>potential</tag>
         <tag>snap</tag>
+        <tag>potential</tag>
       </tags>
   </entry>
   <entry>
@@ -714,185 +729,6 @@ Esc（键盘）
       </tags>
   </entry>
   <entry>
-    <title>npm ERR! Unexpected end of JSON input while parsin</title>
-    <url>/za-tan/npm/npm-1/</url>
-    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
-<li>错误信息</li>
-</ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-baidu-sitemap --save <span class="token function">npm</span> ERR<span class="token operator">!</span> Unexpected end of JSON input <span class="token keyword">while</span> parsin
-</code></pre>
-<ul>
-<li>解决方法<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> cache clean --force</code></pre></li>
-<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
-</ul>
-<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org</code></pre>
-
-
-
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>npm</category>
-      </categories>
-      <tags>
-        <tag>npm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin Integrate</title>
-    <url>/ke-yan-xue-xi/origin/origin-2/</url>
-    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
-<li>选中数据，并按照figure2找到 Integrate</li>
-<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
-<li>接下来就是画图，plot&gt;line</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/ORIGIN-F7.png" width="100%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/ORIGIN-F8.png" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 画双y轴</title>
-    <url>/ke-yan-xue-xi/origin/origin-1/</url>
-    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
-<li>选中数据并，plot&gt;line 画出图</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure1.JPG" width="100%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure2.JPG" width="80%"></td>
-</tr>
-</tbody></table>
-<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
-<li>如图figure3,可以得到figure4–双y轴</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure3</td>
-<td>figure4</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure3.jpg" width="80%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure4.JPG" width="100%"></td>
-</tr>
-</tbody></table>
-<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
-<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
-<li>调一下格式就可以得到最后的图片</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure5</td>
-<td>figure6</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure5.JPG" width="100%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure6.JPG" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
-
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
-y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
-
-points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
-
-fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
-
-norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
-lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
-lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
-lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
-fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
-</ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
-
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Learning Notes</title>
     <url>/learning-notes/2020/notes/</url>
     <content><![CDATA[<h2 id="2020-07"><a href="#2020-07" class="headerlink" title="2020-07"></a><strong>2020-07</strong></h2><h3 id="07-23"><a href="#07-23" class="headerlink" title="07-23"></a><strong>07-23</strong></h3><ol>
@@ -1028,6 +864,228 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
       </tags>
   </entry>
   <entry>
+    <title>Origin 画双y轴</title>
+    <url>/ke-yan-xue-xi/origin/origin-1/</url>
+    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
+<li>选中数据并，plot&gt;line 画出图</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure1.JPG" width="100%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure2.JPG" width="80%"></td>
+</tr>
+</tbody></table>
+<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
+<li>如图figure3,可以得到figure4–双y轴</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure3</td>
+<td>figure4</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure3.jpg" width="80%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure4.JPG" width="100%"></td>
+</tr>
+</tbody></table>
+<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
+<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
+<li>调一下格式就可以得到最后的图片</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure5</td>
+<td>figure6</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure5.JPG" width="100%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure6.JPG" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin Integrate</title>
+    <url>/ke-yan-xue-xi/origin/origin-2/</url>
+    <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
+<li>选中数据，并按照figure2找到 Integrate</li>
+<li>操作完之后，就会在figure1中E(Y2)列出现积分后的数据</li>
+<li>接下来就是画图，plot&gt;line</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/ORIGIN-F7.png" width="100%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/ORIGIN-F8.png" width="100%"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Origin</category>
+      </categories>
+      <tags>
+        <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Potential errors</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-3-perror/</url>
+    <content><![CDATA[<h4 id="1-missing-an-entry"><a href="#1-missing-an-entry" class="headerlink" title="1. missing an entry"></a><strong>1. missing an entry</strong></h4><p><strong>错误信息：</strong><br><code>“ERROR: Potential file is missing an entry (../pair_sw.cpp:500)”</code><br><strong>解决方法：</strong></p>
+<ul>
+<li>是由于势函数文件里少了一部分没给出来。</li>
+<li>比如，以MoS2为例,要给的有，<pre class="language-none"><code class="language-none">Mo S  S
+S  Mo Mo
+Mo Mo Mo
+Mo Mo S 
+Mo S  Mo
+S  Mo S 
+S  S  Mo
+S  S  S </code></pre></li>
+<li>但是，如果少给其中一个就会报此错误。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>potential</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/OVITO-1.png" alt="Display" border="0" />
+
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Ovito</category>
+      </categories>
+      <tags>
+        <tag>Ovito</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm ERR! Unexpected end of JSON input while parsin</title>
+    <url>/za-tan/npm/npm-1/</url>
+    <content><![CDATA[<h3 id="1-Unexpected-end-of-JSON-input-while-parsin"><a href="#1-Unexpected-end-of-JSON-input-while-parsin" class="headerlink" title="1.  Unexpected end of JSON input while parsin"></a>1.  Unexpected end of JSON input while parsin</h3><ul>
+<li>错误信息</li>
+</ul>
+<pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-baidu-sitemap --save <span class="token function">npm</span> ERR<span class="token operator">!</span> Unexpected end of JSON input <span class="token keyword">while</span> parsin
+</code></pre>
+<ul>
+<li>解决方法<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> cache clean --force</code></pre></li>
+<li><a href="https://blog.csdn.net/idomyway/article/details/84327567">参考链接</a></li>
+</ul>
+<h3 id="2-安装npm镜像源"><a href="#2-安装npm镜像源" class="headerlink" title="2. 安装npm镜像源"></a>2. 安装npm镜像源</h3><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org</code></pre>
+
+
+
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>npm</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
+
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
+
+points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
+
+norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>把自己写的Python程序打包exe可执行文件</title>
     <url>/bian-cheng-yu-yan/python/python-2/</url>
     <content><![CDATA[<h3 id="一、打包Python程序"><a href="#一、打包Python程序" class="headerlink" title="一、打包Python程序"></a><strong>一、打包Python程序</strong></h3><ul>
@@ -1141,23 +1199,6 @@ turtle<span class="token punctuation">.</span>done<span class="token punctuation
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/OVITO-1.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
       </tags>
   </entry>
   <entry>
@@ -1275,6 +1316,73 @@ path<span class="token operator">=</span>os<span class="token punctuation">.</sp
       </tags>
   </entry>
   <entry>
+    <title>Alamode</title>
+    <url>/ke-yan-xue-xi/alamode/alamode-1/</url>
+    <content><![CDATA[<h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<p>Alamode 运行</p>
+<ul>
+<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
+<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
+</blockquote>
+</li>
+<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
+<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
+</blockquote>
+</li>
+<li>plot</li>
+</ul>
+<h3 id="2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："><a href="#2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：" class="headerlink" title="2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："></a><strong>2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：</strong></h3><ul>
+<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
+<ol>
+<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
+<li>其他信息修改参照官网</li>
+</ol>
+</blockquote>
+</li>
+<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
+<ol>
+<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
+</ol>
+</blockquote>
+</li>
+<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
+<li>最后使用alamode自带的extract.py，从XFSET.harm（XFSET.cubic）提取到DESET_harmonic（DFSET_cubic）中</li>
+<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
+<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
+<li>同样获得pdos</li>
+<li>具体参见官网</li>
+</ul>
+<p><strong>注意：</strong></p>
+<ul>
+<li>cutoff 的值可以从log中查看</li>
+</ul>
+<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><pre class="language-none"><code class="language-none">terminate called after throwing an instance of &#39;std::bad_alloc&#39;
+  what():  std::bad_alloc
+Aborted (core dumped)</code></pre>
+<ul>
+<li><ol>
+<li>主要是由于运行内存不足；</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>总结两种原因，一种是运行的task太多导致，另一种是一个task的数据量太大了（比如这里选的截断半径太大）</li>
+</ol>
+</li>
+</ul>
+<h3 id="4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候  Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>  Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
+<li>截断半径的原因？怎么设置cutoff?</li>
+<li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Alamode</category>
+      </categories>
+      <tags>
+        <tag>Alamode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Git Command-branch</title>
     <url>/za-tan/git-command/git-command/</url>
     <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch xxx   <span class="token comment">#xxx 分支名，第一种方法</span>
@@ -1358,109 +1466,6 @@ or
       </tags>
   </entry>
   <entry>
-    <title>Alamode</title>
-    <url>/ke-yan-xue-xi/alamode/alamode-1/</url>
-    <content><![CDATA[<h3 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h3><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<p>Alamode 运行</p>
-<ul>
-<li>执行alm<br><code>alm alm.in &gt; alm.log</code><blockquote>
-<p>MODE = suggest的时候可以获得一个包含笛卡尔坐标的displacement patterns<br>MODE = optimize的时候需要一个数据集（DFSET）,且得到xx.fcs(力常数),xx.xml(必要的信息)</p>
-</blockquote>
-</li>
-<li>执行anphon<br><code>anphon anphon.in &gt; anphon.log</code><br>or<br><code>mpirun -np 16 anphon anphon.in &gt; anphon.log</code><blockquote>
-<p>MODE = phonons的时候perform (harmonic) phonon calculations<br>MODE = RTA的时候conduct thermal conductivity calculations</p>
-</blockquote>
-</li>
-<li>plot</li>
-</ul>
-<h3 id="2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："><a href="#2-使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：" class="headerlink" title="2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程："></a><strong>2. 使用LAMMPS和Alamode计算热导率、PDOS、弛豫时间等流程：</strong></h3><ul>
-<li>运行alm.in,生成<code>xxx.pattern_HARMONIC</code>和<code>xxx.pattern_ANHARM3</code><blockquote>
-<ol>
-<li>需要注意：<code>NORDER = 2  # 1: harmonic, 2: cubic, ..</code></li>
-<li>其他信息修改参照官网</li>
-</ol>
-</blockquote>
-</li>
-<li>用alamode自带的displace.py，生成harm1.lammps和cubic1.lammps <blockquote>
-<ol>
-<li>如果harm和cubic文件很多的话，几百几千个，这里可能会出现harm0001.lammps这种文件名，会报错。</li>
-</ol>
-</blockquote>
-</li>
-<li>用脚本运行lammps,in.sw,使harm1.lammps和cubic1.lammps 分别生成XFSET.harm1和XFSET.cubic1</li>
-<li>最后使用alamode自带的extract.py，从XFSET.harm（XFSET.cubic）提取到DESET_harmonic（DFSET_cubic）中</li>
-<li>修改alm.in中的MODE为optimize并添加一些信息，再次运行alm.in，会得到xxx.fcs和xxx.xml,</li>
-<li>利用anphon通过xxx.xml会得到xxx.bands文件，然后通过自带的plotband.py可以计算声子色散；</li>
-<li>同样获得pdos</li>
-<li>具体参见官网</li>
-</ul>
-<p><strong>注意：</strong></p>
-<ul>
-<li>cutoff 的值可以从log中查看</li>
-</ul>
-<h3 id="3-Alamode在训练的时候出现的错误："><a href="#3-Alamode在训练的时候出现的错误：" class="headerlink" title="3. Alamode在训练的时候出现的错误："></a><strong>3. Alamode在训练的时候出现的错误：</strong></h3><pre class="language-none"><code class="language-none">terminate called after throwing an instance of &#39;std::bad_alloc&#39;
-  what():  std::bad_alloc
-Aborted (core dumped)</code></pre>
-<ul>
-<li><ol>
-<li>主要是由于运行内存不足；</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>总结两种原因，一种是运行的task太多导致，另一种是一个task的数据量太大了（比如这里选的截断半径太大）</li>
-</ol>
-</li>
-</ul>
-<h3 id="4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因"><a href="#4-Alamode中拟合力常数的时候-Fitting-error-100-找不到原因" class="headerlink" title="4. Alamode中拟合力常数的时候  Fitting error (%) : 100,找不到原因"></a><strong>4. Alamode中拟合力常数的时候<code>  Fitting error (%) : 100</code>,找不到原因</strong></h3><ul>
-<li>截断半径的原因？怎么设置cutoff?</li>
-<li>运行lammps的时候，只run了0步，因为例子力也是0步，会不会是这里的原因？</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Alamode</category>
-      </categories>
-      <tags>
-        <tag>Alamode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>无法将“mklink”项识别为 cmdlet</title>
-    <url>/za-tan/windows/windows-mklink/</url>
-    <content><![CDATA[<h4 id="1-目的"><a href="#1-目的" class="headerlink" title="1. 目的"></a>1. 目的</h4><ul>
-<li>目的是要把C盘的一个文件夹链接到E盘，</li>
-<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
-</ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
-<h4 id="2-错误信息"><a href="#2-错误信息" class="headerlink" title="2. 错误信息"></a>2. 错误信息</h4><pre class="language-bash" data-language="bash"><code class="language-bash">mklink <span class="token builtin class-name">:</span> 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
-正确，然后再试一次。
-所在位置 行:1 字符: <span class="token number">1</span>
-+ mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> "E:<span class="token punctuation">\</span>VScodePlug <span class="token punctuation">..</span>.
-+ ~~~~~~
-    + Cat<span class="token comment">##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span>
-    + FullyQualifiedErrorId <span class="token builtin class-name">:</span> CommandNotFoundException
-</code></pre>
-<h4 id="3-错误原因"><a href="#3-错误原因" class="headerlink" title="3. 错误原因"></a>3. 错误原因</h4><ul>
-<li>因为PowerShell中没有mklink命令</li>
-</ul>
-<h4 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4. 解决方法"></a>4. 解决方法</h4><ul>
-<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
-</ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
-
-<h4 id="5-成功提示"><a href="#5-成功提示" class="headerlink" title="5. 成功提示"></a>5. 成功提示</h4><pre class="language-bash" data-language="bash"><code class="language-bash">为 C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>yourcomputername<span class="token punctuation">\</span>.vscode<span class="token punctuation">\</span>extensions <span class="token operator">&lt;&lt;</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">>></span> E:<span class="token punctuation">\</span>VScodePlug<span class="token punctuation">\</span>extensions 创建的符号链接</code></pre>
-
-<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Windows</category>
-      </categories>
-      <tags>
-        <tag>mklink</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GPUMD学习</title>
     <url>/ke-yan-xue-xi/gpumd/gpumd-1/</url>
     <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
@@ -1497,44 +1502,39 @@ if (num_bins &gt; N) &#123;
       </tags>
   </entry>
   <entry>
-    <title>虚拟机扩容</title>
-    <url>/za-tan/linux/linux-kuorong/</url>
-    <content><![CDATA[<h3 id="1-VMware虚拟机虚拟硬盘扩展"><a href="#1-VMware虚拟机虚拟硬盘扩展" class="headerlink" title="1. VMware虚拟机虚拟硬盘扩展"></a>1. VMware虚拟机虚拟硬盘扩展</h3><p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji.PNG"></p>
-<ul>
-<li>虚拟机关机情况下，打开<code>虚拟机&gt;设置&gt;硬盘</code>；</li>
-<li>点击右侧<code>磁盘实用工具</code>下方<code>扩展</code>，输入磁盘大小，点击扩展;</li>
-<li><code>注意，谨慎操作，貌似虚拟盘只能增大，往小了改的话好像很困难，我是实现不了</code>;</li>
-<li>耐心等……</li>
+    <title>无法将“mklink”项识别为 cmdlet</title>
+    <url>/za-tan/windows/windows-mklink/</url>
+    <content><![CDATA[<h4 id="1-目的"><a href="#1-目的" class="headerlink" title="1. 目的"></a>1. 目的</h4><ul>
+<li>目的是要把C盘的一个文件夹链接到E盘，</li>
+<li>这里我是为了要把VScode安装的插件位置从C盘link到E盘，在PowerShell（因为使用cmd的话没有权限）使用命令如下：</li>
 </ul>
-<h3 id="2-在Ubuntu虚拟机中分配内存"><a href="#2-在Ubuntu虚拟机中分配内存" class="headerlink" title="2. 在Ubuntu虚拟机中分配内存"></a>2. 在Ubuntu虚拟机中分配内存</h3><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji2.png" height="500" width="500"/>
+<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
+<h4 id="2-错误信息"><a href="#2-错误信息" class="headerlink" title="2. 错误信息"></a>2. 错误信息</h4><pre class="language-bash" data-language="bash"><code class="language-bash">mklink <span class="token builtin class-name">:</span> 无法将“mklink”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径
+正确，然后再试一次。
+所在位置 行:1 字符: <span class="token number">1</span>
++ mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> "E:<span class="token punctuation">\</span>VScodePlug <span class="token punctuation">..</span>.
++ ~~~~~~
+    + Cat<span class="token comment">##egoryInfo          : ObjectNotFound: (mklink:String) [], CommandNotFoundException</span>
+    + FullyQualifiedErrorId <span class="token builtin class-name">:</span> CommandNotFoundException
+</code></pre>
+<h4 id="3-错误原因"><a href="#3-错误原因" class="headerlink" title="3. 错误原因"></a>3. 错误原因</h4><ul>
+<li>因为PowerShell中没有mklink命令</li>
+</ul>
+<h4 id="4-解决方法"><a href="#4-解决方法" class="headerlink" title="4. 解决方法"></a>4. 解决方法</h4><ul>
+<li>在进入PowerShell后先输出 <strong>cmd</strong>,在执行：</li>
+</ul>
+<pre class="language-bash" data-language="bash"><code class="language-bash">mklink /d <span class="token string">"C:\Users\yourcomputername\.vscode<span class="token entity" title="\e">\e</span>xtensions"</span> <span class="token string">"E:\VScodePlug<span class="token entity" title="\e">\e</span>xtensions<span class="token entity" title="\e">\e</span>xtensions"</span></code></pre>
 
-<ul>
-<li>目前只是把内存给了虚拟机，就像是给电脑增加了个硬盘，但是，是未分配状态，因此需要分配空间;</li>
-<li>打开虚拟机，在终端使用：<code>sudo apt-get install gparted</code>安装磁盘分区软件<code>GParted</code>，打开<code>GParted</code></li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji3.png"></p>
-<ul>
-<li>可以看到一个<code>unallocated</code>的内存空间，右键所要扩容的一级磁盘<code>/dev/sda1</code>，点击<code>Resize/Move</code>，将进度条拉到最右边，点击<code>Resize</code>，相同方法操作二级磁盘，再点击上方绿色对勾√；</li>
-<li>比如，这只有两个盘，一个系统盘<code>/dev/sda1</code>和一个空间盘<code>/dev/sda2</code>，我们要扩容给空间盘<code>/dev/sda2</code>，就先右键<code>/dev/sda2</code>这一行（一级磁盘）扩容，然后发现<code>unallocated</code>并未分配，还需要再给它的子空间再分配一次。</li>
-<li>因为，直接右键<code>/dev/sda5</code>分配空间，是不行的，进度条是拉不动的，只有先给一级磁盘分配，然后再由一级分给二级才可以实现。</li>
-</ul>
-<h3 id="3-最后可能还会有个1MiB的空间未分配"><a href="#3-最后可能还会有个1MiB的空间未分配" class="headerlink" title="3. 最后可能还会有个1MiB的空间未分配"></a>3. 最后可能还会有个1MiB的空间未分配</h3><p><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/xuniji4.png"></p>
-<ul>
-<li>直接把那<code>1MiB</code>空间加到<code>Free space following(MiB)</code>,然后<code>Resize</code>；</li>
-<li>之后就可以把这<code>1MiB</code>空间按上述操作再加到<code>/dev/sda2</code>或<code>/dev/sda5</code>里</li>
-</ul>
-<h3 id="4-终端查看df-h空间是否增加"><a href="#4-终端查看df-h空间是否增加" class="headerlink" title="4. 终端查看df -h空间是否增加"></a>4. 终端查看<code>df -h</code>空间是否增加</h3><ul>
-<li><a href="https://blog.csdn.net/u013755520/article/details/91978293?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&dist_request_id=51cd5575-61bc-414c-a186-4798ec20747c&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control">参考链接</a></li>
-</ul>
+<h4 id="5-成功提示"><a href="#5-成功提示" class="headerlink" title="5. 成功提示"></a>5. 成功提示</h4><pre class="language-bash" data-language="bash"><code class="language-bash">为 C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>yourcomputername<span class="token punctuation">\</span>.vscode<span class="token punctuation">\</span>extensions <span class="token operator">&lt;&lt;</span><span class="token operator">==</span><span class="token operator">=</span><span class="token operator">>></span> E:<span class="token punctuation">\</span>VScodePlug<span class="token punctuation">\</span>extensions 创建的符号链接</code></pre>
+
+<p><a href="https://cloud.tencent.com/developer/article/1341325">参考链接</a></p>
 ]]></content>
       <categories>
         <category>杂谈</category>
-        <category>Linux</category>
+        <category>Windows</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>虚拟机扩容</tag>
-        <tag>Ubuntu</tag>
+        <tag>mklink</tag>
       </tags>
   </entry>
   <entry>
