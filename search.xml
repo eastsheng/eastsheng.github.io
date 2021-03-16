@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Learning English Notes</title>
-    <url>/learning-notes/2021/englishnote2021/</url>
-    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
-<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
-<li>many fascinating properties</li>
-<li>provide a promising alternative</li>
-<li>In recent decades</li>
-<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
-<li>In comparison with …</li>
-<li>made of periodically alternating layers of two materials</li>
-<li>have reveiced widespread attention</li>
-<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
-<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
-<li>with close agreement to experimental measurements.</li>
-<li></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Learning Notes</category>
-        <category>2021</category>
-      </categories>
-      <tags>
-        <tag>Learning Notes</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Daily Notes</title>
     <url>/learning-notes/2021/dailynotes2021/</url>
     <content><![CDATA[<h3 id="1-neighbor-2-0-multi"><a href="#1-neighbor-2-0-multi" class="headerlink" title="1. neighbor 2.0 multi "></a>1. <code>neighbor 2.0 multi </code></h3><ul>
@@ -72,6 +46,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Learning English Notes</title>
+    <url>/learning-notes/2021/englishnote2021/</url>
+    <content><![CDATA[<p><strong>Phrase/sentence notes</strong></p>
+<h3 id="2021-01"><a href="#2021-01" class="headerlink" title="2021.01"></a><strong>2021.01</strong></h3><ol>
+<li>many fascinating properties</li>
+<li>provide a promising alternative</li>
+<li>In recent decades</li>
+<li>which is attributed to the competition between incoherent and coherent phonon transport regimes.</li>
+<li>In comparison with …</li>
+<li>made of periodically alternating layers of two materials</li>
+<li>have reveiced widespread attention</li>
+<li>gain insight into the underlying transport mechanisms 深入了解潜在传输机制</li>
+<li>Despite the long-standing importance of A and B as thermoelectric materials,</li>
+<li>with close agreement to experimental measurements.</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Learning Notes</category>
+        <category>2021</category>
+      </categories>
+      <tags>
+        <tag>Learning Notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>GULP 汇总</title>
     <url>/ke-yan-xue-xi/gulp/gulp-1/</url>
     <content><![CDATA[<ul>
@@ -101,6 +101,64 @@
       </categories>
       <tags>
         <tag>GULP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fortran Runtime error</title>
+    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
+    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Fortran runtime error: Bad value during floating point <span class="token builtin class-name">read</span>
+$ Fortran runtime error: Bad integer <span class="token keyword">for</span> item <span class="token number">1</span> <span class="token keyword">in</span> list input
+$ Bad real number <span class="token keyword">in</span> item <span class="token number">4</span> of list input</code></pre>
+<ul>
+<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
+<li>所以，检查格式。</li>
+</ul>
+<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Warning: Extension: REAL array index at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+$ Warning: Deleted feature: Loop variable at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> must be integer</code></pre>
+<ul>
+<li>这种警告信息一般不影响程序运行。</li>
+</ul>
+<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
+<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Fortran</category>
+      </categories>
+      <tags>
+        <tag>Fortran运行error</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>把自己写的Python程序打包成可以引用的模块</title>
+    <url>/bian-cheng-yu-yan/python/python-1/</url>
+    <content><![CDATA[<div class="notification is-info">
+<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
+</div>
+
+
+<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-python" data-language="python"><code class="language-python">$ <span class="token keyword">from</span> distutils<span class="token punctuation">.</span>core <span class="token keyword">import</span> setup
+
+$ setup<span class="token punctuation">(</span>
+$ name         <span class="token operator">=</span> <span class="token string">'thermal_conductivity'</span><span class="token punctuation">,</span>
+$ version      <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
+$ py_modules   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'thermal_conductivity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+$ author       <span class="token operator">=</span> <span class="token string">'eastsheng'</span><span class="token punctuation">,</span>
+$ author_email <span class="token operator">=</span> <span class="token string">'eastsheng@hotmail.com'</span><span class="token punctuation">,</span>
+$ url          <span class="token operator">=</span> <span class="token string">'https://github.com/eastsheng'</span><span class="token punctuation">,</span>
+$ description  <span class="token operator">=</span> <span class="token string">'Calculate thermal conductivity according to NEMD dump.'</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py sdist</code></pre>
+<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py <span class="token function">install</span></code></pre>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -204,160 +262,6 @@ group   g_ID    type 1 2 #atom type</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Git Push Everything up-to-date错误</title>
-    <url>/za-tan/git-command/gitpusherror/</url>
-    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
-Everything up-to-date</code></pre>
-<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
-<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
-</li>
-<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
-</li>
-<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
-</li>
-<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
-</li>
-</ul>
-<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
-<li>一般情况下，正确的做法是：</li>
-</ul>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
-<span class="token function">git</span> commit -m <span class="token string">'your commits'</span>
-<span class="token function">git</span> push origin yourbranch</code></pre>
-<ul>
-<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git Push Everything up-to-date</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Fortran Runtime error</title>
-    <url>/bian-cheng-yu-yan/fortran/fortran-1/</url>
-    <content><![CDATA[<h4 id="1-Bad-value-amp-Bad-integer"><a href="#1-Bad-value-amp-Bad-integer" class="headerlink" title="1. Bad value &amp; Bad integer"></a>1. Bad value &amp; Bad integer</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Fortran runtime error: Bad value during floating point <span class="token builtin class-name">read</span>
-$ Fortran runtime error: Bad integer <span class="token keyword">for</span> item <span class="token number">1</span> <span class="token keyword">in</span> list input
-$ Bad real number <span class="token keyword">in</span> item <span class="token number">4</span> of list input</code></pre>
-<ul>
-<li>这种错误信息，一般都是所读取的文件格式与程序所需要的格式不符；</li>
-<li>所以，检查格式。</li>
-</ul>
-<h4 id="2-Warning"><a href="#2-Warning" class="headerlink" title="2 . Warning"></a>2 . Warning</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ Warning: Extension: REAL array index at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-$ Warning: Deleted feature: Loop variable at <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> must be integer</code></pre>
-<ul>
-<li>这种警告信息一般不影响程序运行。</li>
-</ul>
-<h4 id="3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”"><a href="#3-Fortran-error-“rank-mismatch-in-array-reference-at-1-2-1-”" class="headerlink" title="3 . Fortran error “rank mismatch in array reference at (1) (2/1)”"></a>3 . Fortran error “rank mismatch in array reference at (1) (2/1)”</h4><ul>
-<li>主要是因为定义的数组的规模(或等级维度)与使用数组时不一致。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Fortran</category>
-      </categories>
-      <tags>
-        <tag>Fortran运行error</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Common Commands of Hexo</title>
-    <url>/za-tan/hexo/hexo-command/</url>
-    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
-where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
-default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
-or
-$ hexo s</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
-or
-$ hexo g</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
-or
-$ hexo d</code></pre>
-<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d
-hexo clean &amp;&amp; hexo douban -bgm &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
-<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
-<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
-<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
-<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo command</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给icarus主题换背景图片</title>
-    <url>/za-tan/hexo/hexo-icarus/</url>
-    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-styl" data-language="styl"><code class="language-styl">&#x2F;&#x2F; Custom styles.
-body &#123;
- 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
- 	background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:50% 50%;
-	background-size: cover
-&#125;</code></pre>
-<ol>
-<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
-<li>这里使用的是unsplash，刷新后自动更换美图。</li>
-</ol>
-<p>注：是添加不是替换，不然以前的布局将丢失。</p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Icarus</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>把自己写的Python程序打包成可以引用的模块</title>
-    <url>/bian-cheng-yu-yan/python/python-1/</url>
-    <content><![CDATA[<div class="notification is-info">
-<p><strong>把自己写的python函数组成模块，并安装在本地：</strong></p>
-</div>
-
-
-<h4 id="1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。"><a href="#1-把编写好的函数写在一个指定文件-example：xxx-py-里，并放到一个文件夹-example：xxx-里。" class="headerlink" title="1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。"></a>1. 把编写好的函数写在一个指定文件(example：xxx.py)里，并放到一个文件夹(example：xxx)里。</h4><h4 id="2-接着，在这个文件夹里写一个setup-py文件，文件内容例如："><a href="#2-接着，在这个文件夹里写一个setup-py文件，文件内容例如：" class="headerlink" title="2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如："></a>2. 接着，在这个文件夹里写一个setup.py文件，文件内容例如：</h4><pre class="language-python" data-language="python"><code class="language-python">$ <span class="token keyword">from</span> distutils<span class="token punctuation">.</span>core <span class="token keyword">import</span> setup
-
-$ setup<span class="token punctuation">(</span>
-$ name         <span class="token operator">=</span> <span class="token string">'thermal_conductivity'</span><span class="token punctuation">,</span>
-$ version      <span class="token operator">=</span> <span class="token string">'1.0.0'</span><span class="token punctuation">,</span>
-$ py_modules   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'thermal_conductivity'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-$ author       <span class="token operator">=</span> <span class="token string">'eastsheng'</span><span class="token punctuation">,</span>
-$ author_email <span class="token operator">=</span> <span class="token string">'eastsheng@hotmail.com'</span><span class="token punctuation">,</span>
-$ url          <span class="token operator">=</span> <span class="token string">'https://github.com/eastsheng'</span><span class="token punctuation">,</span>
-$ description  <span class="token operator">=</span> <span class="token string">'Calculate thermal conductivity according to NEMD dump.'</span>
-<span class="token punctuation">)</span>
-</code></pre>
-<h4 id="3-然后，在此文件夹里打开cmd，输入："><a href="#3-然后，在此文件夹里打开cmd，输入：" class="headerlink" title="3. 然后，在此文件夹里打开cmd，输入："></a>3. 然后，在此文件夹里打开cmd，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py sdist</code></pre>
-<h4 id="4-最后，安装此模块到本地，输入："><a href="#4-最后，安装此模块到本地，输入：" class="headerlink" title="4. 最后，安装此模块到本地，输入："></a>4. 最后，安装此模块到本地，输入：</h4><pre class="language-bash" data-language="bash"><code class="language-bash">$ python setup.py <span class="token function">install</span></code></pre>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hueman主题</title>
     <url>/za-tan/hexo/hexo-hueman/</url>
     <content><![CDATA[<p>这个主题挺不错的，不过在配置的时候有些波折，记录一下。</p>
@@ -423,6 +327,364 @@ categories:
       </categories>
       <tags>
         <tag>Hueman</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给icarus主题换背景图片</title>
+    <url>/za-tan/hexo/hexo-icarus/</url>
+    <content><![CDATA[<h4 id="在-themes-source-css-style-styl添加如下代码"><a href="#在-themes-source-css-style-styl添加如下代码" class="headerlink" title="在./themes/../source/css/style.styl添加如下代码"></a>在./themes/../source/css/style.styl添加如下代码</h4><pre class="language-styl" data-language="styl"><code class="language-styl">&#x2F;&#x2F; Custom styles.
+body &#123;
+ 	background:url(https:&#x2F;&#x2F;source.unsplash.com&#x2F;random&#x2F;1600x900?wallpapers);
+ 	background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+	background-size: cover
+&#125;</code></pre>
+<ol>
+<li>如果想要自定义背景图片，直接给图片路径就可以，或者图床的url</li>
+<li>这里使用的是unsplash，刷新后自动更换美图。</li>
+</ol>
+<p>注：是添加不是替换，不然以前的布局将丢失。</p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Icarus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Common Commands of Hexo</title>
+    <url>/za-tan/hexo/hexo-command/</url>
+    <content><![CDATA[<h3 id="1-Create-a-new-post"><a href="#1-Create-a-new-post" class="headerlink" title="1. Create a new post"></a>1. Create a new post</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token string">"My New Post"</span>
+where layout: post<span class="token punctuation">;</span> page<span class="token punctuation">;</span> draft
+default <span class="token assign-left variable">layout</span><span class="token operator">==</span>post</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="2-Run-server"><a href="#2-Run-server" class="headerlink" title="2. Run server"></a>2. Run server</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo server
+or
+$ hexo s</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="3-Generate-static-files"><a href="#3-Generate-static-files" class="headerlink" title="3. Generate static files"></a>3. Generate static files</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo generate
+or
+$ hexo g</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="4-Deploy-to-remote-sites"><a href="#4-Deploy-to-remote-sites" class="headerlink" title="4. Deploy to remote sites"></a>4. Deploy to remote sites</h3><pre class="language-bash" data-language="bash"><code class="language-bash">$ hexo deploy
+or
+$ hexo d</code></pre>
+<h3 id="5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously"><a href="#5-Generate-static-files-and-Deploy-to-remote-sites-simultaneously" class="headerlink" title="5. Generate static files and Deploy to remote sites simultaneously"></a>5. Generate static files and Deploy to remote sites simultaneously</h3><pre class="language-none"><code class="language-none">$ hexo g -d
+hexo clean &amp;&amp; hexo douban -bgm &amp;&amp; hexo g &amp;&amp; hexo d</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="6-参考链接"><a href="#6-参考链接" class="headerlink" title="6. 参考链接"></a>6. 参考链接</h3><ul>
+<li><a href="https://juejin.im/post/5c976dbfe51d4534a068e3be">建站参考链接</a></li>
+<li><a href="https://www.jianshu.com/p/79bd6fb15790">Hexo同时部署在GitHub、Coding、Gitee</a></li>
+<li><a href="https://www.jianshu.com/p/7d3d87b52ad7">Hexo博客提交百度和Google收录参考链接</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/149843912">完全小白教程：使用Coding Pages和Gridea搭建个人博客</a></li>
+<li>自定义一个不使用主题模板渲染的独立页面 <a href="https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html">https://www.cnblogs.com/TRHX/archive/2004/01/13/11699990.html</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo command</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经验势snap的使用</title>
+    <url>/ke-yan-xue-xi/lammps/lammps-2-snap/</url>
+    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
+<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
+<pre class="language-in" data-language="in"><code class="language-in">$ pair_style snap
+$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</code></pre>
+<ol>
+<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
+</li>
+<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
+</li>
+<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
+</li>
+<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
+<pre class="language-in" data-language="in"><code class="language-in">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</code></pre>
+
+</li>
+</ol>
+<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
+<pre class="language-snapcoeff" data-language="snapcoeff"><code class="language-snapcoeff">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)
+$ # Generated by Materials Virtual Lab
+$ 1 31
+$ Mo 0.5 1
+$ -17.2757958404
+$ 0.00431015861472
+$ 0.0657685117891
+$ 0.477733335702
+$ 0.0152688837211
+$ 0.77559888196
+$ 0.284846429566
+$ 0.148804982644
+$ 0.0573702179736
+$ 0.19281989434
+$ 0.323441703578
+$ 0.101324335724
+$ 0.0139639846514
+$ -0.0324444749083
+$ 0.0349797952779
+$ 0.0613023441282
+$ 0.0881078513046
+$ 0.118716074611
+$ 0.0069662975532
+$ -0.0174658914685
+$ -0.0178902177779
+$ 0.0195993756659
+$ 0.0719238160707
+$ 0.0344832661036
+$ -0.0358616891662
+$ -0.0292380783172
+$ -0.0334933909866
+$ 0.00595462520243
+$ 0.0754556638328
+$ -0.000972545258845
+$ -0.0100170422751</code></pre>
+<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
+<ol>
+<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
+<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
+<li>下面的31行就是系数了。</li>
+</ol>
+<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
+<pre class="language-snapcoeff" data-language="snapcoeff"><code class="language-snapcoeff">$ 元素个数(n个) 系数个数
+$ 元素类型1 元素的半径 元素权重
+$ ...
+$ 系数
+$ ...
+$ 元素类型2 元素的半径 元素权重
+$ ...
+$ 系数
+$ ...
+$ ......
+$ 元素类型n 元素的半径 元素权重
+$ ...
+$ 系数
+$ ...</code></pre>
+<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
+<pre class="language-snapparam" data-language="snapparam"><code class="language-snapparam">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]
+$ # 
+$ # required
+$ rcutfac 4.73442
+$ twojmax 8
+$ 
+$ # optional
+$ 
+$ rfac0 0.99363
+$ rmin0 0
+$ bzeroflag 0
+$ quadraticflag 0</code></pre>
+<ol>
+<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
+<li>其他的为可选项，根据具体情况而定。</li>
+</ol>
+<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
+<pre class="language-in" data-language="in"><code class="language-in"># Definition of SNAP potential.
+pair_style snap
+pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo
+</code></pre>
+<p>ps:学习笔记，以供查阅。</p>
+<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
+<p>错误信息：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">cannot <span class="token function">open</span> SNAP coefficient snap</code></pre>
+<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
+<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash">Incorrect SNAP parameter <span class="token function">file</span>  <span class="token punctuation">(</span><span class="token punctuation">..</span>/pair_snap.cpp:705<span class="token punctuation">)</span><span class="token punctuation">;</span>
+The <span class="token function">file</span> cannot be parsed correctly, check its internal syntax.</code></pre>
+<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>Lammps</category>
+      </categories>
+      <tags>
+        <tag>lammps</tag>
+        <tag>snap</tag>
+        <tag>potential</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Push Everything up-to-date错误</title>
+    <url>/za-tan/git-command/gitpusherror/</url>
+    <content><![CDATA[<h3 id="1-错误信息"><a href="#1-错误信息" class="headerlink" title="1. 错误信息"></a>1. 错误信息</h3><pre class="language-none"><code class="language-none">Git Push origin master之后
+Everything up-to-date</code></pre>
+<h3 id="2-理解"><a href="#2-理解" class="headerlink" title="2. 理解"></a>2. 理解</h3><ul>
+<li><p>查了网上很多方法，最多的就是忘了<code>git add .</code>或<code>git add README.md</code>和<code>git commit -m &quot;评论&quot;</code>了，首先这个说法是正确的；</p>
+</li>
+<li><p>但是，具体操作了之后，发现，如果你改动的比较多了之后，使用<code>git add README.md</code>是不行的，它会报错说让你还要评论其他的改动；</p>
+</li>
+<li><p>如果只改动一个文件的内容，是可以使用<code>git add README.md</code>的.</p>
+</li>
+<li><p>还有种可能是，该仓库中的某个文件夹是<code>clone</code>的，里面含有多余的<code>.git</code>文件夹，删除即可。</p>
+</li>
+</ul>
+<h3 id="3-解决方法"><a href="#3-解决方法" class="headerlink" title="3. 解决方法"></a>3. 解决方法</h3><ul>
+<li>一般情况下，正确的做法是：</li>
+</ul>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">'your commits'</span>
+<span class="token function">git</span> push origin yourbranch</code></pre>
+<ul>
+<li>如果仍然无效，可能是push不了的子文件夹中含有隐藏的多余<code>.git</code>文件：<br>（1）先备份push不了的文件夹，然后删除本地仓库的push不了的文件夹，再push到远程仓库。<br>注意：这一步是先删除远程仓库中push不了的文件夹，要先备份，谨慎操作<br>（2）将备份的文件夹中的<code>.git</code>删除，然后再复制到本地仓库push,即可上传到远程仓库。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git Push Everything up-to-date</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux 汇总</title>
+    <url>/za-tan/linux/linux-1/</url>
+    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
+<li>查看空间大小：<code>df -h</code>；</li>
+<li>查看该目录下文件大小：<code>du -sh *</code></li>
+<li>查看内存使用情况：<code>free -m</code></li>
+<li>删除残余的配置文件:<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> remove <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#删除软件包</span>
+
+<span class="token function">sudo</span> <span class="token function">apt-get</span> purge <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#删除软件包以及配置文件</span></code></pre></li>
+<li>找出所删除软件包的残余配置文件<pre class="language-bash" data-language="bash"><code class="language-bash">dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token comment">#找出所删除软件包的残余配置文件</span>
+dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">" "</span> -f <span class="token number">3</span> <span class="token comment">#提取这些软件包的名称</span>
+<span class="token function">sudo</span> dpkg --purge <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#只删除某个软件包的配置文件</span>
+dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">" "</span> -f <span class="token number">3</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">sudo</span> dpkg --purge  <span class="token comment">#删除所有软件包</span></code></pre></li>
+<li>删除没有用的deb软件安装包<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">du</span> -sh /var/cache/apt/archives  <span class="token comment">#查看/var/chace/apt/archives目录下deb安装包的总大小</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> clean <span class="token comment">#删除这些deb包</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> autoclean</code></pre></li>
+<li>清理日志文件</li>
+</ol>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ncdu <span class="token comment">#安装ncdu工具</span>
+<span class="token function">sudo</span> ncdu /var/log <span class="token comment">#查看日志文件</span>
+<span class="token function">sudo</span> <span class="token function">dd</span> <span class="token assign-left variable">if</span><span class="token operator">=</span>/dev/null <span class="token assign-left variable">of</span><span class="token operator">=</span>/var/log/shadowsocks.log  <span class="token comment">#清空这个日志文件的内容</span></code></pre>
+<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
+<li><p>创建文件夹：<code>mkdir filename</code>；</p>
+</li>
+<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
+</li>
+<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
+</li>
+<li><p>删除文件；<code>rm -f filename</code></p>
+</li>
+<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
+</li>
+<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
+</li>
+<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
+</li>
+<li><p>返回上一级目录：<code>cd ..</code>；</p>
+</li>
+<li><p>显示当前工作路径：<code>pwd</code>；</p>
+</li>
+<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
+</li>
+<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
+<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
+<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
+</li>
+<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
+</li>
+</ol>
+<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
+<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
+<ol>
+<li><p>删除’/dev/loop0…’文件:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> purge snapd</code></pre></li>
+<li><p>开启ssh:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> openssh-server
+<span class="token function">service</span> <span class="token function">ssh</span> start</code></pre></li>
+<li><p>查看已设环境变量:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token environment constant">$PATH</span></code></pre></li>
+<li><p>设置临时环境变量:</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/usr/local/<span class="token punctuation">..</span>./bin:<span class="token environment constant">$PATH</span><span class="token punctuation">;</span><span class="token builtin class-name">export</span> <span class="token environment constant">PATH</span></code></pre></li>
+<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件或者<code>~/。brashrc</code>最后加上环境变量: </p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/usr/local/mpich-3.3.2/bin:<span class="token environment constant">$PATH</span>"</span></code></pre>
+<blockquote>
+<p>5.1 具体操作：</p>
+</blockquote>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> /etc/profile
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/usr/local/mpich-3.3.2/bin:<span class="token environment constant">$PATH</span>"</span>
+Esc（键盘）
+:wq 或（快捷键）shift+ZZ 保存并退出；
+:q 不保存退出
+:q<span class="token operator">!</span> 强制退出
+<span class="token builtin class-name">source</span> /etc/profile<span class="token punctuation">(</span>使生效<span class="token punctuation">)</span></code></pre></li>
+<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
+</li>
+<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
+</li>
+<li><p>top命令</p>
+</li>
+</ol>
+<ul>
+<li>Linux查看cpu总数，在top后的界面按1，or<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> processor</code></pre></li>
+<li>查看进程绝对路径<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">top</span> c</code></pre></li>
+</ul>
+<ol start="9">
+<li><p>ubuntu清理缓存</p>
+<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> autoclean     <span class="token comment">#清理旧版本软件缓存</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> clean         <span class="token comment">#清理所有软件缓存</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> autoremove    <span class="token comment">#删除系统不再使用孤立软件</span></code></pre>
+<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4></li>
+<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
+<blockquote>
+<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
+</blockquote>
+</li>
+<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt </code><br><code>nvcc -V</code></p>
+</li>
+<li><p>虚拟机不显示ip地址的解决方法：</p>
+</li>
+</ol>
+<ul>
+<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
+<li>然后即可查看ip:<code>ifconfig</code></li>
+</ul>
+<ol start="4">
+<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
+<li>双系统教程： <a href="https://www.cnblogs.com/masbay/p/10745170.html">https://www.cnblogs.com/masbay/p/10745170.html</a></li>
+</ol>
+<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
+<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
+<blockquote>
+<p>在linux启动和终止matlab</p>
+</blockquote>
+<pre class="language-bash" data-language="bash"><code class="language-bash">matlab -nodesktop -nosplash -r matlabfile<span class="token punctuation">(</span>parameters<span class="token punctuation">)</span>
+<span class="token builtin class-name">exit</span></code></pre>
+<ol start="3">
+<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
+</ol>
+<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
+<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
+<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
+<li>配置<pre class="language-bash" data-language="bash"><code class="language-bash">./configure  --enable-type-prefix --prefix<span class="token operator">=</span>/usr/local/fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared<span class="token operator">=</span>yes
+<span class="token function">sudo</span> <span class="token function">make</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+<span class="token function">make</span> clean</code></pre></li>
+<li>重新编译<pre class="language-bash" data-language="bash"><code class="language-bash">./configure --enable-float --enable-type-prefix --prefix<span class="token operator">=</span>/usr/local/fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared<span class="token operator">=</span>yes
+<span class="token function">sudo</span> <span class="token function">make</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span></code></pre>
+参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></li>
+</ol>
+<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
+<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux Command</tag>
+        <tag>matlab</tag>
+        <tag>alamode</tag>
       </tags>
   </entry>
   <entry>
@@ -587,121 +849,20 @@ S  S  S </code></pre></li>
       </tags>
   </entry>
   <entry>
-    <title>经验势snap的使用</title>
-    <url>/ke-yan-xue-xi/lammps/lammps-2-snap/</url>
-    <content><![CDATA[<p>SNAP(spectral neighbor analysis potential)是一个用于lammps的经验势，具体的信息<a href="https://lammps.sandia.gov/doc/pair_snap.html">在这</a>可以找到。</p>
-<h3 id="一、栗子"><a href="#一、栗子" class="headerlink" title="一、栗子"></a><strong>一、栗子</strong></h3><p>官网举的是“磷化铟”的栗子：</p>
-<pre class="language-in" data-language="in"><code class="language-in">$ pair_style snap
-$ pair_coeff * * InP.snapcoeff InP.snapparam In In P P</code></pre>
-<ol>
-<li><p>第一行应该很明了了，就是个指定potential的style的。</p>
-</li>
-<li><p>第二行指定了snap potential的参数文件，其中两个星号* *，表示后面的系数和参数要用到所有原子类型；</p>
-</li>
-<li><p>InP.snapcoeff，是系数文件 InP.snapparam，是参数文件；接着后面就是原子类型</p>
-</li>
-<li><p>我个人在使用的时候发现,如果要和其他经验势混合使用的话，在星号后面是要添加个snap字样的，例如：</p>
-<pre class="language-in" data-language="in"><code class="language-in">$ pair_coeff * * snap InP.snapcoeff InP.snapparam In In P P</code></pre>
+    <title>Ovito</title>
+    <url>/ke-yan-xue-xi/ovito/ovito/</url>
+    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
+<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/OVITO-1.png" alt="Display" border="0" />
 
-</li>
-</ol>
-<h3 id="二、InP-snapcoeff-系数文件"><a href="#二、InP-snapcoeff-系数文件" class="headerlink" title="二、InP.snapcoeff 系数文件"></a><strong>二、InP.snapcoeff 系数文件</strong></h3><p>文件内容类似：</p>
-<pre class="language-snapcoeff" data-language="snapcoeff"><code class="language-snapcoeff">$ # DATE: 2017-09-18 CONTRIBUTOR: Chi Chen &lt;chc273@eng.ucsd.edu&gt; CITATION: C. Chen, Z. Deng, R. Tran, H. Tang, I.-H. Chu, S. P. Ong, &quot;Accurate force field for molybdenum by machine learning large materials data&quot; Physical Review Materials 1, 04 3603 (2017)
-$ # Generated by Materials Virtual Lab
-$ 1 31
-$ Mo 0.5 1
-$ -17.2757958404
-$ 0.00431015861472
-$ 0.0657685117891
-$ 0.477733335702
-$ 0.0152688837211
-$ 0.77559888196
-$ 0.284846429566
-$ 0.148804982644
-$ 0.0573702179736
-$ 0.19281989434
-$ 0.323441703578
-$ 0.101324335724
-$ 0.0139639846514
-$ -0.0324444749083
-$ 0.0349797952779
-$ 0.0613023441282
-$ 0.0881078513046
-$ 0.118716074611
-$ 0.0069662975532
-$ -0.0174658914685
-$ -0.0178902177779
-$ 0.0195993756659
-$ 0.0719238160707
-$ 0.0344832661036
-$ -0.0358616891662
-$ -0.0292380783172
-$ -0.0334933909866
-$ 0.00595462520243
-$ 0.0754556638328
-$ -0.000972545258845
-$ -0.0100170422751</code></pre>
-<p>在lammps文件夹(Examples/snap)里直接可以找到,</p>
-<ol>
-<li>这里的第三行（有效行第三行及以后）包含两个整数：元素个数（这里是1个Mo）、系数个数（这里是31个，也即是下面的31行数）</li>
-<li>第四行的话包含三个元素：元素类型（这里是Mo原子）、元素的半径（这里是0.5）、元素权重</li>
-<li>下面的31行就是系数了。</li>
-</ol>
-<h4 id="补充1"><a href="#补充1" class="headerlink" title="补充1"></a><strong>补充1</strong></h4><p>这个栗子是只有一类原子，如果有两类或者多类的话，按照上面的第四行到最后的格式重复格式就行了，也就是说除了注释行，这个系数文件的格式是这样的：</p>
-<pre class="language-snapcoeff" data-language="snapcoeff"><code class="language-snapcoeff">$ 元素个数(n个) 系数个数
-$ 元素类型1 元素的半径 元素权重
-$ ...
-$ 系数
-$ ...
-$ 元素类型2 元素的半径 元素权重
-$ ...
-$ 系数
-$ ...
-$ ......
-$ 元素类型n 元素的半径 元素权重
-$ ...
-$ 系数
-$ ...</code></pre>
-<h3 id="三、InP-snapparam-参数文件"><a href="#三、InP-snapparam-参数文件" class="headerlink" title="三、InP.snapparam 参数文件"></a><strong>三、InP.snapparam 参数文件</strong></h3><p>类似：</p>
-<pre class="language-snapparam" data-language="snapparam"><code class="language-snapparam">$ # DATE: 2017-02-20 CONTRIBUTOR: Mitchell Wood mitwood@sandia.gov CITATION: Wood, M. A. and Thompson, A. P. &quot;Quantum-Accurate Molecular Dynamics Potential for Tungsten&quot; arXiv:1702.07042 [physics.comp-ph]
-$ # 
-$ # required
-$ rcutfac 4.73442
-$ twojmax 8
-$ 
-$ # optional
-$ 
-$ rfac0 0.99363
-$ rmin0 0
-$ bzeroflag 0
-$ quadraticflag 0</code></pre>
-<ol>
-<li>其中“rcutfac”和“twojmax”是必需的项；具体的信息去<a href="https://lammps.sandia.gov/doc/pair_snap.html">探索</a></li>
-<li>其他的为可选项，根据具体情况而定。</li>
-</ol>
-<h4 id="补充2："><a href="#补充2：" class="headerlink" title="补充2："></a><strong>补充2：</strong></h4><p>按照上面的例子，可以把以下内容写到一个文件里，如xxx.snap，再lammps input file中通过include xxx.snap 调用，也可以直接写在input file里。</p>
-<pre class="language-in" data-language="in"><code class="language-in"># Definition of SNAP potential.
-pair_style snap
-pair_coeff * * Mo_Chen_PRM2017.snapcoeff Mo_Chen_PRM2017.snapparam Mo
-</code></pre>
-<p>ps:学习笔记，以供查阅。</p>
-<h4 id="四、snap使用常见错误解决方法："><a href="#四、snap使用常见错误解决方法：" class="headerlink" title="四、snap使用常见错误解决方法："></a><strong>四、snap使用常见错误解决方法：</strong></h4><p><strong>1. cannot open SNAP coefficient snap</strong></p>
-<p>错误信息：</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash">cannot <span class="token function">open</span> SNAP coefficient snap</code></pre>
-<p>解决方法：<br>这是因为在只使用snap时(没有与其他势函数混合使用)，不需要在pair_coeff 后面第一个加上snap，不然它会把snap当作是snap coefficient file, so, can’t open this file.</p>
-<p><strong>2. Incorrect SNAP parameter file</strong><br>错误信息：</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash">Incorrect SNAP parameter <span class="token function">file</span>  <span class="token punctuation">(</span><span class="token punctuation">..</span>/pair_snap.cpp:705<span class="token punctuation">)</span><span class="token punctuation">;</span>
-The <span class="token function">file</span> cannot be parsed correctly, check its internal syntax.</code></pre>
-<p>解决方法：<br>这是因为在SNAP parammeter file 中，存在一个或多个参数在lammps snap package 中不存在，也即是“The file cannot be parsed correctly, check its internal syntax.”内部语法错误，找到pair_snap.cpp中705行，检查自己的SNAP parameter file 是否存在多余的参数，比如“diagonalstyle”，这个参数在2020版lammps是没有的，在之前的版本是有的,比如2018版。</p>
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>Lammps</category>
+        <category>Ovito</category>
       </categories>
       <tags>
-        <tag>lammps</tag>
-        <tag>potential</tag>
-        <tag>snap</tag>
+        <tag>Ovito</tag>
       </tags>
   </entry>
   <entry>
@@ -737,237 +898,6 @@ The <span class="token function">file</span> cannot be parsed correctly, check i
       </tags>
   </entry>
   <entry>
-    <title>Linux 汇总</title>
-    <url>/za-tan/linux/linux-1/</url>
-    <content><![CDATA[<h4 id="一、空间"><a href="#一、空间" class="headerlink" title="一、空间"></a>一、空间</h4><ol>
-<li>查看空间大小：<code>df -h</code>；</li>
-<li>查看该目录下文件大小：<code>du -sh *</code></li>
-<li>查看内存使用情况：<code>free -m</code></li>
-<li>删除残余的配置文件:<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> remove <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#删除软件包</span>
-
-<span class="token function">sudo</span> <span class="token function">apt-get</span> purge <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#删除软件包以及配置文件</span></code></pre></li>
-<li>找出所删除软件包的残余配置文件<pre class="language-bash" data-language="bash"><code class="language-bash">dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token comment">#找出所删除软件包的残余配置文件</span>
-dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">" "</span> -f <span class="token number">3</span> <span class="token comment">#提取这些软件包的名称</span>
-<span class="token function">sudo</span> dpkg --purge <span class="token operator">&lt;</span>package-name<span class="token operator">></span> <span class="token comment">#只删除某个软件包的配置文件</span>
-dpkg --list <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^rc"</span> <span class="token operator">|</span> <span class="token function">cut</span> -d <span class="token string">" "</span> -f <span class="token number">3</span> <span class="token operator">|</span> <span class="token function">xargs</span> <span class="token function">sudo</span> dpkg --purge  <span class="token comment">#删除所有软件包</span></code></pre></li>
-<li>删除没有用的deb软件安装包<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">du</span> -sh /var/cache/apt/archives  <span class="token comment">#查看/var/chace/apt/archives目录下deb安装包的总大小</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> clean <span class="token comment">#删除这些deb包</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> autoclean</code></pre></li>
-<li>清理日志文件</li>
-</ol>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> ncdu <span class="token comment">#安装ncdu工具</span>
-<span class="token function">sudo</span> ncdu /var/log <span class="token comment">#查看日志文件</span>
-<span class="token function">sudo</span> <span class="token function">dd</span> <span class="token assign-left variable">if</span><span class="token operator">=</span>/dev/null <span class="token assign-left variable">of</span><span class="token operator">=</span>/var/log/shadowsocks.log  <span class="token comment">#清空这个日志文件的内容</span></code></pre>
-<h4 id="二、文件夹"><a href="#二、文件夹" class="headerlink" title="二、文件夹"></a>二、文件夹</h4><ol>
-<li><p>创建文件夹：<code>mkdir filename</code>；</p>
-</li>
-<li><p>还可以同时创建两个文件夹：<code>mkdir file1 file2</code>；</p>
-</li>
-<li><p>创建一个包含路径的文件夹：<code>mkdir -p /home/file/file1</code></p>
-</li>
-<li><p>删除文件；<code>rm -f filename</code></p>
-</li>
-<li><p>删除空文件夹：<code>rmdir foldername</code>；</p>
-</li>
-<li><p>删除有文件的文件夹：<code>rm -rf foldername</code>；</p>
-</li>
-<li><p>同时删除两个有文件的文件夹：<code>rm -rf folder1 folder2</code>；</p>
-</li>
-<li><p>返回上一级目录：<code>cd ..</code>；</p>
-</li>
-<li><p>显示当前工作路径：<code>pwd</code>；</p>
-</li>
-<li><p>查看当前目录中的文件/文件夹<code>ls</code>；</p>
-</li>
-<li><p>复制一个目录到另一个目录下:<code>cp -r dir1 dir2</code></p>
-<h4 id="三、解压"><a href="#三、解压" class="headerlink" title="三、解压"></a>三、解压</h4></li>
-<li><p>解压<code>&quot;.tar.gz&quot;</code>：<code>tar -zxvf filename.tar.gz</code>;</p>
-</li>
-<li><p>解压<code>&quot;.zip&quot;</code>：<code>unzip filename.zip</code>;</p>
-</li>
-</ol>
-<p>更多参考：<br><a href="https://www.cnblogs.com/yjd_hycf_space/p/7730690.html">https://www.cnblogs.com/yjd_hycf_space/p/7730690.html</a></p>
-<h4 id="四、常用"><a href="#四、常用" class="headerlink" title="四、常用"></a>四、常用</h4><p>Ubuntu:</p>
-<ol>
-<li><p>删除’/dev/loop0…’文件:</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> purge snapd</code></pre></li>
-<li><p>开启ssh:</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> openssh-server
-<span class="token function">service</span> <span class="token function">ssh</span> start</code></pre></li>
-<li><p>查看已设环境变量:</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token environment constant">$PATH</span></code></pre></li>
-<li><p>设置临时环境变量:</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span>/usr/local/<span class="token punctuation">..</span>./bin:<span class="token environment constant">$PATH</span><span class="token punctuation">;</span><span class="token builtin class-name">export</span> <span class="token environment constant">PATH</span></code></pre></li>
-<li><p>设置永久环境变量: 在root后修改<code>/etc/profile</code>文件，在profile文件或者<code>~/。brashrc</code>最后加上环境变量: </p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/usr/local/mpich-3.3.2/bin:<span class="token environment constant">$PATH</span>"</span></code></pre>
-<blockquote>
-<p>5.1 具体操作：</p>
-</blockquote>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">vim</span> /etc/profile
-<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token string">"/usr/local/mpich-3.3.2/bin:<span class="token environment constant">$PATH</span>"</span>
-Esc（键盘）
-:wq 或（快捷键）shift+ZZ 保存并退出；
-:q 不保存退出
-:q<span class="token operator">!</span> 强制退出
-<span class="token builtin class-name">source</span> /etc/profile<span class="token punctuation">(</span>使生效<span class="token punctuation">)</span></code></pre></li>
-<li><p>显示隐藏文件夹：<br>快捷键<code>ctrl h</code><br>命令<code>ls -a</code></p>
-</li>
-<li><p>conda启动与关闭<br>启动：<code>conda activate</code><br>关闭：<code>conda deactivate</code><br>关闭自动开启base:<code>conda config --set auto_activate_base false</code></p>
-</li>
-<li><p>top命令</p>
-</li>
-</ol>
-<ul>
-<li>Linux查看cpu总数，在top后的界面按1，or<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> processor</code></pre></li>
-<li>查看进程绝对路径<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">top</span> c</code></pre></li>
-</ul>
-<ol start="9">
-<li><p>ubuntu清理缓存</p>
-<pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> autoclean     <span class="token comment">#清理旧版本软件缓存</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> clean         <span class="token comment">#清理所有软件缓存</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> autoremove    <span class="token comment">#删除系统不再使用孤立软件</span></code></pre>
-<h4 id="五、其他"><a href="#五、其他" class="headerlink" title="五、其他"></a>五、其他</h4></li>
-<li><p>CUDA driver version is insufficient for CUDA runtime version</p>
-<blockquote>
-<p>NVIDIA GPU的驱动程序版本查看命令：<code>nvidia-smi</code><br>CUDA runtime version（运行时版本）：是在python中安装的cudatoolkit和cudnn程序包的版本<br>查看命令：pip list</p>
-</blockquote>
-</li>
-<li><p>查看cuda当前版本<br><code>cat  /usr/local/cuda/version.txt </code><br><code>nvcc -V</code></p>
-</li>
-<li><p>虚拟机不显示ip地址的解决方法：</p>
-</li>
-</ol>
-<ul>
-<li>在root下：<code>dhclient -v</code>;或者ubuntu下：<code>sudo dhclient -v</code></li>
-<li>然后即可查看ip:<code>ifconfig</code></li>
-</ul>
-<ol start="4">
-<li>远程vpn虚拟机ping不通，很有可能是因为虚拟机没有联网。</li>
-<li>双系统教程： <a href="https://www.cnblogs.com/masbay/p/10745170.html">https://www.cnblogs.com/masbay/p/10745170.html</a></li>
-</ol>
-<h4 id="六、Linux环境软件安装汇总"><a href="#六、Linux环境软件安装汇总" class="headerlink" title="六、Linux环境软件安装汇总"></a>六、Linux环境软件安装汇总</h4><h5 id="1-alamode安装参考"><a href="#1-alamode安装参考" class="headerlink" title="1. alamode安装参考"></a><strong>1. alamode安装参考</strong></h5><p><a href="https://zhuanlan.zhihu.com/p/145873368">https://zhuanlan.zhihu.com/p/145873368</a></p>
-<h5 id="2-linux安装MATLAB步骤参考"><a href="#2-linux安装MATLAB步骤参考" class="headerlink" title="2. linux安装MATLAB步骤参考"></a><strong>2. linux安装MATLAB步骤参考</strong></h5><p> <a href="https://www.cnblogs.com/sixuwuxian/p/12512275.html">https://www.cnblogs.com/sixuwuxian/p/12512275.html</a><br> <a href="https://blog.csdn.net/y1556368418/article/details/82586618">https://blog.csdn.net/y1556368418/article/details/82586618</a><br> <a href="https://blog.csdn.net/sinat_33425327/article/details/79125745">https://blog.csdn.net/sinat_33425327/article/details/79125745</a><br> <a href="https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228">https://blog.csdn.net/Xiao_Song_PKU/article/details/82700228</a><br> <a href="https://www.41sh.cn/?id=74">https://www.41sh.cn/?id=74</a></p>
-<blockquote>
-<p>在linux启动和终止matlab</p>
-</blockquote>
-<pre class="language-bash" data-language="bash"><code class="language-bash">matlab -nodesktop -nosplash -r matlabfile<span class="token punctuation">(</span>parameters<span class="token punctuation">)</span>
-<span class="token builtin class-name">exit</span></code></pre>
-<ol start="3">
-<li>解决ImportError: No module named tkinter的问题以及Tkinter在py2和py3中的使用差别<br>参考<a href="https://www.jianshu.com/p/488ff433bbfa">https://www.jianshu.com/p/488ff433bbfa</a><br>链接：<a href="https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ">https://pan.baidu.com/s/1osJnxAD5mxXDiAmw6ZEBVQ</a><br>提取码：858v<br>复制这段内容后打开百度网盘手机App，操作更方便哦</li>
-</ol>
-<h5 id="3-LINUX系统安装FFTW数学库"><a href="#3-LINUX系统安装FFTW数学库" class="headerlink" title="3. LINUX系统安装FFTW数学库"></a><strong>3. LINUX系统安装FFTW数学库</strong></h5><ol>
-<li>官网下载(<a href="http://www.fftw.org/download.html">http://www.fftw.org/download.html</a>)</li>
-<li>解压并cd到该文件夹<br><code>tar zxvf fftw-3.3.8.tar.gz</code></li>
-<li>配置<pre class="language-bash" data-language="bash"><code class="language-bash">./configure  --enable-type-prefix --prefix<span class="token operator">=</span>/usr/local/fftw --with-gcc --disable-fortran --enable-i386-hacks --enable-shared<span class="token operator">=</span>yes
-<span class="token function">sudo</span> <span class="token function">make</span>
-<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
-<span class="token function">make</span> clean</code></pre></li>
-<li>重新编译<pre class="language-bash" data-language="bash"><code class="language-bash">./configure --enable-float --enable-type-prefix --prefix<span class="token operator">=</span>/usr/local/fftw --with-gcc --enable-fortran --enable-i386-hacks --enable-shared<span class="token operator">=</span>yes
-<span class="token function">sudo</span> <span class="token function">make</span>
-<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span></code></pre>
-参考链接：<br><a href="https://www.cnblogs.com/lifan3a/articles/12502261.html">https://www.cnblogs.com/lifan3a/articles/12502261.html</a><br><a href="https://blog.csdn.net/tuzanbo/article/details/75309647">https://blog.csdn.net/tuzanbo/article/details/75309647</a></li>
-</ol>
-<h5 id="4-LINUX系统安装LAMMPS、VASP"><a href="#4-LINUX系统安装LAMMPS、VASP" class="headerlink" title="4. LINUX系统安装LAMMPS、VASP"></a><strong>4. LINUX系统安装LAMMPS、VASP</strong></h5><p><strong>LAMMPS</strong><br>参考:<a href="https://cloud.tencent.com/developer/article/1484595">https://cloud.tencent.com/developer/article/1484595</a></p>
-<p><strong>VASP</strong><br>参考:<a href="https://www.bilibili.com/read/cv3794759/">https://www.bilibili.com/read/cv3794759/</a><br>VASP资料<br><a href="https://www.vasp.at/">VASP</a><br><a href="http://theory.cm.utexas.edu/henkelman/">HenkelmanGroup</a><br><a href="https://sourceforge.net/projects/vaspkit/files/">VASPkit:VASP计算前后处理，功能强大</a></p>
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux Command</tag>
-        <tag>matlab</tag>
-        <tag>alamode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ovito</title>
-    <url>/ke-yan-xue-xi/ovito/ovito/</url>
-    <content><![CDATA[<h4 id="1-去掉盒子"><a href="#1-去掉盒子" class="headerlink" title="1. 去掉盒子"></a>1. 去掉盒子</h4><ul>
-<li>直接把<code>Display</code>下的<code>Simulation Cell</code>前的框框里的<code>√</code>去掉即可。</li>
-</ul>
-<img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/OVITO-1.png" alt="Display" border="0" />
-
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Ovito</category>
-      </categories>
-      <tags>
-        <tag>Ovito</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 画双y轴</title>
-    <url>/ke-yan-xue-xi/origin/origin-1/</url>
-    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
-<li>选中数据并，plot&gt;line 画出图</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure1</td>
-<td>figure2</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure1.JPG" width="100%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure2.JPG" width="80%"></td>
-</tr>
-</tbody></table>
-<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
-<li>如图figure3,可以得到figure4–双y轴</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure3</td>
-<td>figure4</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure3.jpg" width="80%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure4.JPG" width="100%"></td>
-</tr>
-</tbody></table>
-<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
-<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
-<li>调一下格式就可以得到最后的图片</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>figure5</td>
-<td>figure6</td>
-</tr>
-<tr>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure5.JPG" width="100%"></td>
-<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure6.JPG" width="100%"></td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>Origin</category>
-      </categories>
-      <tags>
-        <tag>origin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Origin Integrate</title>
     <url>/ke-yan-xue-xi/origin/origin-2/</url>
     <content><![CDATA[<h5 id="积分"><a href="#积分" class="headerlink" title="积分"></a>积分</h5><ul>
@@ -998,6 +928,50 @@ Esc（键盘）
       </categories>
       <tags>
         <tag>origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过 Matlibplot 给曲线自定义绘色</title>
+    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
+    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
+
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
+
+points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
+
+norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
+lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
+lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
+fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
+</ul>
+<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
+
+<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
+]]></content>
+      <categories>
+        <category>编程语言</category>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Matlibplot</tag>
       </tags>
   </entry>
   <entry>
@@ -1117,50 +1091,6 @@ turtle<span class="token punctuation">.</span>done<span class="token punctuation
       </tags>
   </entry>
   <entry>
-    <title>通过 Matlibplot 给曲线自定义绘色</title>
-    <url>/bian-cheng-yu-yan/python/pyplot-1/</url>
-    <content><![CDATA[<h4 id="1-Code"><a href="#1-Code" class="headerlink" title="1. Code"></a><strong>1. Code</strong></h4><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>collections <span class="token keyword">import</span> LineCollection
-
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span>
-y <span class="token operator">=</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
-z <span class="token operator">=</span> np<span class="token punctuation">.</span>cos<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token comment">#上色数据</span>
-
-points <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>T<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
-segments <span class="token operator">=</span> np<span class="token punctuation">.</span>concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span>points<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> points<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
-
-fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-fig<span class="token punctuation">.</span>subplots_adjust<span class="token punctuation">(</span>bottom<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">,</span>left<span class="token operator">=</span><span class="token number">0.2</span><span class="token punctuation">)</span><span class="token comment">##调整边界</span>
-
-norm <span class="token operator">=</span> plt<span class="token punctuation">.</span>Normalize<span class="token punctuation">(</span><span class="token builtin">min</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token builtin">max</span><span class="token punctuation">(</span>z<span class="token punctuation">)</span><span class="token punctuation">)</span>
-lc <span class="token operator">=</span> LineCollection<span class="token punctuation">(</span>segments<span class="token punctuation">,</span>cmap<span class="token operator">=</span><span class="token string">'jet'</span><span class="token punctuation">,</span>norm<span class="token operator">=</span>norm<span class="token punctuation">)</span>
-lc<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>z<span class="token punctuation">)</span>
-lc<span class="token punctuation">.</span>set_linewidth<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
-line <span class="token operator">=</span> ax<span class="token punctuation">.</span>add_collection<span class="token punctuation">(</span>lc<span class="token punctuation">)</span>
-fig<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>line<span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token operator">*</span>np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>savefig<span class="token punctuation">(</span><span class="token string">'fig1.png'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
-<ul>
-<li>如果想要画很多曲线的上色，其实只要一个循环就可以了，这里不赘述。</li>
-</ul>
-<h3 id="2-Figure"><a href="#2-Figure" class="headerlink" title="2. Figure"></a><strong>2. Figure</strong></h3><img src="https://s1.ax1x.com/2020/08/27/dhFFdU.png" alt="Figure" border="0" />
-
-<h3 id="3-Ref"><a href="#3-Ref" class="headerlink" title="3. Ref."></a><strong>3. Ref.</strong></h3><p><a href="https://www.matplotlib.org.cn/">参考</a></p>
-]]></content>
-      <categories>
-        <category>编程语言</category>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Matlibplot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python常用</title>
     <url>/bian-cheng-yu-yan/python/python3/</url>
     <content><![CDATA[<ul>
@@ -1207,63 +1137,73 @@ path<span class="token operator">=</span>os<span class="token punctuation">.</sp
       </tags>
   </entry>
   <entry>
-    <title>Git Command-branch</title>
-    <url>/za-tan/git-command/git-command/</url>
-    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch xxx   <span class="token comment">#xxx 分支名，第一种方法</span>
-$ <span class="token function">git</span> checkout -b xxx <span class="token comment">#第二种方法</span></code></pre>
-</code></pre>
-<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin xxx</code></pre>
-</code></pre>
-<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -D xxx</code></pre>
-</code></pre>
-<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin --delete xxx</code></pre>
-</code></pre>
-<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -a</code></pre>
-</code></pre>
-<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch </code></pre>
-</code></pre>
-<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout xxx</code></pre>
-</code></pre>
-<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout --orphan xxx <span class="token comment">#创建本地分支并进入到该分支</span>
-$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#删除该分支的所有内容</span>
-
-$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> 
-$ <span class="token function">git</span> commit -am <span class="token string">"评论内容"</span>
-$ <span class="token function">git</span> push origin xxx
-$ <span class="token function">git</span> pull
-$ <span class="token function">git</span> clone git@github.com:yourname/yourname.github.io.git <span class="token comment">#cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span>
-$ <span class="token function">git</span> checkout xxx <span class="token comment">#进入clone下来的yourname.github.io，切换到要清空的分支</span>
-$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span></code></pre>
-</code></pre>
-<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> <span class="token comment">#cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span>
-$ <span class="token function">git</span> commit -m <span class="token string">"blog source code"</span>
-或者一步到位：
-$ <span class="token function">git</span> commit -a -m <span class="token string">"blog source code"</span>
-$ <span class="token function">git</span> push origin xxx <span class="token comment">#如果不成功执行下一条</span>
-$ <span class="token function">git</span> push origin xxx -f <span class="token comment">#不管3721直接push，谨慎操作。</span></code></pre>
-</code></pre>
-<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:yourname/yourname.github.io.git  <span class="token comment">#(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span></code></pre>
-</code></pre>
-<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">mkdir</span> foldername <span class="token comment">#创建文件夹</span>
-$ <span class="token function">git</span> merge yourbranch <span class="token comment"># 把分支合并到master</span>
-$ <span class="token function">git</span> reset --merge <span class="token comment">#退回合并前</span>
-</code></pre>
-</code></pre>
-<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
-<li>可以命令查看用户名：<code>git config user.name</code></li>
-<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
-<li>查看邮箱：<code>git config user.email</code></li>
-<li>查看配置信息：<code>git config --list</code></li>
-<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+    <title>Origin 画双y轴</title>
+    <url>/ke-yan-xue-xi/origin/origin-1/</url>
+    <content><![CDATA[<h5 id="1-首先画一个单y轴"><a href="#1-首先画一个单y轴" class="headerlink" title="1. 首先画一个单y轴"></a>1. 首先画一个单y轴</h5><ul>
+<li>选中数据并，plot&gt;line 画出图</li>
 </ul>
-<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure1</td>
+<td>figure2</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure1.JPG" width="100%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure2.JPG" width="80%"></td>
+</tr>
+</tbody></table>
+<h5 id="2-然后插入另一个坐标轴"><a href="#2-然后插入另一个坐标轴" class="headerlink" title="2. 然后插入另一个坐标轴"></a>2. 然后插入另一个坐标轴</h5><ul>
+<li>如图figure3,可以得到figure4–双y轴</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure3</td>
+<td>figure4</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure3.jpg" width="80%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure4.JPG" width="100%"></td>
+</tr>
+</tbody></table>
+<h5 id="3-插入数据，并调格式得到完美的双y轴图片"><a href="#3-插入数据，并调格式得到完美的双y轴图片" class="headerlink" title="3. 插入数据，并调格式得到完美的双y轴图片"></a>3. 插入数据，并调格式得到完美的双y轴图片</h5><ul>
+<li>右键，选中figure5中的 Layer Contents,选择要画的数据</li>
+<li>调一下格式就可以得到最后的图片</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>figure5</td>
+<td>figure6</td>
+</tr>
+<tr>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure5.JPG" width="100%"></td>
+<td><img src="https://cdn.jsdelivr.net/gh/eastsheng/PicGoImg/Figures/Blog/figure6.JPG" width="100%"></td>
+</tr>
+</tbody></table>
 ]]></content>
       <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
+        <category>科研学习</category>
+        <category>Origin</category>
       </categories>
       <tags>
-        <tag>Git command-branch</tag>
+        <tag>origin</tag>
       </tags>
   </entry>
   <entry>
@@ -1402,29 +1342,6 @@ Aborted (core dumped)</code></pre>
       </tags>
   </entry>
   <entry>
-    <title>Git Command-delete file</title>
-    <url>/za-tan/git-command/git-delfile/</url>
-    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout yourbranch</code></pre>
-<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> yourfile
-or
-<span class="token function">git</span> <span class="token function">rm</span> -r yourfolder/
-</code></pre>
-<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"your modify comment"</span>
-</code></pre>
-<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin yourbranch
-</code></pre>
-
-
-]]></content>
-      <categories>
-        <category>杂谈</category>
-        <category>Git Command</category>
-      </categories>
-      <tags>
-        <tag>Git delete file</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GPUMD学习</title>
     <url>/ke-yan-xue-xi/gpumd/gpumd-1/</url>
     <content><![CDATA[<h4 id="GPUMD-xyz-in（data）文件的格式解读"><a href="#GPUMD-xyz-in（data）文件的格式解读" class="headerlink" title="GPUMD xyz.in（data）文件的格式解读"></a>GPUMD xyz.in（data）文件的格式解读</h4><ul>
@@ -1494,6 +1411,89 @@ if (num_bins &gt; N) &#123;
       </categories>
       <tags>
         <tag>mklink</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-delete file</title>
+    <url>/za-tan/git-command/git-delfile/</url>
+    <content><![CDATA[<h4 id="1-首先-Git-bash-进入到本地仓库"><a href="#1-首先-Git-bash-进入到本地仓库" class="headerlink" title="1. 首先 Git bash 进入到本地仓库"></a><strong>1. 首先 Git bash 进入到本地仓库</strong></h4><h4 id="2-切换到要删除文件所在分支："><a href="#2-切换到要删除文件所在分支：" class="headerlink" title="2. 切换到要删除文件所在分支："></a><strong>2. 切换到要删除文件所在分支：</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout yourbranch</code></pre>
+<h4 id="3-先删除本地仓库里的文件或文件夹"><a href="#3-先删除本地仓库里的文件或文件夹" class="headerlink" title="3. 先删除本地仓库里的文件或文件夹"></a><strong>3. 先删除本地仓库里的文件或文件夹</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">rm</span> yourfile
+or
+<span class="token function">git</span> <span class="token function">rm</span> -r yourfolder/
+</code></pre>
+<h4 id="4-添加评论"><a href="#4-添加评论" class="headerlink" title="4. 添加评论"></a><strong>4. 添加评论</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"your modify comment"</span>
+</code></pre>
+<h4 id="5-push到GitHub远程仓库"><a href="#5-push到GitHub远程仓库" class="headerlink" title="5. push到GitHub远程仓库"></a><strong>5. push到GitHub远程仓库</strong></h4><pre class="language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin yourbranch
+</code></pre>
+
+
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git delete file</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git Command-branch</title>
+    <url>/za-tan/git-command/git-command/</url>
+    <content><![CDATA[<h5 id="1-创建本地分支"><a href="#1-创建本地分支" class="headerlink" title="1. 创建本地分支"></a>1. 创建本地分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch xxx   <span class="token comment">#xxx 分支名，第一种方法</span>
+$ <span class="token function">git</span> checkout -b xxx <span class="token comment">#第二种方法</span></code></pre>
+</code></pre>
+<h5 id="2-远程创建分支"><a href="#2-远程创建分支" class="headerlink" title="2. 远程创建分支"></a>2. 远程创建分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin xxx</code></pre>
+</code></pre>
+<h5 id="3-删除分支"><a href="#3-删除分支" class="headerlink" title="3. 删除分支"></a>3. 删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -D xxx</code></pre>
+</code></pre>
+<h5 id="4-远程删除分支"><a href="#4-远程删除分支" class="headerlink" title="4. 远程删除分支"></a>4. 远程删除分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin --delete xxx</code></pre>
+</code></pre>
+<h5 id="5-查看所有分支-包括远程分支"><a href="#5-查看所有分支-包括远程分支" class="headerlink" title="5. 查看所有分支(包括远程分支)"></a>5. 查看所有分支(包括远程分支)</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch -a</code></pre>
+</code></pre>
+<h5 id="6-查看分支状态"><a href="#6-查看分支状态" class="headerlink" title="6. 查看分支状态"></a>6. 查看分支状态</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> branch </code></pre>
+</code></pre>
+<h5 id="7-切换分支"><a href="#7-切换分支" class="headerlink" title="7. 切换分支"></a>7. 切换分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout xxx</code></pre>
+</code></pre>
+<h5 id="8-创建一个空白分支"><a href="#8-创建一个空白分支" class="headerlink" title="8. 创建一个空白分支"></a>8. 创建一个空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> checkout --orphan xxx <span class="token comment">#创建本地分支并进入到该分支</span>
+$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#删除该分支的所有内容</span>
+
+$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> 
+$ <span class="token function">git</span> commit -am <span class="token string">"评论内容"</span>
+$ <span class="token function">git</span> push origin xxx
+$ <span class="token function">git</span> pull
+$ <span class="token function">git</span> clone git@github.com:yourname/yourname.github.io.git <span class="token comment">#cd到其他文件夹，或者把本地的yourname.github.io删除后把远程git上的yourname.github.io重新clone下来</span>
+$ <span class="token function">git</span> checkout xxx <span class="token comment">#进入clone下来的yourname.github.io，切换到要清空的分支</span>
+$ <span class="token function">git</span> <span class="token function">rm</span> -rf <span class="token comment">#执行完这一步 在github 服务器上就会多出来个空的xxx的分支</span></code></pre>
+</code></pre>
+<h5 id="9-把blog的源代码上传到刚刚创建的空白分支"><a href="#9-把blog的源代码上传到刚刚创建的空白分支" class="headerlink" title="9. 把blog的源代码上传到刚刚创建的空白分支"></a>9. 把blog的源代码上传到刚刚创建的空白分支</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> <span class="token comment">#cd到blog源文件夹，也即是经常提交hexo g -d 的那个文件夹</span>
+$ <span class="token function">git</span> commit -m <span class="token string">"blog source code"</span>
+或者一步到位：
+$ <span class="token function">git</span> commit -a -m <span class="token string">"blog source code"</span>
+$ <span class="token function">git</span> push origin xxx <span class="token comment">#如果不成功执行下一条</span>
+$ <span class="token function">git</span> push origin xxx -f <span class="token comment">#不管3721直接push，谨慎操作。</span></code></pre>
+</code></pre>
+<h5 id="10-关联仓库"><a href="#10-关联仓库" class="headerlink" title="10. 关联仓库"></a>10. 关联仓库</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:yourname/yourname.github.io.git  <span class="token comment">#(其中origin只是定义的这个库的名字，可以随意起，但是要记住，因为push的时候会用到，例如git push origin master)</span></code></pre>
+</code></pre>
+<h5 id="11-其他常用命令"><a href="#11-其他常用命令" class="headerlink" title="11. 其他常用命令"></a>11. 其他常用命令</h5><pre><code><pre class="language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">mkdir</span> foldername <span class="token comment">#创建文件夹</span>
+$ <span class="token function">git</span> merge yourbranch <span class="token comment"># 把分支合并到master</span>
+$ <span class="token function">git</span> reset --merge <span class="token comment">#退回合并前</span>
+</code></pre>
+</code></pre>
+<h5 id="12-查看的git的邮箱和用户名"><a href="#12-查看的git的邮箱和用户名" class="headerlink" title="12. 查看的git的邮箱和用户名"></a>12. 查看的git的邮箱和用户名</h5><ul>
+<li>可以命令查看用户名：<code>git config user.name</code></li>
+<li>查看密码：<code>git config user.password</code>(一般查不到)</li>
+<li>查看邮箱：<code>git config user.email</code></li>
+<li>查看配置信息：<code>git config --list</code></li>
+<li>被放在，C:\Users\ASUS.gitconfig 文件里<br>参考<br><a href="https://www.cnblogs.com/xihailong/p/13354628.html">https://www.cnblogs.com/xihailong/p/13354628.html</a></li>
+</ul>
+<p><a href="https://www.liaoxuefeng.com/wiki/896043488029600">Git命令参考链接</a></p>
+]]></content>
+      <categories>
+        <category>杂谈</category>
+        <category>Git Command</category>
+      </categories>
+      <tags>
+        <tag>Git command-branch</tag>
       </tags>
   </entry>
   <entry>
